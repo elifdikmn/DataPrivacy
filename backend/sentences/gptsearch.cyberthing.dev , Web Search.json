@@ -1,0 +1,13 @@
+{
+    "collection": [
+        "This\nPrivacy Policy document contains types of information that is collected and\nrecorded by _Search Guy_ and how we use it.",
+        "## Information Collection and Use\ud83d\udd17\n\nWe do not collect any PII (Personally Identifiable Information) about you.",
+        "Search Guy will, however store individual paragraphs from the results of\nqueries that you submit and the articles you ask about for the benefit of all\nusers.",
+        "The only log data we collect is between OpenAI and _Search\nGuy_.",
+        "## Data Storage\ud83d\udd17\n\nThe entirety of the data that _Search Guy_ retains is as follows:\n\n  * The vector embeddings of paragraphs from search results, Wikipedia pages, and websites."
+    ],
+    "sharing": [
+        "## Data Sharing\ud83d\udd17\n\n _Cyberthing_ does not share any _Search Guy_ information with third parties,\nunless subpoenaed by a law enforcement entity."
+    ],
+    "pp_length": 4613
+}

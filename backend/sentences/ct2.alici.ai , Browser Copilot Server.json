@@ -1,0 +1,12 @@
+{
+    "collection": [
+        "No personal data from the GPTs or the authentication process is stored by\nAlici API Service.",
+        "**Data Collection:** No personal information is actively gathered from GPTs.",
+        "Interaction data, such as selected text and generated interactions, is\ncollected purely to process user inquiries and to improve service performance."
+    ],
+    "sharing": [
+        "## Data Sharing\n\n**Processing Requests:** When GPTs initiate requests to Alici API Service\nservers, these may be forwarded to OpenAI, Microsoft, or subsequent AI service\nproviders.",
+        "Data sharing is confined to the content provided by the GPTs,\nChatGPT and their generated queries."
+    ],
+    "pp_length": 1544
+}

@@ -1,0 +1,13 @@
+{
+    "collection": [
+        "Your privacy is critically important to\nus, and this policy is designed to explain how we collect, use, and safeguard\nthe information you provide to us.",
+        "Information We Collect\n\nIn the operation of our OpenAI Navigator API, we collect the following types\nof information:\n\n  * IP Addresses: For purposes of system administration and to audit the use of our API, we may log your IP address.",
+        "* Search Queries: When you use our API, we log the search queries you submit.",
+        "Use of Information\n\nThe information we collect is used solely for the purposes of operating and\nimproving our API services.",
+        "Data Retention\n\nWe retain logged IP addresses and search queries only for a duration that is\nreasonably necessary to support the API's operation and to improve our\nservices."
+    ],
+    "sharing": [
+        "We do not use your information for any other\npurposes, nor do we sell, rent, or otherwise share your information with third\nparties for their marketing purposes."
+    ],
+    "pp_length": 2009
+}

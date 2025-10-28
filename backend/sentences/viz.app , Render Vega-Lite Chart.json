@@ -1,0 +1,14 @@
+{
+    "collection": [
+        "This policy explains how we collect,\nuse, disclose, and safeguard your information when you use our API.",
+        "## Information Collection\n\nWhen you use our API, we may collect the following types of information:\n\n  * **Personal Information:** Information that identifies you personally, such as your name, email address, and payment information, if applicable.",
+        "* **Usage Data:** Information about how you interact with our API, such as access dates and times, device information, and system activity.",
+        "* **Other Information:** Any other information you choose to provide through the use of our API."
+    ],
+    "sharing": [
+        "This policy explains how we collect,\nuse, disclose, and safeguard your information when you use our API.",
+        "## Disclosure of Information\n\nWe may disclose your information in the following circumstances:\n\n  * To service providers, contractors, and other third parties who support our business and are bound by contractual obligations to keep personal information confidential.",
+        "* If we believe disclosure is necessary for the protection of rights, property, or safety of our users or others."
+    ],
+    "pp_length": 2293
+}

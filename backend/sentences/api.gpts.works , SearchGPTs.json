@@ -1,0 +1,16 @@
+{
+    "collection": [
+        "This Privacy Policy outlines our practices concerning\nthe collection, use, and sharing of location data through the Extension.",
+        "**Data Collection**\n\n  * **Location Information** : We collect precise location information (e.g., GPS coordinates) from users' devices when they use the Extension.",
+        "This collection occurs only with the user's explicit consent and is essential for the functionality of the Extension.",
+        "**User Consent and Control**\n\n  * Users are asked to provide explicit consent for location data collection upon installing the Extension or accessing its location-based features.",
+        "* Users can withdraw consent and stop the collection of location information at any time through the Extension settings or their device settings."
+    ],
+    "sharing": [
+        "This Privacy Policy outlines our practices concerning\nthe collection, use, and sharing of location data through the Extension.",
+        "**Data Sharing**\n\n  * **No Third-Party Sharing** : We do not share users' location information with third parties for marketing or advertising purposes.",
+        "* **Service Providers** : Location data may be shared with service providers solely for the purpose of supporting the Extension's functionality, under strict confidentiality agreements.",
+        "* **Legal Obligations** : We may disclose location information if required by law or in response to a valid legal process."
+    ],
+    "pp_length": 3037
+}

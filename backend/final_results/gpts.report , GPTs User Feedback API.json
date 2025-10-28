@@ -1,0 +1,34 @@
+[
+    {
+        "META_PY_KEYS": "content",
+        "description": null,
+        "required_used": false,
+        "title": "User Feedback",
+        "type": "string",
+        "data_name": "User Feedback",
+        "data_type": "Reviews",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "META_PY_KEYS": "chat_history",
+        "description": null,
+        "required_used": false,
+        "title": "Chat History",
+        "type": "string",
+        "data_name": "chat_history",
+        "data_type": "Other in-app messages",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

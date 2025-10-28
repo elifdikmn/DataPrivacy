@@ -1,0 +1,9 @@
+{
+    "collection": [
+        "It doesn\u2019t know what kinds of video titles are trending, and it can\u2019t learn\nanything about a particular channel or video without manually collecting and\npasting in the relevant details.",
+        "## Privacy First\n\nWhile Subscribr does retrieve channel and video information from the YouTube\nAPI, it does not store any information about your conversations.",
+        "The only information sent to Subscribr\u2019s server are channel\nnames and video IDs."
+    ],
+    "sharing": [],
+    "pp_length": 7915
+}

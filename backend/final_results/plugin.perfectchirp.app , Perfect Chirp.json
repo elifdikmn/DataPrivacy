@@ -1,0 +1,18 @@
+[
+    {
+        "META_PY_KEYS": "text",
+        "description": "The idea to be turned into ten tweets.",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "The idea to be turned into ten tweets",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "# Privacy Policy\n\nLast updated: May 17, 2023\n\nThis Privacy Policy (\"Policy\") explains how information about you is\ncollected, used, and disclosed by Hellstrom when you use the \"Perfect Chirp\"\napplication (\"the App\"), a ChatGPT plugin."
+            }
+        ]
+    }
+]

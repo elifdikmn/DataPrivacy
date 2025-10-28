@@ -1,0 +1,50 @@
+[
+    {
+        "description": "The unique symbol of the stock.",
+        "name": "symbol",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "stock symbol",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "Specifies the number of months of historical data to retrieve, default is 60.",
+        "name": "before",
+        "schema_enum": null,
+        "schema_type": "integer",
+        "type": "query",
+        "data_name": "before",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "Specifies the number of months to retrieve data, default is 12.",
+        "name": "after",
+        "schema_enum": null,
+        "schema_type": "integer",
+        "type": "query",
+        "data_name": "number of months to retrieve data",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

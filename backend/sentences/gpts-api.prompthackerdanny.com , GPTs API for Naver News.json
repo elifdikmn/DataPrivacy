@@ -1,0 +1,16 @@
+{
+    "collection": [
+        "This document outlines our policies\nregarding the collection, use, and disclosure of personal information when you\nuse our Service and the choices you have associated with that information.",
+        "_Note: The GPTs API does not handle personal information._\n\n## Data Handling Practices\n\n**Authentication:** The GPTs API does not store any personal data from the\nGPTs or the authentication process, as the API does not handle personal\ninformation directly.",
+        "**Data Collection:** Our service does not actively collect personal\ninformation.",
+        "We collect interaction data such as API usage patterns, request\ntypes, and response data to improve service performance and user experience.",
+        "**Data Storage:** Any collected data is securely stored, emphasizing data\nsecurity and privacy integrity.",
+        "Since we do not collect personal information,\nstorage practices focus on non-identifiable data only."
+    ],
+    "sharing": [
+        "This document outlines our policies\nregarding the collection, use, and disclosure of personal information when you\nuse our Service and the choices you have associated with that information.",
+        "## Data Sharing\n\n**Processing Requests:** Requests processed by the PromptHackerDanny GPTs API\nmay involve communication with external services for data processing and\nimprovement purposes.",
+        "However, given our non-handling of personal information,\nshared data is limited to non-identifiable interaction data."
+    ],
+    "pp_length": 2629
+}

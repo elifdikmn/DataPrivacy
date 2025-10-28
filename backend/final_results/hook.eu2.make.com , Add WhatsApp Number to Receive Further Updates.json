@@ -1,0 +1,33 @@
+[
+    {
+        "META_PY_KEYS": "whatsappNumber",
+        "description": "User's WhatsApp number in international format for receiving updates.",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "whatsapp number",
+        "data_type": "Phone number",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "## Data Collection\n\n**Type of Data Collected:** We collect only the necessary data to provide our\nservice."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "This includes messages you send to the chatbot on WhatsApp and\ninteractions on Twitter."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "**Purpose of Collection:** Data is used solely to respond to your queries and\nimprove the service."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "**Consent:** By using our chatbot, you consent to the data collection as\noutlined in this policy."
+            }
+        ]
+    }
+]

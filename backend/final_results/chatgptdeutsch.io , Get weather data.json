@@ -1,0 +1,18 @@
+[
+    {
+        "description": "The city and state to retrieve the weather for",
+        "name": "location",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "location",
+        "data_type": "Approximate location",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "Soweit auf unseren Seiten personenbezogene Daten\n(beispielsweise Name, Anschrift oder E-Mail-Adressen) erhoben werden, erfolgt\ndies, soweit m\u00f6glich, stets auf freiwilliger Basis."
+            }
+        ]
+    }
+]

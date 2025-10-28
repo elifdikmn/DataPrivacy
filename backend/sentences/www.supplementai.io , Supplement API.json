@@ -1,0 +1,18 @@
+{
+    "collection": [
+        "What Information Do We Collect?",
+        "We collect information that you provide to us and information automatically\ncollected by our web analytics.",
+        "### Information Provided by You:\n\nWe collect emails and other similar information when you sign up to be\nnotified about our launch.",
+        "### Information Automatically Collected:\n\nThe only things that are tracked are basic web analytics and logs through\nVercel as a result of visiting our website and interacting with our APIs\n\n## 2\\.",
+        "Do We Collect Information from Minors?",
+        "We do not knowingly collect data from or market to children under 18 years of\nage.",
+        "Controls for Do-Not-Track Features\n\nMost web browsers and some mobile operating systems and mobile applications\ninclude a Do-Not-Track (\u201cDNT\u201d) feature or setting you can activate to signal\nyour privacy preference not to have data about your online browsing activities\nmonitored and collected.",
+        "However, API calls to our\nwebsite are logged to ensure proper function, these logs contain no personal\ninformation."
+    ],
+    "sharing": [
+        "### For Business Transfers:\n\nWe may use your non-personal information in connection with, or during\nnegotiations of, any merger, sale of company assets, financing, or acquisition\nof all or a portion of our business to another company.",
+        "We may disclose your information where we are legally required to do so in\norder to comply with applicable law, governmental requests, a judicial\nproceeding, court order, or legal process.",
+        "We guarantee that your personal\ninformation, especially your email address, will not be distributed, sold, or\nshared with any third-party entities outside of our company."
+    ],
+    "pp_length": 3814
+}

@@ -1,0 +1,16 @@
+{
+    "collection": [
+        "_Last updated February 15, 2024_\n\nGoogle API Services, including Google Sign-In, are part of an authentication\nand authorization framework that gives you, the developer, the ability to\nconnect directly with Google users when you would like to request access to\nGoogle user data.",
+        "** Only request access to\nuser data in context (via incremental auth) whenever you can, so that users\nunderstand why you need the data.",
+        "This includes without\nlimitation the following requirements:\n\n**_Do not misrepresent what data is collected or what you do with Google user\ndata_."
+    ],
+    "sharing": [
+        "Transfers of data are not allowed, except:\n\n      1.",
+        "As part of a merger, acquisition, or sale of assets of the developer after obtaining explicit prior consent from the user.",
+        "All other transfers, uses, or sales of user data are prohibited, including:\n\n    1.",
+        "Transferring or selling user data to third parties like advertising platforms, data brokers, or any information resellers.",
+        "Transferring, selling, or using user data for serving ads, including retargeting, personalized or interest-based advertising.",
+        "Transferring, selling, or using user data to determine credit-worthiness or for lending purposes."
+    ],
+    "pp_length": 17411
+}

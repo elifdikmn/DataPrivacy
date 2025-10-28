@@ -1,0 +1,11 @@
+{
+    "collection": [
+        "To register **tool** and **email** values,\nsimply send an e-mail to [vog.hin.mln.ibcn@seitilitue](mailto:dev@null)\nincluding the desired values along with the name of either a developer or the\norganization creating the software.",
+        "Once NCBI establishes communication with a\ndeveloper, receives values for **tool** and **email** and validates the e-mail\naddress in **email** , the block will be lifted.",
+        "Once **tool** and **email**\nvalues are registered, all subsequent E-utility requests from that software\npackage should contain both values.",
+        "Software developers may register values\nof **tool** and **email** at any time, and are encouraged to do so.",
+        "### EPost (UID uploads)\n\n_eutils.ncbi.nlm.nih.gov/entrez/eutils/epost.fcgi_\n\nAccepts a list of UIDs from a given database, stores the set on the History\nServer, and responds with a query key and web environment for the uploaded\ndataset."
+    ],
+    "sharing": [],
+    "pp_length": 28981
+}

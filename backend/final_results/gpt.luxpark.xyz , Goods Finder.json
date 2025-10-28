@@ -1,0 +1,123 @@
+[
+    {
+        "description": "The user provides the search keyword for the request. The language used for translating keywords depends on the specified platform. If the platform is Coupang, Korean is used as the default language for translation. If the platform is Amazon or if no platform is specified, English is used as the default language for translation.",
+        "name": "keyword",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "keyword",
+        "data_type": "In-app search history",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "The search platform is selected based on the language specified by the user. If the user does not explicitly specify a platform, the choice of platform is made according to the language used. Coupang is chosen for searches in Korean, AliExpress for searches in Chinese, and Amazon for searches in all other languages.",
+        "name": "platform",
+        "schema_enum": [
+            "Unassigned",
+            "Amazon",
+            "AliExpress",
+            "eBay",
+            "Naver",
+            "Coupang",
+            "Rakuten"
+        ],
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "platform",
+        "data_type": "Languages",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "The classification of the product refers to the specific category or type of product being searched for, such as women's clothing, electronics, etc. This classification helps narrow down the search results to items that belong to the specified category, making it easier for users to find relevant products.",
+        "name": "category",
+        "schema_enum": [
+            "Unknown",
+            "Women's Clothing",
+            "Men's Clothing",
+            "Baby/Children's Clothing",
+            "Fashion Accessories",
+            "Cosmetics/Beauty",
+            "Electronics/Digital",
+            "Furniture/Interior",
+            "Sports/Leisure",
+            "Household/Kitchen Supplies",
+            "Books/Music/DVD",
+            "Food/Groceries/Health Food",
+            "Automobile/Accessories",
+            "Pet/Animal Supplies",
+            "Stationery/Office Supplies",
+            "Travel/Air Tickets/Hotels"
+        ],
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "product category classification",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "The requester's location in ISO 3166-1 Alpha-2 format.",
+        "name": "location",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "location",
+        "data_type": "Approximate location",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "The language of the search keyword in ISO 639-1 format.",
+        "name": "language",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "language",
+        "data_type": "Languages",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "The requester's currency in ISO 4217 format.",
+        "name": "currency",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "currency",
+        "data_type": "Other financial info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

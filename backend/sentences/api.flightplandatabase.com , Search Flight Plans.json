@@ -1,0 +1,17 @@
+{
+    "collection": [
+        "This document details what information is collected, how it is\nused and who has access to it.",
+        "**Information Collection and Usage**  \nThe following identifiable information is collected and stored by the Flight\nPlan Database:  \n  \n\\- Email address: An email address is collected when registering for an\naccount on the Flight Plan Database and is used for account identification and\ntransactional messaging about account updates.",
+        "\\- User entered location information: This information is collected only when\na user chooses to add a location to their profile and is used only for display\npurposes.",
+        "\\- Requesting IP: This information is collected as requests are received by\nthe Flight Plan Database servers and is used for site performance testing and\nabuse prevention.",
+        "\\- Cookies: The Flight Plan Database sets and uses cookies to store state\nbetween requests and store preferences for site interactions."
+    ],
+    "sharing": [
+        "This document details what information is collected, how it is\nused and who has access to it.",
+        "This address is held on the\nFlight Plan Database servers for the lifetime of the account (unless the\naccount email is changed) and shared only with the email service provider\n(Amazon Web Services) necessary to send emails.",
+        "This information is held on the Flight Plan Database servers\nfor 90 days and is also shared with the error tracking service Sentry only in\nthe event of site errors.",
+        "Where required by law,\nthe Flight Plan Database may share the above information with government\nagencies.",
+        "Google's use of the DoubleClick cookie\nenables it and its partners to serve ads to your users based on their visit to\nyour sites and/or other sites on the Internet."
+    ],
+    "pp_length": 4047
+}

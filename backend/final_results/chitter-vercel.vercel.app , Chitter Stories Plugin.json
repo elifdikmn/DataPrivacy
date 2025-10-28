@@ -1,0 +1,103 @@
+[
+    {
+        "META_PY_KEYS": "isPublic",
+        "description": "Whether the story is public or private.",
+        "required_used": false,
+        "title": null,
+        "type": "boolean",
+        "data_name": "story visibility",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "META_PY_KEYS": "title",
+        "description": "The title of the story.",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "title",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "META_PY_KEYS": "content",
+        "description": "The story content.",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "story content",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "META_PY_KEYS": "authorId",
+        "description": "The author's ID (optional, can be null for anonymous stories).",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "authorId",
+        "data_type": "User IDs",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "META_PY_KEYS": "type",
+        "description": "The type of the content (story, dream, secret, idea).",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "type of content",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "The type of stories to filter by (story, dream, secret, idea)",
+        "name": "type",
+        "schema_enum": [
+            "story",
+            "dream",
+            "secret",
+            "idea"
+        ],
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "type of stories",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

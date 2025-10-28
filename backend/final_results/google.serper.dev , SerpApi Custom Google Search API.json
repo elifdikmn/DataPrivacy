@@ -1,0 +1,53 @@
+[
+    {
+        "META_PY_KEYS": "q",
+        "description": "Search query",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "Search query",
+        "data_type": "In-app search history",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "You agree to provide current, complete and accurate purchase and account information for all purchases made at our website."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "When you purchase something from our website, as part of the buying and selling process, we collect the personal information you give us such as your name, address and email address."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "When you browse our website, we also automatically receive your computer's internet protocol (IP) address in order to provide us with information that helps us learn about your browser and operating system."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "When you provide us with personal information to complete a transaction, verify your credit card, place an order, arrange for a delivery or return a purchase, we imply that you consent to our collecting it and using it for that specific reason only."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "If after you opt-in, you change your mind, you may withdraw your consent for us to contact you, for the continued collection, use or disclosure of your information, at anytime, by contacting us at or mailing us at: support@serpapi.com\n    \n    \n    SECTION 3 - DISCLOSURE\n    \n    We may disclose your personal information if we are required by law to do so or if you violate our Terms of Service."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "SECTION 5 - THIRD-PARTY SERVICES\n    \n    In general, the third-party providers used by us will only collect, use and disclose your information to the extent necessary to allow them to perform the services they provide to us."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "SECTION 7 - COOKIES\n    \n    We use cookies for Analytics and session purposes."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "If we make material changes to this policy, we will notify you here that it has been updated, so that you are aware of what information we collect, how we use it, and under what circumstances, if any, we use and/or disclose it."
+            }
+        ]
+    }
+]

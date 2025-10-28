@@ -1,0 +1,18 @@
+{
+    "collection": [
+        "We do not track you across pages or visits, but we do use [Plausible\nAnalytics](https://plausible.io) to collect some information from your\ncomputer, and we do log visits.",
+        "For\nexample, we collect the following technical information about our visitors:\n\n  * The website that referred you to our site (via the [HTTP Referer](https://en.wikipedia.org/wiki/HTTP_referrer) field) \n  * The browser software you use, your operating system, and your monitor's resolution \n  * What country you are from \n  * Any queries that you made in our search, alert or Atom feeds \n\nWhere possible, we delete usage-related logs automatically when they are 12\nweeks old.",
+        "We do not collect personal information about our visitors unless they register\nan account.",
+        "* For the purpose of counting page visits, we use [Plausible Analytics](https://plausible.io)."
+    ],
+    "sharing": [
+        "_Last modified: June 11, 2020_\n\n* * *\n\n### Privacy Policy\n\nCourtListener does not sell information collected about your visits to this\nsite or usage of this site and will only share such information in the ways\nexplained in this policy.",
+        "From 2009\nto 2022 we self-hosted the Matomo analytics system so that our user's traffic\nwould not be shared with third parties.",
+        "We may share anonymized information collected with academic\nresearchers, and they may publish their research based on that information.",
+        "We currently share data with the following third parties:\n\n  * We use Amazon, Inc.'s AWS services to store and process data.",
+        "* For the purpose of sending newsletters, we share information with [Moosend, Ltd, a subsidiary of Sitecore, Inc](https://moosend.com/).",
+        "* For the purpose of processing transactions, we share information with [Neon One, LLC](https://www.neonone.com/).",
+        "* For the purpose of error tracking, we share error and logging information with [Sentry, Inc](https://sentry.com)."
+    ],
+    "pp_length": 17115
+}

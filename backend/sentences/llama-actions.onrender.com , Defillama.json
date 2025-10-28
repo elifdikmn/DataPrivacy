@@ -1,0 +1,8 @@
+{
+    "collection": [
+        "The plugin does not\ncollect any identifying user data.",
+        "The DefiLlama Plugin uses [PostHog](https://posthog.com/) to track anonymized\nproduct analytics."
+    ],
+    "sharing": [],
+    "pp_length": 6128
+}

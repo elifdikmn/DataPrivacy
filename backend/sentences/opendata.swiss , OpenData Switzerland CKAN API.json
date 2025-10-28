@@ -1,0 +1,13 @@
+{
+    "collection": [
+        "Beim Zugriff auf handbook.opendata.swiss werden folgende Daten in Logfiles\ngespeichert: IP-Adresse, Datum, Uhrzeit, Browser-Anfrage und allg.",
+        "Die Webserver unserer Hosting-\nProvider registrieren lediglich unpers\u00f6nliche Nutzungsdaten, welche f\u00fcr die\nbeteiligten Beh\u00f6rden so aufbereitet werden, dass Trends erkennbar sind, um das\nAngebot entsprechend zu verbessern (Logfiles).",
+        "Beim Registrieren der E-Mail-Adresse\nwird diese in eine separate Datenbank aufgenommen, die in keinem Zusammenhang\nmit den anonymen Logfiles steht.",
+        "Matomo verwendet sogenannte \u00abCookies\u00bb, das sind Textdateien, die auf Ihrem\nComputer gespeichert werden und die eine Analyse Ihrer Benutzung der Website\nerm\u00f6glichen.",
+        "Zur Analyse der Benutzung dieser Seite werden die durch den\nCookie erzeugten Nutzungsinformationen (einschliesslich Ihrer gek\u00fcrzten IP-\nAdresse) an unseren Server in der Schweiz \u00fcbertragen und zu Zwecken der\nNutzungsanalyse gespeichert."
+    ],
+    "sharing": [
+        "Pers\u00f6nliche Daten werden auf\nhandbook.opendata.swiss streng vertraulich behandelt und weder an Dritte\nverkauft noch weitergegeben."
+    ],
+    "pp_length": 6105
+}

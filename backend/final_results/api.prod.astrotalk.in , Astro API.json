@@ -1,0 +1,66 @@
+[
+    {
+        "description": "The type of horoscope needed for e.g. DAILY, WEEKLY, MONTHLY, YEARLY",
+        "name": "type",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "type of horoscope",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "The Zodiac sign for which the horoscope is needed, if not given, output will contain horoscope for all ziodiac sign, accepted zodiac signs are Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius and Pisces",
+        "name": "zodiac",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "zodiac sign",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "The id for language as follows, 1 is English, 2 is Hindi, 4 is Punjabi and 5 is Marathi",
+        "name": "languageId",
+        "schema_enum": null,
+        "schema_type": "integer",
+        "type": "query",
+        "data_name": "languageId",
+        "data_type": "Languages",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "Timezone, try always sending 'Asia/Kolkata'",
+        "name": "timezone",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "timezone",
+        "data_type": "Timezone",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

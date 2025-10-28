@@ -1,0 +1,38 @@
+[
+    {
+        "description": "Get current time in Japan.",
+        "name": "location",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "Get current time in Japan.",
+        "data_type": "Time",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "## We do...\n\nWe do log a small amount of information about the requests made to the\nservice."
+            },
+            {
+                "number": 2,
+                "label": "VAGUE",
+                "sentence": "This information includes the date and time of requests, the IP the\nrequest came from, and it's location."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "Some of this information is temporary;\nfor example we keep the IP of the request only for a few minutes so we can\nguard against attacks from malicious agents."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "We also store details about system errors so they can be investigated and\nrectified."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "Any information collected by our hosting platform is outside our control."
+            }
+        ]
+    }
+]

@@ -1,0 +1,10 @@
+{
+    "collection": [
+        "If your FRED\u00ae API application enables you or any party to gain access to information about users of the FRED\u00ae API, including but not limited to personally identifying information or non-personally identifying usage information, you or the party receiving the information must make publicly available, and must abide by, an appropriate privacy policy in your FRED\u00ae API application.",
+        "After supplying the Federal Reserve Bank of St. Louis with your registration\ninformation, you will be issued an alphanumeric key assigned to you by the\nFederal Reserve Bank of St. Louis that is uniquely associated with you."
+    ],
+    "sharing": [
+        "If your FRED\u00ae API application enables you or any party to gain access to information about users of the FRED\u00ae API, including but not limited to personally identifying information or non-personally identifying usage information, you or the party receiving the information must make publicly available, and must abide by, an appropriate privacy policy in your FRED\u00ae API application."
+    ],
+    "pp_length": 23294
+}

@@ -1,0 +1,16 @@
+{
+    "collection": [
+        "Data Aggregation and Usage\n\nGameBrain aggregates data from various public sources, including but not\nlimited to game databases, game review platforms, and YouTube.",
+        "This data may\ninclude game title, authors, release date, genres, screenshots, rating, and\nreviews.",
+        "Users can interact with the Website to answer questions about their\ngaming preferences, enabling us to provide personalized recommendations.",
+        "Anonymous Data Collection\n\nUser data is collected anonymously and stored locally on the user's device in\nthe form of cookies.",
+        "Additionally, we use Plausible Analytics, which is a\nGDPR, CCPA and cookie law compliant site analytics tool, to track overall\ntrends in our website traffic.",
+        "Plausible Analytics collects only aggregated\ninformation, which does not allow us to identify any visitor to our website.",
+        "Account Creation\n\nUsers have the option to create an account by providing their email and a\npassword.",
+        "Account creation is optional, and GameBrain does not\ncollect any personally identifiable information unless willingly provided by\nthe user."
+    ],
+    "sharing": [
+        "No user data is transmitted to these external platforms,\nexcept the fact that users arrived from gamebrain.co."
+    ],
+    "pp_length": 4837
+}

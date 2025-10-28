@@ -1,0 +1,18 @@
+[
+    {
+        "META_PY_KEYS": "query",
+        "description": "The user's question.",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "user's question",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

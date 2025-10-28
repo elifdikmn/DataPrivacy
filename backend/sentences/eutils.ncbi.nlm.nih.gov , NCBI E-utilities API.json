@@ -1,0 +1,15 @@
+{
+    "collection": [
+        "For site security purposes, as well\nas to ensure that this service remains available to all users, we use software\nprograms to monitor traffic and to identify unauthorized attempts to upload or\nchange information or otherwise cause damage.",
+        "## Human Genomic Data Submitted to Unrestricted-Access Repositories\n\nIf you plan to submit large-scale human genomic data, as defined by the [NIH\nGenomic Data Sharing (GDS) Policy](https://osp.od.nih.gov/scientific-\nsharing/genomic-data-sharing/), to be maintained in an unrestricted-access\nNCBI database, NIH expects you to 1) submit an [Institutional\nCertification](http://osp.od.nih.gov/scientific-sharing/institutional-\ncertifications/) to assure that the data submission and expectations defined\nin the NIH GDS Policy have been met, 2) register the study in NCBI\n[BioProject](/bioproject/) regardless of where the data will ultimately reside\n(e.g., GenBank, SRA, GEO).",
+        "As a Center within the\nNLM, we do not collect any personally identifiable information (PII) about\nvisitors to our Web sites.",
+        "We do collect some data about user visits to help\nus better understand how the public uses the site and how to make it more\nhelpful.",
+        "The NCBI does not collect information for commercial marketing or any\npurpose unrelated to [NCBI's Mission](../../about/mission/).",
+        "* Use the URL parameter email, and tool for distributed software, so that we can track your project and contact you if there is a problem."
+    ],
+    "sharing": [
+        "In the event of authorized law\nenforcement investigations and pursuant to any required legal process,\ninformation from these sources may be used to help identify an individual.",
+        "## Human Genomic Data Submitted to Unrestricted-Access Repositories\n\nIf you plan to submit large-scale human genomic data, as defined by the [NIH\nGenomic Data Sharing (GDS) Policy](https://osp.od.nih.gov/scientific-\nsharing/genomic-data-sharing/), to be maintained in an unrestricted-access\nNCBI database, NIH expects you to 1) submit an [Institutional\nCertification](http://osp.od.nih.gov/scientific-sharing/institutional-\ncertifications/) to assure that the data submission and expectations defined\nin the NIH GDS Policy have been met, 2) register the study in NCBI\n[BioProject](/bioproject/) regardless of where the data will ultimately reside\n(e.g., GenBank, SRA, GEO)."
+    ],
+    "pp_length": 12818
+}

@@ -1,0 +1,34 @@
+[
+    {
+        "description": "ICAO airport code",
+        "name": "airportCode",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "airportCode",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "FAA Aircraft N Number",
+        "name": "nNumber",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "FAA Aircraft N Number",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

@@ -1,0 +1,28 @@
+[
+    {
+        "description": "The name of this GPTs",
+        "name": "botname",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "botname",
+        "data_type": "Name",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "[chat prompt gpt](https://chat-prompt.com/img/logo.png)](/ \"chat prompt\ngpt\")\n\n  * [Home](/)\n  * [Techniques](/topic/Techniques)\n  * [Marketing](/topic/Marketing-and-Copywriting)\n  * [Health](/topic/Health)\n  * [Productivity](/topic/Productivity)\n  * [Programming](/topic/Programming-and-Data)\n  * [Entrepreneur](/topic/Entrepreneur)\n  * [Market Research](/topic/Market-Research)\n  * [General](/topic/General)\n  * [Product](/topic/Product)\n  * [Blockchain](/topic/Blockchain)\n  * [Education](/topic/Education)\n  * [eCommerce](/topic/eCommerce)\n  * [Finance](/topic/Finance)\n  * [Prompt-Tips](/topic/Prompt-Tips)\n  * [Miscellaneous](/topic/Miscellaneous)\n  * [Text-to-Image](/topic/Text-to-Image)\n  * [Wellness and Fitness](/topic/Wellness-and-Fitness)\n  * [Privacy](/Privacy)\n\n  * [Sign In](/signin)\n  * [Sign Up](/signup)\n\n# Privacy Policy\n\nLast updated: May 2022\n\n## Information that is gathered from visitors\n\nIn common with other websites, log files are stored on the web server saving\ndetails such as the visitor's IP address, browser type, referring page and\ntime of visit."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "Cookies may be used to remember visitor preferences when interacting with the\nwebsite."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "Where registration is required, the visitor's email and a username will be\nstored on the server."
+            }
+        ]
+    }
+]

@@ -1,0 +1,34 @@
+[
+    {
+        "description": "A single surname",
+        "name": "name",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "name",
+        "data_type": "Name",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "For more than\n12 years we've been collecting and processing data."
+            }
+        ]
+    },
+    {
+        "description": "API key for authentication",
+        "name": "apikey",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "apikey",
+        "data_type": "User IDs",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "For more than\n12 years we've been collecting and processing data."
+            }
+        ]
+    }
+]

@@ -1,0 +1,143 @@
+[
+    {
+        "description": "PMC ID of the article",
+        "name": "id",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "PMC ID of the article",
+        "data_type": "Data identifier",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "When you visit the NLM\nwebsites, we do not collect any personally identifiable information (PII)\nabout you, unless you choose to explicitly provide it to us."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "We do, however,\ncollect some data about your visit to our website to help us better understand\npublic use of the site and to make it more useful to visitors."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "This page\ndescribes the information that is automatically collected and stored."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "NLM\nnever collects information for commercial marketing or any purpose not related\nto [NLM's functions](https://www.nlm.nih.gov/about/functstatement.html)."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "#### What Type of Information NLM Collects\n\nWhen you visit any website, certain information about your visit can be\ncollected."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "NLM automatically collects and stores the following type of\ninformation about your visit:\n\n  * The name of the domain you use to access the Internet (for example, verizon.com, if you are using a Verizon online account, or stanford.edu, if you are connecting from Stanford University's domain)\n  * The date and time of your visit to our website\n  * The pages and documents you viewed on our website from an external search engine such as Bing or Google\n  * The URL of the website you visited prior to ours\n  * The words you searched for on our website\n  * The type and version of your Web browser and operating system, and\n  * Your location at the time of your visit, down to the city-level\n\nThis information is used to measure the number of visitors to the various\nsections of our site and improve organization, coverage, system performance or\nother problem areas."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "If your electronic medical record (EMR), patient health record (PHR) or other\nsystem links you to MedlinePlus, your diagnosis codes or other information,\nsuch as medications or procedures names, are sent to our site in order to link\nyou to the most appropriate information."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "No personally identifiable\ninformation is collected in this process."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "Cookies from NLM web pages only collect information about your browser's visit\nto the site; they do not collect personal information about you."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "While\nvisiting certain NLM websites, you may occasionally encounter a web page that\nautomatically employs cookies to make it easier to use the web page's dynamic\nfeatures."
+            },
+            {
+                "number": 11,
+                "label": "OMITTED",
+                "sentence": "NLM may employ persistent cookies in other\nways consistent with our mission and the OMB guidelines to analyze use\npatterns and improve our users' experience on NLM websites."
+            },
+            {
+                "number": 12,
+                "label": "OMITTED",
+                "sentence": "If you choose to send us personal information by email, or by filling out a\nform on our web site, we use this information to respond to your message and\nto help us provide you with the information or material you requested."
+            },
+            {
+                "number": 13,
+                "label": "OMITTED",
+                "sentence": "#### NLM Accounts\n\nCommon third-party website privacy policies used by NLM include:\n\n  * [Apple](https://www.apple.com/legal/privacy/en-ww/) and [iTunes](https://www.apple.com/legal/internet-services/itunes/us/terms.html) Customer Privacy Policy\n  * [Facebook Data Policy](https://www.facebook.com/policy.php)\n  * [Flickr Privacy Policy](https://policies.yahoo.com/us/en/yahoo/privacy/products/flickr/)\n  * [GitHub Privacy Policy](https://docs.github.com/en/github/site-policy/github-privacy-statement)\n  * [Google and YouTube Privacy Policy](https://www.google.com/intl/en/policies/privacy/) and you can [manage the privacy settings for your Google account](https://myaccount.google.com/privacy)\n  * [Instagram Data Policy](https://help.instagram.com/519522125107875)\n  * [LinkedIn Privacy Policy](https://www.linkedin.com/legal/privacy-policy)\n  * [Pinterest Privacy Policy](https://policy.pinterest.com/en/privacy-policy)\n  * [WordPress Privacy Policy](https://wordpress.org/about/privacy/)\n  * [X Privacy Policy](https://twitter.com/privacy?lang=en)\n\n#### How NLM Collects and Uses Information from Third-Party Websites\n\nIf you have an account/profile with a third-party website, and choose to\nfollow, like, friend, or comment on a third-party website managed by NLM,\ncertain personal information associated with your account may be made\navailable to us based on the privacy policies of the third-party website and\nyour privacy settings within that website."
+            },
+            {
+                "number": 14,
+                "label": "OMITTED",
+                "sentence": "NLM sometimes collects and uses the information made\navailable through third-party websites."
+            },
+            {
+                "number": 15,
+                "label": "OMITTED",
+                "sentence": "#### Google Analytics\n\nWhen you browse through the NLM websites, we use Google Analytics software to\ngather and temporarily store a variety of information about your visit."
+            },
+            {
+                "number": 16,
+                "label": "OMITTED",
+                "sentence": "We do not associate any of the data we collect with you as an individual."
+            },
+            {
+                "number": 17,
+                "label": "OMITTED",
+                "sentence": "#### Demographic and Interest Data\n\nOn some portions of our website we have enabled Google Analytics and other\nthird-party software (listed below), to provide aggregate demographic and\ninterest data of our visitors."
+            },
+            {
+                "number": 18,
+                "label": "OMITTED",
+                "sentence": "**While these tools are used by some websites to serve\nadvertisements, NLM only uses them to measure demographic data."
+            },
+            {
+                "number": 19,
+                "label": "OMITTED",
+                "sentence": "**\n\n  * **DoubleClick** : NLM uses DoubleClick to understand the characteristics and demographics of the people who visit NLM sites."
+            },
+            {
+                "number": 20,
+                "label": "OMITTED",
+                "sentence": "No personally identifiable information is collected by DoubleClick from NLM websites."
+            },
+            {
+                "number": 21,
+                "label": "OMITTED",
+                "sentence": "The DoubleClick Privacy Policy is available at <https://www.google.com/intl/en/policies/privacy/>\n\nYou can opt-out of receiving DoubleClick advertising at [Control the ads you\nsee when you see\nthem](https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.google.com%2FMy-\nAd-Center-\nHelp%2Fanswer%2F12155764%3Fhl%3Den%23&data=05%7C01%7Cbrtvar%40mail.nlm.nih.gov%7C2a049dc5f9fe4cbfd30708dacbd3bc68%7C14b77578977342d58507251ca2dc2b06%7C0%7C0%7C638046407501974505%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=9BsIN5fE3Fu80PyiNEm%2BTbnjiamD7hNpQwJLk%2FJROG4%3D&reserved=0)\nand [Block or allow pop-ups in\nChrome](https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.google.com%2Fchrome%2Fanswer%2F95472%3Fhl%3Den%26co%3DGENIE.Platform%253DDesktop&data=05%7C01%7Cbrtvar%40mail.nlm.nih.gov%7C2a049dc5f9fe4cbfd30708dacbd3bc68%7C14b77578977342d58507251ca2dc2b06%7C0%7C0%7C638046407501974505%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=icMdzZ9Ff8W2OdkBN1aGI5iALUeFGZzuX%2Bk3vrUyRs4%3D&reserved=0)\n\n  * **Survey tools:** NLM also uses surveys to collect opinions and feedback from a random sample of visitors and to understand our visitors' satisfaction with the NLM website."
+            },
+            {
+                "number": 22,
+                "label": "OMITTED",
+                "sentence": "These surveys do not collect PII and participation is voluntary."
+            },
+            {
+                "number": 23,
+                "label": "OMITTED",
+                "sentence": "**CrazyEgg:** NLM uses CrazyEgg to obtain information on how visitors are\ninteracting with specific NLM web pages."
+            },
+            {
+                "number": 24,
+                "label": "OMITTED",
+                "sentence": "The data CrazyEgg collects\nincludes information about how visitors navigate around a web page and the\nmost commonly clicked links on a specific web page."
+            },
+            {
+                "number": 25,
+                "label": "OMITTED",
+                "sentence": "CrazyEgg does not collect\npersonally identifiable information."
+            },
+            {
+                "number": 26,
+                "label": "OMITTED",
+                "sentence": "](https://www.nlm.nih.gov/web_policies.html)\n\nRecords of posts and comments will be kept."
+            }
+        ]
+    }
+]

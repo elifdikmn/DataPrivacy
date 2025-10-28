@@ -1,0 +1,11 @@
+{
+    "collection": [
+        "The source code you typed in the editor window is send to the C++ Insights\nserver.",
+        "## Web logs\n\nC++ Insights keeps web logs to be able to track down issues with the website.",
+        "The code as well as a time stamp and all compiler/insights options are stored\nin a database together with the short link id."
+    ],
+    "sharing": [
+        "Only during the translation it is\ntemporarily transferred to the C++ Insights server."
+    ],
+    "pp_length": 2028
+}

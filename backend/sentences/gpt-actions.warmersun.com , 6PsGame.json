@@ -1,0 +1,14 @@
+{
+    "collection": [
+        "###\n\nUser Identification and Data Storage:\n\nUpon user sign-up for our GPT, a unique user ID is generated.",
+        "###\n\nSign-up and Payment Processing:\n\nSign-up and subscription payments are handled by Kobble.io, where users may\nprovide personal information such as name, email address, and Google or\nMicrosoft account details.",
+        "Using Kobble.io, we do have access to this\npersonally identifiable information (PII) for account management, customer\nsupport, and service optimization purposes.",
+        "###\n\nUser Rights & Data Transparency\n\nUsers have the right to inquire about the data we collect and request access,\ncorrection, or deletion of their personal information.",
+        "###\n\nAge Restrictions\n\nOur services are accessible to a wide audience, but we do not knowingly\ncollect or solicit personal information from individuals under 13 years of\nage.",
+        "If you believe we have inadvertently collected such information, please\ncontact us so we can promptly address the issue."
+    ],
+    "sharing": [
+        "###\n\nThird-Party Data Sharing\n\nWhile we may access personal data through Kobble.io, we do not share this\ninformation with third parties without your consent, except as necessary to\nprovide our services or as required by law."
+    ],
+    "pp_length": 8049
+}

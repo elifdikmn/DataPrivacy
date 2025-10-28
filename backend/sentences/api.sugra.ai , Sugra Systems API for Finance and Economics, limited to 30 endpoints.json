@@ -1,0 +1,12 @@
+{
+    "collection": [
+        "# Privacy Policy\n\n**Introduction**  \nThis Privacy Policy provides details on the handling of data by Sugra Systems,\nInc. (\"Sugra Systems\") through its API, specifically designed to emphasizes\nour commitment to privacy by **not** collecting ANY personal data.",
+        "## Data Collection and Use\n\n  * **No Personal Data Collection:** Our API is designed not to collect any personal data from users.",
+        "* **No Indirect Data Collection:** We do not perform any indirect data collection, such as IP addresses or device information, ensuring users' privacy is maintained.",
+        "## Compliance and Regulation\n\nSince no information is collected, our API is designed in a manner that\ninherently complies with privacy regulations such as GDPR and CCPA, as there\nare no user data concerns."
+    ],
+    "sharing": [
+        "## Data Sharing and Disclosure\n\nNo data sharing or disclosure practices are applicable since no data is\ncollected."
+    ],
+    "pp_length": 3130
+}

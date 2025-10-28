@@ -1,0 +1,10 @@
+{
+    "collection": [
+        "## Privacy Policy\n\nThe Web Page Reader API, built on top of Jina AI's Reader API, does not\ncollect, store, or share any personal data.",
+        "For analytics and performance monitoring, certain non-personal data (such as\nrequest timestamps and headers) is stored in Cloudflare's Analytics Engine for\na duration of three months."
+    ],
+    "sharing": [
+        "## Privacy Policy\n\nThe Web Page Reader API, built on top of Jina AI's Reader API, does not\ncollect, store, or share any personal data."
+    ],
+    "pp_length": 1560
+}

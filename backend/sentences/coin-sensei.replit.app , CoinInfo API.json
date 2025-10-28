@@ -1,0 +1,16 @@
+{
+    "collection": [
+        "This Privacy Policy describes how we collect, use,\ndisclose, and safeguard your information when you interact with our\napplication.",
+        "###  \n\n### Information Collection\n\nIn using MontyTec GPTs, we may collect various types of information,\nincluding:\n\n  * Personal identification information, such as your name, email address, and any other contact details you provide.",
+        "* Data that you enter into MontyTec GPTs, which may include text, images, or other content.",
+        "* Technical information about your device, internet connection, and usage details of MontyTec GPTs.",
+        "###  \n\n### Children's Privacy\n\nMontyTec GPTs does not knowingly collect personal information from children\nunder the age of 13.",
+        "If we learn that we have collected personal information\nfrom a child under 13, we will take steps to delete that information.",
+        "('dmAjax', () => { // Collects client data and\nupdates cookies used by smart sites window.expireDays = 365;\nwindow.visitLength = 30 * 60000; $.setCookie(\"dm_timezone_offset\", (new\nDate()).getTimezoneOffset(), window.expireDays);\nsetSmartSiteCookiesInternal(\"dm_this_page_view\",\"dm_last_page_view\",\"dm_total_visits\",\"dm_last_visit\");\n});  Parameters.NavigationAreaParams.MoreButtonText = 'MORE';\nParameters.NavigationAreaParams.LessButtonText = 'LESS';\nParameters.HomeLinkText = 'Home';"
+    ],
+    "sharing": [
+        "This Privacy Policy describes how we collect, use,\ndisclose, and safeguard your information when you interact with our\napplication.",
+        "###  \n\n### Sharing of Information\n\nWe may share information:\n\n  * With our subsidiaries, affiliates, or third-party service providers to support the MontyTec GPTs operation."
+    ],
+    "pp_length": 5398
+}

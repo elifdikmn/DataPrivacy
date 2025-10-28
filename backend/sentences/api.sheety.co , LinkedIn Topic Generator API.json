@@ -1,0 +1,16 @@
+{
+    "collection": [
+        "As a company we always try to avoid collecting data, though\nsometimes we do collect a small amount in order to offer you the services that\nwe do.",
+        "This page will outline the type of data we do collect, why we collect\nit, and how you can request a copy of it.",
+        "### What data we collect\n\nThe personal data we collect from you includes:\n\n  * questions, queries or feedback you leave, including your email address if you contact us\n  * your email address when you sign up\n  * OAuth access and refresh tokens from your Google account\n  * the names of the spreadsheets you add in the Sheety dashboard, and corresponding identifiers\n  * your Internet Protocol (IP) address, and details of which version of web browser you used\n  * a log of how many times your API has been accessed\n\n### What we do with your data\n\nThe data we collect may be shared with our technology suppliers, for example\nour hosting provider.",
+        "We use Cloudflare Analytics to collect information about how you use our\nwebsites.",
+        "Cloudflare Analytics processes anonymised information about:\n\n  * the pages you visit on our websites\n  * how long you spend on each of our website pages\n  * how you got to the site\n  * what you click on while you\u2019re visiting the site\n\nWe will not identify you through analytics information, and we will not\ncombine analytics information with other data sets in a way that would\nidentify who you are.",
+        "Cloudflare will see:\n\n  * the requests made to your API, including the POST/PUT body\n  * the response from Sheety\n  * the IP addresses of users accessing your API\n\n### How long we keep your data\n\nWe will only retain your personal data for as long as:\n\n  * it is needed for the purposes set out in this document\n  * We will keep your email data until you unsubscribe.",
+        "We do not intentionally collect or maintain data\nabout anyone under the age of 13."
+    ],
+    "sharing": [
+        "### What data we collect\n\nThe personal data we collect from you includes:\n\n  * questions, queries or feedback you leave, including your email address if you contact us\n  * your email address when you sign up\n  * OAuth access and refresh tokens from your Google account\n  * the names of the spreadsheets you add in the Sheety dashboard, and corresponding identifiers\n  * your Internet Protocol (IP) address, and details of which version of web browser you used\n  * a log of how many times your API has been accessed\n\n### What we do with your data\n\nThe data we collect may be shared with our technology suppliers, for example\nour hosting provider.",
+        "We will not:\n\n  * sell or rent your data to third parties\n  * share your data with third parties for marketing purposes\n  * We will share your data if we are required to do so by law - for example, by court order, or to prevent fraud or other crime."
+    ],
+    "pp_length": 5103
+}

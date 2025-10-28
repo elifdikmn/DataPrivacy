@@ -1,0 +1,13 @@
+{
+    "collection": [
+        "## We do...\n\nWe do log a small amount of information about the requests made to the\nservice.",
+        "This information includes the date and time of requests, the IP the\nrequest came from, and it's location.",
+        "Some of this information is temporary;\nfor example we keep the IP of the request only for a few minutes so we can\nguard against attacks from malicious agents.",
+        "We also store details about system errors so they can be investigated and\nrectified.",
+        "Any information collected by our hosting platform is outside our control."
+    ],
+    "sharing": [
+        "## We do not...\n\nWe do not share the information we do log with 3rd parties."
+    ],
+    "pp_length": 1870
+}

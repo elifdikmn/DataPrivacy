@@ -1,0 +1,17 @@
+{
+    "collection": [
+        "[spoonacular logo](/application/frontend/images/logo-simple-framed-green-\ngradient.svg) spoonacular API](/food-api)\n\n  * [Overview](/food-api)\n  * [Docs](/food-api/docs)\n    * [Full Documentation](/food-api/docs)\n    * [FAQ](/food-api/faq)\n    * [SDKs](/food-api/sdk)\n    * [Updates](/food-api/updates)\n  * [Pricing](/food-api/pricing)\n  * [Terms](/food-api/terms)\n  * [Applications](/food-api/apps)\n  * [ Start Now ](/food-api/console)\n\n# Spoonacular API Privacy Policy\n\nThis Privacy Policy describes how spoonacular (\"we\", \"our\", or \"us\") collects,\nuses, and shares information obtained through the spoonacular API (\"the API\").",
+        "## Information We Collect\n\n  1.",
+        "**User-Provided Information:** When you subscribe to our API, you may choose to provide your email address for the purpose of creating your account.",
+        "**API-Collected Information:** We collect usage information based on your API key, such as which endpoints are used and which parameters are set.",
+        "## How We Use Your Information\n\nWe use the information we collect for the following purposes:\n\n  1.",
+        "When you subscribe to a paid API plan, your\npayment information will be collected and processed by Stripe in accordance\nwith their [Privacy Policy](https://stripe.com/en-de/privacy).",
+        "## Data Security\n\nWe take commercially reasonable security measures to protect any information\ncollected from you."
+    ],
+    "sharing": [
+        "[spoonacular logo](/application/frontend/images/logo-simple-framed-green-\ngradient.svg) spoonacular API](/food-api)\n\n  * [Overview](/food-api)\n  * [Docs](/food-api/docs)\n    * [Full Documentation](/food-api/docs)\n    * [FAQ](/food-api/faq)\n    * [SDKs](/food-api/sdk)\n    * [Updates](/food-api/updates)\n  * [Pricing](/food-api/pricing)\n  * [Terms](/food-api/terms)\n  * [Applications](/food-api/apps)\n  * [ Start Now ](/food-api/console)\n\n# Spoonacular API Privacy Policy\n\nThis Privacy Policy describes how spoonacular (\"we\", \"our\", or \"us\") collects,\nuses, and shares information obtained through the spoonacular API (\"the API\").",
+        "To track API usage to compute overage fees and for other billing purposes\n\n## Information Sharing and Disclosure\n\nWe do not sell, trade, or otherwise transfer your information to outside\nparties.",
+        "We may share your information with trusted third parties who assist\nus in operating our API and servicing you as an API subscriber, as long as\nthose parties agree to keep this information confidential."
+    ],
+    "pp_length": 3817
+}

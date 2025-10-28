@@ -1,0 +1,13 @@
+{
+    "collection": [
+        "This policy outlines how we collect, use, disclose, and protect\nyour information in connection with the Plugin.",
+        "##  Information Collection and Use\n\n**What We Collect:**\n\n  * Personal Data: We may collect personal data that you voluntarily provide, such as your email address when seeking support or feedback.",
+        "* Usage Data: When you use the Plugin, we may automatically collect usage data like access times, pages viewed, and the routes taken when using our services.",
+        "* Cookies: The Plugin may use cookies to enhance your user experience, track usage patterns, and deliver personalized content."
+    ],
+    "sharing": [
+        "These services may have access to limited\nuser data solely for the purpose of performing tasks on our behalf and are\nobligated not to disclose or use it for other purposes.",
+        "##  Legal Disclosure\n\nWe may disclose your personal data if required by law or if we believe that\nsuch action is necessary to comply with legal obligations, protect our rights\nor property, prevent fraud, or protect the safety of our users or the public."
+    ],
+    "pp_length": 6169
+}

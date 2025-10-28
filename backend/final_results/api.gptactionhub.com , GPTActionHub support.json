@@ -1,0 +1,18 @@
+[
+    {
+        "description": "TODO",
+        "name": "query",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "body",
+        "data_name": "query",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "In addition to the following GPTActionHub.com may monitor request\ninput/output, collect analytics, and share them with the Actions authors."
+            }
+        ]
+    }
+]

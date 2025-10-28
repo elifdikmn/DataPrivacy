@@ -1,0 +1,12 @@
+{
+    "collection": [
+        "Information We Collect**  \n   \\- Personal identification information (Name, email address, phone number,\netc.).",
+        "\\- Usage data (app usage patterns, preferences, etc.).",
+        "\\- Data collected through GPT interactions.",
+        "\\- How data is collected (directly provided, through app usage, etc.)."
+    ],
+    "sharing": [
+        "Data Sharing and Disclosure**  \n   \\- Situations where we might share data with third parties (service\nproviders, legal requirements, etc.)."
+    ],
+    "pp_length": 5403
+}

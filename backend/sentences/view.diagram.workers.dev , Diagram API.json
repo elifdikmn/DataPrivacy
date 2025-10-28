@@ -1,0 +1,11 @@
+{
+    "collection": [
+        "# Data Collection and Usage\n\nWe collect essential data related to the diagrams you create using our GPT.",
+        "The data we collect is\nused primarily for service enhancement, including fixing rendering issues and\noptimizing performance."
+    ],
+    "sharing": [
+        "# Data Sharing and Monetization\n\nWe share data with trusted third parties like Miro, Cloudfare, and Mixpanel to\nenhance our GPT functionality and efficiency.",
+        "However, we are committed to handling your data responsibly\nand do not engage in selling, trading, or indiscriminately sharing your\ninformation."
+    ],
+    "pp_length": 1780
+}

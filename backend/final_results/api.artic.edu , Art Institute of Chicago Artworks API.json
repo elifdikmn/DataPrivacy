@@ -1,0 +1,18 @@
+[
+    {
+        "description": "The ID of the artwork to retrieve.",
+        "name": "id",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "id",
+        "data_type": "User IDs",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "If you reserve your free tickets online in advance , your resident status will be verified using the zip code associated with the billing address provided."
+            }
+        ]
+    }
+]

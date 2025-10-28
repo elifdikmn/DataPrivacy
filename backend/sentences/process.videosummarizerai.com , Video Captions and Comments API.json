@@ -1,0 +1,17 @@
+{
+    "collection": [
+        "**Information Collection and Use**\n\n'Video Summarizer' collects non-personal information such as video and audio\ndata and captions when you interact with our service.",
+        "The information we collect is used\nsolely to provide education summary and is not used for any other purpose.",
+        "OpenAI may use the\ndata generated from interactions with 'Video Summarizer' for the purpose of\ntraining their models."
+    ],
+    "sharing": [
+        "**Sharing of Data**\n\nWe share data, which may include personally identifiable information, with\nOpenAI during user interactions with 'Video Summarizer'.",
+        "Due to the nature of\nthe data processing, we may inadvertently share personal data with OpenAI\nwithout explicit knowledge of its personal nature.",
+        "Except as required by law\nor to provide the services requested by you, we do not share any personally\nidentifiable information with other third parties.",
+        "In addition to sharing data with OpenAI, 'Video Summarizer' also shares data\nwith PythonAnywhere, a third-party service, for the specific purpose of\nprocessing video captions.",
+        "The shared\ndata may include non-personal information such as video and audio data and\ncaptions.",
+        "When sharing data with PythonAnywhere, we ensure that:\n\n  * The data shared is limited to what is necessary for processing video captions.",
+        "**Data Sharing with OpenAI**\n\n'Video Summarizer' utilizes services powered by OpenAI."
+    ],
+    "pp_length": 6949
+}

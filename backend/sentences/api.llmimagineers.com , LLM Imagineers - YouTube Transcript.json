@@ -1,0 +1,15 @@
+{
+    "collection": [
+        "Introduction\n\nThis Privacy Policy outlines how LLM Imagineers collects, uses, and protects\npersonal information received from users via email.",
+        "Data Collection\n\n**Personal Information** : When users send emails, or use the /feedback \"slash\ncommand\" to send feedback from a Custom GPT such as AutoExpert, we may collect\ndata such as names, email addresses, and any other personal details\nvoluntarily provided in the message.",
+        "**API Requests** : When using our API endpoints at api.llmimagineers.com, we\nlog all requests for performance monitoring and legal compliance.",
+        "**Purpose of Collection** : The data is used for responding to inquiries,\nproviding support, and improving our services."
+    ],
+    "sharing": [
+        "No data is\never shared or sold to third parties, and access is restricted to the LLM\nImagineers security compliance team.",
+        "Data Sharing and Disclosure\n\n**Third-party Sharing** : We do not sell or rent personal data.",
+        "Data may be\nshared with third-party service providers only for purposes essential to our\nservices (e.g., email management tools).",
+        "**Legal Compliance** : We may disclose personal information if required by law\nor in response to legal requests."
+    ],
+    "pp_length": 2218
+}

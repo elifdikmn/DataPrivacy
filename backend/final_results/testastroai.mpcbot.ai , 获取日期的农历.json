@@ -1,0 +1,63 @@
+[
+    {
+        "description": "\u65e5\u671f\uff0c\u683c\u5f0fyyyy-MM-dd HH:mm\uff0c\u4f8b\u59821999-08-23 18:30\u6216\u8005yyyy-MM-dd\uff0c\u4f8b\u59822005-07-18",
+        "name": "date",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "date",
+        "data_type": "Time",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "**Information We Collect, How We Use It, and Legal Basis for Processing**\n\n**Account Information:** We collect your email address to create an account\nand verify your identity."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "**Device Information:** We collect details about your device type and\noperating system for analytics and troubleshooting product issues, fulfilling\nour contractual obligations to you."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "**Subscription Billing Data:** When you subscribe to Starloom, we use third-\nparty service providers to collect and process your billing information."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "Our\nbilling providers may collect information such as your name, billing address,\ncredit or debit card details, phone number, and email address."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "**User Research:** We may ask for your help in testing new features or\nparticipating in surveys to enhance your Starloom experience."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "Participation is\nvoluntary, and the data collected is anonymous."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "**Interactions with Starloom:** Third-party providers and bot developers may\nreceive detailed information about your interactions with Starloom (including\nchat content, likes, etc.)"
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "**Policy for Children**\n\nOur services are not intended for children under the age of 18, and we do not\nknowingly collect personal information from children under 18."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "Changes may apply\nto any personal information we already hold, as well as any new personal\ninformation collected after the policy modification."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "If there are\nany significant changes to how we collect, use, or disclose your personal\ninformation, we will provide more advanced and prominent notice affecting your\nrights under this policy."
+            }
+        ]
+    }
+]

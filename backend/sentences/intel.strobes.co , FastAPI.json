@@ -1,0 +1,18 @@
+{
+    "collection": [
+        "# Types of cookies and similar technologies used by Google\n\nSome or all of the cookies or similar technologies described below may be\nstored in your browser, app, or device.",
+        "These\ncookies are used to remember your preferences and other information, such as\nyour preferred language, how many results you prefer to have shown on a search\nresults page (for example, 10 or 20), and whether you want to have Google\u2019s\nSafeSearch filter turned on.",
+        "For example, YouTube uses the \u2018PREF\u2019\ncookie to store information such as your preferred page configuration and\nplayback preferences like explicit autoplay choices, shuffle content, and\nplayer size.",
+        "### Analytics\n\nCookies and similar technologies used for analytics help collect data that\nallows services to understand how you interact with a particular service.",
+        "Some cookies and similar technologies help sites and apps understand how their\nvisitors engage with their services.",
+        "For example, [Google\nAnalytics](https://analytics.google.com/analytics/academy/?hl=en_US) uses a\nset of cookies to collect information on behalf of businesses which use the\nGoogle Analytics service and report site usage statistics to them without\npersonally identifying individual visitors.",
+        "Any site that implements Google Analytics, including\nGoogle services, uses the \u2018_ga\u2019 cookie.",
+        "Google services also use \u2018NID\u2019 and \u2018_Secure-ENID\u2019 cookies on Google Search,\nand \u2018VISITOR_INFO1_LIVE\u2019 and \u2018__Secure-YEC\u2019 cookies on YouTube, for analytics.",
+        "Google mobile apps may also use unique identifiers, such as the \u2018Google Usage\nID\u2019, for analytics.",
+        "Another cookie, \u2018UULE\u2019, sends precise location information from your browser\nto Google\u2019s servers so that Google can show you results that are relevant to\nyour location."
+    ],
+    "sharing": [
+        "Another cookie, \u2018UULE\u2019, sends precise location information from your browser\nto Google\u2019s servers so that Google can show you results that are relevant to\nyour location."
+    ],
+    "pp_length": 15216
+}

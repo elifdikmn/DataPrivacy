@@ -1,0 +1,8 @@
+{
+    "collection": [
+        "By\ndefault, Wolfram|Alpha attempts to determine the caller's location from the IP\naddress, but you can override this by specifying location information in one\nof the three forms listed.",
+        "The Wolfram|Alpha server stores certain\npod expressions as files before they are formatted, and then waits for the\nclient (a web browser, because here we are describing the behavior of the\nwebsite) to request the formatted versions, at which point the formatting\nstage of the computation is performed and the result for each pod is returned\nas a separate transaction."
+    ],
+    "sharing": [],
+    "pp_length": 170387
+}

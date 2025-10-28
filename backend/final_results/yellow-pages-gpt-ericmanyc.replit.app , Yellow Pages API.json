@@ -1,0 +1,44 @@
+[
+    {
+        "description": "Search term",
+        "name": "term",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "term",
+        "data_type": "In-app search history",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "[Download\nZIP](/ericmanyc/e6e33e23c1af0cfb9591502d52029a72/archive/3ee1b9b4f8fe61d8570149d917730486962c5937.zip)\n\n[ Raw\n](/ericmanyc/e6e33e23c1af0cfb9591502d52029a72/raw/3ee1b9b4f8fe61d8570149d917730486962c5937/gptsprivacypolicy.md)\n\n**gptsprivacypolicy.md**\n\n### Privacy Policy\n\nData Collection: No personal data is collected."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "Repository Data: Only the git repositories provided by the user are cloned for\nthe operation of the service."
+            }
+        ]
+    },
+    {
+        "description": "Location for the search",
+        "name": "location",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "location",
+        "data_type": "Approximate location",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "[Download\nZIP](/ericmanyc/e6e33e23c1af0cfb9591502d52029a72/archive/3ee1b9b4f8fe61d8570149d917730486962c5937.zip)\n\n[ Raw\n](/ericmanyc/e6e33e23c1af0cfb9591502d52029a72/raw/3ee1b9b4f8fe61d8570149d917730486962c5937/gptsprivacypolicy.md)\n\n**gptsprivacypolicy.md**\n\n### Privacy Policy\n\nData Collection: No personal data is collected."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "Repository Data: Only the git repositories provided by the user are cloned for\nthe operation of the service."
+            }
+        ]
+    }
+]

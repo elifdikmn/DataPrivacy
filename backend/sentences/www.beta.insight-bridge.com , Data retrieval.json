@@ -1,0 +1,23 @@
+{
+    "collection": [
+        "This Privacy\nPolicy outlines how we collect, use, store, and safeguard your information.",
+        "Information Collection:**  \n  \nUser Authentication:  \n\u200d  \nOur user authentication process is managed by Auth0.",
+        "This involves the\ncollection of your email address and password to facilitate the login\nprocedure.",
+        "Integration of Data Sources:  \n\u200d  \nWhen you integrate a new data source with our platform, specific identifiers\nand access parameters are stored.",
+        "For Google Analytics, this includes\nproperty_ids of properties you wish to query.",
+        "Website Interaction:**  \n  \nInformation Collection via Google Analytics:  \n\u200d  \nWe utilize Google Analytics on our landing page to gain insights into user\ninteractions, behaviors, and traffic patterns.",
+        "The types of information collected include, but are not limited to: pages\nvisited, time spent on pages, devices used to access the site, user's\ngeographic location, referral sources, and bounce rate.",
+        "Use of Cookies:  \n  \nGoogle Analytics uses cookies, which are small files placed on your device, to\ncollect and store information about your visit and interaction with our\nlanding page.",
+        "These cookies do not collect personal information or identify\nindividual users.",
+        "Data Usage:**  \n  \nPrimary Function:  \n  \nThe data we retrieve from integrated data sources is crucial for the primary\nfunctionality of our app.",
+        "Being in beta also means we are actively refining and improving\nour services, and this might have implications on the data we collect and how\nwe use it."
+    ],
+    "sharing": [
+        "Data Usage and Sharing:  \n  \nThe data collected via Google Analytics is used exclusively for analytical\npurposes.",
+        "We do not share, sell, or lease this data to third parties.",
+        "Google may\naggregate this data across multiple sites, but it remains anonymized and does\nnot identify individual users.",
+        "This add-on prevents\nthe Google Analytics JavaScript from sharing information with Google Analytics\nabout website activity.",
+        "Third-Party Access:  \n  \nThird-party platforms, including our hosting platform, Fly.io, and our logging\nsystem, BetterStack, have limited access to certain data retrieved through the\nreporting API\u2019s such as Google Analytics 4."
+    ],
+    "pp_length": 9232
+}

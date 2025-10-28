@@ -1,0 +1,18 @@
+{
+    "collection": [
+        "At Manifest Labs, Inc, we respect\nthe privacy of our users and are committed to being transparent about how we\ncollect and use your data.",
+        "**_Information We Collect_**\n\nWe collect information you provide directly to us, information obtained\nthrough your use of Pendium.ai, and information from third party sources, as\ndetailed below:\n\n**Account Information** : We collect information you provide when you create a\nPendium.ai account, including your name, email address, and any other\ninformation you choose to provide.",
+        "**Documents** : We collect the documents and files you upload to Pendium.ai\nfor storage and access.",
+        "**Search Queries and Prompts:** We collect the search terms, queries, and\nprompts you enter when interacting with documents through the Pendium.ai\nservice.",
+        "**Usage Data:** We collect information about how you interact with Pendium.ai,\nsuch as document search and access history, clicks, date and time of access,\nand referring webpage addresses.",
+        "**Device Information** : We may collect information about the device and\nsoftware you use to access Pendium.ai, such as IP address, browser type,\noperating system version, and cookie data.",
+        "**Third Party Data:** We may supplement information we collect with\ndemographic data or other attributes from third party sources.",
+        "Usage data, anonymized search queries, prompts,\nand document embeddings may be retained up to one year after account closure\nsolely to improve our services.",
+        "**Children 's Privacy**:\n\nOur service is not directed to children, and we do not knowingly collect data\nfrom them."
+    ],
+    "sharing": [
+        "**_Data Sharing & Third Parties_**\n\nWe use trusted service providers like Google Cloud, Mixpanel, and OpenAI to\ndeliver key product functions.",
+        "We do not sell or share your personal data with third parties for their\nmarketing purposes."
+    ],
+    "pp_length": 5724
+}

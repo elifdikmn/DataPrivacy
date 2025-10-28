@@ -1,0 +1,7 @@
+{
+    "collection": [
+        "Because the index files are loaded separately by the app\nfollowing the user's preferences, the scraper also creates a JSON manifest\nfile containing information about the documentations currently available on\nthe system (such as their name, version, update date, etc.)."
+    ],
+    "sharing": [],
+    "pp_length": 45789
+}

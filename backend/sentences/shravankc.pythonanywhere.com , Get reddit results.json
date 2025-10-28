@@ -1,0 +1,16 @@
+{
+    "collection": [
+        "This policy sets out how we collect, use, disclose,\nand protect any information that you give us when you use this API.",
+        "|  \n| ## Data Collection  \n|  \n| The API collects only the necessary data to ensure its proper functioning.",
+        "This may include, but is not limited to, API usage data and IP addresses.",
+        "No\npersonal information is collected.",
+        "The data collected is solely\nused for the operational effectiveness of the API.",
+        "In order to\nprevent unauthorized access or disclosure, we have put in place suitable\nphysical, electronic, and managerial procedures to safeguard and secure the\ninformation we collect.",
+        "|  \n| ## User Rights  \n|  \n| Users have the right to inquire about any data collected by the API and\nrequest its deletion."
+    ],
+    "sharing": [
+        "This policy sets out how we collect, use, disclose,\nand protect any information that you give us when you use this API.",
+        "|  \n| ## Data Sharing and Disclosure  \n|  \n| We do not share, sell, rent, or trade personally identifiable information\nwith third parties for their commercial purposes."
+    ],
+    "pp_length": 6500
+}

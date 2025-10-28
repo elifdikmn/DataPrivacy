@@ -1,0 +1,18 @@
+[
+    {
+        "description": "Channel name to fetch conversations for",
+        "name": "channelName",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "channel name",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

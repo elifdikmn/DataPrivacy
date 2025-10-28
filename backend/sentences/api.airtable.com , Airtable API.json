@@ -1,0 +1,11 @@
+{
+    "collection": [
+        "It outlines our practices regarding the collection,\nuse, and protection of user information.",
+        "Information Collected\n\n[GPT Starter] collects the following information:\n\n  * Questions asked by the user\n  * Responses provided by the service\n  * User's rating scores for the responses\n\n## 3\\."
+    ],
+    "sharing": [
+        "Sharing and Disclosure of Information\n\nThe collected information is used internally for the improvement of [GPT\nStarter] and is not shared with or disclosed to external parties, except as\ndescribed below.",
+        "Information will not be shared without user consent, except\nin compliance with legal obligations."
+    ],
+    "pp_length": 9019
+}

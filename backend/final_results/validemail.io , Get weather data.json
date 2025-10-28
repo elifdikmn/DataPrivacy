@@ -1,0 +1,34 @@
+[
+    {
+        "description": "The city and state to retrieve the weather for",
+        "name": "email",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "city and state for weather",
+        "data_type": "Approximate location",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "api_key",
+        "name": "api_key",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "api_key",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

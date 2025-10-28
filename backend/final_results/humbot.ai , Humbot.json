@@ -1,0 +1,48 @@
+[
+    {
+        "META_PY_KEYS": "text",
+        "description": "The text to paraphrase.",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "text",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "This Privacy Policy explains\nhow your personal information is collected, used, and disclosed by Humbot."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "## Overview\n\nThis Privacy Policy explains what personal data we collect, how we use it and\nwhy we may process it."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "* Usage Data is a reference to the data automatically collected by either the usage of the service or the infrastructure of the service itself."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "## What information do we collect?"
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "When you visit our website, register on our site, place an order, subscribe to\nour newsletter, or respond to a survey or form, we collect information from\nyou."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "This information includes IP addresses, e-mail addresses, browser type,\nInternet service provider (ISP), referring/exit pages, Email addressName."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "We only use the email\naddress that you give us to contact you."
+            }
+        ]
+    }
+]

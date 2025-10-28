@@ -1,0 +1,11 @@
+{
+    "collection": [
+        "[SightGo](https://sightgo-plugin.chatbot.so/assets/SightGo.png)\n\n##  **Privacy Policy**\n\nThis Privacy Policy describes how the SightGo Plugin for ChatGPT (\"we\", \"our\",\n\"us\") collects, uses, and discloses your information.",
+        "Information We Collect\n\nOur plugin does not collect any personal data from users.",
+        "All we require is\nthe address provided by the user to fetch a street view image, which is not\nstored after the session ends."
+    ],
+    "sharing": [
+        "Information Sharing\n\nSince we do not store personal data, we do not share any such data with third\nparties."
+    ],
+    "pp_length": 1857
+}

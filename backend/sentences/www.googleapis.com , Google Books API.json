@@ -1,0 +1,20 @@
+{
+    "collection": [
+        "When you purchase a book through a reseller or use services of an application developer, you will need to log in with your Google Account information or create a Google Account if you don't have one.",
+        "* When you use books on Google Play, we receive [log information](http://www.google.com/privacy_glossary.html) similar to what we receive in Web Search.",
+        "This may include information such as the query term or page request (which may include book titles or specific pages within a book you are browsing), Internet Protocol address, browser type, browser language, the date and time of your request and one or more cookies that may uniquely identify your browser or your account.",
+        "* You may choose to use optional features within books on Google Play (such as My Library or purchased books) or other optional Google services (such as our [Web History](http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=54050) service) that require a Google Account and which may receive and store information from books on Google Play in association with your Account.",
+        "In order to enforce limits on numbers of devices, we will store the unique ID numbers of your devices on our servers.",
+        "* You will need to have a Google Account in order to purchase books because account information is necessary to provide access to users who bought the book.",
+        "* In order to enable consistent reading position across devices and provide useful navigation within a book, we store the last five pages (only) in each book a user has viewed with the user's account.",
+        "We also store pages viewed for security monitoring and/or if the user elects to use the Web History service."
+    ],
+    "sharing": [
+        "Among other things, this means:\n\n  * We do not share your personal information with third parties, except in the narrow circumstances described in the Privacy Policy, such as emergencies or in response to valid legal process.",
+        "For purchased books, we provide publishers with sales information, but do not provide personal information.",
+        "For purchased books where we acted as the publisher's agent, we provide the publisher with information on the taxes we collect including the state, city and zip code from the purchaser's billing address.",
+        "Once you have logged in, if you choose to synchronize your Google Play account with your account with the reseller or application developer, we will share information about your books on Google Play (e.g., all of your library shelves, titles, annotations, last five pages read for each book), except information regarding the seller(s) from whom you purchased your books, with the reseller or application developer.",
+        "We limit the information (such as books titles) we provide to credit card companies, and enable you to delete purchased books from your Google Account."
+    ],
+    "pp_length": 8292
+}

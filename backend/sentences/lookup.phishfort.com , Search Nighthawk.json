@@ -1,0 +1,8 @@
+{
+    "collection": [
+        "[PhishFort Logo](/pf-text.png) Public Blocklist API](/)\n\n  * docs\n\n    * [Introduction](/docs)\n    * [Getting Started](/docs/first-line)\n    * [API](/docs/get-started)\n    * [API Data Structures](/docs/api-structures)\n    * [List Structure](/docs/list-structure)\n    * [Data Collection Policy](/docs/data-collection)\n    * Partner Sharing\n\n      * [Threat Intel](/docs/partner-sharing/threat-intel)\n\n  * docs\n\n    * [Introduction](/docs)\n    * [Getting Started](/docs/first-line)\n    * [API](/docs/get-started)\n    * [API Data Structures](/docs/api-structures)\n    * [List Structure](/docs/list-structure)\n    * [Data Collection Policy](/docs/data-collection)\n    * Partner Sharing\n\n      * [Threat Intel](/docs/partner-sharing/threat-intel)\n\nLight\n\n[](https://github.com/phishfort/lookup/pages/docs/data-collection.mdx)\n\ndocs\n\nData Collection Policy\n\n# Data Collection Policy\n\nOur policy on data collection is to collect none.",
+        "PhishFort does not collect nor store any inbound or outbound data related to\nthis API or within the domain `lookup.phishfort.com` outside of high-level\nusage statistics and system error logs."
+    ],
+    "sharing": [],
+    "pp_length": 1278
+}

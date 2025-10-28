@@ -1,0 +1,83 @@
+[
+    {
+        "description": "Search query for a specific event",
+        "name": "query",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "query",
+        "data_type": "In-app search history",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "This Privacy Policy\ndocument contains types of information that is collected and recorded by\nMyBroadwayTickets.com and how we use it."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "This Privacy Policy applies only to our online activities and is valid for\nvisitors to our website with regards to the information that they shared\nand/or collect in MyBroadwayTickets.com."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "This policy is not applicable to any\ninformation collected offline or via channels other than this website."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "## Information we collect\n\nThe personal information that you are asked to provide, and the reasons why\nyou are asked to provide it, will be made clear to you at the point we ask you\nto provide your personal information."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "If you contact us directly, we may receive additional information about you\nsuch as your name, email address, phone number, the contents of the message\nand/or attachments you may send us, and any other information you may choose\nto provide."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "When you register for an Account, we may ask for your contact information,\nincluding items such as name, company name, address, email address, and\ntelephone number."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "## How we use your information\n\nWe use the information we collect in various ways, including to:\n\n  * Provide, operate, and maintain our website\n  * Improve, personalize, and expand our website\n  * Understand and analyze how you use our website\n  * Develop new products, services, features, and functionality\n  * Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website, and for marketing and promotional purposes\n  * Send you emails\n  * Find and prevent fraud\n\n## Log Files\n\nMyBroadwayTickets.com follows a standard procedure of using log files."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "The information collected by log files\ninclude internet protocol (IP) addresses, browser type, Internet Service\nProvider (ISP), date and time stamp, referring/exit pages, and possibly the\nnumber of clicks."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "The purpose of the information is for analyzing trends,\nadministering the site, tracking users' movement on the website, and gathering\ndemographic information."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "They automatically receive your IP address when this occurs."
+            },
+            {
+                "number": 11,
+                "label": "OMITTED",
+                "sentence": "## CCPA Privacy Rights (Do Not Sell My Personal Information)\n\nUnder the CCPA, among other rights, California consumers have the right to:\n\nRequest that a business that collects a consumer's personal data disclose the\ncategories and specific pieces of personal data that a business has collected\nabout consumers."
+            },
+            {
+                "number": 12,
+                "label": "OMITTED",
+                "sentence": "Request that a business delete any personal data about the consumer that a\nbusiness has collected."
+            },
+            {
+                "number": 13,
+                "label": "OMITTED",
+                "sentence": "The right to data portability \u2013 You have the right to request that we transfer\nthe data that we have collected to another organization, or directly to you,\nunder certain conditions."
+            },
+            {
+                "number": 14,
+                "label": "OMITTED",
+                "sentence": "MyBroadwayTickets.com does not knowingly collect any Personal Identifiable\nInformation from children under the age of 13."
+            }
+        ]
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "description": "A list of algorithms is obtained for each content. For example, entering ?content=LLM\u30d7\u30ed\u30f3\u30d7\u30c8\u30a8\u30f3\u30b8\u30cb\u30a2\u30ea\u30f3\u30b0 will retrieve a list of prompt engineering methods.",
+        "name": "content",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "content",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

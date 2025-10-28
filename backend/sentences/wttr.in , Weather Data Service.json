@@ -1,0 +1,7 @@
+{
+    "collection": [
+        "You can add the\ndesired location to the URL in your request like this:\n\n    \n    \n    $ curl wttr.in/London\n    $ curl wttr.in/Moscow\n    $ curl wttr.in/Salt+Lake+City\n    \n\nIf you omit the location name, you will get the report for your current\nlocation based on your IP address."
+    ],
+    "sharing": [],
+    "pp_length": 38137
+}

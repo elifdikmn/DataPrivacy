@@ -1,0 +1,34 @@
+[
+    {
+        "META_PY_KEYS": "name",
+        "description": "The title of the movie.",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "movie title",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "META_PY_KEYS": "description",
+        "description": "The description of the movie.",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "description of the movie",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

@@ -1,0 +1,14 @@
+{
+    "collection": [
+        "](/)\n\n# Privacy Policy for Sapientor API\n\n## Introduction\n\nThis Privacy Policy outlines the types of personal information collected by\nthe Sapientor API, its usage, and protection.",
+        "## Information Collection\n\n  * **User Authentication Token** : For user authorization and access to services.",
+        "* **User ID and Email** : Collected during the authorization process for identification and communication purposes.",
+        "* **Knowledge Summaries and User Content** : Includes summaries, URLs, titles, and content provided by users."
+    ],
+    "sharing": [
+        "## Sharing of Information\n\n  * We do not sell or rent personal information to third parties.",
+        "* Information may be shared with third-party service providers to facilitate our services.",
+        "* We may disclose information if required by law or in response to legal requests."
+    ],
+    "pp_length": 2015
+}

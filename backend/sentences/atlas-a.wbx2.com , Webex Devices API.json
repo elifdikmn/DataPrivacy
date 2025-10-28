@@ -1,0 +1,10 @@
+{
+    "collection": [
+        "The policy outlines our practices\nconcerning data collection and usage.",
+        "No Collection of Personal Information:\nThis GPT does not collect, store, or process any personal information from its\nusers.",
+        "Usage Data and OpenAI's Terms of Service: Usage\nData: While we do not collect personal information, anonymized usage data may\nbe gathered purely for the purpose of improving service performance and\nfunctionality.",
+        "Data Security: No personal data is collected, thus minimizing any risk of data\nbreaches concerning personal information."
+    ],
+    "sharing": [],
+    "pp_length": 1366
+}

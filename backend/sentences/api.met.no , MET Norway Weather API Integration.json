@@ -1,0 +1,7 @@
+{
+    "collection": [
+        "If you call the API directly from an app or\nbrowser, the user's IP address will be stored in our logs, along with any\npossible geocoordinates used in requests."
+    ],
+    "sharing": [],
+    "pp_length": 8965
+}

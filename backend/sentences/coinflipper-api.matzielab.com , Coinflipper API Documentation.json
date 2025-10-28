@@ -1,0 +1,12 @@
+{
+    "collection": [
+        "**Information We Collect**  \nOur app is designed to operate with only username and country freetext\nprovided by you the user via ChatGPT.",
+        "We do not collect any other information\nfrom you.",
+        "Since we do not collect\nany personal data, there is nothing to track or profile.",
+        "**No Data Collection**  \nWe stand by our commitment to your privacy; hence, the app does not require\nany form of data input, does not use cookies, and does not have analytics\ntracking."
+    ],
+    "sharing": [
+        "**No Third-Party Sharing**  \nYour personal information, specifically your username and country, is not\nshared with any third parties except for OpenAI, which provides the underlying\ntechnology for our service."
+    ],
+    "pp_length": 1188
+}

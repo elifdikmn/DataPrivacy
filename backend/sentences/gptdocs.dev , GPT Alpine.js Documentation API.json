@@ -1,0 +1,10 @@
+{
+    "collection": [
+        "## Data Collection and Use\n\n**Type of Data Collected:** We do not collect, store, or process any personal\ndata from our users\n\n**Purpose of Data Use:** Since we do not collect personal data, there is no\nuse of such data in our service.",
+        "## Data Storage and Security\n\n**Data Storage:** We do not store any personal data from our users as our\nservice is based solely on GET requests for GPT actions."
+    ],
+    "sharing": [
+        "## Third-Party Sharing\n\nWe do not share any personal data with third-party service providers."
+    ],
+    "pp_length": 1864
+}

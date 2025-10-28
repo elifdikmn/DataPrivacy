@@ -1,0 +1,16 @@
+{
+    "collection": [
+        "This privacy policy\n(\"Policy\") explains how we collect, use, and protect your information when you\nuse the SiteSpeakAI application (\"Application\").",
+        "Information We Collect\n\nWe collect information you provide directly to us when you use our\nApplication.",
+        "This may include:\n\n  * **Account Information** : When you sign up for an account, we collect your name and email address.",
+        "We also collect your payment information through our payment processor Paddle, though we do not store this data on our servers.",
+        "* **Website Data** : When you use our Application, we collect data from your website to train the chatbot.",
+        "* **Usage Information** : We collect information about your interactions with our Application such as the features you use and the chatbot training sessions you initiate.",
+        "* **Analytics Information** : We use Fathom Analytics to understand how our users interact with our Application.",
+        "Fathom Analytics does not collect personally identifiable information."
+    ],
+    "sharing": [
+        "Sharing of Information\n\nWe may share your information in the following situations:\n\n  * With service providers we use to support our Application including OpenAI, Pinecone, and Ably."
+    ],
+    "pp_length": 7183
+}

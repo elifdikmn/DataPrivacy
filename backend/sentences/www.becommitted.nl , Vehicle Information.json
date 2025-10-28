@@ -1,0 +1,12 @@
+{
+    "collection": [
+        "Hieronder\nstaat het privacybeleid beschreven van deze voertuig databron (API):\n\n  \n\n**Data Verzameling:** De voertuig API verzamelt de volgende gegevens bij het\nopvragen van een voertuiggegevens: het kenteken of merk/model, het tijdstip\nvan opvragen en het Chat ID.",
+        "Let wel, er wordt geen persoonlijk\nidentificeerbare informatie verzameld en doorgegeven vanuit Open AI."
+    ],
+    "sharing": [
+        "Let wel, er wordt geen persoonlijk\nidentificeerbare informatie verzameld en doorgegeven vanuit Open AI.",
+        "**Gegevensdeling:** De verzamelde gegevens worden niet gedeeld met externe\npartijen.",
+        "Geaggregeerde data kan wel worden gedeeld, bijvoorbeeld de\nfrequentie waarmee bepaalde kentekens of automerken zijn opgevraagd."
+    ],
+    "pp_length": 1826
+}

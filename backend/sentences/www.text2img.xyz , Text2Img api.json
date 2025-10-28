@@ -1,0 +1,17 @@
+{
+    "collection": [
+        "This Privacy Policy explains how we collect, use, and protect\nyour information when you visit our Site and use our services.",
+        "Information We Collect\n\n**We collect the following information:**\n\n* Your IP address for rate limiting purposes.",
+        "* Data collected via Vercel Analytics, including your country, the URLs you visit on our site, referrers, your operating system, and browser type.",
+        "* Markdown content that you submit through our API for the purpose of creating preview links.",
+        "* Information required to generate an API key for using our API services.",
+        "Use of Information\n\nThe information we collect is used solely for the purpose of improving our\nservice and providing the functionalities offered through our Site and API.",
+        "Data Retention\n\n**We retain the collected data for the following durations:**\n\n* IP addresses and analytics data for a period of one month.",
+        "Security\n\nCurrently, we do not implement specific security measures for the data\ncollected.",
+        "Children&apos;s Privacy\n\nOur Site and services are not intended for, nor do we knowingly collect\ninformation from, children under the age of 16."
+    ],
+    "sharing": [
+        "Information Sharing\n\nWe do not share your personal information with third parties."
+    ],
+    "pp_length": 2410
+}

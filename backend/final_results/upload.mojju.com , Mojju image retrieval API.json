@@ -1,0 +1,18 @@
+[
+    {
+        "META_PY_KEYS": "resultId",
+        "description": "The 21 or 22 characters long id that user pasted in the chat.",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "21 or 22 characters long id",
+        "data_type": "User IDs",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

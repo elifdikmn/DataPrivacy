@@ -1,0 +1,34 @@
+[
+    {
+        "description": "The finalized business plan to be dispatched.",
+        "name": "businessPlanContent",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "businessPlanContent",
+        "data_type": "Files and docs",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "The user's email for sending the plan.",
+        "name": "userEmail",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "userEmail",
+        "data_type": "Email address",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

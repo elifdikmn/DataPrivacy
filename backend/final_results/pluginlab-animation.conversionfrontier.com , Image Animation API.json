@@ -1,0 +1,18 @@
+[
+    {
+        "META_PY_KEYS": "image_url",
+        "description": "URL of the image to animate",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "image URL",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "CLEAR",
+                "sentence": "## Data Collection:\n\nThe types of data collected by Animation Crafter include:\n\n  1."
+            }
+        ]
+    }
+]

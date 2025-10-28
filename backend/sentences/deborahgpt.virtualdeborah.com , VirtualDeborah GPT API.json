@@ -1,0 +1,14 @@
+{
+    "collection": [
+        "## Comments\n\nWhen visitors leave comments on the site we collect the data shown in the\ncomments form, and also the visitor\u2019s IP address and browser user agent string\nto help spam detection.",
+        "## Cookies\n\nIf you leave a comment on our site you may opt-in to saving your name, email\naddress and website in cookies.",
+        "When you log in, we will also set up several cookies to save your login\ninformation and your screen display choices.",
+        "These websites may collect data about you, use cookies, embed additional\nthird-party tracking, and monitor your interaction with that embedded content,\nincluding tracking your interaction with the embedded content if you have an\naccount and are logged in to that website.",
+        "For users that register on our website (if any), we also store the personal\ninformation they provide in their user profile."
+    ],
+    "sharing": [
+        "An anonymized string created from your email address (also called a hash) may\nbe provided to the Gravatar service to see if you are using it.",
+        "## Who we share your data with\n\nIf you request a password reset, your IP address will be included in the reset\nemail."
+    ],
+    "pp_length": 4861
+}

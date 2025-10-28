@@ -1,0 +1,11 @@
+{
+    "collection": [
+        "No personal data from the GPTs or the authentication process is stored by\nWebPilot Inc.\n\n**Data Collection:** No personal information is actively gathered from GPTs.",
+        "Interaction data, such as selected text, generated interactions, and content\ncreated through the WebPilot.ai platform, is collected purely to process user\ninquiries and to improve service performance."
+    ],
+    "sharing": [
+        "## Data Sharing\n\n**Processing Requests:** When GPTs initiate requests to WebPilot servers,\nthese may be forwarded to OpenAI, Microsoft, or subsequent AI service\nproviders.",
+        "Data sharing is confined to the content provided by the GPTs,\nChatGPT, and their generated queries."
+    ],
+    "pp_length": 2674
+}

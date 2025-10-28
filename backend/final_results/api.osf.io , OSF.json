@@ -1,0 +1,18 @@
+[
+    {
+        "description": "Field or topic",
+        "name": "filter[subjects]",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "filter[subjects]",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

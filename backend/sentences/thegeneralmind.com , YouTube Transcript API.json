@@ -1,0 +1,11 @@
+{
+    "collection": [
+        "## Data Collection and Use\n\nOur service collects data exclusively for the purpose of summarizing video\ncontent:\n\n  * **YouTube Video Links:** We process YouTube video links to extract video IDs, enabling us to retrieve video transcripts for summarization.",
+        "## Data Sharing and Security\n\n**No Personal Data Collection:** We affirm that no personal data is collected,\nused, shared, or stored by our service.",
+        "## User Rights\n\nIn line with GDPR, users have rights over their data, which are inherently\nrespected by our operational model, given that we do not collect personal\ndata."
+    ],
+    "sharing": [
+        "## Data Sharing and Security\n\n**No Personal Data Collection:** We affirm that no personal data is collected,\nused, shared, or stored by our service."
+    ],
+    "pp_length": 2022
+}

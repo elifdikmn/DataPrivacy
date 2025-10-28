@@ -1,0 +1,10 @@
+{
+    "collection": [
+        "This Privacy Policy outlines our\npractices regarding the collection, use, and disclosure of your information\nwhen you use our services and informs you about your privacy rights and how\nthe law protects you.\\n\\n### Collection and Use of Your Personal Data\\n\\n####\nTypes of Data Collected:\\n\\n**a.",
+        "Personal Data from Non-Authenticated\nEndpoints:**\\n- For endpoints that do not require authentication, we collect\nminimal data.",
+        "The only information we retain are HTTP access logs.\\n- These\nlogs include details like your IP address, access times, and the pages\nviewed.\\n- The HTTP access logs are retained for a period of approximately 72\nhours for operational purposes.\\n\\n**b.",
+        "Personal Data from Authenticated\nEndpoints:**\\n- For endpoints requiring authentication, we collect and store\nthe information submitted by you.\\n- This data may include, but is not limited\nto, your username, email address, and any other information you provide during\nthe use of our services.\\n- We maintain a detailed audit log of all\ntransactions on these endpoints.\\n\\n#### Use of Your Personal Data:\\n\\nWe use\nyour data to provide and maintain our service, including monitoring the usage\nof our service.\\nFor authenticated endpoints, we may also use your data to\nmanage your account, provide customer support, and ensure the security of our\nservices.\\n\\n#### Retention of Your Personal Data\\n\\nThe data collected via\nnon-authenticated endpoints is retained only for 72 hours.\\nFor authenticated\nendpoints, we retain your Personal Data only for as long as is necessary for\nthe purposes set out in this Privacy Policy.\\n\\n#### Security of Your Personal\nData\\n\\nThe security of your data is important to us."
+    ],
+    "sharing": [],
+    "pp_length": 2320
+}

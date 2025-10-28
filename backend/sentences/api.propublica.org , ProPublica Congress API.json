@@ -1,0 +1,9 @@
+{
+    "collection": [
+        "* Member data: Along with general biographical information for current and past members of Congress, the API returns data about members\u2019 Congressional roles.",
+        "* Other data: The API returns various supplemental information, including party counts by state; and committees and committee rosters.",
+        "## Authentication\n\nTo use the Congress API, you must sign up for an API key."
+    ],
+    "sharing": [],
+    "pp_length": 11470
+}

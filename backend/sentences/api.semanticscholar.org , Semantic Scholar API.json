@@ -1,0 +1,15 @@
+{
+    "collection": [
+        "AI2 will use the data and information that Licensee provides and transmits to call or use the API (\u201cLicensee Data\u201d) for the purpose of providing and improving the API, S2 Data, and S2.",
+        "AI2 may collect information about Licensee and Authorized Users in connection with the use of the API, including without limitation, user visit, session, impression, click-through, or click-stream data, and any statistical or other analysis, information or data based on or derived from the foregoing (\u201c**Usage Data** \u201d).",
+        "AI2 may monitor Licensee's use of the API, and compile Usage Data in an aggregate and anonymized manner, such as for statistical and performance information related to the provision and operation of the API (\u201c**Aggregated Statistics** \u201d).",
+        "** AI2 may monitor your use of the API to improve the service and to ensure your compliance with this Agreement."
+    ],
+    "sharing": [
+        "API Key: If Licensee is provided a unique identifier to authenticate the API (\u201c**API Key** \u201d), you will not disclose or provide the API Key to anyone else other than to the employees, contractors, and agents authorized by Licensee to use the API for its organization (\u201c**Authorized Users** \u201d).",
+        "Licensee agrees that AI2 may use Aggregated Statistics in any manner and make them publicly available.",
+        "The receiving party will not disclose the disclosing party\u2019s Confidential\nInformation to any person or entity, except to the receiving party\u2019s employees\nor contractors who have a need to know the Confidential Information and who\nare bound by confidentiality obligations no less restrictive than the terms\nherein.",
+        "The receiving party may disclose the disclosing party\u2019s Confidential\nInformation to the limited extent required to (i) comply with a court order,\ngovernment authority, or as necessary to comply with applicable law, provided\nthat the receiving party will first provide written notice and reasonably\ncooperate with the disclosing party to limit the scope of disclosure, or (ii)\nto establish its rights under this Agreement, including to make required court\nfilings."
+    ],
+    "pp_length": 28158
+}

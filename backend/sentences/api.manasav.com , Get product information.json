@@ -1,0 +1,19 @@
+{
+    "collection": [
+        "B\u00e1sicamente el correo electr\u00f3nico, para realizar el registro y poder llevar a\ncabo las comunicaciones y alertas de precios; el nombre de usuario de Twitter\nen caso de que quieras que se te notifique a trav\u00e9s de Twitter de las bajadas\nde precio y en caso de iniciar sesi\u00f3n con una cuenta de Google, al iniciar\nsesi\u00f3n recibimos el nombre que aparece en la cuenta, pero ese nombre no se usa\npara nada ni queda almacenado en nuestros servidores.",
+        "#### \u00bfPara qu\u00e9 se recogen los datos?",
+        "Todos los datos que se recogen y se almacenan tienen su finalidad.",
+        "El correo electr\u00f3nico se usa para identificar al usuario de manera \u00fanica y\npara enviarle notificaciones de precios y comunicaciones relativas a novedades\ndentro de Manasav.",
+        "Manasav no emplea cookies para funcionar, pero s\u00ed que utilizamos Google\nAnalytics para sacar estad\u00edsticas de uso de la aplicaci\u00f3n web.",
+        "Utilizamos Google Analytics para monitorizar los eventos del usuario cuando\ninteracciona con la aplicaci\u00f3n, esos eventos son tales como a\u00f1adir un producto\na seguimiento, crear una lista, obtener un enlace de una lista, buscar un\nproducto.",
+        "Es decir, toda acci\u00f3n que realice el usuario genera un evento\nan\u00f3nimo que se env\u00eda a Google Analytics para que posteriormente podamos\nentender c\u00f3mo se usa la aplicaci\u00f3n.",
+        "#### Fotos subidas al crear un producto\n\nLa funci\u00f3n de subir fotos esta pensada \u00fanica y exclusivamente para subir fotos\nde productos que interesan al usuario, para poder identificar el producto de\nmanera clara y concisa."
+    ],
+    "sharing": [
+        "#### \u00bfCon qui\u00e9n se comparten mis datos?",
+        "Los datos no se comparten de manera activa con ninguna empresa a parte de\nestar almacenados en la nube de Google para el correcto funcionamiento de la\nplataforma.",
+        "En ning\u00fan momento nos planteamos compartir ni los datos personales ni los no\npersonales, como productos en seguimiento o listas de productos, con otras\nempresas.",
+        "El uso de Google Analytics es totalmente voluntario por parte del usuario, y\ncada vez que entra desde un navegador nuevo o borra los datos almacenados en\nel navegador, se le preguntar\u00e1 si est\u00e1 de acuerdo en usar Google Analytics\npara compartir la informaci\u00f3n de uso de la p\u00e1gina web."
+    ],
+    "pp_length": 10221
+}

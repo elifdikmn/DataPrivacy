@@ -1,0 +1,13 @@
+{
+    "collection": [
+        "This Privacy\nPolicy outlines our practices regarding the collection, use, and sharing of\ninformation through our API when accessed by an AI agent or otherwise.",
+        "Information Collection\n\nWhen you use our API, we may collect the following types of information:\n\n  * User-Provided Information: Information you provide when using the API, which may include personal data.",
+        "* Automatically Collected Information: Information automatically collected when using our API, such as usage data, location data, and other technical data.",
+        "* AI Agent Data: Information related to the AI agent's interactions with our API."
+    ],
+    "sharing": [
+        "This Privacy\nPolicy outlines our practices regarding the collection, use, and sharing of\ninformation through our API when accessed by an AI agent or otherwise.",
+        "Sharing of Information\n\nWe may share the information we collect with third parties, including:\n\n  * Service providers and partners who assist us in operating our API and conducting our business."
+    ],
+    "pp_length": 2126
+}

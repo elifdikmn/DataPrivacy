@@ -1,0 +1,14 @@
+{
+    "collection": [
+        "This Privacy Policy\noutlines the types of information we collect, how it is used, and the steps we\ntake to safeguard your information.",
+        "**Information Collection and Use**\n**Information You Provide to Us** The Diagram To Code API collects information\nyou provide directly to us when you generate diagrams, including: \\- **Diagram\nLanguage**: The programming language or notation used for diagram generation.",
+        "**Automated Data Collection** We may automatically\ncollect certain information about your use of our API, such as usage\nstatistics and traffic data."
+    ],
+    "sharing": [
+        "**Sharing of Information** We do not share your personal information with\nthird parties except: \\- To comply with legal obligations.",
+        "**Third-Party Services** In\norder to facilitate the generation of diagrams and to provide the\nfunctionality of the Diagram To Code API, we may share your diagram data,\nincluding Diagram Language, Diagram Type, Diagram Code, and optional Theme,\nwith third-party services such as Mermaid, PlantUML, D2, and others that\nspecialize in diagram generation and visualization.",
+        "**How We Share Your\nInformation with Third-Party Services** \\- **Diagram Generation**: Your\ndiagram data is sent to third-party services only for the purpose of\ngenerating the requested diagrams.",
+        "This includes measures to protect data shared with third-party services for\ndiagram generation."
+    ],
+    "pp_length": 3706
+}

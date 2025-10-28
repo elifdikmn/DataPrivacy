@@ -1,0 +1,18 @@
+[
+    {
+        "description": "User's token provided by the user",
+        "name": "userToken",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "userToken",
+        "data_type": "User IDs",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

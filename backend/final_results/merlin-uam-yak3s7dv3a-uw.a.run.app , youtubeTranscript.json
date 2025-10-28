@@ -1,0 +1,18 @@
+[
+    {
+        "META_PY_KEYS": "videoID",
+        "description": "The id of the youtube video",
+        "required_used": false,
+        "title": "videoID",
+        "type": "string",
+        "data_name": "videoID",
+        "data_type": "Data identifier",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "](/en https://bcin.short.gy/nav-\nessay)\n\n[ Merlin](/en)\n\nEnglish\n\n  * Features\n  * Resources\n[Pricing](/en/pricing)[Chat With Merlin](/en/chat)\n\nToggle theme\n\n# Privacy policy\n\nThe following Privacy Policy governs the online information collection\npractices of Foyer (\u201cCompany,\u201d \"we\" or \"us\")."
+            }
+        ]
+    }
+]
