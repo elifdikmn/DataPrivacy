@@ -1,0 +1,33 @@
+{
+    "collection": [
+        "We\nseek to minimize the amount of personal information that we collect and store.",
+        "Any information we do collect is only used to operate Scryfall,\nprovide paid services, and make informed decisions about how to improve our\nproducts.",
+        "This document provides details about what kind of data Scryfall gathers and\nhow we manage and protect it.",
+        "You can inspect our grading\nyourself on multiple sites below:\n\n[ **Observatory by Mozilla**\n](https://observatory.mozilla.org/analyze/scryfall.com?third-party=false) [\n**Qualys SSL Labs**\n](https://www.ssllabs.com/ssltest/analyze.html?d=scryfall.com&s=23.23.80.175&latest)\n[ **HSTS Preload List** ](https://hstspreload.org/?domain=scryfall.com)\n\n## Cookies and Browser Data\n\nScryfall has features that require us to remember your preferences and\nidentify who is logged in to our sites.",
+        "We use a combination of [browser\ncookies](https://en.wikipedia.org/wiki/HTTP_cookie) and your browser\u2019s [local\nstorage](https://en.wikipedia.org/wiki/Web_storage) to track this information.",
+        "**Clear website data:** If you no longer want this information your device,\nyou can clear your history and cookies:\n\n[ **Mozilla Firefox** ](https://support.mozilla.org/en-US/kb/delete-cookies-\nremove-info-websites-stored) [ **Microsoft Edge**\n](https://privacy.microsoft.com/en-us/windows-10-microsoft-edge-and-privacy) [\n**Safari on iOS** ](https://support.apple.com/en-us/HT201265) [ **Safari on\nMac** ](https://support.apple.com/guide/safari/manage-cookies-and-website-\ndata-sfri11471/mac) [ **Chrome on Android**\n](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DAndroid)\n[ **Chrome on iOS**\n](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DiOS) [\n**Chrome on Desktop**\n](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DAndroid)\n\n## Analytics Data\n\nWhen you use Scryfall, we collect statistical data about the device and\nnetwork you used to access the site, including:\n\n  * Your browser version (Safari, Firefox, Chrome, etc)\n  * Your operating system (macOS, Windows, iPhone, etc)\n  * The size of your screen\n  * Your system language\n  * Your network provider (Verizon, O2, Rogers, etc)\n  * Your country\n\nWe also collect behavior data.",
+        "For example, we keep track of which buttons and\nlinks people click to get around on the site and how often they come back.",
+        "We collect this\ninformation so that we can make better decisions about how to improve\nScryfall.",
+        "**Personal information** : In order to open an account, you will need to\nprovide us with some required information, including a username and email\naddress.",
+        "You may also provide other optional information such as a display\nname, your Twitter handle, and an account avatar.",
+        "[ **Set up two-factor authentication** ](/settings/security)\n\n**Data storage** : Scryfall is built on [Heroku](https://www.heroku.com/what)\nand we store account and system data in the United States, using [Heroku\nPostgres](https://www.heroku.com/postgres).",
+        "**Personal information** : To sign up for paid Scryfall services, you will\nneed to provide some required source information, such as debit or credit card\ndetails.",
+        "The payment information that you provide is securely captured by\nStripe.",
+        "**Donations** : If you make a donation to Scryfall, we capture your payment\ninformation or charge your PayPal account only for the purposes of your one-\ntime donation.",
+        "If you install Scryfall's chat bots on your server, the bots will listen to\nyour channels to determine if they need to respond to a message.",
+        "In order to troubleshoot bot issues, Scryfall administrators are able to see\nmessages sent to our bots for a period of less than 24 hours.",
+        "**Limit Discord bot access:** On Discord, the bot listens to all public text\nchannels."
+    ],
+    "sharing": [
+        "This information is stored with [Google\nAnalytics](https://en.wikipedia.org/wiki/Google_Analytics) and is anonymized\nand aggregated.",
+        "When possible, we disable any Google Analytics [data sharing\nsettings](https://support.google.com/analytics/answer/1011397?hl=en&utm_id=ad)\nto limit the amount of additional analysis Google can perform with this data.",
+        "We never sell or trade this information to any other company.",
+        "**Data privacy** : Your email address is private; we will never share your\naccount email with anyone.",
+        "They may be visible to other people who use Scryfall.",
+        "We may be required to\ndisclose personal information we have in order to comply with the legal\nprocess, protect or defend our rights or property, or protect the rights of\nothers.",
+        "When we disclose information, will will do so only after reviewing the legal\nrequest carefully.",
+        "And if we confirm that the request is valid and legal, we will disclose the\nnarrowest amount of information required to comply.",
+        "If we must disclose your personal information in order to comply with the law,\nwe will notify you as soon as we are able to."
+    ],
+    "pp_length": 14503
+}

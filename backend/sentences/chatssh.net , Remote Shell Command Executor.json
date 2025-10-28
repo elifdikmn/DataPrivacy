@@ -1,0 +1,10 @@
+{
+    "collection": [
+        "This notice outlines our practices concerning the\ncollection, use, and protection of your information.",
+        "**Information Collection:**\n     * _SSH Tokens:_ To facilitate remote server access, ChatSSH requires users to provide a chatSshToken."
+    ],
+    "sharing": [
+        "* We do not store, analyze, or share this information for any purpose other than providing the ChatSSH service."
+    ],
+    "pp_length": 2623
+}

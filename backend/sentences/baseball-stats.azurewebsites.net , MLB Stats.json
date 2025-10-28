@@ -1,0 +1,10 @@
+{
+    "collection": [
+        "The Service does not\ncollect personal information about its users.",
+        "## Data Collection and Use:\n\nThe Service does not collect any personal data from its users.",
+        "## API Interaction:\n\nThe external MLB Stats API hosted by the Service's provider may log technical\ndata such as API call patterns, usage frequencies, and system metrics for the\npurpose of maintaining the performance and integrity of the API.",
+        "Given that the Service does not\ncollect personal information, the risk of compromising user privacy is\nsignificantly reduced."
+    ],
+    "sharing": [],
+    "pp_length": 1834
+}

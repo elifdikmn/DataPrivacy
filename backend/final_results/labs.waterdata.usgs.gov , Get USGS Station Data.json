@@ -1,0 +1,218 @@
+[
+    {
+        "description": "The unique identifier of the station",
+        "name": "stationId",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "stationId",
+        "data_type": "User IDs",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "**How We Handle the Information We Gather When You Visit Our Website**\n\nThe type of information that we receive from your visit to our websites\ndepends upon what you do when visiting our sites."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "It is the policy of the USGS that we will not obtain personal identifying\ninformation about you when you visit our websites, unless you choose to\nprovide the information to us (for example, through a questionnaire in which\nyou willingly provide such information, or in which you are requesting a\npublication or other information to be transmitted to you by the USGS)."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "**Information Collected and Stored Automatically**\n\nIf you visit our site to read or download information, such as consumer\nbrochures or press releases, we will automatically collect and store the\nfollowing information about your visit:\n\n  * The name of the Internet domain (for example, \"xcompany.com\" if you use a private Internet access account, or \"yourschool.edu\" if you are connecting from a university's domain);\n  * The IP address (a number that is automatically assigned to your computer when you are using the Internet) from which you access our site;\n  * The type of browser and operating system used to access our site;\n  * The date and time you access our site;\n  * The Internet address of the web site from which you linked directly to our site;\n  * The country and state from which you access our site;\n  * The pages you visit and the information you request; and\n  * Search terms used to get to our web site from an external search engine and terms used on our site using our search engine\n\nThis information does not identify you personally."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "The information collected is part of a systems log file,\nand is only used internally for site management purposes."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "This information is primarily collected to create summary statistics, which\nare used for such purposes as assessing what information is of most and least\ninterest, determining technical design specifications, and identifying system\nperformance or problem areas."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "We use the information we collect to measure the\nnumber of visitors to the different sections of our site, and to help us make\nour site more useful to visitors."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "If you\nchoose to provide personal information, such as by sending an e-mail,\nsubmitting a form, or filling out a questionnaire or guestbook, we will use\nthe information you provide to respond to you."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "Any information that we collect via a questionnaire or a guestbook may be\nsubject to disclosure, but will be handled in accordance with the requirements\nof the Privacy Act and the Freedom of Information Act to ensure the greatest\nprotection of personal privacy."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "The Department of the Interior does not collect information for commercial\nmarketing purposes."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "**Email or Web Forms**  \\- When you send us personal identifying information\nby contacting us via e-mail (that is, in a message containing a question or\ncomment) or by filling out a form that e-mails us this information, we use it\nto respond to your requests."
+            },
+            {
+                "number": 11,
+                "label": "OMITTED",
+                "sentence": "Information collected via e-mail or Web form will be retained at our\ndiscretion in a readable form for as long as necessary to complete our\nresponse."
+            },
+            {
+                "number": 12,
+                "label": "OMITTED",
+                "sentence": "**File Transfer Protocol (FTP)**  \\- Many USGS sites using the file transfer\nprotocol may also store your e-mail address if your Web browser is configured\nto provide it."
+            },
+            {
+                "number": 13,
+                "label": "OMITTED",
+                "sentence": "**Online Surveys**  \\- When you voluntarily provide us with personal\ninformation as part of an online survey, we use it to perform various\nquantitative and qualitative analyses to improve customer service and\nsatisfaction."
+            },
+            {
+                "number": 14,
+                "label": "OMITTED",
+                "sentence": "Information collected\nvia online surveys may be retained at our discretion for an indefinite period\nof time."
+            },
+            {
+                "number": 15,
+                "label": "OMITTED",
+                "sentence": "**Ordering Products Online**  \\- When you voluntarily provide us with personal\ninformation such as name, shipping and billing address, and credit card number\nwhen ordering products online, we use the information to fulfill your order."
+            },
+            {
+                "number": 16,
+                "label": "OMITTED",
+                "sentence": "Personal\nIdentifiable Information (PII) as defined by the Office of Management and\nBudget (OMB) may be minimally collected by USGS to accomplish a purpose\nrequired by statute, regulation or executive order."
+            },
+            {
+                "number": 17,
+                "label": "OMITTED",
+                "sentence": "In the event that USGS\ncollects PII from a third-party website or application, the USGS Privacy\nOfficer must approve the collection, and the public will be notified via a\nFederal Register comment period which will contain the type of information\nbeing collected, the intended purpose of the collection, the retention period,\nas well as any other specifics."
+            },
+            {
+                "number": 18,
+                "label": "OMITTED",
+                "sentence": "In these cases, the USGS personnel\nresponsible for running that USGS account(s) will request your mailing address\nvia e-mail for the sole purposes of mailing the prize(s) to you."
+            },
+            {
+                "number": 19,
+                "label": "OMITTED",
+                "sentence": "Before doing so, we do capture the content of that comment for\nrecords purposes, but we do not collect the name associated with that content."
+            },
+            {
+                "number": 20,
+                "label": "OMITTED",
+                "sentence": "The USGS\nis solely interested in our interaction with the general public and not\ncollecting personal identifiable information."
+            },
+            {
+                "number": 21,
+                "label": "OMITTED",
+                "sentence": "In these cases, the USGS personnel\nresponsible for running that USGS account(s) will request your mailing address\nvia e-mail, for the sole purposes of mailing the prize(s) to you."
+            },
+            {
+                "number": 22,
+                "label": "OMITTED",
+                "sentence": "Contest\nwinner(s) who provide their postal mailing address will do so voluntarily."
+            },
+            {
+                "number": 23,
+                "label": "OMITTED",
+                "sentence": "**Google Analytics:**  \"Like many services, Google Analytics uses \u2026\n[cookies](http://www.google.com/intl/en/privacy/faq.html#toc-terms-cookie) to\ntrack visitor interactions."
+            },
+            {
+                "number": 24,
+                "label": "OMITTED",
+                "sentence": "These cookies are used to store information, such\nas what time the current visit occurred, whether the visitor has been to the\nsite before, and what site referred the visitor to the web page."
+            },
+            {
+                "number": 25,
+                "label": "OMITTED",
+                "sentence": "The\nU.S. Geological Survey does not collect personally identifiable information\nfrom these third-party tools, nor provide them with additional PII."
+            },
+            {
+                "number": 26,
+                "label": "OMITTED",
+                "sentence": "**Hotjar**  \\- The USGS uses Hotjar to track interactions with the USGS.gov\nflagship site to better understand areas of the site which are causing\nproblems for visitors when navigating, completing tasks, or in the general\nease of finding content quickly and easily."
+            },
+            {
+                "number": 27,
+                "label": "OMITTED",
+                "sentence": "If a Pinterest user or member of the public interacts with USGS through its\nofficial Pinterest account, posts comments on an image in a USGS Pinterest\ncollection, requests information or submits feedback through Pinterest, their\nname, gender, profile photo, free-form biography, location/hometown, website\nURL and email address, and other personal information provided by the user may\nbe used by USGS to communicate or provide the requested information."
+            },
+            {
+                "number": 28,
+                "label": "OMITTED",
+                "sentence": "The USGS\ndoes not collect or share PII through its use of Pinterest, except in unusual\ncircumstances where user interactions indicate evidence of criminal activity,\na threat to the government, a threat to the public, or an employee violation\nof USGS policy."
+            },
+            {
+                "number": 29,
+                "label": "OMITTED",
+                "sentence": "This information may include name, gender, profile photo,\nfree-form biography, location/hometown, website URL, email address, comments\nand other personal information provided by the user, and may be used to notify\nthe appropriate agency officials or law enforcement organizations."
+            },
+            {
+                "number": 30,
+                "label": "OMITTED",
+                "sentence": "In these cases, the USGS personnel responsible for running\nthat USGS account(s) will request your mailing address via e-mail for the sole\npurposes of mailing the prize(s) to you."
+            },
+            {
+                "number": 31,
+                "label": "OMITTED",
+                "sentence": "Contest winner(s) who provide their\npostal mailing address will be done voluntarily."
+            },
+            {
+                "number": 32,
+                "label": "OMITTED",
+                "sentence": "Before doing\nso, we do capture the content of that comment for records purposes, but we do\nnot collect the name associated with that content."
+            },
+            {
+                "number": 33,
+                "label": "OMITTED",
+                "sentence": "The USGS is solely\ninterested in our interaction with the general public and not collecting\npersonal identifiable information."
+            },
+            {
+                "number": 34,
+                "label": "OMITTED",
+                "sentence": "**SurveyMonkey**  \\- The USGS uses SurveyMonkey to create online surveys while\nalso managing and analyzing data."
+            },
+            {
+                "number": 35,
+                "label": "OMITTED",
+                "sentence": "USGS survey organizers will specify the level of\nrequested information when they create their surveys."
+            },
+            {
+                "number": 36,
+                "label": "OMITTED",
+                "sentence": "In our use of the Twitter service, the USGS\ndoes not archive any of your personally identifiable information other than\nwhat any public person(s) may see within the content of a tweet (e.g., the\nTwitter profile name if a USGS account replies to that person(s))."
+            },
+            {
+                "number": 37,
+                "label": "OMITTED",
+                "sentence": "In\nthese cases, the USGS personnel responsible for running that USGS account(s)\nwill request your mailing address via e-mail for the sole purposes of mailing\nthe prize(s) to you and will be completely voluntary."
+            },
+            {
+                "number": 38,
+                "label": "OMITTED",
+                "sentence": "Visitors to YouTube\nwill typically have a persistent cookie sent from YouTube which may include\nsome personal information related to your Google account (if you have one)."
+            },
+            {
+                "number": 39,
+                "label": "OMITTED",
+                "sentence": "Information pertaining to what YouTube stores and/or collects for their use\ncan be viewed at [the YouTube privacy\nwebpage](http://www.youtube.com/t/privacy_at_youtube)."
+            },
+            {
+                "number": 40,
+                "label": "OMITTED",
+                "sentence": "In\nthese cases, the USGS personnel responsible for running that USGS account(s)\nwill request your mailing address via e-mail for the sole purposes of mailing\nthe prize(s) to you."
+            },
+            {
+                "number": 41,
+                "label": "OMITTED",
+                "sentence": "Contest winner(s) who provide their postal mailing\naddress will do so voluntarily."
+            }
+        ]
+    }
+]

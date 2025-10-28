@@ -1,0 +1,18 @@
+[
+    {
+        "description": "The name or ID of the item",
+        "name": "itemName",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "itemName",
+        "data_type": "User IDs",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "[](/core/assets/img/custom/youtube_icon.png)](https://youtube.com/c/IsaacGuru)\n\nAdditional pages\n\n  * [About the Website](/about)\n  * [Changelog](/changelog)\n  * [Privacy Policy](/privacy)\n\nThis website stores cookies on your device in order to remember user settings\nthat can be modified via the [Settings page](/settings), including this\nmessage."
+            }
+        ]
+    }
+]

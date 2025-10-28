@@ -1,0 +1,108 @@
+[
+    {
+        "description": "Lyrics for the song.",
+        "name": "content",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "content",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "This Privacy Policy describes our\npractices with respect to Personal Information we collect from or about you\nwhen you use our website, applications, and services (collectively,\n\u201cServices\u201d)."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "For information about how we collect and use training information to develop\nour language models that power ChatGPT and other Services, and your choices\nwith respect to that information, please see [this help center\narticle](https://help.openai.com/en/articles/7842364-how-chatgpt-and-our-\nlanguage-models-are-developed)."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "Personal information we collect\n\nWe collect personal information relating to you (\u201cPersonal Information\u201d) as\nfollows:\n\n**Personal Information You Provide** : We collect Personal Information if you\ncreate an account to use our Services or communicate with us as follows:\n\n  * _Account Information:_ When you create an account with us, we will collect information associated with your account, including your name, contact information, account credentials, payment card information, and transaction history, (collectively, \u201cAccount Information\u201d)."
+            },
+            {
+                "number": 4,
+                "label": "CLEAR",
+                "sentence": "* _User Content:_ When you use our Services, we collect Personal Information that is included in the input, file uploads, or feedback that you provide to our Services (\u201cContent\u201d)."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "*  _Communication Information_ : If you communicate with us, we collect your name, contact information, and the contents of any messages you send (\u201cCommunication Information\u201d)."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "When you interact with our social media pages, we will collect Personal Information that you elect to provide to us, such as your contact details (collectively, \u201cSocial Information\u201d)."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "In addition, the companies that host our social media pages may provide us with aggregate information and analytics about our social media activity."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "* _Other Information You Provide_ : We collect other information that you may provide to us, such as when you participate in our events or surveys or provide us with information to establish your identity (collectively, \u201cOther Information You Provide\u201d\n\n**Personal Information We Receive Automatically From Your Use of the\nServices** : When you visit, use, or interact with the Services, we receive\nthe following information about your visit, use, or interactions (\u201cTechnical\nInformation\u201d):\n\n  * _Log Data_ : Information that your browser or device automatically sends when you use our Services."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "Log data includes your Internet Protocol address, browser type and settings, the date and time of your request, and how you interact with our Services."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "* _Usage Data_ : We may automatically collect information about your use of the Services, such as the types of content that you view or engage with, the features you use and the actions you take, as well as your time zone, country, the dates and times of access, user agent and version, type of computer or mobile device, and your computer connection."
+            },
+            {
+                "number": 11,
+                "label": "OMITTED",
+                "sentence": "* _Device Information_ : Includes name of the device, operating system, device identifiers, and browser you are using."
+            },
+            {
+                "number": 12,
+                "label": "OMITTED",
+                "sentence": "Information collected may depend on the type of device you use and its settings."
+            },
+            {
+                "number": 13,
+                "label": "OMITTED",
+                "sentence": "* _Analytics_ : We may use a variety of online analytics products that use cookies to help us analyze how users use our Services and enhance your experience when you use the Services."
+            },
+            {
+                "number": 14,
+                "label": "OMITTED",
+                "sentence": "We may\ncollect aggregated information through the Services, through cookies, and\nthrough other means described in this Privacy Policy."
+            },
+            {
+                "number": 15,
+                "label": "OMITTED",
+                "sentence": "For information on how to exercise your rights with respect to data we have\ncollected from the internet to train our models, please see [this help center\narticle](https://help.openai.com/en/articles/7842364-how-chatgpt-and-our-\nlanguage-models-are-developed)."
+            },
+            {
+                "number": 16,
+                "label": "OMITTED",
+                "sentence": "Additional U.S. state disclosures\n\nThe following table provides additional information about the categories of\nPersonal Information we collect and how we disclose that information."
+            },
+            {
+                "number": 17,
+                "label": "OMITTED",
+                "sentence": "If you do not have an account with us, or if we suspect\nfraudulent or malicious activity, we may ask you to provide additional\nPersonal Information and proof of residency for verification."
+            },
+            {
+                "number": 18,
+                "label": "OMITTED",
+                "sentence": "OpenAI does not\nknowingly collect Personal Information from children under the age of 13."
+            },
+            {
+                "number": 19,
+                "label": "OMITTED",
+                "sentence": "When we process Account Information, Content, and Technical Information solely to provide our Services to you, this information is necessary to be able to provide our Services."
+            }
+        ]
+    }
+]

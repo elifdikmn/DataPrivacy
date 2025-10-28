@@ -1,0 +1,19 @@
+{
+    "collection": [
+        "This Privacy Policy outlines how we\ncollect, use, disclose, and safeguard your personal information when you\ninteract with our API.",
+        "Information We Collect\n\n### 1.1.",
+        "Personal Information:\n\nWe do not collect any personal information directly from the users when a\ncustom GPT interacts with our API.",
+        "Usage Information:\n\nWe may collect certain usage information automatically when a custom GPT\ninteracts with our API.",
+        "This usage information may include the access time and\ndate and the technical information about the interactions.",
+        "Personal Information:\n\nSince we do not collect any personal information from the users, we do not use\nit for any purpose.",
+        "Usage Information:\n\nWe may use the usage information collected from the custom GPT for the\nfollowing purposes:\n\n  * a) To analyze and improve the performance and functionality of our API.",
+        "Personal Information:\n\nSince we do not collect any personal information from the users, we do not\ndisclose it to any third parties."
+    ],
+    "sharing": [
+        "Personal Information:\n\nSince we do not collect any personal information from the users, we do not\ndisclose it to any third parties.",
+        "Usage Information:\n\nWe may disclose the usage information collected from the custom GPT to the\nfollowing parties:\n\n  * a) Service Providers: We may engage third-party service providers to assist us in analyzing and improving our API.",
+        "These service providers will have access to the usage information but are obligated to maintain the confidentiality and security of the information.",
+        "* b) Legal Requirements: We may disclose the usage information if required to do so by law or in the good faith belief that such action is necessary to comply with legal obligations or protect and defend our rights or property."
+    ],
+    "pp_length": 3130
+}

@@ -1,0 +1,18 @@
+[
+    {
+        "description": "The python code of the algorithm can be obtained.For example, entering ?q=LightGBM will retrieve a python code of LightGBM.",
+        "name": "q",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "python code retrieval query",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

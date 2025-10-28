@@ -1,0 +1,10 @@
+{
+    "collection": [
+        "No personal data from the GPTs or the authentication process is stored.",
+        "**Data Collection:** No personal information is actively gathered from GPTs."
+    ],
+    "sharing": [
+        "###\n\nData Sharing\n\n**Request Processing:** When GPTs send requests to WebScraper servers, these\nrequests may be forwarded to various AI service providers such as Cloudflare,\nOpenAI, Microsoft, or [temp.sh](http://temp.sh/) (a temporary file storage)."
+    ],
+    "pp_length": 1787
+}

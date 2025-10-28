@@ -1,0 +1,9 @@
+{
+    "collection": [
+        "Only request and process the data that is needed to operate your SDA."
+    ],
+    "sharing": [
+        "Do not build an SDA that enables the transfer of data to another service, except for the purpose of enabling a user to transfer their personal data, or the metadata of the user's playlists to another service."
+    ],
+    "pp_length": 18715
+}

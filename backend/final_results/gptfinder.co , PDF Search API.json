@@ -1,0 +1,53 @@
+[
+    {
+        "description": "Query to search for PDFs",
+        "name": "q",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "Query to search for PDFs",
+        "data_type": "In-app search history",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "This Privacy Policy document contains types of\ninformation that is collected and recorded by GPTFinder and how we use it."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "The information collected by log files include\ninternet protocol (IP) addresses, browser type, Internet Service Provider\n(ISP), date and time stamp, referring/exit pages, and possibly the number of\nclicks."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "These cookies are used to\nstore information including visitors' preferences, and the pages on the\nwebsite that the visitor accessed or visited."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "Please note that Google uses\ncookies to collect information about the search queries and interactions with\nthe search box."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "They automatically receive your IP address when this occurs."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "**Information we collect**\n\nThe personal information that you are asked to provide, and the reasons why\nyou are asked to provide it, will be made clear to you at the point we ask you\nto provide your personal information."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "If you contact us directly, we may receive additional information about you\nsuch as your name, email address, phone number, the contents of the message\nand/or attachments you may send us, and any other information you may choose\nto provide."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "When you register for an Account, we may ask for your contact information,\nincluding items such as name, company name, address, email address, and\ntelephone number."
+            }
+        ]
+    }
+]

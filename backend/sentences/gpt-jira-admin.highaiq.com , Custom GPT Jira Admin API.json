@@ -1,0 +1,16 @@
+{
+    "collection": [
+        "This privacy policy outlines how we collect, use,\nand protect your data when you use our software.",
+        "Information We Collect\n\n###  1.1.",
+        "Automatically Collected Information\n\nWhen you use Issue Navigator, we collect the following information for the\nsole purpose of error tracking and improving our services:\n\n  * **Request Information** : We collect basic request information, including but not limited to IP addresses, user agents, and timestamps.",
+        "* **Error Logs** : We collect error logs to identify and diagnose technical issues within the software.",
+        "We do not collect or store any user tokens or personal information beyond what\nis necessary for error tracking.",
+        "The data we collect\nis solely used for internal purposes related to error tracking and\nimprovement.",
+        "Security\n\nWe take reasonable steps to protect the information we collect from\nunauthorized access or disclosure.",
+        "Your Choices\n\nAs we only collect essential data for error tracking, there are no specific\nchoices for users to make regarding their data."
+    ],
+    "sharing": [
+        "Data Sharing\n\nWe do not share your information with any third parties."
+    ],
+    "pp_length": 2094
+}

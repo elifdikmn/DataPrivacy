@@ -1,0 +1,50 @@
+[
+    {
+        "description": "A valid store name (use ListStore to check names first)",
+        "name": "name",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "store name",
+        "data_type": "Name",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "**PRIVACY POLICY**\n\n  \n\n**Last updated November 09, 2023**\n\n  \n\n  \n\n  \n\nThis privacy notice for bleu.green (\"**we** ,\" \"**us** ,\" or \"**our** \"),\ndescribes how and why we might collect, store, use, and/or share (\"**process**\n\") your information when you use our services (\"**Services** \"), such as when\nyou:\n\n  * Visit our website at app.bleu.green, or any website of ours that links to this privacy notice\n\n  * Engage with us in other related ways, including any sales, marketing, or events\n\n**Questions or concerns?"
+            }
+        ]
+    },
+    {
+        "description": "The topic / title of the desired doc pages",
+        "name": "topic",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "topic",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "**PRIVACY POLICY**\n\n  \n\n**Last updated November 09, 2023**\n\n  \n\n  \n\n  \n\nThis privacy notice for bleu.green (\"**we** ,\" \"**us** ,\" or \"**our** \"),\ndescribes how and why we might collect, store, use, and/or share (\"**process**\n\") your information when you use our services (\"**Services** \"), such as when\nyou:\n\n  * Visit our website at app.bleu.green, or any website of ours that links to this privacy notice\n\n  * Engage with us in other related ways, including any sales, marketing, or events\n\n**Questions or concerns?"
+            }
+        ]
+    },
+    {
+        "description": "The topic / title of the desired doc pages, should be short and informative",
+        "name": "topic",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "topic",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "**PRIVACY POLICY**\n\n  \n\n**Last updated November 09, 2023**\n\n  \n\n  \n\n  \n\nThis privacy notice for bleu.green (\"**we** ,\" \"**us** ,\" or \"**our** \"),\ndescribes how and why we might collect, store, use, and/or share (\"**process**\n\") your information when you use our services (\"**Services** \"), such as when\nyou:\n\n  * Visit our website at app.bleu.green, or any website of ours that links to this privacy notice\n\n  * Engage with us in other related ways, including any sales, marketing, or events\n\n**Questions or concerns?"
+            }
+        ]
+    }
+]

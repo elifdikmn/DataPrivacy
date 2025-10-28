@@ -1,0 +1,58 @@
+[
+    {
+        "description": "The city and state to retrieve the weather for",
+        "name": "location",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "location",
+        "data_type": "Approximate location",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "Questa pagina vi informa delle nostre politiche riguardanti la raccolta, l'uso\ne la divulgazione dei dati personali quando usate il nostro Servizio e le\nscelte che avete associato a quei dati."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "Utilizzando il\nServizio, accettate la raccolta e l'uso delle informazioni in conformit\u00e0 con\nquesta politica."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "**Titolare del Trattamento dei Dati**\n\nIl Titolare del Trattamento \u00e8 l'individuo o l'entit\u00e0 che decide come trattare\ni dati, comprese le decisioni su quali precauzioni adottare per proteggerli,\ndove memorizzarli (ad esempio, su server o cloud), quali dati richiedere\nall'utente, quali elaborare e per quale scopo, a chi cederli e come gestire i\ndiritti e le relazioni con gli utenti."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "**Raccolta e Uso delle Informazioni**\n\n  * **Tipi di Dati Raccolti**\n    * Dati Personali\n\nMentre usate il nostro Servizio, potremmo chiedervi di fornirci alcune\ninformazioni personali identificabili che possono essere utilizzate per\ncontattarvi o identificarvi (\"Dati Personali\")."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "Le informazioni personali\nidentificabili possono includere, ma non sono limitate a:\n\n  * Indirizzo email\n  * Nome e cognome\n  * Cookies e Dati di Utilizzo\n\n\n\n  * **Utilizzo dei Dati**\n\nReporter Gourmet S.r.l."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "usa i dati raccolti per vari scopi:\n\n  *     * Per fornire e mantenere il nostro Servizio\n    * Per notificare agli utenti le variazioni nel nostro Servizio\n    * Per consentire agli utenti di partecipare alle funzionalit\u00e0 interattive del nostro Servizio quando scelgono di farlo\n    * Per fornire assistenza ai clienti\n    * Per raccogliere analisi o informazioni preziose in modo da poter migliorare il nostro Servizio\n    * Per monitorare l'uso del nostro Servizio\n    * Per rilevare, prevenire e affrontare problemi tecnici\n\n\n\n\n\n**Trasferimento dei Dati**\n\nI vostri dati, compresi i Dati Personali, possono essere trasferiti a - e\nmantenuti su - computer situati fuori dal vostro stato, provincia, paese o\naltra giurisdizione governativa dove le leggi sulla protezione dei dati\npossono essere diverse da quelle della vostra giurisdizione."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "Con il tuo consenso, utilizziamo cookie tecnici e di terze parti che ci\npermettono di poter elaborare alcuni dati, come quali pagine vengono visitate\nsul nostro sito."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "[Configura cookies](javascript:void\\(0\\); \"Configura cookies\")\n[Rifiuta](javascript:void\\(0\\); \"Rifiuta\")\n\n[Accetta](javascript:void\\(0\\); \"Accetta\")\n\n[x](javascript:void\\(0\\);)\n\nCentro preferenza privacy\n\n  * Informazioni generali\n\n### Informazioni generali\n\nDurante la navigazione, i siti Web ricevono informazioni tramite i cookie\ndegli utenti."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "* Cookie di analisi\n\n### Cookie di analisi\n\nSi tratta di Cookie utilizzati esclusivamente per fini statistici, che\nraccolgono informazioni in forma aggregata ed anonima per analizzare le visite\ne il percorso di navigazione sul Sito da parte degli utenti."
+            }
+        ]
+    }
+]

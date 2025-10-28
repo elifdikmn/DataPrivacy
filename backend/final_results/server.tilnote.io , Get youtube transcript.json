@@ -1,0 +1,18 @@
+[
+    {
+        "META_PY_KEYS": "videoId",
+        "description": "Unique identifier for the video",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "videoId",
+        "data_type": "Data identifier",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "[glevel](https://server.tilnote.io/img/profiles/ee54636a-3b5b-4452-b9bb-75abdbba23b8.png?width=175&height=175)](https://tilnote.io/@glevel)\n\n[**glevel**](https://tilnote.io/@glevel) 2023-11-09 17:01\n\nWe don't collect any information from your converstaion."
+            }
+        ]
+    }
+]

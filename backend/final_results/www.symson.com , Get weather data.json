@@ -1,0 +1,23 @@
+[
+    {
+        "description": "The city and state to retrieve the weather for",
+        "name": "location",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "location",
+        "data_type": "Approximate location",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "[The SYMSON automated, dynamic pricing competitor analysis](https://assets-\nglobal.website-\nfiles.com/62137861fa1d2b4bba2bbdf7/6293dc7375fcb72f09ebf7f0_image_graph.webp)\n\n###### **COMPETITOR PRICING**\n\n## Know your competitors better than themselves\n\nSYMSON offers the opportunity to collect daily market prices from all vendors\nin the market."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "[](https://assets-global.website-\nfiles.com/62137861fa1d2b4bba2bbdf7/6293e004466a22ba0ea8d559_icon_4.svg)\n\n### **Get everyone on board**\n\nGet your team involved in the pricing process through a highly intuitive &\neasy-to-use interface, where you can collect and track desired data, adjust &\nimprove the parameters and assess the outputs."
+            }
+        ]
+    }
+]

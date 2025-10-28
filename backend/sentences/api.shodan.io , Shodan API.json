@@ -1,0 +1,25 @@
+{
+    "collection": [
+        "##### SHODAN and cookies\n\nUpon your first visit to SHODAN, SHODAN sends a \"cookie\" to your computer.",
+        "SHODAN uses\ncookies to improve the quality of our service and to understand our user base\nmore.",
+        "SHODAN does this by storing user preferences in cookies and by tracking\nuser trends and patterns of how people search.",
+        "##### What information do we collect?",
+        "SHODAN does not collect any unique information about you (such as your name,\nemail address, etc.)",
+        "SHODAN notes and saves information such as time of day, browser\ntype, browser language, and IP address with each query.",
+        "For\nexample, SHODAN may use your IP address or browser language to determine which\nlanguage to use when showing search results or advertisements.",
+        "When\nSHODAN uses a URL redirecter, if you click on a URL from a search result,\ninformation about the click is sent to SHODAN, and SHODAN in turn sends you to\nthe site you clicked on.",
+        "##### Your consent and changes to the Privacy Policy\n\nBy using the SHODAN Search Services and our web site, you consent to the\ncollection and use of your information as we have outlined in this policy and\nto our Terms of Service Policy.",
+        "When we do, we will post those changes on this page\nso that you are always aware of the information we collect, how we use it, and\nunder what circumstances we disclose it."
+    ],
+    "sharing": [
+        "Individually identifiable\ninformation about you is not willfully disclosed to any third party without\nfirst receiving your permission, as explained in this privacy policy (\"Privacy\nPolicy\").",
+        "SHODAN will not disclose its\ncookies to third parties except as required by a valid legal process such as a\nsearch warrant, subpoena, statute, or court order.",
+        "##### With whom does SHODAN share information?",
+        "SHODAN may share information about you with advertisers, business partners,\nsponsors, and other third parties.",
+        "However, we only divulge aggregate\ninformation about our users and will not share personally identifiable\ninformation with any third party without your express consent.",
+        "For example, we\nmay disclose how frequently the average SHODAN user visits SHODAN.",
+        "Please be\naware, however, that we will release specific personal information about you\nif required to do so in order to comply with any valid legal process such as a\nsearch warrant, subpoena, statute, or court order.",
+        "When we do, we will post those changes on this page\nso that you are always aware of the information we collect, how we use it, and\nunder what circumstances we disclose it."
+    ],
+    "pp_length": 4931
+}

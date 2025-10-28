@@ -1,0 +1,143 @@
+[
+    {
+        "description": "The passcode for the property",
+        "name": "passcode",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "passcode",
+        "data_type": "Passwords",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "### How This Policy Applies  \n\nThis Policy describes the information we collect from you, how we use that\ninformation and our legal basis for doing so."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "### What We Collect and Receive\n\nIn order for you to create an account with AIPEX and use our Services, we need\nto collect and process certain information."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "Depending on your use of the\nServices, that may include:\n\n  * Information you provide by completing forms on AIPEX websites \u2014 your name, your company name, email and postal addresses, telephone number, country of residence, login, and password details."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "We may ask for this information if you register as a user of the Services, subscribe to communication we offer, upload or submit content through AIPEX, or if you contact us;\n\n  * Details of any requests or transactions you make through the Services."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "AIPEX partners with other companies (such as Braintree) for payment processing, and the payment information you submit is collected and used by them in accordance with their privacy policies (for Braintree\u2019s, [click here](https://www.braintreepayments.com/legal))."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "Rather than storing any credit card information on our systems, AIPEX is provided a secure token by Braintree which cannot be used at any other merchant;\n\n  * Information about your activity on and interaction with AIPEX, such as your IP address, the type of device or browser you use, and your actions on the Sites;\n\n  * Information about the ways people visit and interact with our Sites, in the form of traffic analytics."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "For more information about our use of data analytics to protect and improve our Services, see Cookies and other Technologies;\n\n  * Communications you send to us (for example, when you ask for support, send us questions or comments, or report a problem);\n\n  * Information that you submit on or to AIPEX in the form of comments, contributions to discussions, or messages to other users; and\n\n  * The email address associated with your Amazon or Google account that you use to enable the AIPEX Services at your properties."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "### How We Use This Information\n\nWe use the information we collect for the following purposes:\n\n  * To keep your account secure and protect our Services (including to verify the identities of creators and prevent fraud and abuse);\n\n  * To enable us to provide you with our Services, and to improve and promote our Services;\n\n  * To create and administer your account, contact you, and customize your experience on AIPEX; and\n\n  * To track and analyze use of the Services so that we can improve how AIPEX is performing and provide users with the best experience possible."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "### European Union Users\n\nData protection law in Europe requires a \u201clawful basis\u201d for collecting and\nretaining personal information from citizens or residents of the European\nEconomic Area."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "* Legal compliance: Sometimes the law says we need to collect and use your data."
+            },
+            {
+                "number": 11,
+                "label": "OMITTED",
+                "sentence": "We sometimes require your data to pursue our legitimate interests in a way that might reasonably be expected as part of running our business and that does not materially impact your rights, freedom or interests."
+            },
+            {
+                "number": 12,
+                "label": "OMITTED",
+                "sentence": "We also collect and maintain aggregated, anonymized or pseudonymized\ninformation which we may retain indefinitely to protect the safety and\nsecurity of our Site, improve our Services or comply with legal obligations."
+            },
+            {
+                "number": 13,
+                "label": "OMITTED",
+                "sentence": "### Data Transfers\n\nBecause AIPEX is a US-based company, your information will be collected and\nprocessed in the United States."
+            },
+            {
+                "number": 14,
+                "label": "OMITTED",
+                "sentence": "### Cookies and other Technologies\n\n#### **What they are**\n\nCookies are small data files that are issued to your device when you visit a\nwebsite and that store information about your use of a service."
+            },
+            {
+                "number": 15,
+                "label": "OMITTED",
+                "sentence": "Pixel tags\n(which are also called clear GIFs, web beacons, or pixels) are little snippets\nof code or tiny images embedded on websites and in email that help us learn\nhow you interact with our site and emails."
+            },
+            {
+                "number": 16,
+                "label": "OMITTED",
+                "sentence": "#### **How they work**\n\nWhen you visit AIPEX, our web server sends a cookie to your device, which\nallows us to recognize your device (but not the specific person using it)."
+            },
+            {
+                "number": 17,
+                "label": "OMITTED",
+                "sentence": "By\nassociating the identification numbers in the cookies with other account\ninformation when, for example, you log in to our Services, we know that the\ncookie information relates to your user account."
+            },
+            {
+                "number": 18,
+                "label": "OMITTED",
+                "sentence": "Similarly, pixel tags on\nAIPEX and in email communications help us identify how your device is being\nused to interact with AIPEX content."
+            },
+            {
+                "number": 19,
+                "label": "OMITTED",
+                "sentence": "We may use third party software development kits (SDK) in\nour Sites to collect information about activity in the app, the type of device\nand operating system it is running on and how the Services are functioning."
+            },
+            {
+                "number": 20,
+                "label": "OMITTED",
+                "sentence": "For example an SDK may send us a report if the Service crashes, and reports on\nwhich features are used more than others."
+            },
+            {
+                "number": 21,
+                "label": "OMITTED",
+                "sentence": "* **Analytics and research  \n** Cookies and other technologies also help us to understand, improve, and\nresearch features and content on AIPEX sites."
+            },
+            {
+                "number": 22,
+                "label": "OMITTED",
+                "sentence": "For example, we may use cookies\nto determine which types of browsers or devices are accessing AIPEX."
+            },
+            {
+                "number": 23,
+                "label": "OMITTED",
+                "sentence": "In some\ncases, our partners may use cookies to provide us with information about your\ninteractions with their services."
+            },
+            {
+                "number": 24,
+                "label": "OMITTED",
+                "sentence": "To opt out of having your online behavior collected for advertising\npurposes, [click here](http://optout.aboutads.info/?c=2#!/)."
+            },
+            {
+                "number": 25,
+                "label": "OMITTED",
+                "sentence": "We follow industry-standard practices to protect the data we\ncollect and maintain, including using Transport Layer Security (TLS) to\nencrypt information as it travels over the internet."
+            },
+            {
+                "number": 26,
+                "label": "OMITTED",
+                "sentence": "AIPEX does not knowingly collect any personal\ninformation from children under the age of 13 and children under 13 are not\npermitted to register for an account or use our Services."
+            }
+        ]
+    }
+]

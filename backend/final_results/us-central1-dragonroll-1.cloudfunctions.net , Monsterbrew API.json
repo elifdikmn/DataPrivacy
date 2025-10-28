@@ -1,0 +1,43 @@
+[
+    {
+        "META_PY_KEYS": "content",
+        "description": "The text to be processed.",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "text to be processed",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "Privacy Policy Effective Date: Nov 11, 2023 This Privacy Policy applies to\nMonsterbrew GPT (\"we,\" \"us,\" or \"our\") and explains our practices regarding\nthe collection, use, and disclosure of information that we receive when you\nuse our GPT."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "Information Collection and Use We firmly believe in the\nimportance of your privacy and are committed to creating a safe and secure\nenvironment for all our users."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "Hence, we do not collect, store, or use any\npersonal data from our users."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "This includes, but is not limited to, personal\nidentifiers, contact information, demographic details, financial data, and any\nother type of data that could be used to identify or contact you."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "Non-\ncollection of Sensitive Information We do not collect sensitive personal\ninformation such as health-related data, political opinions, religious or\nphilosophical beliefs, or any other categories of sensitive information."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "Data Security As we do not collect any personal data, there is no risk of such\ndata being accessed, used, or disclosed by any third parties."
+            }
+        ]
+    }
+]

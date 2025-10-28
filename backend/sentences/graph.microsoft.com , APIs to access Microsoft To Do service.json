@@ -1,0 +1,12 @@
+{
+    "collection": [
+        "Microsoft email protocols and APIs;\n  6. any other Microsoft APIs that enable access to data in Microsoft Intune\u00ae; and\n  7. any other Microsoft APIs that enable access to data from Project Rome services, including, but not limited to: user activities, notifications, device relay and share (documented, for example, at [https://learn.microsoft.com/windows/project-rome/](/en-us/windows/project-rome/)).",
+        "Your network, operating system and the\nsoftware of your servers, databases, and computer systems (collectively,\n\"**Systems** \") must be properly configured to securely operate your\nApplication and store content collected through your Application (including\nthe Microsoft API content)."
+    ],
+    "sharing": [
+        "Request, use or make available any data obtained using the Microsoft APIs outside any permissions expressly granted by Customers in connection with using your Application;\n  12.",
+        "Use or transfer any data accessed or obtained using the Microsoft APIs, including any data aggregated, anonymized or derived from that data (collectively the \"Microsoft APIs Data\") for advertising or marketing purposes including (i) targeting ads, or (ii) serving ads.",
+        "Feedback\n\nIf you give feedback about the Microsoft APIs to Microsoft, you give to\nMicrosoft, without charge, the right to use, share and commercialize your\nfeedback in any way and for any purpose."
+    ],
+    "pp_length": 31029
+}

@@ -1,0 +1,18 @@
+[
+    {
+        "description": "Number of Facts to retrieve",
+        "name": "count",
+        "schema_enum": null,
+        "schema_type": "integer",
+        "type": "query",
+        "data_name": "count",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

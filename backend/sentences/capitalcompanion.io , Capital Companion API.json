@@ -1,0 +1,13 @@
+{
+    "collection": [
+        "This privacy policy (\"Policy\") describes how\nCapital Companion collects, uses, and shares personal information when you use\nour service.",
+        "Information Collection\n\nWe collect the following information:\n\n  * **Usage Data** : When you access the service, we may automatically collect certain information about your device and usage of the service, including IP addresses, browser type, browser version, the pages of our service that you visit, the time and date of your visit, the time spent on those pages, and other diagnostic data.",
+        "* **API Data** : When you use our API, we may collect information about the API requests made, including the stock symbols queried and the frequency of requests.",
+        "Use of Information\n\nThe information we collect is used for the following purposes:\n\n  * To provide and maintain our service."
+    ],
+    "sharing": [
+        "This privacy policy (\"Policy\") describes how\nCapital Companion collects, uses, and shares personal information when you use\nour service.",
+        "Data Sharing\n\nWe do not share your personal information with third parties, except as\nnecessary to comply with the law, or protect our rights."
+    ],
+    "pp_length": 1668
+}

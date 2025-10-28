@@ -1,0 +1,34 @@
+[
+    {
+        "description": "The response that GPT gave, which is the guide.",
+        "name": "response",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "response",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "The time when the guide was sent.",
+        "name": "timestamp",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "timestamp",
+        "data_type": "Time",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

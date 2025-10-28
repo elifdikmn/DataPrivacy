@@ -1,0 +1,23 @@
+[
+    {
+        "description": "Comma-separated data values for the bar graph.",
+        "name": "data",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "data",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "It is our policy to respect your privacy and\ncomply with any applicable law and regulation regarding any personal\ninformation we may collect about you."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "## Information We Collect\n\nInformation we collect includes both information you knowingly and actively\nprovide us when using our services, and any information automatically sent by\nyour devices in the course of accessing our products and services."
+            }
+        ]
+    }
+]

@@ -1,0 +1,10 @@
+{
+    "collection": [
+        "This Privacy Policy is\nintended to inform you about the types of information we collect and do not\ncollect when you use our Service, as well as our commitment to protecting any\ndata we might access.",
+        "## No Personal Data Collection\n\nOur Service is designed in a way that we do not collect, store, or process any\npersonal data from our users.",
+        "### Data We Do Not Collect\n\nWe do not collect any information that can be used to personally identify you,\nsuch as:\n\n  * Names\n  * Email addresses\n  * Physical addresses\n  * Phone numbers\n  * IP addresses\n  * Any other form of personal or sensitive information\n\n## Usage Data\n\nWhile we do not collect personal data, we may collect non-personally\nidentifiable information related to the usage of our Service.",
+        "This includes:\n\n  * Type of API requests made\n  * Frequency of API calls\n  * General usage statistics\n\nThis data is purely for the purpose of improving the Service and analyzing\nusage trends."
+    ],
+    "sharing": [],
+    "pp_length": 1857
+}

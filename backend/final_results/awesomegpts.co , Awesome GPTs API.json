@@ -1,0 +1,74 @@
+[
+    {
+        "META_PY_KEYS": "type",
+        "description": "The type of feedback.",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "type of feedback",
+        "data_type": "Reviews",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "This Privacy Policy outlines\nthe types of information we collect when you use our website and services, how\nwe use that information, and the choices you have regarding its use."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "By accessing and using the Awesome GPTs website and services, you agree to the\ncollection and use of your information as outlined in this Privacy Policy."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "### Information We Collect\n\nWe collect the following types of information:\n\n  * Personal Information: This includes any information that can be used to identify you, such as your name, email address, or other contact details."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "Usage Information: This includes information about how you use our website and services, such as the pages you visit, the time and date of your visits, and the files you upload."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "Technical Information: This includes information about your device, browser, and operating system, as well as your IP address and other similar technical data."
+            }
+        ]
+    },
+    {
+        "META_PY_KEYS": "msg",
+        "description": "The feedback message, help the developer to find the issue.",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "feedback message",
+        "data_type": "Reviews",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "This Privacy Policy outlines\nthe types of information we collect when you use our website and services, how\nwe use that information, and the choices you have regarding its use."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "By accessing and using the Awesome GPTs website and services, you agree to the\ncollection and use of your information as outlined in this Privacy Policy."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "### Information We Collect\n\nWe collect the following types of information:\n\n  * Personal Information: This includes any information that can be used to identify you, such as your name, email address, or other contact details."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "Usage Information: This includes information about how you use our website and services, such as the pages you visit, the time and date of your visits, and the files you upload."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "Technical Information: This includes information about your device, browser, and operating system, as well as your IP address and other similar technical data."
+            }
+        ]
+    }
+]

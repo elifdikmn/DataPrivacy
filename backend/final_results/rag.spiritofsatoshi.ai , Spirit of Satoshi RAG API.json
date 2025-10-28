@@ -1,0 +1,33 @@
+[
+    {
+        "META_PY_KEYS": "query_str",
+        "description": "The query string you want to search the vector store with.",
+        "required_used": false,
+        "title": "Query string",
+        "type": "string",
+        "data_name": "query string",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "CLEAR",
+                "sentence": "Information Usage\n\nWhen you use the Spirit of Satoshi GPT, we may collect and process the text\ninputs and queries you provide."
+            },
+            {
+                "number": 2,
+                "label": "AMBIGUOUS",
+                "sentence": "Data Storage\n\nWe want to emphasize that we do not record or store any of the information or\nqueries you submit to the Spirit of Satoshi GPT on our servers."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "Cookies and Similar Technologies\n\nWe do not use cookies or similar tracking technologies to collect information\nabout your browsing activity when you use the Spirit of Satoshi GPT."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "We do not knowingly collect personal information from children."
+            }
+        ]
+    }
+]

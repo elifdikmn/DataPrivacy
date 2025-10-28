@@ -1,0 +1,15 @@
+{
+    "collection": [
+        "The app\nwill read page data you give access to when you sign in via Google OAuth.",
+        "In addition, user profile data like name and\nemail is requested to create an account and authorise you with eesel.",
+        "We strictly adhere to GDPR guidelines, collecting and processing data only\nwhen necessary, never transferring or selling user data."
+    ],
+    "sharing": [
+        "When a request\nis made, the app uses the embeddings to find related pages and conversations,\nand shares only specific relevant snippets with [OpenAI](https://openai.com/)\nto generate the response.",
+        "Data shared with OpenAI is retained for abuse and misuse\nmonitoring for a maximum of 30 days, and then it is deleted.",
+        "Google user data like name and email is never shared with any party.",
+        "Likewise, any access to your\npage data you provide (like your Google Docs, Slides or Sheets) is never\nshared with anyone.",
+        "We strictly adhere to GDPR guidelines, collecting and processing data only\nwhen necessary, never transferring or selling user data."
+    ],
+    "pp_length": 9892
+}

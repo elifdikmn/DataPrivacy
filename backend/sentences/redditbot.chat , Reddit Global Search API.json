@@ -1,0 +1,8 @@
+{
+    "collection": [
+        "Moderator actions taken within a subreddit are logged.",
+        "id| A valid, existing reddit username  \n---|---  \n  \n#\n\n### GET /user/_username_\n/about[read](https://github.com/reddit/reddit/wiki/OAuth2)\n\nReturn information about the user, including karma and gold status."
+    ],
+    "sharing": [],
+    "pp_length": 133647
+}

@@ -1,0 +1,26 @@
+{
+    "collection": [
+        "This Privacy Policy outlines how we collect, use, disclose, and\nprotect the information that you provide to us when using our website and\nservices (collectively, the \"Services\").",
+        "By using our Services, you agree to the collection, use, and disclosure of\nyour information in accordance with this Privacy Policy.",
+        "## Information We Collect\n\nWe collect the following types of information from you when you use our\nServices:\n\n  1.",
+        "Personal Information: This includes any information that can be used to identify you, such as your name, email address, and any other information you choose to provide.",
+        "Document Information: This includes the documents you upload to our Services, as well as any associated metadata.",
+        "Usage Information: We automatically collect information about your usage of our Services, such as IP addresses, device information, and browsing activity.",
+        "This information is collected through third-party tools like Google Firebase and Google Analytics.",
+        "## Cookies and Similar Technologies\n\nWe and our third-party partners, such as Google Firebase and Google Analytics,\nuse cookies and similar technologies, like web beacons, to collect and analyze\nusage information, enhance user experience, and provide personalized content\nand advertisements.",
+        "Google Firebase and Google Analytics for the purpose of collecting and analyzing usage data.",
+        "To facilitate this integration, our application accesses, uses,\nstores, and shares Google user data as follows:\n\n  1.",
+        "Drive API Scopes: Our application utilizes the following two Google Drive API scopes:\n\n     * `https://www.googleapis.com/auth/drive.appdata` \u2013 This allows our application to see, create, and delete its own configuration data in your Google Drive.",
+        "Data Usage: When you upload or share documents with us through Google Drive, we index and calculate vectors of numbers (known as \"embeddings\") that represent those documents."
+    ],
+    "sharing": [
+        "This Privacy Policy outlines how we collect, use, disclose, and\nprotect the information that you provide to us when using our website and\nservices (collectively, the \"Services\").",
+        "By using our Services, you agree to the collection, use, and disclosure of\nyour information in accordance with this Privacy Policy.",
+        "## How We Share Your Information\n\nWe share your information with the following third parties:\n\n  1.",
+        "Cloud-based database providers, such as AWS, Vercel, and Fly.io, for the purpose of storing and indexing your documents.",
+        "Legal and regulatory authorities, when required by law.",
+        "We do not sell, rent, or otherwise disclose your personal information to third\nparties for their marketing purposes.",
+        "To facilitate this integration, our application accesses, uses,\nstores, and shares Google user data as follows:\n\n  1."
+    ],
+    "pp_length": 7821
+}

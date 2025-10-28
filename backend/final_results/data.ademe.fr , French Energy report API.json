@@ -1,0 +1,18 @@
+[
+    {
+        "description": "\n  Un filtre pour restreindre les r\u00e9sultats \u00e0 moins d'une certaine distance du point pass\u00e9 en param\u00e8tre.\n\n  Le format est 'lon:lat:distance'. La distance optionnelle (0 par d\u00e9faut) et est exprim\u00e9e en m\u00e8tres.\n\n  Si les documents contiennent des g\u00e9om\u00e9tries la distance est calcul\u00e9e \u00e0 partir de leurs centro\u00efdes \u00e0 moins que la distance soit 0 auquel cas le filtre retourne tous les documents dont la g\u00e9om\u00e9trie contient le point pass\u00e9 en param\u00e8tre.\n    ",
+        "name": "geo_distance",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "geo_distance",
+        "data_type": "Precise location",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

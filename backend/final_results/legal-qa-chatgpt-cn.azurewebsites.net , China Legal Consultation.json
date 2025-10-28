@@ -1,0 +1,18 @@
+[
+    {
+        "description": "The user's inquiry.",
+        "name": "inquiry",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "inquiry",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

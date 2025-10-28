@@ -1,0 +1,37 @@
+{
+    "collection": [
+        "* Where users provide information in order to access our services, we rely on contractual necessity to process that information as necessary to perform those services.",
+        "## **Cookies** #\n\nLike many websites, the services may use cookies to obtain certain types of\ninformation when your web browser accesses our site.",
+        "Cookies are used most\ncommonly to do things like tracking page views, identifying repeat users and\nutilizing login tokens for a session.",
+        "## **Children\u2019s Privacy** #\n\nThe services are not directed to children and we do not knowingly collect\npersonal information from anyone under the age of sixteen.",
+        "## **Specific services** #\n\n### **Rust Foundation administration** #\n\nIf you contact us via email, your email address and message will be accessible\nto our small team of staff.",
+        "### **Rust Foundation Community Grants Program** #\n\nGrant applicants will be asked to give their consent to our processing and\nstorage of the following personal data:\n\nAll applicants:\n\n  * Name\n  * Preferred pronouns\n  * Email address\n  * Location\n  * IP address\n  * GitHub username\n  * Social media usernames\n\nSuccessful applicants (in addition to the above):\n\n  * Bank account details\n\nData for all applicants will be retained for three years.",
+        "When you visit [rust-lang.org](http://rust-lang.org), we receive your IP\naddress as part of our standard server logs.",
+        "#### **[static.rust-lang.org](http://static.rust-lang.org)** #\n\nWhen you (or tooling, such as Rustup) visits [static.rust-\nlang.org](http://static.rust-lang.org) or [dev-static.rust-\nlang.org](http://dev-static.rust-lang.org), we receive your IP address, user-\nagent header, referer header, and request path as part of our standard server\nlogs.",
+        "[Crates.io](http://Crates.io) requires users to have a [GitHub\naccount](https://github.com) in order to log in and use the service.",
+        "When you\nlog in to [Crates.io](http://Crates.io) using a GitHub account, we receive\nyour GitHub username and avatar.",
+        "If you share a display name or public email\naddress in your GitHub public profile, we also receive that information.",
+        "We receive any\npublic email address associated with your GitHub account.",
+        "You can also choose\nto submit a different address to associate with your\n[Crates.io](http://Crates.io) activity.",
+        "When you visit [Crates.io](http://Crates.io), we receive your IP address,\nuser-agent header, and request path as part of our standard server logs.",
+        "When you (or tooling, such as Cargo) visits\n[static.crates.io](http://static.crates.io), we receive your IP address, user-\nagent header, referer header, and request path as part of our standard server\nlogs.",
+        "[Crates.io](http://Crates.io) uses Sentry, an error monitoring service, to\nhelp the Rust team discover and fix the performance of the code.",
+        "When there is\nan error, Sentry receives basic information about how you interacted with the\nwebsite and the actions that led to the error.",
+        "When you visit [docs.rs](http://docs.rs), we receive your IP address and user-\nagent header as part of our standard server logs.",
+        "If\nyou sign up to participate in these forums, we collect your email address and\nname.",
+        "As administrators of the forum, we have access to usage information\nregarding your interactions with it, such as posts published and read, and\ntime spent on the site."
+    ],
+    "sharing": [
+        "The services and all corresponding data (including personal data\nof users) were transferred to the Rust Foundation upon its formation.",
+        "Because we offer our services to people in different countries\nand use technical infrastructure based in the United States, we may need to\ntransfer your personal information across borders in order to deliver our\nservices.",
+        "If you withdraw your consent to the use or sharing of your personal\ninformation for the purposes set out in this policy, we may not be able to\nprovide you with our services.",
+        "The data is [not owned or controlled by\nGoogle](https://support.google.com/googlecloud/answer/6056650); they will not\nshare it with third parties or use it for advertising, and neither will we.",
+        "We may ask individuals outside of the Rust Foundation to assist with the grant\nassessment process.",
+        "The only personal data that will be shared with such\nindividuals will be the applicant\u2019s GitHub username.",
+        "Because of the public nature of\n[Crates.io](http://Crates.io), any personal data you might include in a\nCargo.toml file uploaded to a crate will be publicly available.",
+        "For example,\nif an email address is in the `authors` field in the Cargo.toml file, that\nemail address will also be public.",
+        "Due to its public nature, be aware if you include any private information in a\ncrate, that information may be indexed by search engines or used by third\nparties.",
+        "Additionally, your IP address\nmay be disclosed to Sentry as part of the error reporting process but we\u2019ve\nconfigured Sentry to delete it as soon as it\u2019s received."
+    ],
+    "pp_length": 15358
+}

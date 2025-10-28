@@ -1,0 +1,38 @@
+[
+    {
+        "META_PY_KEYS": "text",
+        "description": "The mermaid diagram text",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "mermaid diagram text",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "This privacy policy explains how we collect, use, and share\ninformation about you when you use our services."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "## Information We Collect\n\n  1."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "User-Provided Information: We collect your email address when you sign up for our services."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "API Data: When you use our APIs (e.g., calendar, contacts, tasks), we may collect data you provide through these APIs."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "Our APIs also collect anonymous feedback for improvement purposes."
+            }
+        ]
+    }
+]

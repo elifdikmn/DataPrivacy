@@ -1,0 +1,11 @@
+{
+    "collection": [
+        "This\nPrivacy Policy outlines our practices concerning the handling of any personal\ndata that might be collected or processed during the use of our service.",
+        "Data Collection and Usage\n\nOur service does not store, log, or collect any personal data from its users.",
+        "Hosting Platform\n\nOur service is hosted on Netlify, which may collect data for operational and\nsecurity purposes.",
+        "We do not control and are not responsible for the data\ncollection practices of Netlify.",
+        "For details on their data collection and\nprocessing, please refer to [Netlify's Privacy\nPolicy](https://www.netlify.com/privacy/)."
+    ],
+    "sharing": [],
+    "pp_length": 1276
+}

@@ -1,0 +1,13 @@
+{
+    "collection": [
+        "This Privacy Notice outlines how\nRepoMate collects, uses, protects, and shares your information.",
+        "Information Collection and Use\n\nRepoMate is designed to interact with public GitHub repositories.",
+        "Our policy\nregarding data collection and use is as follows:\n\n  * User-Inputted Information: RepoMate does not save any personal information that you input.",
+        "However, please be aware that OpenAI, the provider of the underlying technology for ChatGPT, may store information you provide.",
+        "OpenAI's Data Practices\n\nSince RepoMate relies on OpenAI's technology, the data you provide while\ninteracting with RepoMate may be subject to OpenAI's data collection and\nstorage practices."
+    ],
+    "sharing": [
+        "This Privacy Notice outlines how\nRepoMate collects, uses, protects, and shares your information."
+    ],
+    "pp_length": 7409
+}

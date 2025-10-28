@@ -1,0 +1,28 @@
+[
+    {
+        "description": "The address of the location you want a street view of.",
+        "name": "address",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "address",
+        "data_type": "Address",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "[SightGo](https://sightgo-plugin.chatbot.so/assets/SightGo.png)\n\n##  **Privacy Policy**\n\nThis Privacy Policy describes how the SightGo Plugin for ChatGPT (\"we\", \"our\",\n\"us\") collects, uses, and discloses your information."
+            },
+            {
+                "number": 2,
+                "label": "INCORRECT",
+                "sentence": "Information We Collect\n\nOur plugin does not collect any personal data from users."
+            },
+            {
+                "number": 3,
+                "label": "CLEAR",
+                "sentence": "All we require is\nthe address provided by the user to fetch a street view image, which is not\nstored after the session ends."
+            }
+        ]
+    }
+]

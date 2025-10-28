@@ -1,0 +1,20 @@
+{
+    "collection": [
+        "User Data Handling\n\nAnalyticsAI accesses your private Google Analytics data, but does not store\nit.",
+        "A clear\nand unambiguous consent request is presented to the user that outlines:\n\n  * The data that will be used (private Google Analytics data).",
+        "Always review the privacy policies of all third-party services to\nunderstand their data collection and usage practices.",
+        "The addon only stores and uses the user API key provided by the user to access\nthe addon's functionality.",
+        "The Image Analysis API service may collect\nand process the information that users send to it, including images and text\ninputs associated with the images.",
+        "We strongly recommend that users review the privacy policies of\nreplicate.com before using the addon to understand how their data may be\ncollected and used."
+    ],
+    "sharing": [
+        "This data is used for analytics and sent directly to OpenAI for\nprocessing.",
+        "Any information use and\ntransfer from Google APIs adhere to Google API Services User Data Policy,\nincluding the Limited Use requirements.",
+        "Your private Google Analytics data, such as metrics, dimensions, and property\nsettings, is shared with OpenAI's ChatGPT for this purpose.",
+        "\u200b\n\nUser Consent to Share Data with OpenAI's ChatGPT, User Consent Process\n\nDuring the initial setup or at the point of use, AnalyticsAI seeks explicit\nconsent from users for the use of their private Google Analytics data.",
+        "* That the data is not stored by AnalyticsAI but by the third-party tool (OpenAI).",
+        "\u200b\n\nBy using AnalyticsAI, you explicitly give consent for your private Google\nAnalytics data to be shared with OpenAI's ChatGPT.",
+        "\u200b\n\nUser Data Handling\n\nImageAI does not access, use, store, or share any private Google user data."
+    ],
+    "pp_length": 6971
+}

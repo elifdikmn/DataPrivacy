@@ -1,0 +1,10 @@
+{
+    "collection": [
+        "### Application monitoring\n\n  * All access to SciSpace applications is logged and audited.",
+        "* SciSpace takes snapshots of your document at frequent intervals as our automatic backup strategy."
+    ],
+    "sharing": [
+        "* Whenever a security event is detected, it is immediately shared with our emergency engineering team, teams are notified and assembled to immediately address the event."
+    ],
+    "pp_length": 15887
+}

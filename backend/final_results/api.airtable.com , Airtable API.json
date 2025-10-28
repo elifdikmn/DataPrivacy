@@ -1,0 +1,23 @@
+[
+    {
+        "description": "Maximum number of records to return.",
+        "name": "maxRecords",
+        "schema_enum": null,
+        "schema_type": "integer",
+        "type": "query",
+        "data_name": "maxRecords",
+        "data_type": "Settings or parameters",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "It outlines our practices regarding the collection,\nuse, and protection of user information."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "Information Collected\n\n[GPT Starter] collects the following information:\n\n  * Questions asked by the user\n  * Responses provided by the service\n  * User's rating scores for the responses\n\n## 3\\."
+            }
+        ]
+    }
+]

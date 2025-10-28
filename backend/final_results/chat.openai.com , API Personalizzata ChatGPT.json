@@ -1,0 +1,18 @@
+[
+    {
+        "META_PY_KEYS": "prompt",
+        "description": "Il prompt da inviare al ChatGPT personalizzato.",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "prompt",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "13 Regolamento UE n. 679/2016 (General\nData Protection Regulation \u2013 GDPR)**\n\nGentile utente,\n\ni dati personali da lei forniti alla Savino Solution S.p.A. societ\u00e0 Benefit\nformano oggetto di trattamento nel rispetto della normativa in materia di\nprotezione dei dati personali, ai sensi del D.lgs."
+            }
+        ]
+    }
+]

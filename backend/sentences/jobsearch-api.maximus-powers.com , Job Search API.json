@@ -1,0 +1,15 @@
+{
+    "collection": [
+        "This Privacy Policy explains how\nwe collect, use, disclose, and safeguard your information when you use our\nAPI.",
+        "### Information Collection\n\nOur API collects information in the following ways: Uploaded Documents: When\nusers upload documents (resumes) to our '/search_by_resume_text' endpoint, we\nonly recieve the text of the document, and not the document itself.",
+        "Form Data: We collect form\ndata submitted to our '/search_by_category_location' endpoint, including\ncategory and location information.",
+        "Server Logs: Our servers automatically\ncollect information when our API is accessed, including IP addresses, browser\ntypes, and access times.",
+        "### Use of Information\n\nThe information collected through our API is used for the following purposes:\nTo Provide Services: To match resumes with job listings and respond to user\nqueries.",
+        "### Children's Privacy\n\nOur API is not intended for individuals under the age of 13, and we do not\nknowingly collect personal information from children under 13."
+    ],
+    "sharing": [
+        "This Privacy Policy explains how\nwe collect, use, disclose, and safeguard your information when you use our\nAPI.",
+        "### Data Sharing\n\nWe do not sell, trade, or otherwise transfer your personally identifiable\ninformation to outside parties, except as required by law."
+    ],
+    "pp_length": 2431
+}

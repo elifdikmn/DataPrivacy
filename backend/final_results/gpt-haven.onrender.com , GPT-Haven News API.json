@@ -1,0 +1,34 @@
+[
+    {
+        "description": "The date for which to retrieve news, in YYYY-MM-DD format.",
+        "name": "date",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "date for news retrieval",
+        "data_type": "Time",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "The maximum number of news items to return.",
+        "name": "limit",
+        "schema_enum": null,
+        "schema_type": "integer",
+        "type": "query",
+        "data_name": "limit",
+        "data_type": "Settings or parameters",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

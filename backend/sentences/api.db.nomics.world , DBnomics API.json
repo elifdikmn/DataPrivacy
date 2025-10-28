@@ -1,0 +1,22 @@
+{
+    "collection": [
+        "### **User tracking**\n\nWe collect anonymised tracking data to gather statistical data to help us\nreport on growth of our organisation\u2019s followers to our funders.",
+        "We are\ncurrently using [Plausible](https://plausible.io/) for this, which doesn't\ncollect any Personal Identifiable Information (PII).",
+        "In the\npast we have used Google Analytics to track visits to our sites.",
+        "In general, cookies are used to retain user\npreferences and store information for things like pages visited on a website,\nsearch history and language preferences.",
+        "### **Donations**\n\nIf you make donations to our organisation via PayPal, please be aware that\nPayPal passes your name and email address to us.",
+        "### **Public data and publishing**\n\nIf you are uploading datasets for one of our surveys or to one of our database\nservices, we request that you check the data and ensure full anonymisation, so\nthat we remain GDPR compliant.",
+        "### **Author identification**\n\nWhen posting a comment on one of our blogs, a name and email address may be\nrequired.",
+        "Page edits, comments, trackbacks, and pingbacks and other activity on our\nwebsites may be identified by your IP address.",
+        "### **Server Logging**\n\nAny time you visit a page on the internet, you send quite a bit of information\nto the server.",
+        "The web servers that host this site maintain access logs with\nthe information that you send.",
+        "you might need to tell us your\nIP number in order for us to find a match and confirm your identity) may delay\nour ability to provide this information within the 30 days required of the\nGDPR Regulation."
+    ],
+    "sharing": [
+        "### **Data release policy**\n\nOur policy is only to release the data we collect in the following\ncircumstances:\n\n  * As required by law, such as in response to a valid request from law enforcement.",
+        "* To designated third parties to resolve or investigate abuse complaints.",
+        "* For abusive users, we may release information to assist in attempting to block the abusive user or to complain to that user\u2019s Internet Service Provider.",
+        "### **No selling of information**\n\nWe will not sell information collected via this site, such as your email\naddress, to third parties."
+    ],
+    "pp_length": 12414
+}

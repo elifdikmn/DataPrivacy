@@ -1,0 +1,58 @@
+[
+    {
+        "META_PY_KEYS": "domains",
+        "description": null,
+        "required_used": false,
+        "title": null,
+        "type": "array",
+        "data_name": "domains",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "\ud83d\udcddOpenAI logs your search queries for 30 days to ensure that the platform\nremains safe and appropriate for all users."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "We have adopted this Privacy Policy, which determines how we are processing\nthe information collected by exoname.com, which also provides the reasons why\nwe must collect certain personal data about you."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "#### Personal information we collect:\n\nWhen you visit the exoname.com, we automatically collect certain information\nabout your device, including information about your web browser, IP address,\ntime zone, and some of the installed cookies on your device."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "Additionally, as\nyou browse the Site, we collect information about the individual web pages or\nproducts you view, what websites or search terms referred you to the Site, and\nhow you interact with the Site."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "We refer to this automatically-collected\ninformation as \u201cDevice Information.\u201d Moreover, we might collect the personal\ndata you provide to us (including but not limited to Name, Surname, Address,\npayment information, etc.)"
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "Our top priority is customer data security, and, as such, we may process only\nminimal user data, only as much as it is absolutely necessary to maintain the\nwebsite."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "Information collected automatically is used only to identify\npotential cases of abuse and establish statistical information regarding\nwebsite usage."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "If, however, you wish to use some of the website\u2019s features, or\nyou wish to receive our newsletter or provide other details by filling a form,\nyou may provide personal data to us, such as your email, first name, last\nname, city of residence, organization, telephone number."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "We encourage you to be aware\nwhen you leave our website and read the privacy statements of each website\nthat may collect personal information."
+            }
+        ]
+    }
+]

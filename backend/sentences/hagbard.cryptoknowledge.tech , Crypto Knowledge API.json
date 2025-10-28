@@ -1,0 +1,17 @@
+{
+    "collection": [
+        "This Privacy Policy explains how we collect, use, disclose, and safeguard your\ninformation when you use our mobile application.",
+        "## Information Collection and Use\n\n### Types of Data Collected\n\n#### Personal Data\n\nWhile using our application, we may ask you to provide us with certain\npersonally identifiable information that can be used to contact or identify\nyou (\"Personal Data\").",
+        "Personally identifiable information may include, but is\nnot limited to:\n\n  * Email address\n\n#### Usage Data\n\nWe may also collect information that your mobile device sends whenever you use\nour app (\"Usage Data\").",
+        "This Usage Data may include information such as your\ndevice's IP address, operating system, and other diagnostic data.",
+        "### Use of Data\n\nWe use the collected data solely for app-related purposes:\n\n  * To provide and maintain our app\n  * To notify you about changes to our app\n  * To provide customer support\n  * To monitor the usage of our app\n  * To detect, prevent, and address technical issues\n\n### Legal Basis for Processing Personal Data Under GDPR\n\nIf you are from the European Economic Area (EEA), our legal basis for\ncollecting and using your personal information depends on the specific context\nin which we collect it.",
+        "* The right to access, update, or delete the information we have on you\n  * The right to rectification\n  * The right to object\n  * The right to data portability\n  * The right to withdraw consent\n\n## Log Data\n\nWe want to inform you that whenever you use our app, we collect data and\ninformation on your phone called Log Data in case of an error.",
+        "This Log Data\nmay include information such as your device IP address, device name, operating\nsystem version, configuration of the app, the time and date of your app use,\nand other statistics.",
+        "Our app does not use these \u201ccookies\u201d explicitly, but the\napp may use third-party code and libraries that use cookies to collect\ninformation and improve their services.",
+        "We do not knowingly\ncollect personally identifiable information from children under 13."
+    ],
+    "sharing": [
+        "## Data Transfer\n\nYour information, including Personal Data, may be transferred to and\nmaintained on computers outside your state, province, country, or other\ngovernmental jurisdiction where the data protection laws may differ from those\nof your jurisdiction."
+    ],
+    "pp_length": 4205
+}

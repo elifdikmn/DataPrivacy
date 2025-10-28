@@ -1,0 +1,10 @@
+{
+    "collection": [
+        "# Privacy Policy for YouTube Subtitles API\n\n_Last Updated: 8 January 2024_\n\nThis Privacy Policy describes how the YouTube Subtitles API (hereafter\nreferred to as \"the API\") collects, uses, and discloses information, and what\nchoices you have with respect to the information.",
+        "In the course of using the API, we may collect the following information:\n\n  * **YouTube Video IDs** : We collect the unique identifiers of YouTube videos when users request subtitles for these videos."
+    ],
+    "sharing": [
+        "Data Sharing and Disclosure\n\nWe do not share or disclose any personal information with third parties,\nexcept in the following situations:\n\n  * **Compliance with Law** : If we are required to disclose information in response to lawful requests by public authorities, including meeting national security or law enforcement requirements."
+    ],
+    "pp_length": 1772
+}

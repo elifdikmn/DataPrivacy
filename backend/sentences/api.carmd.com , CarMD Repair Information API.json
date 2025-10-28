@@ -1,0 +1,10 @@
+{
+    "collection": [
+        "On registration you will have 2 pieces of\ninformation which must be submitted as part of your requests.",
+        "With just basic vehicle identification by VIN or YMM, the only fields that\nwill be valid are:\n\n  * Decode\n  * Port\n  * TSB\n  * Maintenance List\n  * Recall\n  * Warranty\n\nTo get Vehicle History Report a VIN must be provided.",
+        "For data on repair or diagnostics, submission of the mileage and dtcs are\nneeded in addition to the vehicle information.",
+        "To check the maintenance and upcoming fields, mileage information is required."
+    ],
+    "sharing": [],
+    "pp_length": 50475
+}

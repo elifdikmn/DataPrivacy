@@ -1,0 +1,18 @@
+[
+    {
+        "META_PY_KEYS": "email",
+        "description": null,
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "email",
+        "data_type": "Email address",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

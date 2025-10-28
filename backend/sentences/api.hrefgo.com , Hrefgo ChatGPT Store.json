@@ -1,0 +1,11 @@
+{
+    "collection": [
+        "**Data Collection:** No personal information is actively gathered from GPT.",
+        "Interaction data, such as selected text, generated interactions, and content\ncreated through the Hrefgo.com platform, is collected purely to process user\ninquiries and to improve service performance."
+    ],
+    "sharing": [
+        "## Data Sharing\n\n**Processing Requests:** When GPT initiate requests to Hrefgo servers, these\nmay be forwarded to OpenAI, Microsoft, or subsequent AI service providers.",
+        "Data sharing is confined to the content provided by the GPT, ChatGPT, and\ntheir generated queries."
+    ],
+    "pp_length": 2429
+}

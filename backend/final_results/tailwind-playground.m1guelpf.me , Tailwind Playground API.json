@@ -1,0 +1,18 @@
+[
+    {
+        "META_PY_KEYS": "html",
+        "description": "Tailwind CSS HTML code.",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "html",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

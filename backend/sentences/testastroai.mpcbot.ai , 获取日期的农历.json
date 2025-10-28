@@ -1,0 +1,22 @@
+{
+    "collection": [
+        "**Information We Collect, How We Use It, and Legal Basis for Processing**\n\n**Account Information:** We collect your email address to create an account\nand verify your identity.",
+        "**Device Information:** We collect details about your device type and\noperating system for analytics and troubleshooting product issues, fulfilling\nour contractual obligations to you.",
+        "**Subscription Billing Data:** When you subscribe to Starloom, we use third-\nparty service providers to collect and process your billing information.",
+        "Our\nbilling providers may collect information such as your name, billing address,\ncredit or debit card details, phone number, and email address.",
+        "**User Research:** We may ask for your help in testing new features or\nparticipating in surveys to enhance your Starloom experience.",
+        "Participation is\nvoluntary, and the data collected is anonymous.",
+        "**Interactions with Starloom:** Third-party providers and bot developers may\nreceive detailed information about your interactions with Starloom (including\nchat content, likes, etc.)",
+        "**Policy for Children**\n\nOur services are not intended for children under the age of 18, and we do not\nknowingly collect personal information from children under 18.",
+        "Changes may apply\nto any personal information we already hold, as well as any new personal\ninformation collected after the policy modification.",
+        "If there are\nany significant changes to how we collect, use, or disclose your personal\ninformation, we will provide more advanced and prominent notice affecting your\nrights under this policy."
+    ],
+    "sharing": [
+        "**Subscription Billing Data:** When you subscribe to Starloom, we use third-\nparty service providers to collect and process your billing information.",
+        "**Interactions with Starloom:** Third-party providers and bot developers may\nreceive detailed information about your interactions with Starloom (including\nchat content, likes, etc.)",
+        "Your\nStarloom account information (e.g., username and email) will not be shared\nwith any third-party law or developer.",
+        "If there are\nany significant changes to how we collect, use, or disclose your personal\ninformation, we will provide more advanced and prominent notice affecting your\nrights under this policy.",
+        "Please remember, any information you provide to bots on Starloom will be\nshared with third-party LLM providers and developers supporting the bots, and\nsensitive personal information (like credit card details, social security\ninformation, etc.)"
+    ],
+    "pp_length": 4417
+}

@@ -1,0 +1,34 @@
+[
+    {
+        "description": "Name of the item (a creature, equipment, material, monster, or treasure)",
+        "name": "item",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "item name",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "Name of a single region",
+        "name": "region",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "region",
+        "data_type": "Approximate location",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

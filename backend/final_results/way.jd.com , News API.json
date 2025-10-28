@@ -1,0 +1,226 @@
+[
+    {
+        "description": "API key for access",
+        "name": "appkey",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "appkey",
+        "data_type": "User IDs",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "This page is used to inform website visitors regarding our policies with the\ncollection, use, and disclosure of Personal Information if anyone decided to\nuse our Service, the Website Name website."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "If you choose to use our Service, then you agree to the collection and use of\ninformation in relation with this policy."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "The Personal Information that we\ncollect are used for providing and improving the Service."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "## Information Collection and Use\n\nFor a better experience while using our Service, we may require you to provide\nus with certain personally identifiable information, including but not limited\nto your name, phone number, and postal address."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "The information that we\ncollect will be used to contact or identify you."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "## Log Data\n\nWe want to inform you that whenever you visit our Service, we collect\ninformation that your browser sends to us that is called Log Data."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "This Log\nData may include information such as your computer's Internet Protocol (\u201cIP\u201d)\naddress, browser version, pages of our Service that you visit, the time and\ndate of your visit, the time spent on those pages, and other statistics."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "Our website uses these \u201ccookies\u201d to collection information and to improve our\nService."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "We do not knowingly\ncollect personal identifiable information from children under 13."
+            }
+        ]
+    },
+    {
+        "description": "The channel to retrieve the news for",
+        "name": "channel",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "channel",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "This page is used to inform website visitors regarding our policies with the\ncollection, use, and disclosure of Personal Information if anyone decided to\nuse our Service, the Website Name website."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "If you choose to use our Service, then you agree to the collection and use of\ninformation in relation with this policy."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "The Personal Information that we\ncollect are used for providing and improving the Service."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "## Information Collection and Use\n\nFor a better experience while using our Service, we may require you to provide\nus with certain personally identifiable information, including but not limited\nto your name, phone number, and postal address."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "The information that we\ncollect will be used to contact or identify you."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "## Log Data\n\nWe want to inform you that whenever you visit our Service, we collect\ninformation that your browser sends to us that is called Log Data."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "This Log\nData may include information such as your computer's Internet Protocol (\u201cIP\u201d)\naddress, browser version, pages of our Service that you visit, the time and\ndate of your visit, the time spent on those pages, and other statistics."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "Our website uses these \u201ccookies\u201d to collection information and to improve our\nService."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "We do not knowingly\ncollect personal identifiable information from children under 13."
+            }
+        ]
+    },
+    {
+        "description": "Number of news items to return",
+        "name": "num",
+        "schema_enum": null,
+        "schema_type": "integer",
+        "type": "query",
+        "data_name": "Number of news items to return",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "This page is used to inform website visitors regarding our policies with the\ncollection, use, and disclosure of Personal Information if anyone decided to\nuse our Service, the Website Name website."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "If you choose to use our Service, then you agree to the collection and use of\ninformation in relation with this policy."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "The Personal Information that we\ncollect are used for providing and improving the Service."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "## Information Collection and Use\n\nFor a better experience while using our Service, we may require you to provide\nus with certain personally identifiable information, including but not limited\nto your name, phone number, and postal address."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "The information that we\ncollect will be used to contact or identify you."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "## Log Data\n\nWe want to inform you that whenever you visit our Service, we collect\ninformation that your browser sends to us that is called Log Data."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "This Log\nData may include information such as your computer's Internet Protocol (\u201cIP\u201d)\naddress, browser version, pages of our Service that you visit, the time and\ndate of your visit, the time spent on those pages, and other statistics."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "Our website uses these \u201ccookies\u201d to collection information and to improve our\nService."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "We do not knowingly\ncollect personal identifiable information from children under 13."
+            }
+        ]
+    },
+    {
+        "description": "Starting index of news items",
+        "name": "start",
+        "schema_enum": null,
+        "schema_type": "integer",
+        "type": "query",
+        "data_name": "start",
+        "data_type": "Data identifier",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "This page is used to inform website visitors regarding our policies with the\ncollection, use, and disclosure of Personal Information if anyone decided to\nuse our Service, the Website Name website."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "If you choose to use our Service, then you agree to the collection and use of\ninformation in relation with this policy."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "The Personal Information that we\ncollect are used for providing and improving the Service."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "## Information Collection and Use\n\nFor a better experience while using our Service, we may require you to provide\nus with certain personally identifiable information, including but not limited\nto your name, phone number, and postal address."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "The information that we\ncollect will be used to contact or identify you."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "## Log Data\n\nWe want to inform you that whenever you visit our Service, we collect\ninformation that your browser sends to us that is called Log Data."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "This Log\nData may include information such as your computer's Internet Protocol (\u201cIP\u201d)\naddress, browser version, pages of our Service that you visit, the time and\ndate of your visit, the time spent on those pages, and other statistics."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "Our website uses these \u201ccookies\u201d to collection information and to improve our\nService."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "We do not knowingly\ncollect personal identifiable information from children under 13."
+            }
+        ]
+    }
+]

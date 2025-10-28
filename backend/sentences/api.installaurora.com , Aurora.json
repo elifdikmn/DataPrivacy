@@ -1,0 +1,11 @@
+{
+    "collection": [
+        "  * [HOME](home)\n  * LEGAL\n  * [FEEDBACK](mailto:feedback@installaurora.com?subject=Feedback%20-%20\\[Aurora_v1\\])\n\n##  Privacy Policy\n\n##  Information Collection:\n\nWhen using Aurora, we collect device IDs related to your Philips Hue bridge\nand Philips Hue lights.",
+        "We also collect the current settings of your bridge\nand lights.",
+        "We don't collect personal identifiers like name or email unless\nyou're making a payment."
+    ],
+    "sharing": [
+        "Your data is stored securely and\nis not shared with any third parties unless required by law."
+    ],
+    "pp_length": 1729
+}

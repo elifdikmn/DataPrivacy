@@ -1,0 +1,8 @@
+{
+    "collection": [
+        "#### Stockage des donn\u00e9es soumises \u00e0 l\u2019API\n\nLes donn\u00e9es adresses soumises \u00e0 l\u2019API peuvent \u00eatre conserv\u00e9es dans un but\nd\u2019am\u00e9lioration du service, que ce soit au niveau des algorithmes ou au niveau\ndu contenu de la BAN.",
+        "Pour les fichiers CSV soumis au g\u00e9ocodage, seules les colonnes signal\u00e9es comme\ncontenant les donn\u00e9es adresses peuvent \u00eatre conserv\u00e9es, aucun stockage des\nautres colonnes n\u2019est effectu\u00e9 \u00e0 l\u2019issu du traitement."
+    ],
+    "sharing": [],
+    "pp_length": 6094
+}

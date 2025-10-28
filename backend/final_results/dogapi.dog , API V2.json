@@ -1,0 +1,18 @@
+[
+    {
+        "description": null,
+        "name": "limit",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "limit",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

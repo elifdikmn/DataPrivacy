@@ -1,0 +1,33 @@
+[
+    {
+        "description": "url",
+        "name": "url",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "url",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "Accordingly, I have developed this\nPolicy in order for you to understand how I collect, use, communicate and\ndisclose and make use of personal information."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "The following outlines my privacy policy:\n\nBefore or at the time of collecting personal information, I will identify the\npurposes for which information is being collected."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "I will collect and use of personal information solely with the objective of\nfulfilling those purposes specified by us and for other compatible purposes,\nunless I obtain the consent of the individual concerned or as required by law."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "I will collect personal information by lawful and fair means and, where\nappropriate, with the knowledge or consent of the individual concerned."
+            }
+        ]
+    }
+]

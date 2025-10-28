@@ -1,0 +1,48 @@
+[
+    {
+        "META_PY_KEYS": "messages",
+        "description": null,
+        "required_used": false,
+        "title": null,
+        "type": "array",
+        "data_name": "messages",
+        "data_type": "Other in-app messages",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "We are committed to protecting the privacy of our users (\"you\" or\n\"your\") and handling any information we collect from you with care and\nrespect."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "This policy outlines our practices regarding the collection, use, and\ndisclosure of information through the Application."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "**\n\nVoluntary Information Collection\n\n**\n\nWe collect information solely based on your voluntary interaction with the\nApplication."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "The data collected includes the text you input into the chatbot\nfeature of the Application (\"User Inputs\")."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "We do not request, require, or\ncollect any personal information, nor do we collect data that may indirectly\nidentify you, such as location data or session identifiers unless you\nexplicitly submit that to the chatbot itself and volunteer that information."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "**\n\nPurpose of Data Collection\n\n**\n\nThe User Inputs are collected for the sole purpose of providing and improving\nthe Application\u2019s interactive and personalized chatbot experience."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "The User Inputs are stored without any identifiers that link\nthem to a specific user or session."
+            }
+        ]
+    }
+]

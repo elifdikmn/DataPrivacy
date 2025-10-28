@@ -1,0 +1,78 @@
+[
+    {
+        "META_PY_KEYS": "softwares",
+        "description": null,
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "softwares",
+        "data_type": "Installed apps",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "This Privacy Policy document\ncontains types of information that is collected and recorded by Business Ideas\nand how we use it."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "## Log Files\n\nBusiness Ideas follows a standard procedure of using log files."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "The information collected by log files\ninclude internet protocol (IP) addresses, browser type, Internet Service\nProvider (ISP), date and time stamp, referring/exit pages, and possibly the\nnumber of clicks."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "They automatically receive your IP address when this occurs."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "Business Ideas does not knowingly collect any Personal Identifiable\nInformation from children under the age of 13."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "## Online Privacy Policy Only\n\nThis Privacy Policy applies only to our online activities and is valid for\nvisitors to our website with regards to the information that they shared\nand/or collect in Business Ideas."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "This policy is not applicable to any\ninformation collected offline or via channels other than this website."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "This Privacy Policy document\ncontains types of information that is collected and recorded by Business Ideas\nand how we use it."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "The information collected by log files\ninclude internet protocol (IP) addresses, browser type, Internet Service\nProvider (ISP), date and time stamp, referring/exit pages, and possibly the\nnumber of clicks."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "They automatically receive your IP address when this occurs."
+            },
+            {
+                "number": 11,
+                "label": "OMITTED",
+                "sentence": "Business Ideas does not knowingly collect any Personal Identifiable\nInformation from children under the age of 13."
+            },
+            {
+                "number": 12,
+                "label": "OMITTED",
+                "sentence": "## Online Privacy Policy Only\n\nThis Privacy Policy applies only to our online activities and is valid for\nvisitors to our website with regards to the information that they shared\nand/or collect in Business Ideas."
+            },
+            {
+                "number": 13,
+                "label": "OMITTED",
+                "sentence": "This policy is not applicable to any\ninformation collected offline or via channels other than this website."
+            }
+        ]
+    }
+]

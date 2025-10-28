@@ -1,0 +1,13 @@
+{
+    "collection": [
+        "This Privacy Policy outlines how we collect, use, and protect your personal\ninformation.",
+        "By using our service, you agree to the collection and use of\ninformation in accordance with this policy.",
+        "### Information We Collect\n\n#### Personal Information\n\nWhen you register and use our service, we collect the following personal\ninformation:\n\n  * Email address\n  * Password\n\n#### Content Information\n\nWe also collect the description and content you provide for the slides.",
+        "We also use cookies and third-party tracking\ntechnologies to measure application reach and performance."
+    ],
+    "sharing": [
+        "We use the description and\ncontent provided for slides to generate slides using third-party API\nproviders.",
+        "### Third-Party Sharing\n\nWe share the description and content associated with slides with third-party\nAPI providers for the purpose of generating slide content."
+    ],
+    "pp_length": 2266
+}

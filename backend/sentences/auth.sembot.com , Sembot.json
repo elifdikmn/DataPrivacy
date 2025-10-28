@@ -1,0 +1,34 @@
+{
+    "collection": [
+        "As part of the registration process, the\nUser shall also provide his / her telephone number, www address of the online\nshop and define the type of User or other data required by the Provider.",
+        "As part of the sign-up, the User will link their PPC account to the\nGoogle Network, which will link ad groups and keywords to the Google Network\nvia the API.",
+        "The User agrees that the sembot.com Platform can access their accounts through\nthe OAuth2 protocol access system.",
+        "The User is obliged to provide the Provider with all the assistance necessary\nto ensure the proper provision of the service and, in particular, to provide\nin due time all necessary information and documents requested by the Provider\nif such provision is necessary to fulfil the purpose of the Contract.",
+        "The User allows the Platform to collect data from Google Ads, Google\nAnalytics, Microsoft Advertising, Meta Ads accounts.",
+        "Collective data, collected by the Platform, may be used to prepare general\nreports, which will prevent identification of sensitive data, especially\nadvertised phrases, budgets, and User\u2019s data.",
+        "Collected data will be used for machine learning, which will help the Platform\nto make decisions about the changes on advertising accounts.",
+        "The Platform downloads campaigns and ad groups from the enabled advertising\naccounts.",
+        "The Platform stores information essential for connecting with Google Ads,\n/ Meta Ads / Microsoft Advertising Account, account ID, account name, OAuth2\nauthorization token.",
+        "The Platform stores identification data of Google Ads / Meta Ads /\nMicrosoft Advertising accounts linked to connected accounts, which has\nmodification rights to (sub Manager accounts, linked accounts).",
+        "The Platform stores\ninformation about the currency and time zone of the account.",
+        "The Platform stores campaigns (ID, name) from accounts, added by the User\nfor the purpose of speeding up the interface (cache).",
+        "The Platform downloads the list of keywords for the particular campaign\nfor the purpose of enabling the option to add a keyword to the Platform.",
+        "The Platform cumulatively stores (with a frequency chosen by the user)\ncurrent (only for the particular day of checking) statistics of auction for\nkeywords added by the user with an interface or by adding a Sembot label to\nthe keyword.",
+        "The system\nstores the following pieces of information: keyword ID, ad group ID, ad group\nname, campaign ID, campaign name, the number of views, the number of clicks,\naverage CTR, average position, average CPM, approximate cost for the first\nposition, approximate cost for the top of results, approximate cost for the\nfirst page, the result of quality, match type, viewing time, account ID,\naccount name.",
+        "The system cumulatively stores (with a frequency chosen by the user)\ncurrent (only for the particular day of checking) statistics of auction for\nkeywords added by the user with an interface or by adding a Sembot label to\nthe keyword.",
+        "The system\nstores the following pieces of information: keyword ID, ad group ID, ad group\nname, campaign ID, campaign name, the number of views, the number of clicks,\naverage CTR, average position, average CPM, approximate cost for the first\nposition, approximate cost for the top of results, approximate cost for the\nfirst page, the result of quality, match type, viewing time, account ID,\naccount name.",
+        "In order for the Platform\nto work properly, the minimum amount of data is as follows: account ID,\naccount name, the number of views, average position, keyword name (it can be\nencrypted or changed), keyword ID, ad group ID.",
+        "The following shall be considered as an expression of interest in using the\nCSS service:  \nfilling in and sending the registration form on Sembot\u2019s website and complete\nbuying process with selected CSS and the Platform options,  \nindication of consent to these Business Conditions, sending the billing data\nof the User to Sembot within the Platform.",
+        "After entering the identifiers of the card used by the User,\nthe licence fee is collected and the recurring automatic payments calculated\naccording to the currently valid price list and chosen plan are always set for\nthe next subsequent periods of 30 days.",
+        "The User understands that the Platform works based on API Google Ads,\nMicrosoft Advertising or Meta Ads interface, or data downloaded directly from\nthe User's account."
+    ],
+    "sharing": [
+        "No\ninformation connected with a specific User will be shared.",
+        "Connecting through the script \u201cAds script\u201d  \nIn case there is a necessity to grant full control over the transferred data,\nthere is an option of controlled transfer of data through dedicated scripts.",
+        "The Platform will not share User\u2019s data with third parties.",
+        "not to disclose them or to give\naccess to them to third parties, lasts indefinitely and the parties are\nobliged to adhere to it even after the eventual termination of the Contract.",
+        "The User gives the Provider consent to anonymized (without the possibility to\nspecify any User identifiers except the industry in which the client operates)\nprocessing of data from campaigns of the end-user of the licence (e-shop) and\ntheir use as a business reference.",
+        "If the Provider is interested in presenting\ndata from the User's campaigns with their identifiers, prior written or e-mail\nconsent is required."
+    ],
+    "pp_length": 59920
+}

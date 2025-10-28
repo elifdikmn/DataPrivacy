@@ -1,0 +1,38 @@
+[
+    {
+        "description": "The URL to analyze.",
+        "name": "url",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "url",
+        "data_type": "Web browsing history",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "## Comments\n\nWhen visitors leave comments on the site we collect the data shown in the\ncomments form, and also the visitor\u2019s IP address and browser user agent string\nto help spam detection."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "## Cookies\n\nIf you leave a comment on our site you may opt-in to saving your name, email\naddress and website in cookies."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "When you log in, we will also set up several cookies to save your login\ninformation and your screen display choices."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "These websites may collect data about you, use cookies, embed additional\nthird-party tracking, and monitor your interaction with that embedded content,\nincluding tracking your interaction with the embedded content if you have an\naccount and are logged in to that website."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "For users that register on our website (if any), we also store the personal\ninformation they provide in their user profile."
+            }
+        ]
+    }
+]

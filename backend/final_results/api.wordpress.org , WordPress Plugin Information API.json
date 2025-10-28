@@ -1,0 +1,58 @@
+[
+    {
+        "description": "The slug of the WordPress plugin.",
+        "name": "plugin_slug",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "plugin_slug",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "## Kontakt mit uns\n\nWenn Sie per Formular auf der Website oder per E-Mail Kontakt mit uns\naufnehmen, werden Ihre angegebenen Daten zwecks Bearbeitung der Anfrage und\nf\u00fcr den Fall von Anschlussfragen sechs Monate bei uns gespeichert."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "## Datenspeicherung\n\nWir weisen darauf hin, dass zum Zweck des einfacheren Einkaufsvorganges und\nzur sp\u00e4teren Vertragsabwicklung vom Webshop-Betreiber im Rahmen von Cookies\ndie IP-Daten des Anschlussinhabers gespeichert werden, ebenso wie Name,\nTelefonnummer, Anschrift, Lieferadressen des K\u00e4ufers, und die gleichen Daten\ndes Warenempf\u00e4ngers, falls dieser vom K\u00e4ufer abweicht."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "Dar\u00fcber hinaus werden zum Zweck der Vertragsabwicklung folgende Daten auch bei\nuns gespeichert: Bankdaten, Kreditkartennummern des K\u00e4ufers."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "## Web-Analyse\n\nUnsere Website verwendet Funktionen des Webanalysedienstes Google (Universal)\nAnalytics, einen Webanalysedienst der Google Inc. (www.google.com)."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "Google\n(Universal) Analytics verwendet Methoden, die eine Analyse der Benutzung der\nWebsite durch Sie erm\u00f6glichen, wie zum Beispiel sog."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "Die erzeugten Informationen \u00fcber\nIhre Benutzung dieser Website werden in der Regel an einen Server von Google\nin den USA \u00fcbertragen und dort gespeichert."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "Sie k\u00f6nnen die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung\nder Website bezogenen Daten (inkl."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "Hierf\u00fcr ben\u00f6tigen wir Ihre E-Mail-Adresse und ihre Erkl\u00e4rung, dass\nSie mit dem Bezug des Newsletters einverstanden sind."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "Um Sie zielgerichtet mit Informationen zu versorgen, erheben und verarbeiten\nwir au\u00dferdem freiwillig gemachte Angaben wie Anrede, Vorname, Name,\nInformationen zu Interessengebieten, Geburtstag und Postleitzahl oder weitere\nfreiwilliger Felder."
+            }
+        ]
+    }
+]

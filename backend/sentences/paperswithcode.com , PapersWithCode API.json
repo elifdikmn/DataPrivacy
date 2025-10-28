@@ -1,0 +1,39 @@
+{
+    "collection": [
+        "This Data Policy explains our practices for handling your information\ncollected in connection with the Papers with Code website (the \u201cWebsite\u201d),\nincluding the materials hosted on the Website.",
+        "#### Collection of Information\n\nWhen you interact with us through the Website, we may collect or receive the\nfollowing types of information from you:\n\n#### Information you provide directly\n\nFor certain activities, we may collect the following types of information:\n\n  * Contact information, such as your name (first and last name) and email address;\n  * Content that you upload on the website, such as papers, code, evaluation tables, research developments, libraries, methods, datasets and other materials;\n  * Other information you choose to provide to us, such as when you send us correspondence or provide feedback to us.",
+        "Information collected as part of the account creation includes your username,\nemail address and password.",
+        "If you choose to customise your profile, we also\nprocess the description and location you choose to add as well as your avatar\nor photo that you decide to upload.",
+        "#### Information collected automatically\n\nWe may collect certain account and profile activity information, such as your\njoin date, last post, last log-in date, profile views, days visited, read\ntime, topics viewed, posts viewed, hearts given and received, topics created\nand posts created on your profile.",
+        "Depending on the type of device used to\nvisit the Website, we may also collect certain additional information\nautomatically, such as:\n\n  * **Device attributes** : information such as the operating system, hardware and software versions, battery level, signal strength, available storage space, browser type, app and file names and types, and plugins.",
+        "* **Device operations** : information about operations and behaviors performed on the device, such as whether a window is placed in the foreground or background, or mouse movements (which can help distinguish humans from bots), as well as pages visited.",
+        "* **Identifiers** : unique identifiers, device IDs, and other identifiers, and Family Device IDs associated with the same device or account.",
+        "* **Device signals** : Bluetooth signals, and information about nearby Wi-Fi access points, beacons, and cell towers.",
+        "* **Data from device settings** : information you allow us to receive through device settings you turn on, such as access to your GPS location.",
+        "* **Network and connections** : information such as the name of your mobile operator or ISP, language, time zone, mobile phone number, IP address, and connection speed.",
+        "* **Cookie data** : data from cookies stored on your device, including cookie IDs and settings.",
+        "If you sign in using your account with certain third-party\nplatforms (such as Slack) and interact on our channel or with us on such\nplatforms, we may retrieve and store your profile picture, user name, first\nname, last name and e-mail address (to the extent that you have provided such\ninformation on the third party website).",
+        "If you decide to join our Slack discussion group, any information that you\nprovide on Slack or that is collected by Slack will be subject to Slack's\nterms of use and privacy policy.",
+        "Slack or GitHub), we also collect such information to deliver, personalise and improve the Website.",
+        "If you sign up to our newsletter, we will process your data in accordance with your preferences.",
+        "#### Cookies And Similar Technologies\n\nCookies are small text files placed on your device to store data that can be\nrecalled by a web server in the domain that placed the cookie.",
+        "We use Google Analytics, which is a web analytics tool that helps us\nunderstand how users engage with the Website.",
+        "Like many services, Google\nAnalytics uses cookies to track user interactions, as in our case, where they\nare used to collect information about how users use our Website.",
+        "#### Children's Information\n\nWe do not knowingly collect or store information from children under the age\nof 13 (or under the age of majority in your jurisdiction of residence), unless\npermitted by law.",
+        "We collect, use and share data on the basis of the following:\n\n  * **Contractual necessity** : The majority of the processing of personal data described in this Data Policy is justified on the basis that it is necessary for the performance of a contract and specifically, for the purposes of the Website's [Terms of Use](/site/terms).",
+        "In some cases, we may need to\ncollect additional information to verify your identity, such as a government\nissued ID."
+    ],
+    "sharing": [
+        "#### How We Share Information\n\nThere are certain circumstances in which we will share your information with\ncertain third parties without further notice to you, as follows:\n\n  * Authorized third-party vendors and service providers.",
+        "We share your information with third-party vendors and service providers that help us with specialized services, including email communications, business analytics, data storage, and data processing.",
+        "We may disclose information where we are legally required to do so in order to comply with applicable law, governmental requests, a judicial proceeding, court order, or other legal process (including in response to public authorities to meet national security or law enforcement requirements).",
+        "We may disclose information where we believe it is necessary to investigate, prevent, or take action regarding illegal or harmful activities, suspected fraud or other security issues, violations of our terms, or policies, or as evidence in litigation in which we may be involved.",
+        "We may share or transfer information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company, provided that we inform the buyer it must use your personal information only for the purposes disclosed in this Data Policy.",
+        "We may share your information with any other third party with your consent to the disclosure.",
+        "We collect, use and share data on the basis of the following:\n\n  * **Contractual necessity** : The majority of the processing of personal data described in this Data Policy is justified on the basis that it is necessary for the performance of a contract and specifically, for the purposes of the Website's [Terms of Use](/site/terms).",
+        "We rely on this legal basis to share information with others, including law enforcement, and to respond to legal requests.",
+        "#### Data Transfers\n\nWe transfer personal data both internally within the Meta Platforms Companies\nand externally with our partners.",
+        "These data transfers are\nnecessary to provide the services set forth in the Website's [Terms of\nUse](/site/terms)."
+    ],
+    "pp_length": 23903
+}

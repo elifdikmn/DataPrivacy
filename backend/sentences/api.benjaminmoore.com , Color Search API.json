@@ -1,0 +1,40 @@
+{
+    "collection": [
+        "Total being %total%\n\nContinue shopping [View cart](/cart) [Checkout](/checkout)\n\n# Privacy policy\n\nThis Privacy Policy describes how gilfordhardware.com (the \u201cSite\u201d or \u201cwe\u201d)\ncollects, uses, and discloses your Personal Information when you visit or make\na purchase from the Site.",
+        "# Collecting Personal Information\n\nWhen you visit the Site, we collect certain information about your device,\nyour interaction with the Site, and information necessary to process your\npurchases.",
+        "We may also collect additional information if you contact us for\ncustomer support.",
+        "See the list below for more information about what Personal\nInformation we collect and why.",
+        "_Device information_\n\n  * **Examples of Personal Information collected:** version of web browser, IP address, time zone, cookie information, what sites or products you view, search terms, and how you interact with the Site.",
+        "* **Purpose of collection:** to load the Site accurately for you, and to perform analytics on Site usage to optimize our Site.",
+        "* **Source of collection:** Collected automatically when you access our Site using cookies, log files, web beacons, tags, or pixels _[ADD OR SUBTRACT ANY OTHER TRACKING TECHNOLOGIES USED]_.",
+        "_Order information_\n\n  * **Examples of Personal Information collected:** name, billing address, shipping address, payment information (including credit card numbers _[INSERT ANY OTHER PAYMENT TYPES ACCEPTED]_), email address, and phone number.",
+        "* **Purpose of collection:** to provide products or services to you to fulfill our contract, to process your payment information, arrange for shipping, and provide you with invoices and/or order confirmations, communicate with you, screen our orders for potential risk or fraud, and when in line with the preferences you have shared with us, provide you with information or advertising relating to our products or services.",
+        "* **Source of collection:** collected from you.",
+        "_Customer support information_\n\n  * **Examples of Personal Information collected:** _[MODIFICATIONS TO THE INFORMATION LISTED ABOVE OR ADDITIONAL INFORMATION AS NEEDED]_\n  * **Purpose of collection:** to provide customer support.",
+        "* **Source of collection:** collected from you.",
+        "We\ndo not intentionally collect Personal Information from children.",
+        "For example:\n\n  * _[INSERT IF APPLICABLE]_ We use Google Analytics to help us understand how our customers use the Site.",
+        "We collect and share some of this information directly with our advertising partners, and in some cases through the use of cookies or other similar technologies (which you may consent to, depending on your location).",
+        "Cookies also provide information\non how people use the website, for instance whether it\u2019s their first time\nvisiting or if they are a frequent visitor.",
+        "## Do Not Track\n\nPlease note that because there is no consistent industry understanding of how\nto respond to \u201cDo Not Track\u201d signals, we do not alter our data collection and\nusage practices when we detect such a signal from your browser.",
+        "This Cookie Policy is designed to inform you about our practices regarding the\ncollection of information through cookies and other tracking technologies\n(like gifs, web beacons, etc.).",
+        "**Performance Cookies:** These cookies allow us to analyze how you interact with our website.",
+        "They collect information about your browsing behavior and help us improve the performance and functionality of our site.",
+        "These cookies do not collect any personally identifiable information.",
+        "The Shopify cookie allows us to track the performance of our advertising campaigns and optimize our marketing efforts.",
+        "It helps us streamline the implementation of cookies and other tracking technologies, making it easier for us to track user interactions and collect analytics data.",
+        "This cookie collects information about your visit, such as the pages you view, the time spent on each page, and the website you visited before coming to ours.",
+        "* **Google Ads Conversion Tracking (Analytics):** This cookie enables us to track the actions taken by users after they click on our Google Ads."
+    ],
+    "sharing": [
+        "* **Disclosure for a business purpose:** shared with our processor Shopify _[ADD ANY OTHER VENDORS WITH WHOM YOU SHARE THIS INFORMATION]_.",
+        "* **Disclosure for a business purpose:** shared with our processor Shopify _[ADD ANY OTHER VENDORS WITH WHOM YOU SHARE THIS INFORMATION.",
+        "# Sharing Personal Information\n\nWe share your Personal Information with service providers to help us provide\nour services and fulfill our contracts with you, as described above.",
+        "* We may share your Personal Information to comply with applicable laws and regulations, to respond to a subpoena, search warrant or other lawful request for information we receive, or to otherwise protect our rights.",
+        "* _[INSERT IF YOU USE A THIRD PARTY MARKETING APP THAT COLLECTS INFORMATION ABOUT BUYER ACTIVITY ON YOUR SITE]_ We share information about your use of the Site, your purchases, and your interaction with our ads on other websites with our advertising partners.",
+        "We collect and share some of this information directly with our advertising partners, and in some cases through the use of cookies or other similar technologies (which you may consent to, depending on your location).",
+        "_[INCLUDE THE FOLLOWING SECTION ONLY IF YOU SELL PERSONAL INFORMATION, AS\nDEFINED BY THE CALIFORNIA CONSUMER PRIVACY ACT]_\n\n# Selling Personal Information\n\nOur Site sells Personal Information, as defined by the California Consumer\nPrivacy Act of 2018 (\u201cCCPA\u201d).",
+        "Additionally, please note that blocking cookies may not completely prevent how\nwe share information with third parties such as our advertising partners."
+    ],
+    "pp_length": 45210
+}

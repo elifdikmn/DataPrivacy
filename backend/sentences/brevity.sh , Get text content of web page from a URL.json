@@ -1,0 +1,23 @@
+{
+    "collection": [
+        "[home](/_next/static/media/logo.d2d62096.svg)Brevity](/)\n\n# Privacy Policy\n\nWhen you use https://brevity.sh (Brevity), we collect some personal\ninformation from you.",
+        "However, this site has been designed to minimize the\ninformation collected.",
+        "This Privacy Policy outlines the details of the information collected, how\nit's collected, and the purposes for which it is used.",
+        "We encourage you to review this Privacy\nPolicy periodically to stay informed about how we are protecting the personal\ninformation we collect.",
+        "## Information collected\n\n  * When you register, Brevity only collects a valid email address that you control.",
+        "Brevity does not require you to submit any personal data nor will it process the personal data that might be contained in your content.",
+        "* Brevity does not directly collect payment information.",
+        "As a result of this integration, the following items of your data will be visible to Brevity through the tools provided by Stripe - your name, your email address, your country, the amount paid to Brevity, and the taxes paid on the transaction.",
+        "Your email address may be stored within their servers.",
+        "Brevity has access to information regarding the delivery of those emails through Firebase.",
+        "* Brevity sets cookies for authentication purposes as well as to enable essential functionalities of the platform.",
+        "Brevity sets up a cookie to mark the user\u2019s session ID, a cookie with the session signature to prevent tampering, and a cookie to tell the browser who the current user is.",
+        "For analytics, Brevity uses Vercel (vercel.com), which does not use cookies and doesn\u2019t collect any personal data.",
+        "* For monitoring usage and maintaining service quality, we record the IP addresses of all visitors to our site.",
+        "## Data Retention, Deletion, and Export\n\n  * All information collected will be retained only for as long as your account remains in existence."
+    ],
+    "sharing": [
+        "As a result, this data is transmitted between Brevity and OpenAI during the process of creation."
+    ],
+    "pp_length": 4395
+}

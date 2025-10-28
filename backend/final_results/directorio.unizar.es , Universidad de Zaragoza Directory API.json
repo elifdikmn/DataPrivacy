@@ -1,0 +1,33 @@
+[
+    {
+        "description": "Numeric identifier of the person",
+        "name": "nip",
+        "schema_enum": null,
+        "schema_type": "integer",
+        "type": "query",
+        "data_name": "nip",
+        "data_type": "User IDs",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "a trav\u00e9s del sitio web mediante los correspondientes\nformularios y los correos electr\u00f3nicos recibidos solicitando informaci\u00f3n o\nenviando observaciones y/o contenidos diversos y que tienen la consideraci\u00f3n\nde datos de car\u00e1cter personal, se incluir\u00e1n en el correspondiente fichero de\ndatos personales, salvo que en la p\u00e1gina web o apartado concreto se\nespecifique otra cosa."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "La simple visita o visualizaci\u00f3n de contenidos no supone registro ni\ntratamiento de datos personales, s\u00f3lo recogida de datos estad\u00edsticos."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "**Finalidad y tratamiento de los datos personales registrados**\n\nLos datos obtenidos mediante la cumplimentaci\u00f3n de los respectivos formularios\no correos electr\u00f3nicos y los derivados de los contenidos virtuales recibidos\nser\u00e1n usados mediante sistemas autom\u00e1ticos de decisi\u00f3n, segmentaci\u00f3n y\nvaloraci\u00f3n de los mismos a fin de poder gestionar su contestaci\u00f3n o el\ntratamiento, emisi\u00f3n, difusi\u00f3n y archivo de los materiales recibidos o su\nparticipaci\u00f3n en los diversos foros y servicios que en cada apartado concreto\nse especifiquen."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "**Recogida de datos estad\u00edsticos**\n\nLa Universidad puede generar estad\u00edsticas web para disponer de informaci\u00f3n\nsobre el tr\u00e1fico de su sitio web, la procedencia de los usuarios, las p\u00e1ginas\nque han visitado, la duraci\u00f3n de sus sesiones, las secciones de abandono de la\np\u00e1gina web, los t\u00e9rminos de b\u00fasqueda empleados en los buscadores, los\nnavegadores utilizados, etc."
+            }
+        ]
+    }
+]

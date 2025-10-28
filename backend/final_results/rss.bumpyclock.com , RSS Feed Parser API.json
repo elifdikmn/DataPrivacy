@@ -1,0 +1,34 @@
+[
+    {
+        "META_PY_KEYS": "urls",
+        "description": "List of URLs to discover RSS feeds from.",
+        "required_used": false,
+        "title": null,
+        "type": "array",
+        "data_name": "List of URLs",
+        "data_type": "Web browsing history",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "META_PY_KEYS": "urls",
+        "description": "URL of the RSS feed to parse.",
+        "required_used": false,
+        "title": null,
+        "type": "array",
+        "data_name": "URL of the RSS feed to parse",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

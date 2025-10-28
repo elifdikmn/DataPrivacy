@@ -1,0 +1,12 @@
+{
+    "collection": [
+        "We do not store any personal data from the GPTs or the authentication process.",
+        "**Data Collection:** We do not actively collect personal information from\nGPTs.",
+        "Interaction data, such as selected text and generated responses, is\ncollected solely to process user inquiries and enhance service performance."
+    ],
+    "sharing": [
+        "## Data Sharing\n\n**Processing Requests:** Requests initiated by GPTs to FindGPTs servers may be\nforwarded to OpenAI, Microsoft, or other AI service providers.",
+        "Data sharing is\nlimited to the content provided by the GPTs, ChatGPT, and their generated\nqueries."
+    ],
+    "pp_length": 3028
+}

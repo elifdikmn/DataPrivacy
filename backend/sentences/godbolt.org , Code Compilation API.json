@@ -1,0 +1,10 @@
+{
+    "collection": [
+        "Of course, we _do_ (at\nleast temporarily) store their source code, which may be precious and\nsensitive.",
+        "When making\nshort links, we send an encoding of their source code for storage, and again\nwe must be clear how that process works."
+    ],
+    "sharing": [
+        "When compiling with some Microsoft\ncompilers we send data to the sister site\n[www.godbolt.ms](http://www.godbolt.ms) and that data is covered by\n[Microsoft's Privacy Policy](https://go.microsoft.com/fwlink/?LinkId=521839)."
+    ],
+    "pp_length": 9499
+}

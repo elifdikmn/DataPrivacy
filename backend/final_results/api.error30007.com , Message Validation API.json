@@ -1,0 +1,63 @@
+[
+    {
+        "META_PY_KEYS": "message",
+        "description": "The message to be validated.",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "message",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "This Privacy Policy is designed to inform you about our practices regarding\nthe collection, use, and disclosure of information that you may provide via\nthis API."
+            },
+            {
+                "number": 2,
+                "label": "CLEAR",
+                "sentence": "##  \nInformation Collection and Use  \n  \nWhat We Collect\n\n  * User-Submitted Messages: We collect and analyze the text content of messages submitted by users to check for compliance with carrier guidelines."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "* API Usage Data: This includes timestamps, frequency of requests, and types of requests made to our API."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "##  \nData Security\n\n##  \nWe adopt appropriate data collection, storage, and processing practices and\nsecurity measures to protect against unauthorized access, alteration,\ndisclosure, or destruction of your personal information, username, password,\ntransaction information, and data stored on our API."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "We\nencourage users to frequently check this page for any changes to stay informed\nabout how we are helping to protect the personal information we collect."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "This Privacy Policy is designed to inform you about our practices regarding\nthe collection, use, and disclosure of information that you may provide via\nthis API."
+            },
+            {
+                "number": 7,
+                "label": "CLEAR",
+                "sentence": "##  \nInformation Collection and Use  \n  \nWhat We Collect\n\n  * User-Submitted Messages: We collect and analyze the text content of messages submitted by users to check for compliance with carrier guidelines."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "* API Usage Data: This includes timestamps, frequency of requests, and types of requests made to our API."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "##  \nData Security\n\n##  \nWe adopt appropriate data collection, storage, and processing practices and\nsecurity measures to protect against unauthorized access, alteration,\ndisclosure, or destruction of your personal information, username, password,\ntransaction information, and data stored on our API."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "We\nencourage users to frequently check this page for any changes to stay informed\nabout how we are helping to protect the personal information we collect."
+            }
+        ]
+    }
+]

@@ -1,0 +1,17 @@
+{
+    "collection": [
+        "This policy describes the types of information we may collect from you\nor that you may provide when using our [Product/Service Name] powered by\nOpenAI's GPT technology and our practices for collecting, using, maintaining,\nprotecting, and disclosing that information.",
+        "## Information We Collect\n\nWe may collect several types of information from and about users of our API,\nspecifically information:\n\n  * By which you may be personally identified, such as name, postal address, e-mail address, telephone number (\"personal information\");\n  * That is about you but individually does not identify you; and/or\n  * About your internet connection, the equipment you use to access our API, and usage details.",
+        "## How We Collect Information\n\nWe collect this information:\n\n  * Directly from you when you provide it to us.",
+        "* Automatically as you navigate through the site.",
+        "Information collected automatically may include usage details, IP addresses, and information collected through cookies and other tracking technologies.",
+        "## Data Usage\n\nThe information we collect helps us to improve our API and to deliver a better\nand more personalized experience by enabling us to:\n\n  * Estimate our audience size and usage patterns.",
+        "* Store information about your preferences, allowing us to customize our API according to your individual interests."
+    ],
+    "sharing": [
+        "## Data Sharing\n\nWe may disclose aggregated information about our users, and information that\ndoes not identify any individual, without restriction.",
+        "We may disclose\npersonal information that we collect or you provide as described in this\nprivacy policy:\n\n  * To our subsidiaries and affiliates.",
+        "* To contractors, service providers, and other third parties we use to support our business."
+    ],
+    "pp_length": 3031
+}

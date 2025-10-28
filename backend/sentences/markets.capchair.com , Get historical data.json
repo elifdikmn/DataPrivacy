@@ -1,0 +1,14 @@
+{
+    "collection": [
+        "Our service is\ndesigned to provide information in response to user queries without collecting\nany personal information, and to facilitate functions without compromising\nyour privacy.",
+        "Data Handling  \nNo Personal Data Collection for Basic Queries: Our GPT action does not collect\nany personal information from its users.",
+        "Account Creation for Extended Features: For some features, users are required\nto create an account.",
+        "While the GPT will only access non-personal data for\nthese features, the account creation process and any associated data will be\nsubject to our regular privacy policy, which can be found at\n<https://www.capchair.com/privacy.>  \nQueries: We only process the text of the queries submitted by users.",
+        "No\nadditional data is recorded or stored except for what is necessary for\nfunctionality that requires account creation for users who opt into these\nfeatures by creating an account.",
+        "Data Sharing and Disclosure  \nNo Data Sharing: As we do not collect personal data, there is no sharing or\ndisclosing of any personal information to third parties."
+    ],
+    "sharing": [
+        "Data Sharing and Disclosure  \nNo Data Sharing: As we do not collect personal data, there is no sharing or\ndisclosing of any personal information to third parties."
+    ],
+    "pp_length": 3646
+}

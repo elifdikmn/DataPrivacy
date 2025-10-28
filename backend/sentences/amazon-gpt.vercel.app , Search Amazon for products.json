@@ -1,0 +1,38 @@
+{
+    "collection": [
+        "To understand how we collect and utilize training information for developing\nour language models that power ChatGPT and other Services, along with your\noptions regarding that information, kindly refer to this help center article.",
+        "Personal information we collect\n\nWe gather information that, when used alone or combined with other information\nin our possession, could identify you (known as \"Personal Information\") as\nfollows:\n\n## Personal Information You Provide:\n\nShould you create an account to use our Services or communicate with us, we\nmay gather your Personal Information as follows:\n\n  * **Account Information** : Upon creating an account with us, we gather details linked to your account such as your name, contact information, account credentials, payment card details, and transaction history, collectively referred to as \"Account Information\".",
+        "* **User Content** : While using our Services, we may gather Personal Information contained within the input, file uploads, or feedback you provide to our Services, referred to as \"Content\".",
+        "* **Communication Information** : If you interact with us, we may gather your name, contact details, and the content of any messages you send, referred to as \"Communication Information\".",
+        "When you engage with our social media pages, we collect Personal Information you choose to share with us, such as your contact information, collectively known as \"Social Information\".",
+        "Moreover, the companies hosting our social media pages might provide us with aggregate data and analytics regarding our social media activity.",
+        "## Personal Information We Receive Automatically From Your Use of the\nServices:\n\nAs you visit, use, and interact with our Services, we may obtain the following\ndetails about your visit, use, or interactions, referred to as \"Technical\nInformation\":\n\n  * **Log Data** : This includes information automatically sent by your browser when you use our website.",
+        "Log data contains your Internet Protocol address, browser type and settings, the date and time of your request, and your interactions with our website.",
+        "* **Usage Data** : We may automatically collect details about your use of the Services, like the types of content that you view or engage with, the features you use, the actions you take, your time zone, country, the dates and times of access, user agent and version, type of computer or mobile device, computer connection, IP address, and similar information.",
+        "* **Device Information** : This comprises the name of the device, operating system, and browser you are using.",
+        "The information collected may depend on the type of device you use and its settings.",
+        "* **Analytics** : We may utilize various online analytics products that use cookies to help us\n\n# 3\\.",
+        "For information on how to exercise your rights concerning data we've gathered\nfrom the internet to train our models, kindly refer to this help center\narticle.",
+        "As allowed by law and subject to applicable exceptions, California residents\nhave the following privacy rights regarding their Personal Information:\n\n  * The right to know details about our processing of your Personal Information, including the specific pieces of Personal Information we have collected from you.",
+        "If you don't have an account with us, or if we suspect fraudulent\nor malicious activity, we may ask for additional Personal Information and\nproof of residency for verification.",
+        "TalkingCart does\nnot knowingly collect Personal Information from children under 13 years of\nage."
+    ],
+    "sharing": [
+        "Sharing of personal information\n\nThere might be circumstances in which we need to share your Personal\nInformation with third parties, without further notifying you, unless mandated\nby law:\n\n  * **Service Providers and Vendors** : To meet our business operation requirements and provide certain services and functions, we may share Personal Information with service providers and vendors.",
+        "These parties, as per our directives, will access, process, or store Personal Information while carrying out their obligations to us.",
+        "* **Business Transfers** : If we engage in strategic transactions, reorganization, bankruptcy, receivership, or service transition to another provider (collectively known as a \"Transaction\"), your Personal Information and other information may be shared during the diligence process with counterparties and others assisting with the Transaction, and transferred to a successor or affiliate as part of that Transaction along with other assets.",
+        "* **Legal Requirements** : We may be obligated to disclose your Personal Information if the law requires it or in the good faith belief that such action is needed to: (i) fulfill a legal obligation, including meeting national security or law enforcement requirements, (ii) protect and uphold our rights or property, (iii) prevent fraud, (iv) act in urgent circumstances to protect the personal safety of users of the Services, or the public, or (v) protect against legal liability.",
+        "* **Affiliates** : Your Personal Information might be disclosed to our affiliates, defined as an entity that controls, is controlled by, or is under common control with TalkingCart.",
+        "Our affiliates may use the shared Personal Information in a manner consistent with this Privacy Policy.",
+        "* Transfer your Personal Information elsewhere.",
+        "Privacy Rights for California Residents\n\nThe table below provides further details about how we disclose Personal\nInformation.",
+        "* **Identifiers (like your contact information):** This kind of personal information is disclosed to our affiliates, vendors and service providers, law enforcement, and entities involved in Transactions.",
+        "* **Commercial Information (like your transaction history):** This category of personal information is also disclosed to our affiliates, vendors and service providers, law enforcement, and entities involved in Transactions.",
+        "* **Network Activity Information (like Content and how you interact with our Services):** This information is likewise shared with our affiliates, vendors and service providers, law enforcement, and entities involved in Transactions.",
+        "* **Geolocation Data:** This type of personal information is also disclosed to our affiliates, vendors and service providers, law enforcement, and entities involved in Transactions.",
+        "* **Your account login credentials (Sensitive Personal Information):** This particularly sensitive personal information is disclosed to our affiliates, vendors and service providers, law enforcement, and entities involved in Transactions.",
+        "We do not sell or share Personal Information as defined by the California\nConsumer Privacy Act (CCPA), as amended by the California Privacy Rights Act.",
+        "We will only transfer Personal Information as per a legally valid transfer\nmechanism."
+    ],
+    "pp_length": 16362
+}

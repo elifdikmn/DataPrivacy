@@ -1,0 +1,63 @@
+[
+    {
+        "META_PY_KEYS": "evalString",
+        "description": "The mathematical expression provided from user.",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "mathematical expression",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "Last Updated: July 4th, 2023\n\nMixerBox\u2122 Service Privacy Policy\n\nWhat kinds of information do we collect?"
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "Depending on which Services you use, we collect different kinds of information\nfrom or about you."
+            },
+            {
+                "number": 3,
+                "label": "CLEAR",
+                "sentence": "We collect the content and other information you provide when you use our\nServices, including when you create or share a post, and message or\ncommunicate with others."
+            },
+            {
+                "number": 4,
+                "label": "VAGUE",
+                "sentence": "We also collect information about how you use our Services, such\nas the types of content you view or engage with or the frequency and duration\nof your activities."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "We collect information from or about the smart phones, tablets or other\ndevices where you install or access our Services, depending on the permissions\nyou've granted."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "We may associate the information we collect from your\ndifferent devices, which helps us provide consistent Services across your\ndevices."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "Here are some examples of the device information we collect:\n\nAttributes such as the operating system, hardware version, device settings,\nfile and software names and types, battery and signal strength, and device\nidentifiers."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "Device locations, including specific geographic locations, such as through\nGPS, Bluetooth, or WiFi signals."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "Connection information such as the name of your mobile operator or ISP,\nbrowser type, language and time zone, mobile phone number and IP address."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "We are able to deliver our Services,\npersonalize content, and make suggestions for you by using this information to\nunderstand how you use and interact with our Services and the people or things\nyou're connected to and interested in on and off our Services."
+            }
+        ]
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "META_PY_KEYS": "tableNames",
+        "description": null,
+        "required_used": false,
+        "title": null,
+        "type": "array",
+        "data_name": "tableNames",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "This Privacy Policy outlines our commitments and your\nrights regarding the collection, use, and protection of your personal\ninformation."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "## Information Collection\n\n**What We Collect:**\n\n  * We collect information necessary to provide our services, such as queries and interaction data with our ChatGPT assistant."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "* We do not collect personal identification information unless voluntarily provided by you for specific services."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "**How We Collect:**\n\nInformation is collected through your interaction with our services and\nvoluntary disclosures."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "* DB GPTs does not collect, share, nor use personally identifiable data in any way."
+            }
+        ]
+    }
+]

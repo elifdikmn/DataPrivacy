@@ -1,0 +1,224 @@
+[
+    {
+        "description": null,
+        "name": "query",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "query",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "This document contains types of information that is collected\nand recorded by AINIRO.IO AS and how we use it."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "## SCOPE\n\nAINIRO.IO AS (AINIRO.IO, \"we\") might collect and process personal data of\nusers of AINIRO's website and online services."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "This Privacy Policy applies to\npersonal data we obtain from our customers and their representatives (\"Users\")\nthrough our websites when the relevant User registers to AINIRO's cloud-based\ninfrastructure and software services (collectively, the \"Services\")."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "As regards the data AINIRO.IO's\ncustomers or Users insert into Services while using the Services, AINIRO.IO\nregisters this personal data as a data processor and the relevant customer\nshall be considered to be the data controller with regard to this personal\ndata."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "We collect two types of information from the Users: (i) User Data; and (ii)\nTechnical Data."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "AINIRO.IO may collect and process for example the following User Data from\nUsers: (i) name and contact details; (ii) e-mail address; (iii) phone number;\n(iv) invoicing and billing information; (v) other personal data Users provide\nthemselves."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "The specific kind of User Data collected will depend on the Services used by\nthe User."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "Most of the User Data is received directly from Users at the point\nof registration or otherwise at beginning of and during the customer\nrelationship."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "Technical Data we gather in connection with the use of our Services includes\nfor example the following data: (i) User's IP address; (ii) browser type and\nversion; (iii) preferred language; (iv) geographic location using IP address\nor the GPS, wireless, or Bluetooth technology on your device; (v) operating\nsystem and computer platform; (vi) the full Uniform Resource Locator (URL)\nclickstream to, through, and from our Services, including date and time; (vii)\nproducts or services User viewed or searched for while using our Services; and\n(viii) areas of our Services User has visited."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "### COOKIES\n\nWe use various technologies to collect and store Technical Data and other\ninformation when Users visit our Services, including cookies."
+            },
+            {
+                "number": 11,
+                "label": "OMITTED",
+                "sentence": "Cookies allow us\nto calculate the aggregate number of people visiting our Services and monitor\nthe use of the Services."
+            },
+            {
+                "number": 12,
+                "label": "OMITTED",
+                "sentence": "We\nmay use tracking and analytics cookies to see how well our Services are being\nreceived by our Users."
+            },
+            {
+                "number": 13,
+                "label": "OMITTED",
+                "sentence": "### WEB ANALYTICS SERVICES\n\nOur Services use several web analytics services to compile Technical Data and\nreports on visitor usage and to help us improve our Services."
+            },
+            {
+                "number": 14,
+                "label": "OMITTED",
+                "sentence": "Personal data is processed by AINIRO.IO for managing the relationships with\ncustomers, facilitating transactions and payments, and for managing,\ndeveloping and analysing our customer service."
+            },
+            {
+                "number": 15,
+                "label": "OMITTED",
+                "sentence": "We process personal data in the first place to be able to offer the Services\nto our customers and Users and to run, maintain and develop our business."
+            },
+            {
+                "number": 16,
+                "label": "OMITTED",
+                "sentence": "If User contacts our customer service, we will use the provided\ninformation for answering questions and solving possible issues."
+            },
+            {
+                "number": 17,
+                "label": "OMITTED",
+                "sentence": "This means that Users may contact us and we will inform what\npersonal data we have collected and processed regarding the said User and the\npurposes such data are used for."
+            },
+            {
+                "number": 18,
+                "label": "OMITTED",
+                "sentence": "We may request the provision of additional information necessary to\nconfirm the identity of the User."
+            },
+            {
+                "number": 19,
+                "label": "OMITTED",
+                "sentence": "We maintain all personal data collected through industry standard safe\nmechanisms including, but necessarily limited to encryption of password data\nas well as API keys, SSL-encryption, passing of credit card information\ndirectly to our PCI compliant Merchant Processor and encryption of any\ncollected credit card information."
+            },
+            {
+                "number": 20,
+                "label": "OMITTED",
+                "sentence": "We use administrative, organizational, technical, and physical safeguards to\nprotect the personal data we collect and process."
+            }
+        ]
+    },
+    {
+        "description": null,
+        "name": "type",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "type",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "This document contains types of information that is collected\nand recorded by AINIRO.IO AS and how we use it."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "## SCOPE\n\nAINIRO.IO AS (AINIRO.IO, \"we\") might collect and process personal data of\nusers of AINIRO's website and online services."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "This Privacy Policy applies to\npersonal data we obtain from our customers and their representatives (\"Users\")\nthrough our websites when the relevant User registers to AINIRO's cloud-based\ninfrastructure and software services (collectively, the \"Services\")."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "As regards the data AINIRO.IO's\ncustomers or Users insert into Services while using the Services, AINIRO.IO\nregisters this personal data as a data processor and the relevant customer\nshall be considered to be the data controller with regard to this personal\ndata."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "We collect two types of information from the Users: (i) User Data; and (ii)\nTechnical Data."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "AINIRO.IO may collect and process for example the following User Data from\nUsers: (i) name and contact details; (ii) e-mail address; (iii) phone number;\n(iv) invoicing and billing information; (v) other personal data Users provide\nthemselves."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "The specific kind of User Data collected will depend on the Services used by\nthe User."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "Most of the User Data is received directly from Users at the point\nof registration or otherwise at beginning of and during the customer\nrelationship."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "Technical Data we gather in connection with the use of our Services includes\nfor example the following data: (i) User's IP address; (ii) browser type and\nversion; (iii) preferred language; (iv) geographic location using IP address\nor the GPS, wireless, or Bluetooth technology on your device; (v) operating\nsystem and computer platform; (vi) the full Uniform Resource Locator (URL)\nclickstream to, through, and from our Services, including date and time; (vii)\nproducts or services User viewed or searched for while using our Services; and\n(viii) areas of our Services User has visited."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "### COOKIES\n\nWe use various technologies to collect and store Technical Data and other\ninformation when Users visit our Services, including cookies."
+            },
+            {
+                "number": 11,
+                "label": "OMITTED",
+                "sentence": "Cookies allow us\nto calculate the aggregate number of people visiting our Services and monitor\nthe use of the Services."
+            },
+            {
+                "number": 12,
+                "label": "OMITTED",
+                "sentence": "We\nmay use tracking and analytics cookies to see how well our Services are being\nreceived by our Users."
+            },
+            {
+                "number": 13,
+                "label": "OMITTED",
+                "sentence": "### WEB ANALYTICS SERVICES\n\nOur Services use several web analytics services to compile Technical Data and\nreports on visitor usage and to help us improve our Services."
+            },
+            {
+                "number": 14,
+                "label": "OMITTED",
+                "sentence": "Personal data is processed by AINIRO.IO for managing the relationships with\ncustomers, facilitating transactions and payments, and for managing,\ndeveloping and analysing our customer service."
+            },
+            {
+                "number": 15,
+                "label": "OMITTED",
+                "sentence": "We process personal data in the first place to be able to offer the Services\nto our customers and Users and to run, maintain and develop our business."
+            },
+            {
+                "number": 16,
+                "label": "OMITTED",
+                "sentence": "If User contacts our customer service, we will use the provided\ninformation for answering questions and solving possible issues."
+            },
+            {
+                "number": 17,
+                "label": "OMITTED",
+                "sentence": "This means that Users may contact us and we will inform what\npersonal data we have collected and processed regarding the said User and the\npurposes such data are used for."
+            },
+            {
+                "number": 18,
+                "label": "OMITTED",
+                "sentence": "We may request the provision of additional information necessary to\nconfirm the identity of the User."
+            },
+            {
+                "number": 19,
+                "label": "OMITTED",
+                "sentence": "We maintain all personal data collected through industry standard safe\nmechanisms including, but necessarily limited to encryption of password data\nas well as API keys, SSL-encryption, passing of credit card information\ndirectly to our PCI compliant Merchant Processor and encryption of any\ncollected credit card information."
+            },
+            {
+                "number": 20,
+                "label": "OMITTED",
+                "sentence": "We use administrative, organizational, technical, and physical safeguards to\nprotect the personal data we collect and process."
+            }
+        ]
+    }
+]

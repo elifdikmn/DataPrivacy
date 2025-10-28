@@ -1,0 +1,98 @@
+[
+    {
+        "META_PY_KEYS": "source_code",
+        "description": "The source code to be executed.",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "source code",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "META_PY_KEYS": "language_id",
+        "description": "The ID of the language in which the source code is written.",
+        "required_used": false,
+        "title": null,
+        "type": "integer",
+        "data_name": "language_id",
+        "data_type": "Data identifier",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "META_PY_KEYS": "stdin",
+        "description": "The standard input to be provided to the program.",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "description",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "META_PY_KEYS": "expected_output",
+        "description": "The expected output of the program. Used for comparison in some scenarios.",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "postal code information",
+        "data_type": "Address",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "META_PY_KEYS": "additional_files",
+        "description": "Base64 encoded additional files for the submission.",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "additional files",
+        "data_type": "Files and docs",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "The submission's unique token.",
+        "name": "token",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "token",
+        "data_type": "User IDs",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

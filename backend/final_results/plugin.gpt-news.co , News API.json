@@ -1,0 +1,189 @@
+[
+    {
+        "description": "The original prompt that the user provided should be shared here for later reference",
+        "name": "prompt",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "body",
+        "data_name": "prompt",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "Please review our Privacy Policy for more\ninformation on how we collect, use, and share your personal data."
+            }
+        ]
+    },
+    {
+        "description": "Topic to search for in the news.",
+        "name": "topic",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "body",
+        "data_name": "topic",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "Please review our Privacy Policy for more\ninformation on how we collect, use, and share your personal data."
+            }
+        ]
+    },
+    {
+        "description": "Start date for the news articles. Defaults to yesterday's date.",
+        "name": "start_date",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "body",
+        "data_name": "start_date",
+        "data_type": "Time",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "Please review our Privacy Policy for more\ninformation on how we collect, use, and share your personal data."
+            }
+        ]
+    },
+    {
+        "description": "Sort order for the articles. Defaults to 'popularity'.",
+        "name": "sort_by",
+        "schema_enum": [
+            "popularity",
+            "relevance",
+            "publishedAt"
+        ],
+        "schema_type": "string",
+        "type": "body",
+        "data_name": "sort_by",
+        "data_type": "Settings or parameters",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "Please review our Privacy Policy for more\ninformation on how we collect, use, and share your personal data."
+            }
+        ]
+    },
+    {
+        "description": "ISO 3166-1 code of the country. Defaults to 'us'. Gets a range of sources form that country.",
+        "name": "country",
+        "schema_enum": [
+            "ar",
+            "au",
+            "at",
+            "be",
+            "br",
+            "bg",
+            "ca",
+            "cn",
+            "co",
+            "cu",
+            "cz",
+            "eg",
+            "fr",
+            "de",
+            "gr",
+            "hk",
+            "hu",
+            "in",
+            "id",
+            "ie",
+            "il",
+            "it",
+            "jp",
+            "lv",
+            "lt",
+            "my",
+            "mx",
+            "ma",
+            "nl",
+            "nz",
+            "ng",
+            "no",
+            "ph",
+            "pl",
+            "pt",
+            "ro",
+            "ru",
+            "sa",
+            "rs",
+            "sg",
+            "sk",
+            "si",
+            "za",
+            "kr",
+            "se",
+            "ch",
+            "tw",
+            "th",
+            "tr",
+            "ae",
+            "ua",
+            "gb",
+            "us",
+            "ve"
+        ],
+        "schema_type": "string",
+        "type": "body",
+        "data_name": "country",
+        "data_type": "Approximate location",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "Please review our Privacy Policy for more\ninformation on how we collect, use, and share your personal data."
+            }
+        ]
+    },
+    {
+        "description": "topic to search for if one is given",
+        "name": "topic",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "body",
+        "data_name": "topic",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "Please review our Privacy Policy for more\ninformation on how we collect, use, and share your personal data."
+            }
+        ]
+    },
+    {
+        "description": "Start date for the top headlines. Defaults to yesterday's date.",
+        "name": "start_date",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "body",
+        "data_name": "start_date",
+        "data_type": "Time",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "Please review our Privacy Policy for more\ninformation on how we collect, use, and share your personal data."
+            }
+        ]
+    },
+    {
+        "description": "The news source identifier. Defaults to 'bbc-news'.",
+        "name": "source",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "body",
+        "data_name": "news source identifier",
+        "data_type": "Data identifier",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "Please review our Privacy Policy for more\ninformation on how we collect, use, and share your personal data."
+            }
+        ]
+    }
+]

@@ -1,0 +1,15 @@
+{
+    "collection": [
+        "We may run any business data submitted to OpenAI\u2019s services through automated\ncontent classifiers and safety tools, including to better understand how our\nservices are used.",
+        "OpenAI may securely retain API inputs and outputs for up to 30 days to provide\nthe services and to identify abuse.",
+        "Then, we use data from ChatGPT users and human trainers to make sure the\noutputs are safe and accurate and to improve their general capabilities.",
+        "OpenAI uses data from different places including public sources, licensed\nthird-party data, and information created by human reviewers."
+    ],
+    "sharing": [
+        "\u200b\u200bAuthorized OpenAI\nemployees will only ever access your conversations for the purposes of\nresolving incidents, recovering end user conversations with your explicit\npermission, or where required by applicable law.",
+        "Our access to\nconversations stored on our systems is limited to (1) authorized employees\nthat require access for engineering support, investigating potential platform\nabuse, and legal compliance and (2) specialized third-party contractors who\nare bound by confidentiality and security obligations, solely to review for\nabuse and misuse.",
+        "Your fine-tuned models are for your use\nalone and never served to or shared with other customers or used to train\nother models.",
+        "Our access to API business data stored on our systems is limited to (1)\nauthorized employees that require access for engineering support,\ninvestigating potential platform abuse, and legal compliance and (2)\nspecialized third-party contractors who are bound by confidentiality and\nsecurity obligations, solely to review for abuse and misuse."
+    ],
+    "pp_length": 11006
+}

@@ -1,0 +1,41 @@
+{
+    "collection": [
+        "We take on\nconsiderable additional effort to collect as little data as neccessary and\nhandle it safely and securely.",
+        "This Privacy Policy explains how and why our organization collects personal\ndata and how it is used.",
+        "### Definitions\n\nTo avoid confusion, let\u2019s define who we collect data from:\n\n  * Researcher: the person who uses the Cloud to create and distribute Formbricks forms and surveys or manage submissions from other forms\n  * Website visitors: People who visit our marketing landing page\n\n### We are data processor, you are data controller\n\nWith our Cloud we are a provider of this Service.",
+        "We are not the owner of the\ncollected personal data from survey respondents.",
+        "you) is responsible for the data they collect and\nthus data controller of respondent data.",
+        "## **Data do we collect**\n\nThis is the information we collect from **Website visitors** and\n**Researchers** as long as you are using our Service:\n\n  * **Electronical identification data** : including anonymized IP address, device & browser data;\n  * **Anonymized information about your use of our website** : including how you end up on our website, what actions you perform and the pages you visited.",
+        "* **Registration information:** When you register for an account, we collect your name, username, hashed password and email address.",
+        "* **Billing information:** If you pay for Formbricks, we will ask for your billing details including name, address and financial information depending on your payment method (stored by our payment service provider Stripe)\n  * **Survey data:** We store your survey data (questions and responses) for you and provide tools for you to analyse and use this data.",
+        "* **Error logs:** We collect error logs to help us diagnose and fix issues with our service.",
+        "Generally, we only\ncollect your data with your consent in order to:\n\n  * Provide and improve our Service.",
+        "IP, Browser & Device Information| Product Analytics| \ud83c\udde9\ud83c\uddea| DPA\nsigned| [GDPR Info](https://posthog.com/docs/privacy/gdpr-compliance)  \nStripe| Billing Information| Payments| \ud83c\uddfa\ud83c\uddf8| Part of ToS| [GDPR\nInfo](https://stripe.com/privacy-center/legal#international-data-transfers)  \nSentry| Error Logs| Error Tracking| \ud83c\uddfa\ud83c\uddf8| DPA signed| [GDPR\nInfo](https://sentry.io/legal/dpa/)  \nCustomer.io| Email Address, User Interaction Data| Marketing and\nCommunication| \ud83c\uddea\ud83c\uddfa| DPA signed| [GDPR Info](https://customer.io/legal/privacy-\npolicy/)  \n  \n## **Native Integrations**\n\nFormbricks comes with a number of native integrations.",
+        "If you\u2019ve submitted your personal data through a Formbricks form, the\nResearcher who created the form is responsible for the collected data.",
+        "Additionally, we may not be able to provide Service without\nsome necessary data.",
+        "You have the right to complain to a Data Protection Authority about our\ncollection and use of your Personal Data.",
+        "The law\u2019s reach stretches well\nbeyond California to require a person or company in the United States (and\nconceivable the world) that operates websites collecting personally\nidentifiable information from California consumers to post a conspicuous\nprivacy policy on its website stating exactly the information being collected\nand those individuals with whom it is being shared, and to comply with this\npolicy.",
+        "## **Your Data Protection Rights under CCPA**\n\nIf you are a California resident, you are entitled to learn what data we\ncollect about you, ask to delete your data and not to sell (share) it.",
+        "* The categories of personal information we have collected about you.",
+        "* The categories of sources from which we collect your personal information.",
+        "* The business or commercial purpose for collecting or selling your personal information.",
+        "* The specific pieces of personal information we have collected about you.",
+        "When you make this request,\nthe information provided may be limited to the personal information we\ncollected about you in the previous 12 months.",
+        "Formbricks uses cookies to improve your user experience, including:\n\n  * Keeping you signed in\n  * Understanding how you use our product\n\n### What types of cookies does Formbricks use?",
+        "When you log on to our website, authentication cookies are\nset which let us know who you are during a browsing session.",
+        "In circumstances\nwhere a change will materially change the way in which we collect or use your\npersonal information or data, we will send a notice of this change to all of\nour account holders."
+    ],
+    "sharing": [
+        "* Share news and offers about our other services (only if you've shown interest).",
+        "## **Data Subprocessors**\n\nWe only share your information with our Service providers who help us operate\nour business, in which case those third parties are also required to comply\nwith the GDPR framework.",
+        "This is a list of the\nsubprocessors we are working with:\n\nSubprocessor| Data| Use| Server Location| DPA| GDPR Info  \n---|---|---|---|---|---  \nVercel Inc.| IP, Browser & Device Information| Hosting| \ud83c\udde9\ud83c\uddea| DPA signed| [GDPR\nInfo](https://vercel.com/legal/privacy-policy)  \nAWS| Email Address| Email| \ud83c\udde9\ud83c\uddea| Part of ToS| [GDPR\nInfo](https://aws.amazon.com/de/compliance/gdpr-center/)  \nPostHog EU| Anon.",
+        "In case you decide to setup an integration, you acknowledge and agree to the\nfollowing:\n\n**Google Sheets Integration:** Formbricks use and transfer to any other app of\ninformation received from Google APIs will adhere to [Google API Services User\nData Policy](https://developers.google.com/terms/api-services-user-data-\npolicy#additional_requirements_for_specific_api_scopes), including the Limited\nUse requirements.",
+        "The law\u2019s reach stretches well\nbeyond California to require a person or company in the United States (and\nconceivable the world) that operates websites collecting personally\nidentifiable information from California consumers to post a conspicuous\nprivacy policy on its website stating exactly the information being collected\nand those individuals with whom it is being shared, and to comply with this\npolicy.",
+        "## **Your Data Protection Rights under CCPA**\n\nIf you are a California resident, you are entitled to learn what data we\ncollect about you, ask to delete your data and not to sell (share) it.",
+        "* The categories of third parties with whom we share personal information.",
+        "* A list of categories of personal information that we have sold, along with the category of any other company we sold it to.",
+        "* A list of categories of personal information that we have disclosed for a business purpose, along with the category of any other company we shared it with.",
+        "Only billing information processed by Stripe Inc. and anonymized personal\ndata neccessary to provide this Service may be transfered overseas."
+    ],
+    "pp_length": 17060
+}

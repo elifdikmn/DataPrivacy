@@ -1,0 +1,155 @@
+[
+    {
+        "description": null,
+        "name": "view",
+        "schema_enum": [
+            "jsonexportkurseZOLLWeb"
+        ],
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "view",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "In der folgenden Datenschutzerkl\u00e4rung informieren wir Sie dar\u00fcber, welche\nDaten beim Zugriff auf www.zoll.de erhoben werden und wie wir die Daten der\nBesucher unserer Website sch\u00fctzen."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "### Umfang der Verarbeitung personenbezogener Daten\n\nWir verarbeiten personenbezogene Daten unserer Nutzerinnen und Nutzer\ngrunds\u00e4tzlich nur, soweit dies zur Bereitstellung einer funktionsf\u00e4higen\nWebsite sowie unserer Inhalte und Leistungen erforderlich ist."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "Ihre\nDaten erheben und speichern wir nur, wenn Sie uns diese freiwillig mitteilen,\nso zum Beispiel bei der Nutzung der verschiedenen Kontaktm\u00f6glichkeiten zum\nZoll (siehe Abschnitt \"Kontaktm\u00f6glichkeiten zum Zoll\")."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "### Bereitstellung der Website und Erstellung von Logfiles\n\nUm die Auslieferung der Website an den Rechner der Nutzerinnen und Nutzer zu\nerm\u00f6glichen, zur Optimierung unserer Website sowie aus Gr\u00fcnden der technischen\nSicherheit, insbesondere zur Abwehr von Angriffsversuchen, werden bei Ihrem\nBesuch auf www.zoll.de automatisiert auf den Webservern unseres Webanbieters\nInformationstechnikzentrum Bund (ITZBund) in einer Protokolldatei Daten, die\nm\u00f6glicherweise eine Identifizierung zulassen, f\u00fcr einen Zeitraum von zwei\nWochen gespeichert."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "Dabei handelt es sich um folgende Angaben:\n\n  * IP-Adresse\n  * Datum und Uhrzeit des Abrufs\n  * betrachtete Seiten\n  * aktuell aufgerufenes Dokument\n  * HTTP-Statuscode\n\nWir behalten uns das Recht vor, im Fall von schweren Verst\u00f6\u00dfen gegen unsere\nNutzungsbedingungen und bei unzul\u00e4ssigen Zugriffen beziehungsweise\nZugriffsversuchen auf unsere Server unter Zuhilfenahme einzelner Datens\u00e4tze\ndie Strafverfolgungsbeh\u00f6rden einzuschalten und eine Herleitung zu\npersonenbezogenen Daten zu veranlassen."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "Die Erfassung der Daten zur Bereitstellung der Website und die Speicherung der\nDaten in Logfiles ist f\u00fcr den Betrieb der Internetseite zwingend erforderlich."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "Die oben genannten Cookies erheben keine pers\u00f6nlichen Daten \u00fcber Sie oder Ihre\nNutzung der Website."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "### Webanalyse und Statistik-Cookie\n\nZur Erstellung von Zugriffsstatistiken sowie zur Analyse des allgemeinen\nNutzungsverhaltens auf der Website verwenden wir die Webanalyse-Software\nMatomo (ehemals \"PIWIK\")."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "Matomo ist dabei so konfiguriert, dass keine\npersonenbezogenen Daten erhoben werden."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "Stimmen Sie der Webanalyse zu, setzen wir das Statistik-Cookie\n\"matomoTracking\", welches 28 Tage g\u00fcltig ist."
+            },
+            {
+                "number": 11,
+                "label": "OMITTED",
+                "sentence": "Dabei werden folgende\nDaten an Matomo \u00fcbermittelt:\n\n### Ger\u00e4teinformationen\n\n  * verwendete Bildschirmaufl\u00f6sung\n  * verwendetes Betriebssystem\n  * verwendeter Browser (Browsertyp und Version)\n  * verwendete Browsersprache (z.B."
+            },
+            {
+                "number": 12,
+                "label": "OMITTED",
+                "sentence": "Deutsch)\n  * verwendete Zeitzone\n\n### Nutzungsverhalten\n\n  * anonymisierte IP-Adresse \n  * Request (Dateiname der angeforderten Datei), Datum und Uhrzeit des Request\n  * Titel und URL der besuchten Seite\n  * Referrer URL (die zuvor besuchte Website, von der auf die aufgerufene Seite gelangt wurde)\n  * angeklickte oder heruntergeladene Dateien\n  * angeklickte ausgehende Links zu anderen Webseiten\n  * URL der Seite, die vor der aktuellen Seite angezeigt wurde\n  * Verweildauer\n\nDie Rohdaten werden nach 30 Tagen durch das ITZBund gel\u00f6scht."
+            },
+            {
+                "number": 13,
+                "label": "OMITTED",
+                "sentence": "Noch w\u00e4hrend Ihres Besuches unserer\nWebsite k\u00f6nnen Sie dem Einsatz des Statistik-Cookies aktiv widersprechen,\nindem Sie die von uns eingesetzte Webanalyse-Software Matomo deaktivieren:\n\nWebanalyse auf dieser Website aktivieren Webanalyse auf dieser Website\ndeaktivieren\n\nDurch die Verwendung von Matomo k\u00f6nnen wir das Nutzungsverhalten auf unserer\nWebsite analysieren und dadurch unser Angebot stetig verbessern."
+            },
+            {
+                "number": 14,
+                "label": "OMITTED",
+                "sentence": "Wenn Sie dieses Angebot nutzen, werden f\u00fcr die Dauer\ndes Abonnements Ihre E-Mail-Adresse, das Anmeldedatum sowie die von Ihnen\ngew\u00e4hlten Themen auf den Webservern unseres Webanbieters\nInformationstechnikzentrum Bund (ITZBund) gespeichert."
+            },
+            {
+                "number": 15,
+                "label": "OMITTED",
+                "sentence": "Wir\nversichern Ihnen, dass Ihre dabei erhobenen Daten wie Name oder E-Mail-Adresse\nausschlie\u00dflich f\u00fcr die Bearbeitung Ihres Anliegens, zum Zweck der\nKorrespondenz mit Ihnen beziehungsweise f\u00fcr den Versand von erbetenen\nNachrichten oder Informationsmaterialien genutzt werden."
+            },
+            {
+                "number": 16,
+                "label": "OMITTED",
+                "sentence": "Bei der Kontaktaufnahme \u00fcber ein Kontaktformular werden beim Absenden des\nFormulars zus\u00e4tzliche Daten verarbeitet."
+            },
+            {
+                "number": 17,
+                "label": "OMITTED",
+                "sentence": "R\u00fcckruf-Service\nzur Kraftfahrzeugsteuer, Deutsches Zollmuseum, FIU) verwenden, sind Ihre\nPflichtangaben auf die f\u00fcr die Bearbeitung Ihres Anliegens erforderlichen\nAngaben beschr\u00e4nkt."
+            },
+            {
+                "number": 18,
+                "label": "OMITTED",
+                "sentence": "Wir weisen Sie darauf hin, dass die Verarbeitung der mit dem Kontaktformular\n\u00fcbermittelten Daten und des Inhalts zum Zwecke der Bearbeitung Ihres Anliegens\nerfolgt."
+            },
+            {
+                "number": 19,
+                "label": "OMITTED",
+                "sentence": "Nehmen Sie diese M\u00f6glichkeit der Kontaktaufnahme wahr, werden die in der\nEingabemaske eingegebenen Daten an uns \u00fcbermittelt und gespeichert."
+            },
+            {
+                "number": 20,
+                "label": "OMITTED",
+                "sentence": "Beim\nAbsenden der Nachricht werden zudem folgende Daten gespeichert:\n\n  * IP-Adresse\n  * Datum und Uhrzeit des Abrufs\n  * betrachtete Seiten\n  * aktuell aufgerufenes Dokument\n  * HTTP-Statuscode\n\n#### Kommunikation per De-Mail\n\nAls weiteren sicheren Kommunikationsweg mit den Zoll-Dienststellen bieten wir\nIhnen die De-Mail an."
+            },
+            {
+                "number": 21,
+                "label": "OMITTED",
+                "sentence": "[Dienststellensuche](DE/Service/Dienststellensuche/Startseite/dienststellensuche_node.html\n\"Dienststellensuche\")  \n[Informationen zu De-Mail in den\nBenutzerhinweisen](DE/Service_II/Benutzerhinweise/benutzerhinweise_node.html\n\"Zu fachlichen und technischen Hinweisen\")\n\n### Verarbeitung und Ver\u00f6ffentlichung personenbezogener Daten im Rahmen der\n\u00f6ffentlichen Zustellung\n\nDiese Information betrifft die Verarbeitung und Ver\u00f6ffentlichung\npersonenbezogener Daten \u00f6ffentlicher Zustellungen auf www.zoll.de durch die\nZollbeh\u00f6rden des Bundes (Hauptzoll\u00e4mter, Zollfahndungs\u00e4mter und\nGeneralzolldirektion)."
+            },
+            {
+                "number": 22,
+                "label": "OMITTED",
+                "sentence": "### Minderj\u00e4hrigenschutz\n\nPersonen unter 18 Jahren sollten ohne Zustimmung der Eltern oder\nErziehungsberechtigten keine personenbezogenen Daten an uns \u00fcbermitteln."
+            },
+            {
+                "number": 23,
+                "label": "OMITTED",
+                "sentence": "Wissentlich sammeln wir solche Daten nicht und geben sie auch nicht an Dritte\nweiter."
+            },
+            {
+                "number": 24,
+                "label": "OMITTED",
+                "sentence": "Wir machen ausdr\u00fccklich darauf aufmerksam, dass die genannten Medien die Daten\nihrer Nutzerinnen und Nutzer (zum Beispiel pers\u00f6nliche Informationen, IP-\nAdressen) entsprechend ihrer eigenen Datenverwendungsrichtlinien abspeichern\nund f\u00fcr gesch\u00e4ftliche Zwecke nutzen."
+            },
+            {
+                "number": 25,
+                "label": "OMITTED",
+                "sentence": "Bei all diesen T\u00e4tigkeiten m\u00fcssen die Zollbeh\u00f6rden\npersonenbezogene Daten verarbeiten, um ihre Aufgaben ordnungsgem\u00e4\u00df erf\u00fcllen zu\nk\u00f6nnen."
+            },
+            {
+                "number": 26,
+                "label": "OMITTED",
+                "sentence": "[\n\n              NachObenTitle](/SiteGlobals/Frontend/Images/icons/zoll/backtotop.svg?__blob=normal&v=2) ](DE/Service_II/Datenschutz/datenschutz_node.html#Start)\n\n## Hinweis zur Webanalyse und Verwendung von Statistik-Cookies\n\nWir m\u00f6chten zur Verbesserung unserer Website das Nutzungsverhalten analysieren\nund Zugriffsstatistiken erstellen."
+            },
+            {
+                "number": 27,
+                "label": "OMITTED",
+                "sentence": "Daf\u00fcr werden mit der Webanalyse-Software\nMatomo statistische Informationen vollst\u00e4ndig anonymisiert erfasst und\nausgewertet."
+            },
+            {
+                "number": 28,
+                "label": "OMITTED",
+                "sentence": "Ausschlie\u00dflich mit Ihrer Einwilligung speichern wir daf\u00fcr ein\nStatistik-Cookie auf Ihrem Endger\u00e4t und greifen auf f\u00fcr diesen Zweck\nerforderliche Ger\u00e4teinformationen Ihres Endger\u00e4tes zu."
+            }
+        ]
+    }
+]

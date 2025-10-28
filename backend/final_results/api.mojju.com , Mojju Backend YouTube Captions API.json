@@ -1,0 +1,18 @@
+[
+    {
+        "description": "The videoId parameter specifies the YouTube video ID of the video for which the API should return caption tracks.",
+        "name": "videoId",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "videoId",
+        "data_type": "Data identifier",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

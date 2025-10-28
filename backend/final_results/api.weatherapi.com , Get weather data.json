@@ -1,0 +1,18 @@
+[
+    {
+        "description": "The city and state to retrieve the weather for",
+        "name": "q",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "city and state for weather",
+        "data_type": "Approximate location",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "Collecting personal information\n\n2.1 We may collect, store and use the following kinds of personal information:\n\n  * information about your computer and about your visits to and use of this website including your IP address, geographical location, browser type and version, operating system, referral source, length of visit, page views and website navigation paths; \n  * information that you provide to us when registering with our website including your email address; \n  * information that you provide when completing your profile on our website including your name, profile pictures, gender, date of birth, relationship status, interests and hobbies, educational details and employment details; \n  * information that you provide to us for the purpose of subscribing to our email notifications and/or newsletters including your name and email address; \n  * information that you provide to us when using the services on our website, or that is generated in the course of the use of those services including the timing, frequency and pattern of service use; \n  * information relating to any purchases you make of our goods / services / goods and/or services or any other transactions that you enter into through our website including your name, address, telephone number and email address; \n  * information that you post to our website for publication on the internet including your user name, your profile pictures and the content of your posts; \n  * information contained in or relating to any communications that you send to us or send through our website including the communication content and meta data associated with the communication; \n  * any other personal information that you choose to send to us; and \n  * provide details of other personal information collected."
+            }
+        ]
+    }
+]

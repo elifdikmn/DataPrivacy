@@ -1,0 +1,34 @@
+[
+    {
+        "description": "How many items to return at one time (max 100)",
+        "name": "limit",
+        "schema_enum": null,
+        "schema_type": "integer",
+        "type": "query",
+        "data_name": "limit",
+        "data_type": "Settings or parameters",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "\ubcf8 \uac1c\uc778\uc815\ubcf4 \ucc98\ub9ac\ubc29\uce68\uc740 \uadc0\ud558\uac00 OpenAI\uc758 \uc6f9\uc0ac\uc774\ud2b8, \uc560\ud50c\ub9ac\ucf00\uc774\uc158 \ubc0f\n\uc11c\ube44\uc2a4(\ucd1d\uce6d\ud558\uc5ec \u201c\uc11c\ube44\uc2a4\u201d)\ub97c \uc774\uc6a9\ud560 \ub54c OpenAI\uac00 \uadc0\ud558\ub85c\ubd80\ud130 \ub610\ub294 \uadc0\ud558\uc5d0 \uad00\ud558\uc5ec \uc218\uc9d1\ud558\ub294 \uac1c\uc778\uc815\ubcf4\uc5d0 \uad00\ud55c OpenAI\uc758 \ucc98\ub9ac \ubc29\uc2dd\uc744\n\uc124\uba85\ud569\ub2c8\ub2e4."
+            }
+        ]
+    },
+    {
+        "description": "The id of the pet to retrieve",
+        "name": "petId",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "petId",
+        "data_type": "User IDs",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "\ubcf8 \uac1c\uc778\uc815\ubcf4 \ucc98\ub9ac\ubc29\uce68\uc740 \uadc0\ud558\uac00 OpenAI\uc758 \uc6f9\uc0ac\uc774\ud2b8, \uc560\ud50c\ub9ac\ucf00\uc774\uc158 \ubc0f\n\uc11c\ube44\uc2a4(\ucd1d\uce6d\ud558\uc5ec \u201c\uc11c\ube44\uc2a4\u201d)\ub97c \uc774\uc6a9\ud560 \ub54c OpenAI\uac00 \uadc0\ud558\ub85c\ubd80\ud130 \ub610\ub294 \uadc0\ud558\uc5d0 \uad00\ud558\uc5ec \uc218\uc9d1\ud558\ub294 \uac1c\uc778\uc815\ubcf4\uc5d0 \uad00\ud55c OpenAI\uc758 \ucc98\ub9ac \ubc29\uc2dd\uc744\n\uc124\uba85\ud569\ub2c8\ub2e4."
+            }
+        ]
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "description": "smiles",
+        "name": "smiles",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "smiles",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

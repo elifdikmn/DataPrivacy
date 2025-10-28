@@ -1,0 +1,11 @@
+{
+    "collection": [
+        "This Privacy Policy explains how we collect, use, and\nretain certain data when you use our online service.",
+        "Information We Collect\n\nWe retain server logs of API requests.",
+        "The information we collect includes\ninformation submitted on your behalf by ChatGPT (namely, the link to an AI\ngenerated image and inscription text), as well as certain information appended\nto that request by OpenAI."
+    ],
+    "sharing": [
+        "We rely on our\ntrusted partner, Stripe, an industry-leading payment processor, to handle all\nbilling-related data."
+    ],
+    "pp_length": 3418
+}

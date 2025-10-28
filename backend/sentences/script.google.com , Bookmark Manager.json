@@ -1,0 +1,11 @@
+{
+    "collection": [
+        "User Identification\n\nUsers must provide a unique ID (GetProfile) to use the Bookmark Manager\nservices.",
+        "Collection and Use of Information\n\nUsers will provide titles, categories, and details for URLs they wish to\nbookmark.",
+        "User Consent\n\nBy using the Bookmark Manager services, users consent to the collection and\nuse of their information as described in this agreement."
+    ],
+    "sharing": [
+        "Data Storage and Security\n\nUser data will be stored securely and will not be shared with third parties\nwithout explicit user consent."
+    ],
+    "pp_length": 2153
+}

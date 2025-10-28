@@ -1,0 +1,33 @@
+[
+    {
+        "META_PY_KEYS": "query_str",
+        "description": "The query string related to Agile topics. Must be in English.",
+        "required_used": false,
+        "title": "Query String",
+        "type": "string",
+        "data_name": "query string about Agile topics",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "### Collection of Personal Information\n\nWe may collect basic contact information such as your email address when you\nsubscribe to our newsletters or contact us via the contact form on our\nwebsite."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "We ensure that the collection, storage, and handling of data\nfrom individuals within the European Union are conducted in full compliance\nwith GDPR requirements."
+            },
+            {
+                "number": 3,
+                "label": "VAGUE",
+                "sentence": "Queries sent may be stored, utilized to track user interest trends to enrich\nour knowledge base with highly relevant content."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "Some cookies are necessary for the website to function correctly, while others\nhelp us improve your experience by tracking how you use the site."
+            }
+        ]
+    }
+]

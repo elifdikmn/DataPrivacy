@@ -1,0 +1,14 @@
+{
+    "collection": [
+        "## PodGPT Privacy Policy\n\nThis privacy policy outlines how PodGPT collects, uses, protects, and shares\ninformation gathered through our service.",
+        "### Information Collection and Use\n\nWhen you use our service, we collect the URL you provide from podcast players.",
+        "Our backend service downloads the audio file associated with this URL for\nsummarization purposes.",
+        "This\nservice does not have access to any other data than the audio file of the\ncontent you submit to PodGPT.",
+        "### User Consent\n\nBy using our service, you consent to the collection, processing, and use of\ndata as described in this policy."
+    ],
+    "sharing": [
+        "## PodGPT Privacy Policy\n\nThis privacy policy outlines how PodGPT collects, uses, protects, and shares\ninformation gathered through our service.",
+        "### Third-Party Data Sharing and Transcription Services\n\nWe partner with a third-party service to aid with audio processing."
+    ],
+    "pp_length": 941
+}

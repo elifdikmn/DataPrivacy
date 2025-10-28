@@ -1,0 +1,13 @@
+{
+    "collection": [
+        "# Pol\u00edtica de Privacidad para la API de Hor\u00f3scopo\n\n## Introducci\u00f3n\n\nEsta pol\u00edtica de privacidad proporciona detalles sobre c\u00f3mo nuestra API de\nAstrolog\u00eda recopila, utiliza y protege la informaci\u00f3n proporcionada por los\nusuarios.",
+        "## Consentimiento del Usuario\n\nAl utilizar nuestra API, los usuarios consienten expresamente la recopilaci\u00f3n\ny el uso de su informaci\u00f3n geogr\u00e1fica y horaria seg\u00fan lo descrito en esta\npol\u00edtica.",
+        "## Informaci\u00f3n que Recopilamos\n\nLa API recopila y utiliza los siguientes datos:\n\n  * **Datos de Geolocalizaci\u00f3n y Horarios:** Estos datos son esenciales para calcular la posici\u00f3n de los astros y proporcionar predicciones astrol\u00f3gicas.",
+        "No recopilamos ni almacenamos informaci\u00f3n personal como nombres, direcciones de correo electr\u00f3nico o detalles de contacto.",
+        "## Uso de la Informaci\u00f3n\n\nUsamos la informaci\u00f3n recopilada exclusivamente para:\n\n  * **Calcular la Posici\u00f3n Geogr\u00e1fica de los Astros:** Los datos de geolocalizaci\u00f3n y horarios se utilizan para generar predicciones astrol\u00f3gicas precisas y personalizadas.",
+        "* **Medidas de Seguridad:** Implementamos protocolos de seguridad y cifrado para garantizar la integridad y seguridad de los datos recopilados.",
+        "## Pol\u00edtica de Retenci\u00f3n de Datos\n\n  * **Retenci\u00f3n de Datos:** Los datos recopilados se utilizan en tiempo real y no se almacenan en nuestros servidores."
+    ],
+    "sharing": [],
+    "pp_length": 2138
+}

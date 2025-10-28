@@ -1,0 +1,23 @@
+[
+    {
+        "META_PY_KEYS": "price",
+        "description": "What the player payed (money and/or things) to get the carpet as a nicely formatted string.",
+        "required_used": false,
+        "title": "price",
+        "type": "string",
+        "data_name": "price",
+        "data_type": "Purchase history",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "I have no access to the\nserver logs and I do not know what information 000webhost collects."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "I do not\ncollect any information myself."
+            }
+        ]
+    }
+]

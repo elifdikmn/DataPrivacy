@@ -1,0 +1,17 @@
+{
+    "collection": [
+        "## Comentarios\n\nCuando los visitantes dejan comentarios en la web, recopilamos los datos que\nse muestran en el formulario de comentarios, as\u00ed como la direcci\u00f3n IP del\nvisitante y la cadena de agentes de usuario del navegador para ayudar a la\ndetecci\u00f3n de spam.",
+        "## Cookies\n\nSi dejas un comentario en nuestro sitio puedes elegir guardar tu nombre,\ndirecci\u00f3n de correo electr\u00f3nico y web en cookies.",
+        "Cuando accedas, tambi\u00e9n instalaremos varias cookies para guardar tu\ninformaci\u00f3n de acceso y tus opciones de visualizaci\u00f3n de pantalla.",
+        "Estas web pueden recopilar datos sobre ti, utilizar cookies, incrustar un\nseguimiento adicional de terceros, y supervisar tu interacci\u00f3n con ese\ncontenido incrustado, incluido el seguimiento de tu interacci\u00f3n con el\ncontenido incrustado si tienes una cuenta y est\u00e1s conectado a esa web.",
+        "De los usuarios que se registran en nuestra web (si los hay), tambi\u00e9n\nalmacenamos la informaci\u00f3n personal que proporcionan en su perfil de usuario.",
+        "Recopilamos informaci\u00f3n sobre los visitantes que\ncomentan en los sitios que usan nuestro servicio anti-spam, Akismet.",
+        "La\ninformaci\u00f3n que recopilamos depende de c\u00f3mo configure Akismet en el sitio el\nusuario, pero incluye, normalmente, la direcci\u00f3n IP del comentarista, el\nnavegador del usuario, el sitio de referencia y la URL del sitio (adem\u00e1s de\notra informaci\u00f3n directamente facilitada por el comentarista, como su nombre,\nnombre de usuario, direcci\u00f3n de correo electr\u00f3nico y el mismo comentario)."
+    ],
+    "sharing": [
+        "Una cadena an\u00f3nima creada a partir de tu direcci\u00f3n de correo electr\u00f3nico\n(tambi\u00e9n llamada hash) puede ser proporcionada al servicio de Gravatar para\nver si la est\u00e1s usando.",
+        "## Con qui\u00e9n compartimos tus datos\n\nSi solicitas un restablecimiento de contrase\u00f1a, tu direcci\u00f3n IP ser\u00e1 incluida\nen el correo electr\u00f3nico de restablecimiento.",
+        "## D\u00f3nde se env\u00edan tus datos\n\nLos comentarios de los visitantes puede que los revise un servicio de\ndetecci\u00f3n autom\u00e1tica de spam."
+    ],
+    "pp_length": 4884
+}

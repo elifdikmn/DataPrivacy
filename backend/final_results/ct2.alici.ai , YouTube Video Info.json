@@ -1,0 +1,23 @@
+[
+    {
+        "META_PY_KEYS": "url",
+        "description": "The URL of the YouTube video.",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "URL of the YouTube video",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "**Data Collection:** No personal information is actively gathered from GPTs."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "Interaction data, such as selected text and generated interactions, is\ncollected purely to process user inquiries and to improve service performance."
+            }
+        ]
+    }
+]

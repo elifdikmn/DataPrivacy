@@ -1,0 +1,17 @@
+{
+    "collection": [
+        "### c. Registration\n\nIn order to access certain APIs you may be required to provide certain\ninformation (such as identification or contact details) as part of the\nregistration process for the APIs, or as part of your continued use of the\nAPIs.",
+        "Security\n\nYou will use commercially reasonable efforts to protect user information\ncollected by your API Client, including personal data, from unauthorized\naccess or use and will promptly report to your users any unauthorized access\nor use of such information to the extent required by applicable law.",
+        "You will provide and\nadhere to a privacy policy for your API Client that clearly and accurately\ndescribes to users of your API Client what user information you collect and\nhow you use and share such information (including for advertising) with Google\nand third parties.",
+        "## Section 7: Privacy and Copyright Protection\n\n### a. Google Privacy Policies\n\nBy using our APIs, Google may use submitted information in accordance with our\n[privacy policies](https://www.google.com/policies/privacy/)."
+    ],
+    "sharing": [
+        "### g. Feedback\n\nIf you provide feedback or suggestions about our APIs, then we (and those we\nallow) may use such information without obligation to you.",
+        "You will provide and\nadhere to a privacy policy for your API Client that clearly and accurately\ndescribes to users of your API Client what user information you collect and\nhow you use and share such information (including for advertising) with Google\nand third parties.",
+        "If you receive any such information, then you will not disclose it to any third party without Google's prior written consent.",
+        "For the sole purpose of enabling Google to provide, secure, and improve\nthe APIs (and the related service(s)) and only in accordance with the\napplicable Google privacy policies, you give Google a perpetual, irrevocable,\nworldwide, sublicensable, royalty-free, and non-exclusive license to Use\ncontent submitted, posted, or displayed to or from the APIs through your API\nClient.",
+        "### c. Retrieval of content\n\nWhen a user's non-public content is obtained through the APIs, you may not\nexpose that content to other users or to third parties without explicit opt-in\nconsent from that user.",
+        "For as long as you use or store any user\ndata that you obtained through the APIs, you agree to enable your users to\nexport their equivalent data to other services or applications of their choice\nin a way that's substantially as fast and easy as exporting such data from\nGoogle products and services, subject to applicable laws, and you agree that\nyou will not make that data available to third parties who do not also abide\nby this obligation."
+    ],
+    "pp_length": 26895
+}

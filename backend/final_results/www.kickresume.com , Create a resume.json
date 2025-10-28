@@ -1,0 +1,970 @@
+[
+    {
+        "META_PY_KEYS": "firstName",
+        "description": "User's first name, eg. 'John'",
+        "required_used": false,
+        "title": "Firstname",
+        "type": null,
+        "data_name": "firstName",
+        "data_type": "Name",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "Performance cookies\n\nThanks to these cookies, we can count visits and traffic sources to our pages."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "Performance cookies let us see which pages are the most and least popular, and\nhow you and other visitors move around the site."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "All information these cookies collect is aggregated (it\u2019s a statistic) and\ntherefore completely anonymous."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "Marketing cookies\n\nWe use these cookies to uniquely identify your browser and internet device."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "With the personal data you provide, based on your choice our system will create a CV, Cover letter or Personal website for you with the graphic design of your preference."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "When using our Services through our Platform or Mobile App, either with the AI help or not, we process your personal data for the purposes of **entering into agreement and carrying out such agreement** on provision of our Services based on your decision to engage with our Services."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "The agreement also involves creating your account via registration into our Platform (legal basis: the conclusion and performance of a contract in accordance with Article 6 (1) (b) of the GDPR)."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "We also process your personal data for the purposes of understanding how our Services are used by our customers and how we can improve them for you (by, in particular, analysing data we collected in necessary extent and making anonymous statistics) (legal basis: **legitimate interest** in evaluating, developing and improving our Services as well as products and systems for better user experience) in accordance with Article 6 (1) (f) of GDPR)."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "We also need to collect and store some specific data (e.g."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "your logins into your account, information on your device you used upon login into your account, IP address, etc.)"
+            },
+            {
+                "number": 11,
+                "label": "OMITTED",
+                "sentence": "The Controller processes in particular **ordinary category of your personal data** , for instance:  \nyour title, name, surname, address of permanent residence, delivery address,\nemail address, phone number, date of birth, gender, age, marital status,\ninformation on the education, achieved degrees, courses attended, lectures,\ncertificates or licenses, information on the membership in associations or\norganisations, language skills, information on former professional experience\nor practice, hobbies, picture, and any other data provided by you voluntarily\nwhen you use our Services (i.e., when creating your CV, Cover letter or\nPersonal website) and other personal data you provide us with upon your\nregistration into our Platform and/or using our Services, especially payment\ndetails."
+            },
+            {
+                "number": 12,
+                "label": "OMITTED",
+                "sentence": "We collect your data primarily from you when you create an account on our Platform and use our Services."
+            },
+            {
+                "number": 13,
+                "label": "OMITTED",
+                "sentence": "We may also collect some data from third parties, for example, if you choose to use your social network account to log into your Kickresume account, we will collect necessary data from the social network of your choice."
+            },
+            {
+                "number": 14,
+                "label": "OMITTED",
+                "sentence": "The Controller uses cookies (for more information see below) and some third-party applications which are getting basic data (email, IP address, number of visits, etc.)"
+            },
+            {
+                "number": 15,
+                "label": "OMITTED",
+                "sentence": "If you choose to use your social network account to log into your Kickresume account, the social network may collect some of your data."
+            },
+            {
+                "number": 16,
+                "label": "OMITTED",
+                "sentence": "For that reason, Kickresume does not knowingly collect or solicit personal data from anyone under the age of 16."
+            },
+            {
+                "number": 17,
+                "label": "OMITTED",
+                "sentence": "In the event that we learn that we have collected personal information from a child under age 16, we will delete that information as quickly as possible."
+            },
+            {
+                "number": 18,
+                "label": "OMITTED",
+                "sentence": "It applies from the very beginning - for example, when you provide us with your data we immediately encrypt the data using secure socket layer technology (SSL)."
+            },
+            {
+                "number": 19,
+                "label": "OMITTED",
+                "sentence": "Like your cookies preferences \n     * Understand how you use our services, so we can make them better and provide you with personalized content\n     * Uniquely identify your browser and internet device, thanks to which we and our partners can target you with discounts to our service, ads and specialized content \n\nYou can change your Kickresume **cookie settings** at any time."
+            },
+            {
+                "number": 20,
+                "label": "OMITTED",
+                "sentence": "We are using our own cookies in addition to NewRelic, PayPal, Ziprecruiter,\nGoogle Analytics, Tapfiliate, Hotjar, and Intercom (live chat & support)."
+            },
+            {
+                "number": 21,
+                "label": "OMITTED",
+                "sentence": "Performance cookies let us see which pages are the most and least popular, and\nhow you and other visitors move around the site."
+            },
+            {
+                "number": 22,
+                "label": "OMITTED",
+                "sentence": "#### Marketing cookies\n\nWe use these cookies to uniquely identify your browser and internet device\nbased on your consent."
+            }
+        ]
+    },
+    {
+        "META_PY_KEYS": "lastName",
+        "description": "User's last name, eg. 'Smith'",
+        "required_used": false,
+        "title": "Lastname",
+        "type": null,
+        "data_name": "last name",
+        "data_type": "Name",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "Performance cookies\n\nThanks to these cookies, we can count visits and traffic sources to our pages."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "Performance cookies let us see which pages are the most and least popular, and\nhow you and other visitors move around the site."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "All information these cookies collect is aggregated (it\u2019s a statistic) and\ntherefore completely anonymous."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "Marketing cookies\n\nWe use these cookies to uniquely identify your browser and internet device."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "With the personal data you provide, based on your choice our system will create a CV, Cover letter or Personal website for you with the graphic design of your preference."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "When using our Services through our Platform or Mobile App, either with the AI help or not, we process your personal data for the purposes of **entering into agreement and carrying out such agreement** on provision of our Services based on your decision to engage with our Services."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "The agreement also involves creating your account via registration into our Platform (legal basis: the conclusion and performance of a contract in accordance with Article 6 (1) (b) of the GDPR)."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "We also process your personal data for the purposes of understanding how our Services are used by our customers and how we can improve them for you (by, in particular, analysing data we collected in necessary extent and making anonymous statistics) (legal basis: **legitimate interest** in evaluating, developing and improving our Services as well as products and systems for better user experience) in accordance with Article 6 (1) (f) of GDPR)."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "We also need to collect and store some specific data (e.g."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "your logins into your account, information on your device you used upon login into your account, IP address, etc.)"
+            },
+            {
+                "number": 11,
+                "label": "CLEAR",
+                "sentence": "The Controller processes in particular **ordinary category of your personal data** , for instance:  \nyour title, name, surname, address of permanent residence, delivery address,\nemail address, phone number, date of birth, gender, age, marital status,\ninformation on the education, achieved degrees, courses attended, lectures,\ncertificates or licenses, information on the membership in associations or\norganisations, language skills, information on former professional experience\nor practice, hobbies, picture, and any other data provided by you voluntarily\nwhen you use our Services (i.e., when creating your CV, Cover letter or\nPersonal website) and other personal data you provide us with upon your\nregistration into our Platform and/or using our Services, especially payment\ndetails."
+            },
+            {
+                "number": 12,
+                "label": "OMITTED",
+                "sentence": "We collect your data primarily from you when you create an account on our Platform and use our Services."
+            },
+            {
+                "number": 13,
+                "label": "OMITTED",
+                "sentence": "We may also collect some data from third parties, for example, if you choose to use your social network account to log into your Kickresume account, we will collect necessary data from the social network of your choice."
+            },
+            {
+                "number": 14,
+                "label": "OMITTED",
+                "sentence": "The Controller uses cookies (for more information see below) and some third-party applications which are getting basic data (email, IP address, number of visits, etc.)"
+            },
+            {
+                "number": 15,
+                "label": "OMITTED",
+                "sentence": "If you choose to use your social network account to log into your Kickresume account, the social network may collect some of your data."
+            },
+            {
+                "number": 16,
+                "label": "OMITTED",
+                "sentence": "For that reason, Kickresume does not knowingly collect or solicit personal data from anyone under the age of 16."
+            },
+            {
+                "number": 17,
+                "label": "OMITTED",
+                "sentence": "In the event that we learn that we have collected personal information from a child under age 16, we will delete that information as quickly as possible."
+            },
+            {
+                "number": 18,
+                "label": "OMITTED",
+                "sentence": "It applies from the very beginning - for example, when you provide us with your data we immediately encrypt the data using secure socket layer technology (SSL)."
+            },
+            {
+                "number": 19,
+                "label": "OMITTED",
+                "sentence": "Like your cookies preferences \n     * Understand how you use our services, so we can make them better and provide you with personalized content\n     * Uniquely identify your browser and internet device, thanks to which we and our partners can target you with discounts to our service, ads and specialized content \n\nYou can change your Kickresume **cookie settings** at any time."
+            },
+            {
+                "number": 20,
+                "label": "OMITTED",
+                "sentence": "We are using our own cookies in addition to NewRelic, PayPal, Ziprecruiter,\nGoogle Analytics, Tapfiliate, Hotjar, and Intercom (live chat & support)."
+            },
+            {
+                "number": 21,
+                "label": "OMITTED",
+                "sentence": "Performance cookies let us see which pages are the most and least popular, and\nhow you and other visitors move around the site."
+            },
+            {
+                "number": 22,
+                "label": "OMITTED",
+                "sentence": "#### Marketing cookies\n\nWe use these cookies to uniquely identify your browser and internet device\nbased on your consent."
+            }
+        ]
+    },
+    {
+        "META_PY_KEYS": "jobExperience",
+        "description": "User's employment details",
+        "required_used": false,
+        "title": "Jobexperience",
+        "type": null,
+        "data_name": "User's employment details",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "Performance cookies\n\nThanks to these cookies, we can count visits and traffic sources to our pages."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "Performance cookies let us see which pages are the most and least popular, and\nhow you and other visitors move around the site."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "All information these cookies collect is aggregated (it\u2019s a statistic) and\ntherefore completely anonymous."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "Marketing cookies\n\nWe use these cookies to uniquely identify your browser and internet device."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "With the personal data you provide, based on your choice our system will create a CV, Cover letter or Personal website for you with the graphic design of your preference."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "When using our Services through our Platform or Mobile App, either with the AI help or not, we process your personal data for the purposes of **entering into agreement and carrying out such agreement** on provision of our Services based on your decision to engage with our Services."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "The agreement also involves creating your account via registration into our Platform (legal basis: the conclusion and performance of a contract in accordance with Article 6 (1) (b) of the GDPR)."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "We also process your personal data for the purposes of understanding how our Services are used by our customers and how we can improve them for you (by, in particular, analysing data we collected in necessary extent and making anonymous statistics) (legal basis: **legitimate interest** in evaluating, developing and improving our Services as well as products and systems for better user experience) in accordance with Article 6 (1) (f) of GDPR)."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "We also need to collect and store some specific data (e.g."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "your logins into your account, information on your device you used upon login into your account, IP address, etc.)"
+            },
+            {
+                "number": 11,
+                "label": "OMITTED",
+                "sentence": "The Controller processes in particular **ordinary category of your personal data** , for instance:  \nyour title, name, surname, address of permanent residence, delivery address,\nemail address, phone number, date of birth, gender, age, marital status,\ninformation on the education, achieved degrees, courses attended, lectures,\ncertificates or licenses, information on the membership in associations or\norganisations, language skills, information on former professional experience\nor practice, hobbies, picture, and any other data provided by you voluntarily\nwhen you use our Services (i.e., when creating your CV, Cover letter or\nPersonal website) and other personal data you provide us with upon your\nregistration into our Platform and/or using our Services, especially payment\ndetails."
+            },
+            {
+                "number": 12,
+                "label": "OMITTED",
+                "sentence": "We collect your data primarily from you when you create an account on our Platform and use our Services."
+            },
+            {
+                "number": 13,
+                "label": "OMITTED",
+                "sentence": "We may also collect some data from third parties, for example, if you choose to use your social network account to log into your Kickresume account, we will collect necessary data from the social network of your choice."
+            },
+            {
+                "number": 14,
+                "label": "OMITTED",
+                "sentence": "The Controller uses cookies (for more information see below) and some third-party applications which are getting basic data (email, IP address, number of visits, etc.)"
+            },
+            {
+                "number": 15,
+                "label": "OMITTED",
+                "sentence": "If you choose to use your social network account to log into your Kickresume account, the social network may collect some of your data."
+            },
+            {
+                "number": 16,
+                "label": "OMITTED",
+                "sentence": "For that reason, Kickresume does not knowingly collect or solicit personal data from anyone under the age of 16."
+            },
+            {
+                "number": 17,
+                "label": "OMITTED",
+                "sentence": "In the event that we learn that we have collected personal information from a child under age 16, we will delete that information as quickly as possible."
+            },
+            {
+                "number": 18,
+                "label": "OMITTED",
+                "sentence": "It applies from the very beginning - for example, when you provide us with your data we immediately encrypt the data using secure socket layer technology (SSL)."
+            },
+            {
+                "number": 19,
+                "label": "OMITTED",
+                "sentence": "Like your cookies preferences \n     * Understand how you use our services, so we can make them better and provide you with personalized content\n     * Uniquely identify your browser and internet device, thanks to which we and our partners can target you with discounts to our service, ads and specialized content \n\nYou can change your Kickresume **cookie settings** at any time."
+            },
+            {
+                "number": 20,
+                "label": "OMITTED",
+                "sentence": "We are using our own cookies in addition to NewRelic, PayPal, Ziprecruiter,\nGoogle Analytics, Tapfiliate, Hotjar, and Intercom (live chat & support)."
+            },
+            {
+                "number": 21,
+                "label": "OMITTED",
+                "sentence": "Performance cookies let us see which pages are the most and least popular, and\nhow you and other visitors move around the site."
+            },
+            {
+                "number": 22,
+                "label": "OMITTED",
+                "sentence": "#### Marketing cookies\n\nWe use these cookies to uniquely identify your browser and internet device\nbased on your consent."
+            }
+        ]
+    },
+    {
+        "META_PY_KEYS": "attainedEducation",
+        "description": "User's education entries",
+        "required_used": false,
+        "title": "Attainededucation",
+        "type": null,
+        "data_name": "User's education entries",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "Performance cookies\n\nThanks to these cookies, we can count visits and traffic sources to our pages."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "Performance cookies let us see which pages are the most and least popular, and\nhow you and other visitors move around the site."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "All information these cookies collect is aggregated (it\u2019s a statistic) and\ntherefore completely anonymous."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "Marketing cookies\n\nWe use these cookies to uniquely identify your browser and internet device."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "With the personal data you provide, based on your choice our system will create a CV, Cover letter or Personal website for you with the graphic design of your preference."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "When using our Services through our Platform or Mobile App, either with the AI help or not, we process your personal data for the purposes of **entering into agreement and carrying out such agreement** on provision of our Services based on your decision to engage with our Services."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "The agreement also involves creating your account via registration into our Platform (legal basis: the conclusion and performance of a contract in accordance with Article 6 (1) (b) of the GDPR)."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "We also process your personal data for the purposes of understanding how our Services are used by our customers and how we can improve them for you (by, in particular, analysing data we collected in necessary extent and making anonymous statistics) (legal basis: **legitimate interest** in evaluating, developing and improving our Services as well as products and systems for better user experience) in accordance with Article 6 (1) (f) of GDPR)."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "We also need to collect and store some specific data (e.g."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "your logins into your account, information on your device you used upon login into your account, IP address, etc.)"
+            },
+            {
+                "number": 11,
+                "label": "VAGUE",
+                "sentence": "The Controller processes in particular **ordinary category of your personal data** , for instance:  \nyour title, name, surname, address of permanent residence, delivery address,\nemail address, phone number, date of birth, gender, age, marital status,\ninformation on the education, achieved degrees, courses attended, lectures,\ncertificates or licenses, information on the membership in associations or\norganisations, language skills, information on former professional experience\nor practice, hobbies, picture, and any other data provided by you voluntarily\nwhen you use our Services (i.e., when creating your CV, Cover letter or\nPersonal website) and other personal data you provide us with upon your\nregistration into our Platform and/or using our Services, especially payment\ndetails."
+            },
+            {
+                "number": 12,
+                "label": "OMITTED",
+                "sentence": "We collect your data primarily from you when you create an account on our Platform and use our Services."
+            },
+            {
+                "number": 13,
+                "label": "OMITTED",
+                "sentence": "We may also collect some data from third parties, for example, if you choose to use your social network account to log into your Kickresume account, we will collect necessary data from the social network of your choice."
+            },
+            {
+                "number": 14,
+                "label": "OMITTED",
+                "sentence": "The Controller uses cookies (for more information see below) and some third-party applications which are getting basic data (email, IP address, number of visits, etc.)"
+            },
+            {
+                "number": 15,
+                "label": "OMITTED",
+                "sentence": "If you choose to use your social network account to log into your Kickresume account, the social network may collect some of your data."
+            },
+            {
+                "number": 16,
+                "label": "OMITTED",
+                "sentence": "For that reason, Kickresume does not knowingly collect or solicit personal data from anyone under the age of 16."
+            },
+            {
+                "number": 17,
+                "label": "OMITTED",
+                "sentence": "In the event that we learn that we have collected personal information from a child under age 16, we will delete that information as quickly as possible."
+            },
+            {
+                "number": 18,
+                "label": "OMITTED",
+                "sentence": "It applies from the very beginning - for example, when you provide us with your data we immediately encrypt the data using secure socket layer technology (SSL)."
+            },
+            {
+                "number": 19,
+                "label": "OMITTED",
+                "sentence": "Like your cookies preferences \n     * Understand how you use our services, so we can make them better and provide you with personalized content\n     * Uniquely identify your browser and internet device, thanks to which we and our partners can target you with discounts to our service, ads and specialized content \n\nYou can change your Kickresume **cookie settings** at any time."
+            },
+            {
+                "number": 20,
+                "label": "OMITTED",
+                "sentence": "We are using our own cookies in addition to NewRelic, PayPal, Ziprecruiter,\nGoogle Analytics, Tapfiliate, Hotjar, and Intercom (live chat & support)."
+            },
+            {
+                "number": 21,
+                "label": "OMITTED",
+                "sentence": "Performance cookies let us see which pages are the most and least popular, and\nhow you and other visitors move around the site."
+            },
+            {
+                "number": 22,
+                "label": "OMITTED",
+                "sentence": "#### Marketing cookies\n\nWe use these cookies to uniquely identify your browser and internet device\nbased on your consent."
+            }
+        ]
+    },
+    {
+        "META_PY_KEYS": "skills",
+        "description": "Skills that the user has, eg. 'Python', 'HTML', 'Java'",
+        "required_used": false,
+        "title": "Skills",
+        "type": null,
+        "data_name": "skills",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "Performance cookies\n\nThanks to these cookies, we can count visits and traffic sources to our pages."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "Performance cookies let us see which pages are the most and least popular, and\nhow you and other visitors move around the site."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "All information these cookies collect is aggregated (it\u2019s a statistic) and\ntherefore completely anonymous."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "Marketing cookies\n\nWe use these cookies to uniquely identify your browser and internet device."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "With the personal data you provide, based on your choice our system will create a CV, Cover letter or Personal website for you with the graphic design of your preference."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "When using our Services through our Platform or Mobile App, either with the AI help or not, we process your personal data for the purposes of **entering into agreement and carrying out such agreement** on provision of our Services based on your decision to engage with our Services."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "The agreement also involves creating your account via registration into our Platform (legal basis: the conclusion and performance of a contract in accordance with Article 6 (1) (b) of the GDPR)."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "We also process your personal data for the purposes of understanding how our Services are used by our customers and how we can improve them for you (by, in particular, analysing data we collected in necessary extent and making anonymous statistics) (legal basis: **legitimate interest** in evaluating, developing and improving our Services as well as products and systems for better user experience) in accordance with Article 6 (1) (f) of GDPR)."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "We also need to collect and store some specific data (e.g."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "your logins into your account, information on your device you used upon login into your account, IP address, etc.)"
+            },
+            {
+                "number": 11,
+                "label": "OMITTED",
+                "sentence": "The Controller processes in particular **ordinary category of your personal data** , for instance:  \nyour title, name, surname, address of permanent residence, delivery address,\nemail address, phone number, date of birth, gender, age, marital status,\ninformation on the education, achieved degrees, courses attended, lectures,\ncertificates or licenses, information on the membership in associations or\norganisations, language skills, information on former professional experience\nor practice, hobbies, picture, and any other data provided by you voluntarily\nwhen you use our Services (i.e., when creating your CV, Cover letter or\nPersonal website) and other personal data you provide us with upon your\nregistration into our Platform and/or using our Services, especially payment\ndetails."
+            },
+            {
+                "number": 12,
+                "label": "OMITTED",
+                "sentence": "We collect your data primarily from you when you create an account on our Platform and use our Services."
+            },
+            {
+                "number": 13,
+                "label": "OMITTED",
+                "sentence": "We may also collect some data from third parties, for example, if you choose to use your social network account to log into your Kickresume account, we will collect necessary data from the social network of your choice."
+            },
+            {
+                "number": 14,
+                "label": "OMITTED",
+                "sentence": "The Controller uses cookies (for more information see below) and some third-party applications which are getting basic data (email, IP address, number of visits, etc.)"
+            },
+            {
+                "number": 15,
+                "label": "OMITTED",
+                "sentence": "If you choose to use your social network account to log into your Kickresume account, the social network may collect some of your data."
+            },
+            {
+                "number": 16,
+                "label": "OMITTED",
+                "sentence": "For that reason, Kickresume does not knowingly collect or solicit personal data from anyone under the age of 16."
+            },
+            {
+                "number": 17,
+                "label": "OMITTED",
+                "sentence": "In the event that we learn that we have collected personal information from a child under age 16, we will delete that information as quickly as possible."
+            },
+            {
+                "number": 18,
+                "label": "OMITTED",
+                "sentence": "It applies from the very beginning - for example, when you provide us with your data we immediately encrypt the data using secure socket layer technology (SSL)."
+            },
+            {
+                "number": 19,
+                "label": "OMITTED",
+                "sentence": "Like your cookies preferences \n     * Understand how you use our services, so we can make them better and provide you with personalized content\n     * Uniquely identify your browser and internet device, thanks to which we and our partners can target you with discounts to our service, ads and specialized content \n\nYou can change your Kickresume **cookie settings** at any time."
+            },
+            {
+                "number": 20,
+                "label": "OMITTED",
+                "sentence": "We are using our own cookies in addition to NewRelic, PayPal, Ziprecruiter,\nGoogle Analytics, Tapfiliate, Hotjar, and Intercom (live chat & support)."
+            },
+            {
+                "number": 21,
+                "label": "OMITTED",
+                "sentence": "Performance cookies let us see which pages are the most and least popular, and\nhow you and other visitors move around the site."
+            },
+            {
+                "number": 22,
+                "label": "OMITTED",
+                "sentence": "#### Marketing cookies\n\nWe use these cookies to uniquely identify your browser and internet device\nbased on your consent."
+            }
+        ]
+    },
+    {
+        "META_PY_KEYS": "strengths",
+        "description": "Strengths that the user has, eg. 'Dependable', 'Detail oriented', 'Punctual'",
+        "required_used": false,
+        "title": "Strengths",
+        "type": null,
+        "data_name": "Strengths",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "Performance cookies\n\nThanks to these cookies, we can count visits and traffic sources to our pages."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "Performance cookies let us see which pages are the most and least popular, and\nhow you and other visitors move around the site."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "All information these cookies collect is aggregated (it\u2019s a statistic) and\ntherefore completely anonymous."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "Marketing cookies\n\nWe use these cookies to uniquely identify your browser and internet device."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "With the personal data you provide, based on your choice our system will create a CV, Cover letter or Personal website for you with the graphic design of your preference."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "When using our Services through our Platform or Mobile App, either with the AI help or not, we process your personal data for the purposes of **entering into agreement and carrying out such agreement** on provision of our Services based on your decision to engage with our Services."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "The agreement also involves creating your account via registration into our Platform (legal basis: the conclusion and performance of a contract in accordance with Article 6 (1) (b) of the GDPR)."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "We also process your personal data for the purposes of understanding how our Services are used by our customers and how we can improve them for you (by, in particular, analysing data we collected in necessary extent and making anonymous statistics) (legal basis: **legitimate interest** in evaluating, developing and improving our Services as well as products and systems for better user experience) in accordance with Article 6 (1) (f) of GDPR)."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "We also need to collect and store some specific data (e.g."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "your logins into your account, information on your device you used upon login into your account, IP address, etc.)"
+            },
+            {
+                "number": 11,
+                "label": "OMITTED",
+                "sentence": "The Controller processes in particular **ordinary category of your personal data** , for instance:  \nyour title, name, surname, address of permanent residence, delivery address,\nemail address, phone number, date of birth, gender, age, marital status,\ninformation on the education, achieved degrees, courses attended, lectures,\ncertificates or licenses, information on the membership in associations or\norganisations, language skills, information on former professional experience\nor practice, hobbies, picture, and any other data provided by you voluntarily\nwhen you use our Services (i.e., when creating your CV, Cover letter or\nPersonal website) and other personal data you provide us with upon your\nregistration into our Platform and/or using our Services, especially payment\ndetails."
+            },
+            {
+                "number": 12,
+                "label": "OMITTED",
+                "sentence": "We collect your data primarily from you when you create an account on our Platform and use our Services."
+            },
+            {
+                "number": 13,
+                "label": "OMITTED",
+                "sentence": "We may also collect some data from third parties, for example, if you choose to use your social network account to log into your Kickresume account, we will collect necessary data from the social network of your choice."
+            },
+            {
+                "number": 14,
+                "label": "OMITTED",
+                "sentence": "The Controller uses cookies (for more information see below) and some third-party applications which are getting basic data (email, IP address, number of visits, etc.)"
+            },
+            {
+                "number": 15,
+                "label": "OMITTED",
+                "sentence": "If you choose to use your social network account to log into your Kickresume account, the social network may collect some of your data."
+            },
+            {
+                "number": 16,
+                "label": "OMITTED",
+                "sentence": "For that reason, Kickresume does not knowingly collect or solicit personal data from anyone under the age of 16."
+            },
+            {
+                "number": 17,
+                "label": "OMITTED",
+                "sentence": "In the event that we learn that we have collected personal information from a child under age 16, we will delete that information as quickly as possible."
+            },
+            {
+                "number": 18,
+                "label": "OMITTED",
+                "sentence": "It applies from the very beginning - for example, when you provide us with your data we immediately encrypt the data using secure socket layer technology (SSL)."
+            },
+            {
+                "number": 19,
+                "label": "OMITTED",
+                "sentence": "Like your cookies preferences \n     * Understand how you use our services, so we can make them better and provide you with personalized content\n     * Uniquely identify your browser and internet device, thanks to which we and our partners can target you with discounts to our service, ads and specialized content \n\nYou can change your Kickresume **cookie settings** at any time."
+            },
+            {
+                "number": 20,
+                "label": "OMITTED",
+                "sentence": "We are using our own cookies in addition to NewRelic, PayPal, Ziprecruiter,\nGoogle Analytics, Tapfiliate, Hotjar, and Intercom (live chat & support)."
+            },
+            {
+                "number": 21,
+                "label": "OMITTED",
+                "sentence": "Performance cookies let us see which pages are the most and least popular, and\nhow you and other visitors move around the site."
+            },
+            {
+                "number": 22,
+                "label": "OMITTED",
+                "sentence": "#### Marketing cookies\n\nWe use these cookies to uniquely identify your browser and internet device\nbased on your consent."
+            }
+        ]
+    },
+    {
+        "META_PY_KEYS": "hobbies",
+        "description": "Hobbies that the user has, eg. 'Gym', 'Exploring new countries', 'Listening to music'",
+        "required_used": false,
+        "title": "Hobbies",
+        "type": null,
+        "data_name": "hobbies",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "Performance cookies\n\nThanks to these cookies, we can count visits and traffic sources to our pages."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "Performance cookies let us see which pages are the most and least popular, and\nhow you and other visitors move around the site."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "All information these cookies collect is aggregated (it\u2019s a statistic) and\ntherefore completely anonymous."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "Marketing cookies\n\nWe use these cookies to uniquely identify your browser and internet device."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "With the personal data you provide, based on your choice our system will create a CV, Cover letter or Personal website for you with the graphic design of your preference."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "When using our Services through our Platform or Mobile App, either with the AI help or not, we process your personal data for the purposes of **entering into agreement and carrying out such agreement** on provision of our Services based on your decision to engage with our Services."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "The agreement also involves creating your account via registration into our Platform (legal basis: the conclusion and performance of a contract in accordance with Article 6 (1) (b) of the GDPR)."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "We also process your personal data for the purposes of understanding how our Services are used by our customers and how we can improve them for you (by, in particular, analysing data we collected in necessary extent and making anonymous statistics) (legal basis: **legitimate interest** in evaluating, developing and improving our Services as well as products and systems for better user experience) in accordance with Article 6 (1) (f) of GDPR)."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "We also need to collect and store some specific data (e.g."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "your logins into your account, information on your device you used upon login into your account, IP address, etc.)"
+            },
+            {
+                "number": 11,
+                "label": "OMITTED",
+                "sentence": "The Controller processes in particular **ordinary category of your personal data** , for instance:  \nyour title, name, surname, address of permanent residence, delivery address,\nemail address, phone number, date of birth, gender, age, marital status,\ninformation on the education, achieved degrees, courses attended, lectures,\ncertificates or licenses, information on the membership in associations or\norganisations, language skills, information on former professional experience\nor practice, hobbies, picture, and any other data provided by you voluntarily\nwhen you use our Services (i.e., when creating your CV, Cover letter or\nPersonal website) and other personal data you provide us with upon your\nregistration into our Platform and/or using our Services, especially payment\ndetails."
+            },
+            {
+                "number": 12,
+                "label": "OMITTED",
+                "sentence": "We collect your data primarily from you when you create an account on our Platform and use our Services."
+            },
+            {
+                "number": 13,
+                "label": "OMITTED",
+                "sentence": "We may also collect some data from third parties, for example, if you choose to use your social network account to log into your Kickresume account, we will collect necessary data from the social network of your choice."
+            },
+            {
+                "number": 14,
+                "label": "OMITTED",
+                "sentence": "The Controller uses cookies (for more information see below) and some third-party applications which are getting basic data (email, IP address, number of visits, etc.)"
+            },
+            {
+                "number": 15,
+                "label": "OMITTED",
+                "sentence": "If you choose to use your social network account to log into your Kickresume account, the social network may collect some of your data."
+            },
+            {
+                "number": 16,
+                "label": "OMITTED",
+                "sentence": "For that reason, Kickresume does not knowingly collect or solicit personal data from anyone under the age of 16."
+            },
+            {
+                "number": 17,
+                "label": "OMITTED",
+                "sentence": "In the event that we learn that we have collected personal information from a child under age 16, we will delete that information as quickly as possible."
+            },
+            {
+                "number": 18,
+                "label": "OMITTED",
+                "sentence": "It applies from the very beginning - for example, when you provide us with your data we immediately encrypt the data using secure socket layer technology (SSL)."
+            },
+            {
+                "number": 19,
+                "label": "OMITTED",
+                "sentence": "Like your cookies preferences \n     * Understand how you use our services, so we can make them better and provide you with personalized content\n     * Uniquely identify your browser and internet device, thanks to which we and our partners can target you with discounts to our service, ads and specialized content \n\nYou can change your Kickresume **cookie settings** at any time."
+            },
+            {
+                "number": 20,
+                "label": "OMITTED",
+                "sentence": "We are using our own cookies in addition to NewRelic, PayPal, Ziprecruiter,\nGoogle Analytics, Tapfiliate, Hotjar, and Intercom (live chat & support)."
+            },
+            {
+                "number": 21,
+                "label": "OMITTED",
+                "sentence": "Performance cookies let us see which pages are the most and least popular, and\nhow you and other visitors move around the site."
+            },
+            {
+                "number": 22,
+                "label": "OMITTED",
+                "sentence": "#### Marketing cookies\n\nWe use these cookies to uniquely identify your browser and internet device\nbased on your consent."
+            }
+        ]
+    },
+    {
+        "META_PY_KEYS": "summary",
+        "description": "Description of user and their skills based on the provided data. eg. 'Ambitious and hard working accountant, skilled in accounting and data analysis. Looking to grow in the finance field.'",
+        "required_used": false,
+        "title": "Summary",
+        "type": null,
+        "data_name": "Description of user and their skills",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "Performance cookies\n\nThanks to these cookies, we can count visits and traffic sources to our pages."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "Performance cookies let us see which pages are the most and least popular, and\nhow you and other visitors move around the site."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "All information these cookies collect is aggregated (it\u2019s a statistic) and\ntherefore completely anonymous."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "Marketing cookies\n\nWe use these cookies to uniquely identify your browser and internet device."
+            },
+            {
+                "number": 5,
+                "label": "CLEAR",
+                "sentence": "With the personal data you provide, based on your choice our system will create a CV, Cover letter or Personal website for you with the graphic design of your preference."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "When using our Services through our Platform or Mobile App, either with the AI help or not, we process your personal data for the purposes of **entering into agreement and carrying out such agreement** on provision of our Services based on your decision to engage with our Services."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "The agreement also involves creating your account via registration into our Platform (legal basis: the conclusion and performance of a contract in accordance with Article 6 (1) (b) of the GDPR)."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "We also process your personal data for the purposes of understanding how our Services are used by our customers and how we can improve them for you (by, in particular, analysing data we collected in necessary extent and making anonymous statistics) (legal basis: **legitimate interest** in evaluating, developing and improving our Services as well as products and systems for better user experience) in accordance with Article 6 (1) (f) of GDPR)."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "We also need to collect and store some specific data (e.g."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "your logins into your account, information on your device you used upon login into your account, IP address, etc.)"
+            },
+            {
+                "number": 11,
+                "label": "OMITTED",
+                "sentence": "The Controller processes in particular **ordinary category of your personal data** , for instance:  \nyour title, name, surname, address of permanent residence, delivery address,\nemail address, phone number, date of birth, gender, age, marital status,\ninformation on the education, achieved degrees, courses attended, lectures,\ncertificates or licenses, information on the membership in associations or\norganisations, language skills, information on former professional experience\nor practice, hobbies, picture, and any other data provided by you voluntarily\nwhen you use our Services (i.e., when creating your CV, Cover letter or\nPersonal website) and other personal data you provide us with upon your\nregistration into our Platform and/or using our Services, especially payment\ndetails."
+            },
+            {
+                "number": 12,
+                "label": "OMITTED",
+                "sentence": "We collect your data primarily from you when you create an account on our Platform and use our Services."
+            },
+            {
+                "number": 13,
+                "label": "OMITTED",
+                "sentence": "We may also collect some data from third parties, for example, if you choose to use your social network account to log into your Kickresume account, we will collect necessary data from the social network of your choice."
+            },
+            {
+                "number": 14,
+                "label": "OMITTED",
+                "sentence": "The Controller uses cookies (for more information see below) and some third-party applications which are getting basic data (email, IP address, number of visits, etc.)"
+            },
+            {
+                "number": 15,
+                "label": "OMITTED",
+                "sentence": "If you choose to use your social network account to log into your Kickresume account, the social network may collect some of your data."
+            },
+            {
+                "number": 16,
+                "label": "OMITTED",
+                "sentence": "For that reason, Kickresume does not knowingly collect or solicit personal data from anyone under the age of 16."
+            },
+            {
+                "number": 17,
+                "label": "OMITTED",
+                "sentence": "In the event that we learn that we have collected personal information from a child under age 16, we will delete that information as quickly as possible."
+            },
+            {
+                "number": 18,
+                "label": "OMITTED",
+                "sentence": "It applies from the very beginning - for example, when you provide us with your data we immediately encrypt the data using secure socket layer technology (SSL)."
+            },
+            {
+                "number": 19,
+                "label": "OMITTED",
+                "sentence": "Like your cookies preferences \n     * Understand how you use our services, so we can make them better and provide you with personalized content\n     * Uniquely identify your browser and internet device, thanks to which we and our partners can target you with discounts to our service, ads and specialized content \n\nYou can change your Kickresume **cookie settings** at any time."
+            },
+            {
+                "number": 20,
+                "label": "OMITTED",
+                "sentence": "We are using our own cookies in addition to NewRelic, PayPal, Ziprecruiter,\nGoogle Analytics, Tapfiliate, Hotjar, and Intercom (live chat & support)."
+            },
+            {
+                "number": 21,
+                "label": "OMITTED",
+                "sentence": "Performance cookies let us see which pages are the most and least popular, and\nhow you and other visitors move around the site."
+            },
+            {
+                "number": 22,
+                "label": "OMITTED",
+                "sentence": "#### Marketing cookies\n\nWe use these cookies to uniquely identify your browser and internet device\nbased on your consent."
+            }
+        ]
+    }
+]

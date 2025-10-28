@@ -1,0 +1,18 @@
+[
+    {
+        "description": "The name of the sign we get daily information for",
+        "name": "sign",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "sign",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

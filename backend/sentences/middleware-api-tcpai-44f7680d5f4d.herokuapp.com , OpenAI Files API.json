@@ -1,0 +1,10 @@
+{
+    "collection": [
+        "For additional information see: <https://aws.amazon.com/security>\n\n## Privacy\n\nHeroku has a published privacy policy that clearly defines what data is\ncollected and how it is used."
+    ],
+    "sharing": [
+        "Amazon only provides data center access and information to employees who have\na legitimate business need for such privileges.",
+        "There may be cases where Heroku is requested to\ninteract with customer data or applications at the request of the customer for\nsupport purposes or where required by law."
+    ],
+    "pp_length": 26445
+}

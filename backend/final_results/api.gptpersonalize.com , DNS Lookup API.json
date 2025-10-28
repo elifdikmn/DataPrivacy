@@ -1,0 +1,23 @@
+[
+    {
+        "description": "The domain to check DNS records for",
+        "name": "domain",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "domain",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "## Our Service\n\nThe API (\"Service\") provided at api.gptpersonalize.com is designed to simply\nforward API requests to api-ninjas.com without collecting, storing, or\nanalyzing these requests."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "**No Collection of Statistics:** We do not collect any statistics, logs, or\ndata analytics on the API requests made through our Service."
+            }
+        ]
+    }
+]

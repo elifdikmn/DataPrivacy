@@ -1,0 +1,18 @@
+[
+    {
+        "description": null,
+        "name": "video_id",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "video_id",
+        "data_type": "Data identifier",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

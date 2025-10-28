@@ -1,0 +1,126 @@
+[
+    {
+        "description": "Email of the user. Has to be a real active email. Ask user.",
+        "name": "user_email",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "user_email",
+        "data_type": "Email address",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "This Privacy Policy outlines our practices regarding the collection, use, and\nsharing of personal data."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "DATA COLLECTION AND USE\n\n  \n\n2.1 TYPES OF DATA COLLECTED  \n\nIWe collect personal data necessary to process transactions and provide our\nservices."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "This may include:\n\n  * User's name and contact information  \n\n  * Payment details such as credit/debit card information  \n\n  * Basic chat information including number of chats per session and general topics\n  * Transaction details including amounts, dates, and merchant information  \n\n  * Technical data such as IP addresses, device information, and usage data  \n\n2.2 How we USE YOUR DATA  \n\nThe data collected is used solely for the purpose of providing our analytics\nand payment services."
+            }
+        ]
+    },
+    {
+        "description": "Name of the GPT user is trying to access to. Do not ask user.",
+        "name": "product_gpt_name",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "product_gpt_name",
+        "data_type": "Name",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "This Privacy Policy outlines our practices regarding the collection, use, and\nsharing of personal data."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "DATA COLLECTION AND USE\n\n  \n\n2.1 TYPES OF DATA COLLECTED  \n\nIWe collect personal data necessary to process transactions and provide our\nservices."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "This may include:\n\n  * User's name and contact information  \n\n  * Payment details such as credit/debit card information  \n\n  * Basic chat information including number of chats per session and general topics\n  * Transaction details including amounts, dates, and merchant information  \n\n  * Technical data such as IP addresses, device information, and usage data  \n\n2.2 How we USE YOUR DATA  \n\nThe data collected is used solely for the purpose of providing our analytics\nand payment services."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "None"
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "Checkout ID for which to retrieve details. This has been provided by getCheckout. Do not ask the user.",
+        "name": "checkout_uuid",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "checkout_uuid",
+        "data_type": "User IDs",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "This Privacy Policy outlines our practices regarding the collection, use, and\nsharing of personal data."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "DATA COLLECTION AND USE\n\n  \n\n2.1 TYPES OF DATA COLLECTED  \n\nIWe collect personal data necessary to process transactions and provide our\nservices."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "This may include:\n\n  * User's name and contact information  \n\n  * Payment details such as credit/debit card information  \n\n  * Basic chat information including number of chats per session and general topics\n  * Transaction details including amounts, dates, and merchant information  \n\n  * Technical data such as IP addresses, device information, and usage data  \n\n2.2 How we USE YOUR DATA  \n\nThe data collected is used solely for the purpose of providing our analytics\nand payment services."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "None"
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "The authentication code that has been emailed to the user. If getCheckout returns checkout_otp: true, this parameter is required. If needed, ask the user.",
+        "name": "checkout_otp",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "checkout_otp",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "This Privacy Policy outlines our practices regarding the collection, use, and\nsharing of personal data."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "DATA COLLECTION AND USE\n\n  \n\n2.1 TYPES OF DATA COLLECTED  \n\nIWe collect personal data necessary to process transactions and provide our\nservices."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "This may include:\n\n  * User's name and contact information  \n\n  * Payment details such as credit/debit card information  \n\n  * Basic chat information including number of chats per session and general topics\n  * Transaction details including amounts, dates, and merchant information  \n\n  * Technical data such as IP addresses, device information, and usage data  \n\n2.2 How we USE YOUR DATA  \n\nThe data collected is used solely for the purpose of providing our analytics\nand payment services."
+            }
+        ]
+    }
+]

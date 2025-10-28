@@ -1,0 +1,22 @@
+{
+    "collection": [
+        "This policy describes the types of information we may collect from you or that\nyou may provide when you use the rememberizer.ai generative AI platform (our\n\"Service\") and our practices for collecting, using, maintaining, protecting,\nand disclosing that information.",
+        "###\n\nInformation We Collect About You and How We Collect It\n\nWe collect several types of information from and about users of our Service,\nincluding:\n\n  * Personal information, such as your name, email address, and other identifiers by which you may be contacted online or offline.",
+        "* Technical data, such as information about your internet connection, the equipment you use to access our Service, and usage details.",
+        "We collect this information:\n\n  * Directly from you when you provide it to us by authorizing access to a data source.",
+        "* Directly from when an app you have integrated with Rememberizer chooses to store text in Rememberizer memory for later use by that app or others.",
+        "* Automatically as you navigate through the Service.",
+        "Information collected automatically may include usage details, IP addresses, and information collected through cookies, web beacons, and other tracking technologies.",
+        "###\n\nHow We Use Your Information\n\nWe use information that we collect about you or that you provide to us,\nincluding any personal information:\n\n  * To provide you with the Service and its contents, and any other information, products or services that you request from us."
+    ],
+    "sharing": [
+        "These come from data sources that you select and choose to share with Rememberizer.",
+        "* Directly from when an app you have integrated with Rememberizer chooses to store text in Rememberizer memory for later use by that app or others.",
+        "* Text components of Knowledge documents are stored in chunks and indexed in vector data stores so that parts that are estimated to have semantic relevance can be returned to third party applications that you authorize to have that access.",
+        "###\n\nThird Party Sharing\n\nA major purpose of Rememberizer is to share highly relevant extracts of your\ndata with 3rd party applications in a controlled fashion.",
+        "All shares every file that the\nuser has allowed Rememberizer to access.",
+        "###\n\nDisclosure of Your Information\n\nWe may disclose aggregated information about our users, and information that\ndoes not identify any individual, without restriction.",
+        "We may disclose\npersonal information that we collect or you provide as described in this\nprivacy policy:\n\n  * To third-party vendors, service providers, contractors, or agents who perform services for us or on our behalf and require access to such information to do that work."
+    ],
+    "pp_length": 10784
+}

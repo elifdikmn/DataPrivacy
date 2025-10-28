@@ -1,0 +1,210 @@
+[
+    {
+        "description": "Page number of the results to fetch",
+        "name": "page",
+        "schema_enum": null,
+        "schema_type": "integer",
+        "type": "query",
+        "data_name": "page",
+        "data_type": "Settings or parameters",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "The name of the commit/branch/tag. Default: the repository\u2019s default branch (usually master)",
+        "name": "ref",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "ref",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "The username of the repository owner",
+        "name": "owner",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "owner",
+        "data_type": "User IDs",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "The name of the repository",
+        "name": "repo",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "repository name",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "The file path within the repository",
+        "name": "path",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "file path",
+        "data_type": "Files and docs",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "SHA or branch to start listing commits from",
+        "name": "sha",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "sha",
+        "data_type": "Data identifier",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "Only commits containing this file path will be returned",
+        "name": "path",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "path",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "Number of results per page (max 100)",
+        "name": "per_page",
+        "schema_enum": null,
+        "schema_type": "integer",
+        "type": "query",
+        "data_name": "per_page",
+        "data_type": "Settings or parameters",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "Only commits after this date will be returned",
+        "name": "since",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "since",
+        "data_type": "Time",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "Only commits before this date will be returned",
+        "name": "until",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "until",
+        "data_type": "Time",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "Search term, plus optional qualifiers",
+        "name": "q",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "q",
+        "data_type": "In-app search history",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "The sort field. Can be comments, created, or updated. Default: best match",
+        "name": "sort",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "sort field",
+        "data_type": "Settings or parameters",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "The sort order if sort parameter is provided. One of asc or desc. Default: desc",
+        "name": "order",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "order",
+        "data_type": "Settings or parameters",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

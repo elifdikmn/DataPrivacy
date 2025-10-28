@@ -1,0 +1,8 @@
+{
+    "collection": [
+        "**Response Information:**\n\nAll Cards\n\n  * id - ID or Passcode of the card.",
+        "* views - The number of times a card has been viewed in our database (does not include API/external views)."
+    ],
+    "sharing": [],
+    "pp_length": 45982
+}

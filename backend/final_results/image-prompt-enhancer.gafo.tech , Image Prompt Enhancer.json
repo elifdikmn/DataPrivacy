@@ -1,0 +1,18 @@
+[
+    {
+        "description": null,
+        "name": "prompt",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "prompt",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

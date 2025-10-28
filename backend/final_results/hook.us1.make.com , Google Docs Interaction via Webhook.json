@@ -1,0 +1,53 @@
+[
+    {
+        "META_PY_KEYS": "documentId",
+        "description": "The Google Doc's ID extracted from the URL.",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "Google Doc's ID",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "This encompasses all scripts\ncrafted to address the specific needs of our users, based on the detailed\ninformation they provide about their customers, offers, and marketing\nobjectives."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "### **8.1 Types of Information Collected**\n\nVideo Boss LLC collects both personal and non-personal information related to\nour Custom GPT service for crafting direct response video ad scripts."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "The\ntypes of information collected include:\n\n  * **Personal Information:** Links to Google Docs that contain offer and customer information provided voluntarily by users."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "* **Non-personal Information:** We may collect aggregated data or usage information that does not identify you personally but helps us improve our service quality and efficiency."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "### **8.2 How Information is Collected**\n\nInformation is collected exclusively through voluntary submission by our\nusers."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "We do not employ automatic data collection methods."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "Users provide this\ninformation to assist in the creation of tailored video ad scripts that meet\ntheir specific needs."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "Consent**\n\nBy using our Custom GPT service, you consent to the collection and use of\ninformation in accordance with this Privacy Policy."
+            }
+        ]
+    }
+]

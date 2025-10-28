@@ -1,0 +1,14 @@
+{
+    "collection": [
+        "This document provides important information about the data that we collect\nwhen you use Google Public DNS, how long we store it, and how we use it.",
+        "Moreover, Google does\nnot use any personal information collected through the Public DNS service to\ntarget ads.",
+        "## Information that we collect\n\nThe information that we collect about your DNS queries is stored in two types\nof logs, each detailed below:\n\n  * Temporary DNS Logs\n  * Permanent DNS Logs\n\n### Temporary DNS Logs\n\nTemporary logs are the only logs that store both your IP address and your DNS\nquery.",
+        "Specifically, the temporary logs include:\n\n  * the IP address of your device sending the DNS query\n  * the technical information collected for Permanent Logs (see below)\n  * for DNS-over-HTTPS (DoH): the Content-Type and Accept HTTP headers\n\nThese logs are subject to our deletion processes within 24-48 hours.",
+        "The following\ninformation is logged in the permanent logs:\n\n  * Requested domain name\n  * Request type (`A` , `AAAA` , `NS`, `MX`, `TXT`, etc.)",
+        "* Request Size\n  * Transport protocol (`TCP`, `UDP`, `TLS`, or `HTTPS`)\n  * Client's autonomous system number\n  * User's geolocation: country, region, and city (no more specific than 1 km\u00b2 and 1000 users)\n  * DNS Response code\n  * Google DNS server information\n  * Timestamp\n  * Processing time\n  * Response DNS flags (including `AD`, `CD`, `DO`, `RD`, and `TC`)\n  * Response size\n  * EDNS version\n  * EDNS option\n  * EDNS Client Subnet (ECS) (IP protocol and prefix length -- excluding the client IP address)\n  * For DNS-over-HTTPS (DoH): \n    * Version string corresponding to HTTP path (`/dns-query` or `/resolve`)\n    * Response HTTP encoding, such as `application/dns-message` or `json`\n\n## Previous Versions\n\nYou can see [all past versions](/speed/public-dns/archive/privacy-changes) of\nthis policy."
+    ],
+    "sharing": [
+        "We do not correlate or associate personal information in Google Public DNS\nlogs with your information from use of any other Google service except for\naddressing security and abuse."
+    ],
+    "pp_length": 8929
+}

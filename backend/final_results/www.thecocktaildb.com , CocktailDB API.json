@@ -1,0 +1,54 @@
+[
+    {
+        "description": "Type of drink to filter, e.g., 'Alcoholic'",
+        "name": "a",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "Type of drink to filter",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "This privacy policy\noutlines how we handle information collected and processed through our\nservice, which utilizes TheCocktailDB's free recipe API."
+            },
+            {
+                "number": 2,
+                "label": "VAGUE",
+                "sentence": "## Information Collection and Use\n\n  * **User Queries** : We collect information that you provide directly when you interact with Wepa!"
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "* **No Personal Data Collected** : Our service is designed not to collect or store any personal data such as names, email addresses, or payment information."
+            }
+        ]
+    },
+    {
+        "description": "Type of drink to filter, e.g., 'Non_Alcoholic'",
+        "name": "a",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "Type of drink to filter",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "This privacy policy\noutlines how we handle information collected and processed through our\nservice, which utilizes TheCocktailDB's free recipe API."
+            },
+            {
+                "number": 2,
+                "label": "VAGUE",
+                "sentence": "## Information Collection and Use\n\n  * **User Queries** : We collect information that you provide directly when you interact with Wepa!"
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "* **No Personal Data Collected** : Our service is designed not to collect or store any personal data such as names, email addresses, or payment information."
+            }
+        ]
+    }
+]

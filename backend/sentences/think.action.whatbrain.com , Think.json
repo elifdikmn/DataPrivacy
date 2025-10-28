@@ -1,0 +1,17 @@
+{
+    "collection": [
+        "Information Collection Our\nChatGPT action does not collect or log any personal information from its\nusers.",
+        "We do not store any personally identifiable information (PII), nor do\nwe record any details about the inputs provided by users during their\ninteraction with our action.",
+        "Use of Information Since we do not collect any\npersonal information, there is no usage of such data.",
+        "The only information we\ntrack is the total number of times the API is executed, which is used solely\nfor operational and performance metrics.",
+        "Data Sharing and Disclosure As we do\nnot collect or store any personal information, there is no sharing or\ndisclosure of such data to any third parties.",
+        "Data Storage and Security The\nonly data stored is the count of API executions.",
+        "User Rights Given that\nwe do not collect or store any personal information, there are no specific\nuser rights related to data access, rectification, or deletion.",
+        "Children's\nPrivacy Our ChatGPT action does not specifically target or collect information\nfrom children.",
+        "Since no personal data is collected, we inherently comply with\nchildren's privacy laws like the Children's Online Privacy Protection Act\n(COPPA)."
+    ],
+    "sharing": [
+        "Data Sharing and Disclosure As we do\nnot collect or store any personal information, there is no sharing or\ndisclosure of such data to any third parties."
+    ],
+    "pp_length": 1969
+}

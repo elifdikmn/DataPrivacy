@@ -1,0 +1,34 @@
+[
+    {
+        "description": "The stock symbol for which to retrieve notices.",
+        "name": "symbol",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "stock symbol",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "Data Protection**\n\n**6.1 Data Collection, Use and Protection**\n\n6.1.1 In order to provide you with the Services, we will collect data that you\nvoluntarily provide to us and data that is automatically generated when you\nuse the Services."
+            }
+        ]
+    },
+    {
+        "description": "The type of notices to retrieve.",
+        "name": "type",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "type of notices to retrieve",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "Data Protection**\n\n**6.1 Data Collection, Use and Protection**\n\n6.1.1 In order to provide you with the Services, we will collect data that you\nvoluntarily provide to us and data that is automatically generated when you\nuse the Services."
+            }
+        ]
+    }
+]

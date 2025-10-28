@@ -1,0 +1,24 @@
+{
+    "collection": [
+        "30  \n81373 Munich,\nGermany](https://graphhopper.com/maps/?point=GraphHopper%20M%C3%BCnchen)\n\n# Privacy\n\nLast modified: Jan 17, 2023\n\nThe GraphHopper GmbH is the sole owner of the information collected on this\nsite.",
+        "We do not collect, store, or share any personally identifiable user\ndata, except what you voluntarily give to us via email, up on registration or\nother direct contact from you.",
+        "GraphHopper Website and Documentation\n\nFor web analytics we use [Matomo (piwik)](https://matomo.org/) where we do not\nstore the full IP address but only 2 bytes like 192.168.xxx.xxx, as well as\ninformation like your internet domain, the date and time of your visit, and\nthe pages you access on GraphHopper.com.",
+        "This information is collected solely\nfor diagnostic and analytic purposes.",
+        "If you contact us via our contact form or use our FAQ, the data is stored in\n[freshdesk](https://www.freshworks.com/privacy/).",
+        "If you contact us via email, the emails are stored at our email-provider\n[DomainFactory](https://www.df.eu/int/datenschutz/).",
+        "Additionally, we use the default map provider\n[Omniscale](https://omniscale.com/privacy) where the request is processed to\nprovide us with map tiles.",
+        "### Cookies\n\nWe use cookies information to  \n(i) simplify browsing our website so you do not need to re-enter user data\nduring your visit or in subsequent visits;  \n(ii) maintain sessions for authenticated users; and  \n(iii) monitor aggregate metrics such as total number of visitors and pages\nviewed.",
+        "Every API request is\nstored.",
+        "We save the associated information (request body and headers, IP,\ntime) for a maximum of 5 weeks.",
+        "When customers sign up at our **dashboard** we collect personal information\nsuch as name, email, registration IP, time and company name.",
+        "**Payment** providers can store additional information such as address and\ncredit card number.",
+        "It is collected, processed, and held in a secure\nenvironment that only authorized persons can access."
+    ],
+    "sharing": [
+        "We do not collect, store, or share any personally identifiable user\ndata, except what you voluntarily give to us via email, up on registration or\nother direct contact from you.",
+        "We do not sell or rent this information to\nanyone.",
+        "We do not share any identifiable\ninformation about this information at any time, unless required by law.",
+        "For **invoice** processing and accouting we collaborate with\n[R/F/E](http://www.rfe.gmbh) and\n[Buchhaltungsbutler](https://www.buchhaltungsbutler.de/datenschutzbestimmungen/)."
+    ],
+    "pp_length": 8535
+}

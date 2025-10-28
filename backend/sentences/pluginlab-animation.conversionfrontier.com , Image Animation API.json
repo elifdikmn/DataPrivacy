@@ -1,0 +1,10 @@
+{
+    "collection": [
+        "## Data Collection:\n\nThe types of data collected by Animation Crafter include:\n\n  1.",
+        "Directly Provided Data: This includes user inputs such as animation prompts, image links (specifically Google Drive links), and any specific instructions or preferences for the animation.",
+        "Automatically Collected Data: Usage statistics, such as frequency of use, types of animations requested, and general user engagement metrics.",
+        "## AI-Specific Considerations:\n\nThe AI in Animation Crafter processes personal data as follows:\n\n  * Analyzing user prompts and image links to generate animations."
+    ],
+    "sharing": [],
+    "pp_length": 5386
+}

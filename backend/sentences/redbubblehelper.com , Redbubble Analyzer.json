@@ -1,0 +1,14 @@
+{
+    "collection": [
+        "This Privacy\nPolicy outlines how we collect, use, protect, and manage your personal\ninformation.",
+        "## Data Collection\n\n### What We Collect:\n\n  * **Personal Information:** This may include your name, email address, and other contact information you provide when registering or communicating with us.",
+        "* **Usage Data:** Information on how you interact with our API, including choices made within the service, and technical data like IP address, browser type, and operating system.",
+        "* **Analytics:** We may collect aggregated data or statistics to understand how our service is used.",
+        "### How We Collect Data:\n\n  * **Directly From You:** When you sign up, contact us, or interact with our services.",
+        "* **Automatically:** Through cookies and similar technologies when you use our API."
+    ],
+    "sharing": [
+        "## Third-Party Affiliations\n\nWe may share your data with third parties for service providers and legal\nrequirements, but we do not sell your personal data to third parties."
+    ],
+    "pp_length": 2770
+}

@@ -1,0 +1,407 @@
+[
+    {
+        "description": "The identifier of the educational standard to retrieve",
+        "name": "standardId",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "standardId",
+        "data_type": "User IDs",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "But sometimes we do need information to provide\nservices that you request, and this privacy statement explains data collection\nand use in those situations."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "**Collection of your Personal Information**\n\nWe will ask you when we need information that personally identifies you\n(personal information) or allows us to contact you."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "Generally, this\ninformation is requested when you are registering before entering a contest,\nordering e-mail newsletters, joining a limited-access premium site, signing up\nfor an event or training, or when purchasing and/or registering GaDOE\nproducts."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "Personal information collected by GaDOE websites often is limited to\ne-mail address, language, country or location, but may include other\ninformation when needed to provide a service you requested."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "For example: If you choose a service or transaction that requires payment,\nsuch as making a purchase in the Shop area of the website, we will request\npersonal information necessary for billing and/or shipping, such as: name,\naddress, telephone number, and credit card number."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "When you buy and install a new product, we may ask you to register your\npurchase electronically."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "We keep this registration information on file with\nany information you've already given us on previous visits to our website."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "The GaDOE also collects certain information about your computer hardware and\nsoftware."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "This information may include: your IP address, browser type,\noperating system, domain name, access times and referring website addresses."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "The GaDOE also collects information about which pages our customers visit\nwithin georgiastandards.org This site visitation data is identified only by a\nunique ID number, and it is linked with personal information provided by the\nuser."
+            },
+            {
+                "number": 11,
+                "label": "OMITTED",
+                "sentence": "In some limited-entry sections\nof GaDOE, with your approval, we will combine site-visitation data with your\npersonal information in order to provide you with personalized content."
+            },
+            {
+                "number": 12,
+                "label": "OMITTED",
+                "sentence": "GaDOE abides by the safe harbor framework\nas set forth by the U.S. Department of Commerce regarding the collection, use,\nand retention of data from the European Union."
+            },
+            {
+                "number": 13,
+                "label": "OMITTED",
+                "sentence": "**Protection of Children's Personal Information**\n\nGaDOE is intended for business use and does not knowingly collect any personal\ninformation from children."
+            },
+            {
+                "number": 14,
+                "label": "OMITTED",
+                "sentence": "One use of cookies is to assist in the collection of the site\nvisitation statistics described above."
+            }
+        ]
+    },
+    {
+        "description": "The grade level to filter the educational standards. Select PK,KG,01,02,03,04,05,06,07,08,09,10,11,12",
+        "name": "gradeLevel",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "grade level",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "But sometimes we do need information to provide\nservices that you request, and this privacy statement explains data collection\nand use in those situations."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "**Collection of your Personal Information**\n\nWe will ask you when we need information that personally identifies you\n(personal information) or allows us to contact you."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "Generally, this\ninformation is requested when you are registering before entering a contest,\nordering e-mail newsletters, joining a limited-access premium site, signing up\nfor an event or training, or when purchasing and/or registering GaDOE\nproducts."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "Personal information collected by GaDOE websites often is limited to\ne-mail address, language, country or location, but may include other\ninformation when needed to provide a service you requested."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "For example: If you choose a service or transaction that requires payment,\nsuch as making a purchase in the Shop area of the website, we will request\npersonal information necessary for billing and/or shipping, such as: name,\naddress, telephone number, and credit card number."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "When you buy and install a new product, we may ask you to register your\npurchase electronically."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "We keep this registration information on file with\nany information you've already given us on previous visits to our website."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "The GaDOE also collects certain information about your computer hardware and\nsoftware."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "This information may include: your IP address, browser type,\noperating system, domain name, access times and referring website addresses."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "The GaDOE also collects information about which pages our customers visit\nwithin georgiastandards.org This site visitation data is identified only by a\nunique ID number, and it is linked with personal information provided by the\nuser."
+            },
+            {
+                "number": 11,
+                "label": "OMITTED",
+                "sentence": "In some limited-entry sections\nof GaDOE, with your approval, we will combine site-visitation data with your\npersonal information in order to provide you with personalized content."
+            },
+            {
+                "number": 12,
+                "label": "OMITTED",
+                "sentence": "GaDOE abides by the safe harbor framework\nas set forth by the U.S. Department of Commerce regarding the collection, use,\nand retention of data from the European Union."
+            },
+            {
+                "number": 13,
+                "label": "OMITTED",
+                "sentence": "**Protection of Children's Personal Information**\n\nGaDOE is intended for business use and does not knowingly collect any personal\ninformation from children."
+            },
+            {
+                "number": 14,
+                "label": "OMITTED",
+                "sentence": "One use of cookies is to assist in the collection of the site\nvisitation statistics described above."
+            }
+        ]
+    },
+    {
+        "description": "The subject to filter the educational standards",
+        "name": "subject",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "subject",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "But sometimes we do need information to provide\nservices that you request, and this privacy statement explains data collection\nand use in those situations."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "**Collection of your Personal Information**\n\nWe will ask you when we need information that personally identifies you\n(personal information) or allows us to contact you."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "Generally, this\ninformation is requested when you are registering before entering a contest,\nordering e-mail newsletters, joining a limited-access premium site, signing up\nfor an event or training, or when purchasing and/or registering GaDOE\nproducts."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "Personal information collected by GaDOE websites often is limited to\ne-mail address, language, country or location, but may include other\ninformation when needed to provide a service you requested."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "For example: If you choose a service or transaction that requires payment,\nsuch as making a purchase in the Shop area of the website, we will request\npersonal information necessary for billing and/or shipping, such as: name,\naddress, telephone number, and credit card number."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "When you buy and install a new product, we may ask you to register your\npurchase electronically."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "We keep this registration information on file with\nany information you've already given us on previous visits to our website."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "The GaDOE also collects certain information about your computer hardware and\nsoftware."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "This information may include: your IP address, browser type,\noperating system, domain name, access times and referring website addresses."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "The GaDOE also collects information about which pages our customers visit\nwithin georgiastandards.org This site visitation data is identified only by a\nunique ID number, and it is linked with personal information provided by the\nuser."
+            },
+            {
+                "number": 11,
+                "label": "OMITTED",
+                "sentence": "In some limited-entry sections\nof GaDOE, with your approval, we will combine site-visitation data with your\npersonal information in order to provide you with personalized content."
+            },
+            {
+                "number": 12,
+                "label": "OMITTED",
+                "sentence": "GaDOE abides by the safe harbor framework\nas set forth by the U.S. Department of Commerce regarding the collection, use,\nand retention of data from the European Union."
+            },
+            {
+                "number": 13,
+                "label": "OMITTED",
+                "sentence": "**Protection of Children's Personal Information**\n\nGaDOE is intended for business use and does not knowingly collect any personal\ninformation from children."
+            },
+            {
+                "number": 14,
+                "label": "OMITTED",
+                "sentence": "One use of cookies is to assist in the collection of the site\nvisitation statistics described above."
+            }
+        ]
+    },
+    {
+        "description": "A search term to filter the educational standards",
+        "name": "search",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "search term for educational standards",
+        "data_type": "In-app search history",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "But sometimes we do need information to provide\nservices that you request, and this privacy statement explains data collection\nand use in those situations."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "**Collection of your Personal Information**\n\nWe will ask you when we need information that personally identifies you\n(personal information) or allows us to contact you."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "Generally, this\ninformation is requested when you are registering before entering a contest,\nordering e-mail newsletters, joining a limited-access premium site, signing up\nfor an event or training, or when purchasing and/or registering GaDOE\nproducts."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "Personal information collected by GaDOE websites often is limited to\ne-mail address, language, country or location, but may include other\ninformation when needed to provide a service you requested."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "For example: If you choose a service or transaction that requires payment,\nsuch as making a purchase in the Shop area of the website, we will request\npersonal information necessary for billing and/or shipping, such as: name,\naddress, telephone number, and credit card number."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "When you buy and install a new product, we may ask you to register your\npurchase electronically."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "We keep this registration information on file with\nany information you've already given us on previous visits to our website."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "The GaDOE also collects certain information about your computer hardware and\nsoftware."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "This information may include: your IP address, browser type,\noperating system, domain name, access times and referring website addresses."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "The GaDOE also collects information about which pages our customers visit\nwithin georgiastandards.org This site visitation data is identified only by a\nunique ID number, and it is linked with personal information provided by the\nuser."
+            },
+            {
+                "number": 11,
+                "label": "OMITTED",
+                "sentence": "In some limited-entry sections\nof GaDOE, with your approval, we will combine site-visitation data with your\npersonal information in order to provide you with personalized content."
+            },
+            {
+                "number": 12,
+                "label": "OMITTED",
+                "sentence": "GaDOE abides by the safe harbor framework\nas set forth by the U.S. Department of Commerce regarding the collection, use,\nand retention of data from the European Union."
+            },
+            {
+                "number": 13,
+                "label": "OMITTED",
+                "sentence": "**Protection of Children's Personal Information**\n\nGaDOE is intended for business use and does not knowingly collect any personal\ninformation from children."
+            },
+            {
+                "number": 14,
+                "label": "OMITTED",
+                "sentence": "One use of cookies is to assist in the collection of the site\nvisitation statistics described above."
+            }
+        ]
+    },
+    {
+        "description": "The identifier of the subject to retrieve the full standards collection",
+        "name": "subjectId",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "subjectId",
+        "data_type": "User IDs",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "But sometimes we do need information to provide\nservices that you request, and this privacy statement explains data collection\nand use in those situations."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "**Collection of your Personal Information**\n\nWe will ask you when we need information that personally identifies you\n(personal information) or allows us to contact you."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "Generally, this\ninformation is requested when you are registering before entering a contest,\nordering e-mail newsletters, joining a limited-access premium site, signing up\nfor an event or training, or when purchasing and/or registering GaDOE\nproducts."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "Personal information collected by GaDOE websites often is limited to\ne-mail address, language, country or location, but may include other\ninformation when needed to provide a service you requested."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "For example: If you choose a service or transaction that requires payment,\nsuch as making a purchase in the Shop area of the website, we will request\npersonal information necessary for billing and/or shipping, such as: name,\naddress, telephone number, and credit card number."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "When you buy and install a new product, we may ask you to register your\npurchase electronically."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "We keep this registration information on file with\nany information you've already given us on previous visits to our website."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "The GaDOE also collects certain information about your computer hardware and\nsoftware."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "This information may include: your IP address, browser type,\noperating system, domain name, access times and referring website addresses."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "The GaDOE also collects information about which pages our customers visit\nwithin georgiastandards.org This site visitation data is identified only by a\nunique ID number, and it is linked with personal information provided by the\nuser."
+            },
+            {
+                "number": 11,
+                "label": "OMITTED",
+                "sentence": "In some limited-entry sections\nof GaDOE, with your approval, we will combine site-visitation data with your\npersonal information in order to provide you with personalized content."
+            },
+            {
+                "number": 12,
+                "label": "OMITTED",
+                "sentence": "GaDOE abides by the safe harbor framework\nas set forth by the U.S. Department of Commerce regarding the collection, use,\nand retention of data from the European Union."
+            },
+            {
+                "number": 13,
+                "label": "OMITTED",
+                "sentence": "**Protection of Children's Personal Information**\n\nGaDOE is intended for business use and does not knowingly collect any personal\ninformation from children."
+            },
+            {
+                "number": 14,
+                "label": "OMITTED",
+                "sentence": "One use of cookies is to assist in the collection of the site\nvisitation statistics described above."
+            }
+        ]
+    }
+]

@@ -1,0 +1,13 @@
+{
+    "collection": [
+        "Do not be creepy about what personal data is collected or how it\nis used and do not change the way personal data is used without first giving\npeople notice and an opportunity to object, or, where required, obtaining\nprior consent.",
+        "Transparency is a core\nvalue and every team member is responsible for the proper collection and use\nof personal data consistent with our [Privacy\nStatement](https://about.gitlab.com/privacy/).",
+        "Consent is captured by an unticked checkbox or other\nunequivocal statement which signifies agreement to the processing of personal\ndata before or at the time of collection.",
+        "GitLab also serves as a Data Controller for all\npersonal data collected from Team Members for employment purposes and any\nadministration of benefits.",
+        "Data Subject Rights\n\n**Right of Access** A request seeking access to the specific pieces of\npersonal data that have been collected and used by a Data Controller."
+    ],
+    "sharing": [
+        "Generally\nthis is a request to opt-out of processing for targeted advertising, which\nincludes the sale or sharing of personal data for profiling or cross-context\nbehavioral advertising."
+    ],
+    "pp_length": 432853
+}

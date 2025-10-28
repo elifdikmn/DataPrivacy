@@ -1,0 +1,14 @@
+{
+    "collection": [
+        "### Collection of Personal Information\n\nWe may collect basic contact information such as your email address when you\nsubscribe to our newsletters or contact us via the contact form on our\nwebsite.",
+        "We ensure that the collection, storage, and handling of data\nfrom individuals within the European Union are conducted in full compliance\nwith GDPR requirements.",
+        "Queries sent may be stored, utilized to track user interest trends to enrich\nour knowledge base with highly relevant content.",
+        "Some cookies are necessary for the website to function correctly, while others\nhelp us improve your experience by tracking how you use the site."
+    ],
+    "sharing": [
+        "Agile Coach Pro employs the [Retrieval-\nAugmented Generation\n(RAG)](https://help.openai.com/en/articles/8868588-retrieval-augmented-\ngeneration-rag-and-semantic-search-for-gpts) technology, which may send user\nqueries to an external system.",
+        "These queries are designed to be free of\npersonal information, ensuring Agile Coach Pro cannot transmit user personal\ndata externally.",
+        "### Data Transfer\n\nWe may share your contact information with our data processing partners to\nfulfill requests made through our site, ensuring they adhere to strict\nconfidentiality and data protection requirements."
+    ],
+    "pp_length": 5440
+}

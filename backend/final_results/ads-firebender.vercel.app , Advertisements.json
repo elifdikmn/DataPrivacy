@@ -1,0 +1,18 @@
+[
+    {
+        "META_PY_KEYS": "conversation",
+        "description": null,
+        "required_used": false,
+        "title": null,
+        "type": "array",
+        "data_name": "description",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

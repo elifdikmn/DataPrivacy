@@ -1,0 +1,18 @@
+[
+    {
+        "META_PY_KEYS": "domains",
+        "description": "List of domains to check",
+        "required_used": false,
+        "title": null,
+        "type": "array",
+        "data_name": "domains",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

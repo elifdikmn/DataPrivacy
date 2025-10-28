@@ -1,0 +1,384 @@
+[
+    {
+        "META_PY_KEYS": "pair",
+        "description": "The trading pair (e.g., 'BTC/USDT', 'ETH/USDT').",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "trading pair",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "In some cases we may use cookies to collect personal information, or that\nbecomes personal information if we combine it with other information."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "Other cookies\nalso enable us\n\nto track and target the interests of our users to enhance the experience on\nour Online Properties."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": ".termly.io\n\nTermly View Service Privacy Policy United States http_cookie 1 year\n\nAnalytics and customization cookies:\n\nThese cookies collect information that is used either in aggregate form to\nhelp us understand how our Websites are being used or how effective our\nmarketing campaigns are, or to help us customize our Websites for you."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": ".thekingfisher.io Google Analytics View Service Privacy Policy Netherlands\nhttp_cookie 1 minute\n\n_ga\n\nIt records a particular ID used to come up with data about website usage by\nthe user."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": ".thekingfisher.io Google Analytics View Service Privacy Policy Netherlands\nhttp_cookie 1 year 11 months 29 days\n\n_gid\n\nKeeps an entry of unique ID which is then used to come up with statistical\ndata on website usage by visitors."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "This\nallows us, for example, to monitor the traffic patterns of users from one page\nwithin a website to another, to deliver or communicate with cookies, to\nunderstand whether you have come to the website from an online advertisement\ndisplayed on a third-party website, to improve site performance, and to\nmeasure the success of e-mail marketing campaigns."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "In this privacy notice, we\nseek to explain to you in the clearest way possible what information we\ncollect, how we use it and what rights you have in relation to it."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "This privacy notice applies to all information collected through our Services\n(which, as described above, includes our Website), as well as, any related\nservices, sales, marketing or events."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "Please read this privacy notice carefully as it will help you understand what\nwe do with the information that we collect."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "WHAT INFORMATION DO WE COLLECT?"
+            },
+            {
+                "number": 11,
+                "label": "OMITTED",
+                "sentence": "DO WE COLLECT\nINFORMATION FROM MINORS?"
+            },
+            {
+                "number": 12,
+                "label": "OMITTED",
+                "sentence": "HOW CAN YOU REVIEW, UPDATE OR DELETE THE DATA WE COLLECT FROM YOU?"
+            },
+            {
+                "number": 13,
+                "label": "OMITTED",
+                "sentence": "WHAT INFORMATION DO WE COLLECT?"
+            },
+            {
+                "number": 14,
+                "label": "OMITTED",
+                "sentence": "Personal information you disclose to us\n\nIn Short: We collect personal information that you provide to us."
+            },
+            {
+                "number": 15,
+                "label": "OMITTED",
+                "sentence": "We collect personal information that you voluntarily provide to us when you\nregister on the Website, express an interest in obtaining information about us\nor our products and Services, when you participate in activities on the\nWebsite or otherwise when you contact us."
+            },
+            {
+                "number": 16,
+                "label": "OMITTED",
+                "sentence": "The personal information that we collect depends on the context of your\ninteractions with us and the Website, the choices you make and the products\nand features you use."
+            },
+            {
+                "number": 17,
+                "label": "OMITTED",
+                "sentence": "The personal information we collect may include the\nfollowing:\n\nPersonal Information Provided by You."
+            },
+            {
+                "number": 18,
+                "label": "OMITTED",
+                "sentence": "We collect email addresses; and other\nsimilar information."
+            },
+            {
+                "number": 19,
+                "label": "OMITTED",
+                "sentence": "We may collect data necessary to process your payment if you\nmake purchases, such as your payment instrument number (such as a credit card\nnumber), and the security code associated with your payment instrument."
+            },
+            {
+                "number": 20,
+                "label": "OMITTED",
+                "sentence": "We use personal information collected via our Website for a variety of\nbusiness purposes described below."
+            },
+            {
+                "number": 21,
+                "label": "OMITTED",
+                "sentence": "We use the information we collect or receive:\n\n  * \u25aa To facilitate account creation and logon process."
+            },
+            {
+                "number": 22,
+                "label": "OMITTED",
+                "sentence": "If you choose to link your account with us to a third-party account (such as your Google or Facebook account), we use the information you allowed us to collect from those third parties to facilitate account creation and logon process for the performance of the contract."
+            },
+            {
+                "number": 23,
+                "label": "OMITTED",
+                "sentence": "In Short: We may use cookies and other tracking technologies to collect and\nstore your information."
+            },
+            {
+                "number": 24,
+                "label": "OMITTED",
+                "sentence": "We may use cookies and similar tracking technologies (like web beacons and\npixels) to access or store information."
+            },
+            {
+                "number": 25,
+                "label": "OMITTED",
+                "sentence": "DO WE COLLECT INFORMATION FROM MINORS?"
+            },
+            {
+                "number": 26,
+                "label": "OMITTED",
+                "sentence": "In Short: We do not knowingly collect data from or market to children under 18\nyears of age."
+            },
+            {
+                "number": 27,
+                "label": "OMITTED",
+                "sentence": "If we learn that personal information from\nusers less than 18 years of age has been collected, we will deactivate the\naccount and take reasonable measures to promptly delete such data from our\nrecords."
+            },
+            {
+                "number": 28,
+                "label": "OMITTED",
+                "sentence": "If you become aware of any data we may have collected from children\nunder age 18, please contact us\n\nat contact.thekingfisher@gmail.com."
+            },
+            {
+                "number": 29,
+                "label": "OMITTED",
+                "sentence": "CONTROLS FOR DO-NOT-TRACK\nFEATURES\n\nMost web browsers and some mobile operating systems and mobile applications\ninclude a Do-Not-Track (\"DNT\") feature or setting you can activate to signal\nyour privacy preference not to have data about your online browsing activities\nmonitored and collected."
+            },
+            {
+                "number": 30,
+                "label": "OMITTED",
+                "sentence": "HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?"
+            },
+            {
+                "number": 31,
+                "label": "OMITTED",
+                "sentence": "Based on the applicable laws of your country, you may have the right to\nrequest access to the personal information we collect from you, change that\ninformation, or delete it in some circumstances."
+            },
+            {
+                "number": 32,
+                "label": "OMITTED",
+                "sentence": "Upload or transmit (or attempt to upload or to transmit) any material\nthat acts as a passive or active information collection or transmission\nmechanism, including without limitation, clear graphics interchange formats\n(\u201cgifs\u201d), 1\u00d71 pixels, web bugs, cookies, or other similar devices (sometimes\nreferred to as \u201cspyware\u201d or \u201cpassive collection mechanisms\u201d or \u201cpcms\u201d)."
+            },
+            {
+                "number": 33,
+                "label": "OMITTED",
+                "sentence": "Make any unauthorized use of the Site, including collecting usernames\nand/or email addresses of users by electronic or other means for the purpose\nof sending unsolicited email, or creating user accounts by automated means or\nunder false pretenses."
+            },
+            {
+                "number": 34,
+                "label": "OMITTED",
+                "sentence": "We may provide you\nwith the opportunity to create, submit, post, display, transmit, perform,\npublish, distribute, or broadcast content and materials to us or on the Site,\nincluding but not limited to text, writings, video, audio, photographs,\ngraphics, comments, suggestions, or personal information or other material\n(collectively, \"Contributions\")."
+            },
+            {
+                "number": 35,
+                "label": "OMITTED",
+                "sentence": "CONTRIBUTION LICENSE\n\nYou and the Site agree that we may access, store, process, and use any\ninformation and personal data that you provide following the terms of the\nPrivacy Policy and your choices (including settings)."
+            },
+            {
+                "number": 36,
+                "label": "OMITTED",
+                "sentence": "USER DATA\n\nWe will maintaincertain data that you transmit to the Site for the purpose of\nmanaging theperformance of the Site, as well as data relating to your use of\nthe Site."
+            }
+        ]
+    },
+    {
+        "META_PY_KEYS": "tf",
+        "description": "The timeframe (e.g., '5m', '1h', '4h').",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "timeframe",
+        "data_type": "Time",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "In some cases we may use cookies to collect personal information, or that\nbecomes personal information if we combine it with other information."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "Other cookies\nalso enable us\n\nto track and target the interests of our users to enhance the experience on\nour Online Properties."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": ".termly.io\n\nTermly View Service Privacy Policy United States http_cookie 1 year\n\nAnalytics and customization cookies:\n\nThese cookies collect information that is used either in aggregate form to\nhelp us understand how our Websites are being used or how effective our\nmarketing campaigns are, or to help us customize our Websites for you."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": ".thekingfisher.io Google Analytics View Service Privacy Policy Netherlands\nhttp_cookie 1 minute\n\n_ga\n\nIt records a particular ID used to come up with data about website usage by\nthe user."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": ".thekingfisher.io Google Analytics View Service Privacy Policy Netherlands\nhttp_cookie 1 year 11 months 29 days\n\n_gid\n\nKeeps an entry of unique ID which is then used to come up with statistical\ndata on website usage by visitors."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "This\nallows us, for example, to monitor the traffic patterns of users from one page\nwithin a website to another, to deliver or communicate with cookies, to\nunderstand whether you have come to the website from an online advertisement\ndisplayed on a third-party website, to improve site performance, and to\nmeasure the success of e-mail marketing campaigns."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "In this privacy notice, we\nseek to explain to you in the clearest way possible what information we\ncollect, how we use it and what rights you have in relation to it."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "This privacy notice applies to all information collected through our Services\n(which, as described above, includes our Website), as well as, any related\nservices, sales, marketing or events."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "Please read this privacy notice carefully as it will help you understand what\nwe do with the information that we collect."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "WHAT INFORMATION DO WE COLLECT?"
+            },
+            {
+                "number": 11,
+                "label": "OMITTED",
+                "sentence": "DO WE COLLECT\nINFORMATION FROM MINORS?"
+            },
+            {
+                "number": 12,
+                "label": "OMITTED",
+                "sentence": "HOW CAN YOU REVIEW, UPDATE OR DELETE THE DATA WE COLLECT FROM YOU?"
+            },
+            {
+                "number": 13,
+                "label": "OMITTED",
+                "sentence": "WHAT INFORMATION DO WE COLLECT?"
+            },
+            {
+                "number": 14,
+                "label": "OMITTED",
+                "sentence": "Personal information you disclose to us\n\nIn Short: We collect personal information that you provide to us."
+            },
+            {
+                "number": 15,
+                "label": "OMITTED",
+                "sentence": "We collect personal information that you voluntarily provide to us when you\nregister on the Website, express an interest in obtaining information about us\nor our products and Services, when you participate in activities on the\nWebsite or otherwise when you contact us."
+            },
+            {
+                "number": 16,
+                "label": "OMITTED",
+                "sentence": "The personal information that we collect depends on the context of your\ninteractions with us and the Website, the choices you make and the products\nand features you use."
+            },
+            {
+                "number": 17,
+                "label": "OMITTED",
+                "sentence": "The personal information we collect may include the\nfollowing:\n\nPersonal Information Provided by You."
+            },
+            {
+                "number": 18,
+                "label": "OMITTED",
+                "sentence": "We collect email addresses; and other\nsimilar information."
+            },
+            {
+                "number": 19,
+                "label": "OMITTED",
+                "sentence": "We may collect data necessary to process your payment if you\nmake purchases, such as your payment instrument number (such as a credit card\nnumber), and the security code associated with your payment instrument."
+            },
+            {
+                "number": 20,
+                "label": "OMITTED",
+                "sentence": "We use personal information collected via our Website for a variety of\nbusiness purposes described below."
+            },
+            {
+                "number": 21,
+                "label": "OMITTED",
+                "sentence": "We use the information we collect or receive:\n\n  * \u25aa To facilitate account creation and logon process."
+            },
+            {
+                "number": 22,
+                "label": "OMITTED",
+                "sentence": "If you choose to link your account with us to a third-party account (such as your Google or Facebook account), we use the information you allowed us to collect from those third parties to facilitate account creation and logon process for the performance of the contract."
+            },
+            {
+                "number": 23,
+                "label": "OMITTED",
+                "sentence": "In Short: We may use cookies and other tracking technologies to collect and\nstore your information."
+            },
+            {
+                "number": 24,
+                "label": "OMITTED",
+                "sentence": "We may use cookies and similar tracking technologies (like web beacons and\npixels) to access or store information."
+            },
+            {
+                "number": 25,
+                "label": "OMITTED",
+                "sentence": "DO WE COLLECT INFORMATION FROM MINORS?"
+            },
+            {
+                "number": 26,
+                "label": "OMITTED",
+                "sentence": "In Short: We do not knowingly collect data from or market to children under 18\nyears of age."
+            },
+            {
+                "number": 27,
+                "label": "OMITTED",
+                "sentence": "If we learn that personal information from\nusers less than 18 years of age has been collected, we will deactivate the\naccount and take reasonable measures to promptly delete such data from our\nrecords."
+            },
+            {
+                "number": 28,
+                "label": "OMITTED",
+                "sentence": "If you become aware of any data we may have collected from children\nunder age 18, please contact us\n\nat contact.thekingfisher@gmail.com."
+            },
+            {
+                "number": 29,
+                "label": "OMITTED",
+                "sentence": "CONTROLS FOR DO-NOT-TRACK\nFEATURES\n\nMost web browsers and some mobile operating systems and mobile applications\ninclude a Do-Not-Track (\"DNT\") feature or setting you can activate to signal\nyour privacy preference not to have data about your online browsing activities\nmonitored and collected."
+            },
+            {
+                "number": 30,
+                "label": "OMITTED",
+                "sentence": "HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?"
+            },
+            {
+                "number": 31,
+                "label": "OMITTED",
+                "sentence": "Based on the applicable laws of your country, you may have the right to\nrequest access to the personal information we collect from you, change that\ninformation, or delete it in some circumstances."
+            },
+            {
+                "number": 32,
+                "label": "OMITTED",
+                "sentence": "Upload or transmit (or attempt to upload or to transmit) any material\nthat acts as a passive or active information collection or transmission\nmechanism, including without limitation, clear graphics interchange formats\n(\u201cgifs\u201d), 1\u00d71 pixels, web bugs, cookies, or other similar devices (sometimes\nreferred to as \u201cspyware\u201d or \u201cpassive collection mechanisms\u201d or \u201cpcms\u201d)."
+            },
+            {
+                "number": 33,
+                "label": "OMITTED",
+                "sentence": "Make any unauthorized use of the Site, including collecting usernames\nand/or email addresses of users by electronic or other means for the purpose\nof sending unsolicited email, or creating user accounts by automated means or\nunder false pretenses."
+            },
+            {
+                "number": 34,
+                "label": "OMITTED",
+                "sentence": "We may provide you\nwith the opportunity to create, submit, post, display, transmit, perform,\npublish, distribute, or broadcast content and materials to us or on the Site,\nincluding but not limited to text, writings, video, audio, photographs,\ngraphics, comments, suggestions, or personal information or other material\n(collectively, \"Contributions\")."
+            },
+            {
+                "number": 35,
+                "label": "OMITTED",
+                "sentence": "CONTRIBUTION LICENSE\n\nYou and the Site agree that we may access, store, process, and use any\ninformation and personal data that you provide following the terms of the\nPrivacy Policy and your choices (including settings)."
+            },
+            {
+                "number": 36,
+                "label": "OMITTED",
+                "sentence": "USER DATA\n\nWe will maintaincertain data that you transmit to the Site for the purpose of\nmanaging theperformance of the Site, as well as data relating to your use of\nthe Site."
+            }
+        ]
+    }
+]

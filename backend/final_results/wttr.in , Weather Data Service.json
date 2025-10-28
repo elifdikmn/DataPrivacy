@@ -1,0 +1,18 @@
+[
+    {
+        "description": "The city and state to retrieve the weather for, in the format 'city+state'. Replace spaces with '+' in the location string.",
+        "name": "location",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "location",
+        "data_type": "Approximate location",
+        "collection": [
+            {
+                "number": 1,
+                "label": "VAGUE",
+                "sentence": "You can add the\ndesired location to the URL in your request like this:\n\n    \n    \n    $ curl wttr.in/London\n    $ curl wttr.in/Moscow\n    $ curl wttr.in/Salt+Lake+City\n    \n\nIf you omit the location name, you will get the report for your current\nlocation based on your IP address."
+            }
+        ]
+    }
+]

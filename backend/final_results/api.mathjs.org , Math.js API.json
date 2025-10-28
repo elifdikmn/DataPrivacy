@@ -1,0 +1,66 @@
+[
+    {
+        "META_PY_KEYS": "expr",
+        "description": null,
+        "required_used": false,
+        "title": null,
+        "type": "array",
+        "data_name": "postal code information",
+        "data_type": "Address",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "META_PY_KEYS": "precision",
+        "description": null,
+        "required_used": false,
+        "title": null,
+        "type": "integer",
+        "data_name": "precision",
+        "data_type": "Settings or parameters",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "The expression to be evaluated",
+        "name": "expr",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "expr",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "Number of significant digits in formatted output",
+        "name": "precision",
+        "schema_enum": null,
+        "schema_type": "integer",
+        "type": "query",
+        "data_name": "precision",
+        "data_type": "Settings or parameters",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

@@ -1,0 +1,20 @@
+{
+    "collection": [
+        "At Tantou AI, we respect the privacy of\nour users and are committed to being transparent about how we collect and use\nyour data.",
+        "#### Data Collection by UTantou\n\nThe information collected by UTantou encompasses various types, as outlined\nbelow:\n\n  1.",
+        "**Account Information** : This includes details provided by users during the creation of an UTantou account, such as names, email addresses, and any other voluntarily provided information.",
+        "**Documents** : UTantou collects and stores documents and files that users upload for access and storage purposes.",
+        "**Search Queries and Prompts** : The service records the search terms, queries, and prompts users input while interacting with their documents on UTantou.",
+        "**Usage Data** : Information on user interactions with UTantou is collected.",
+        "This encompasses document search and access history, click data, timestamps of access, and the URLs of referring webpages.",
+        "**Device Information** : UTantou may gather data about the devices and software used to access its service, including IP addresses, browser types, operating system versions, and cookie data.",
+        "**Third Party Data** : UTantou might enhance its collected data with demographic or other information obtained from third-party sources.",
+        "**Active Account Retention** : While your account is active, all account information, including documents, search queries, and prompts, is retained.",
+        "#### Children's Privacy Policy:\n\nWe do not target our services to children and consciously avoid collecting\ndata from this demographic."
+    ],
+    "sharing": [
+        "For essential product functions, we partner with trusted service providers like Amazon Web Services, Cloudflare, and OpenAI.",
+        "We commit to not selling or sharing your personal data with third parties for their marketing purposes."
+    ],
+    "pp_length": 5858
+}

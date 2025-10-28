@@ -1,0 +1,21 @@
+[
+    {
+        "META_PY_KEYS": "params",
+        "description": null,
+        "required_used": [
+            "method",
+            "url"
+        ],
+        "title": null,
+        "type": "object",
+        "data_name": "API request parameters",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

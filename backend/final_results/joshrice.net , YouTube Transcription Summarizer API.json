@@ -1,0 +1,18 @@
+[
+    {
+        "description": "The ID of the YouTube video",
+        "name": "videoId",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "videoId",
+        "data_type": "Data identifier",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

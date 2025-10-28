@@ -1,0 +1,35 @@
+{
+    "collection": [
+        "This document contains types of information that is collected\nand recorded by AINIRO.IO AS and how we use it.",
+        "## SCOPE\n\nAINIRO.IO AS (AINIRO.IO, \"we\") might collect and process personal data of\nusers of AINIRO's website and online services.",
+        "This Privacy Policy applies to\npersonal data we obtain from our customers and their representatives (\"Users\")\nthrough our websites when the relevant User registers to AINIRO's cloud-based\ninfrastructure and software services (collectively, the \"Services\").",
+        "As regards the data AINIRO.IO's\ncustomers or Users insert into Services while using the Services, AINIRO.IO\nregisters this personal data as a data processor and the relevant customer\nshall be considered to be the data controller with regard to this personal\ndata.",
+        "We collect two types of information from the Users: (i) User Data; and (ii)\nTechnical Data.",
+        "AINIRO.IO may collect and process for example the following User Data from\nUsers: (i) name and contact details; (ii) e-mail address; (iii) phone number;\n(iv) invoicing and billing information; (v) other personal data Users provide\nthemselves.",
+        "The specific kind of User Data collected will depend on the Services used by\nthe User.",
+        "Most of the User Data is received directly from Users at the point\nof registration or otherwise at beginning of and during the customer\nrelationship.",
+        "Technical Data we gather in connection with the use of our Services includes\nfor example the following data: (i) User's IP address; (ii) browser type and\nversion; (iii) preferred language; (iv) geographic location using IP address\nor the GPS, wireless, or Bluetooth technology on your device; (v) operating\nsystem and computer platform; (vi) the full Uniform Resource Locator (URL)\nclickstream to, through, and from our Services, including date and time; (vii)\nproducts or services User viewed or searched for while using our Services; and\n(viii) areas of our Services User has visited.",
+        "### COOKIES\n\nWe use various technologies to collect and store Technical Data and other\ninformation when Users visit our Services, including cookies.",
+        "Cookies allow us\nto calculate the aggregate number of people visiting our Services and monitor\nthe use of the Services.",
+        "We\nmay use tracking and analytics cookies to see how well our Services are being\nreceived by our Users.",
+        "### WEB ANALYTICS SERVICES\n\nOur Services use several web analytics services to compile Technical Data and\nreports on visitor usage and to help us improve our Services.",
+        "Personal data is processed by AINIRO.IO for managing the relationships with\ncustomers, facilitating transactions and payments, and for managing,\ndeveloping and analysing our customer service.",
+        "We process personal data in the first place to be able to offer the Services\nto our customers and Users and to run, maintain and develop our business.",
+        "If User contacts our customer service, we will use the provided\ninformation for answering questions and solving possible issues.",
+        "This means that Users may contact us and we will inform what\npersonal data we have collected and processed regarding the said User and the\npurposes such data are used for.",
+        "We may request the provision of additional information necessary to\nconfirm the identity of the User.",
+        "We maintain all personal data collected through industry standard safe\nmechanisms including, but necessarily limited to encryption of password data\nas well as API keys, SSL-encryption, passing of credit card information\ndirectly to our PCI compliant Merchant Processor and encryption of any\ncollected credit card information.",
+        "We use administrative, organizational, technical, and physical safeguards to\nprotect the personal data we collect and process."
+    ],
+    "sharing": [
+        "As such,\nwe and our service providers may transfer personal data to, or access it in,\njurisdictions outside the European Economic Area or the User's domicile.",
+        "### RECIPIENTS\n\nWe only share personal data within the organisation of AINIRO.IO if and as far\nas reasonably necessary to perform and develop our Services.",
+        "We do not share\npersonal data with third parties outside of AINIRO.IO's organization unless\none of the following circumstances applies:\n\n#### IT IS NECESSARY FOR THE PURPOSES SET OUT IN THIS PRIVACY POLICY\n\nTo the extent that third parties need access to personal data to perform the\nServices, Arta Marketing has taken appropriate contractual and organisational\nmeasures to ensure that personal data are processed exclusively for the\npurposes specified in this Privacy Policy and in accordance with all\napplicable laws and regulations.",
+        "#### FOR LEGAL REASONS\n\nWe may share personal data with third parties outside AINIRO.IO's organization\nif we have a good-faith belief that access to and use of the personal data is\nreasonably necessary to: (i) meet any applicable law, regulation, and/or court\norder; (ii) detect, prevent, or otherwise address fraud, security or technical\nissues; and/or (iii) protect the interests, properties or safety of AINIRO.IO,\nour Users or the public in accordance with the law.",
+        "#### TO AUTHORIZED SERVICE PROVIDERS\n\nWe may share personal data to authorized service providers who perform\nservices for us (including data storage, sales, marketing and customer support\nservices).",
+        "Our agreements with our service providers include commitments that\nthe service providers agree to limit their use of personal data and to comply\nwith privacy and security standards at least as stringent as the terms of this\nPrivacy Policy.",
+        "#### FOR OTHER LEGITIMATE REASONS\n\nIf AINIRO.IO is involved in a merger, acquisition or asset sale, we may\ntransfer personal data to the third party involved.",
+        "#### WITH EXPLICIT CONSENT\n\nWe may share personal data with third parties outside AINIRO.IO's organization\nfor other reasons than the ones mentioned before, when we have the User's\nexplicit consent to do so."
+    ],
+    "pp_length": 18544
+}

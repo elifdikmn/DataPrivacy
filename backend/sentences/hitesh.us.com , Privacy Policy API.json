@@ -1,0 +1,18 @@
+{
+    "collection": [
+        "## Comments\n\n**Suggested text:** When visitors leave comments on the site we collect the\ndata shown in the comments form, and also the visitor\u2019s IP address and browser\nuser agent string to help spam detection.",
+        "## Cookies\n\n**Suggested text:** If you leave a comment on our site you may opt-in to\nsaving your name, email address and website in cookies.",
+        "When you log in, we will also set up several cookies to save your login\ninformation and your screen display choices.",
+        "These websites may collect data about you, use cookies, embed additional\nthird-party tracking, and monitor your interaction with that embedded content,\nincluding tracking your interaction with the embedded content if you have an\naccount and are logged in to that website.",
+        "For users that register on our website (if any), we also store the personal\ninformation they provide in their user profile.",
+        "We also use third-party cookies that\nhelp us analyze and understand how you use this website.",
+        "These cookies help provide information on metrics the number of\nvisitors, bounce rate, traffic source, etc.",
+        "These cookies track visitors across websites and collect\ninformation to provide customized ads."
+    ],
+    "sharing": [
+        "An anonymized string created from your email address (also called a hash) may\nbe provided to the Gravatar service to see if you are using it.",
+        "## Who we share your data with\n\n**Suggested text:** If you request a password reset, your IP address will be\nincluded in the reset email.",
+        "## Where we send your data\n\n**Suggested text:** Visitor comments may be checked through an automated spam\ndetection service."
+    ],
+    "pp_length": 8452
+}

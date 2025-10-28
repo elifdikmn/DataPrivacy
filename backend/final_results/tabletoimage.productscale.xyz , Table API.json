@@ -1,0 +1,50 @@
+[
+    {
+        "META_PY_KEYS": "title",
+        "description": "This field supports HTML tags, and not markdown.",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "HTML tags support in field",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "META_PY_KEYS": "headers",
+        "description": null,
+        "required_used": false,
+        "title": null,
+        "type": "array",
+        "data_name": "headers",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "META_PY_KEYS": "rows",
+        "description": "This field supports HTML tags, and not markdown.",
+        "required_used": false,
+        "title": null,
+        "type": "array",
+        "data_name": "HTML tags support",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

@@ -1,0 +1,28 @@
+[
+    {
+        "description": "The YouTube video ID to retrieve the transcript for",
+        "name": "video_id",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "video_id",
+        "data_type": "Data identifier",
+        "collection": [
+            {
+                "number": 1,
+                "label": "INCORRECT",
+                "sentence": "Information Collection and Use The API is\ndesigned to not collect or store any personal data of its users."
+            },
+            {
+                "number": 2,
+                "label": "INCORRECT",
+                "sentence": "However, as we do not collect or store\ndata, the risk of breach concerning personal data is significantly minimized."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "Children's Privacy Our API is not designed for, nor do we knowingly\ncollect information from children under the age of 13."
+            }
+        ]
+    }
+]

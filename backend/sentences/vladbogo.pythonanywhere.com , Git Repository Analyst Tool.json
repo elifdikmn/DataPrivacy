@@ -1,0 +1,10 @@
+{
+    "collection": [
+        "# Privacy Policy\n\n**Data Collection:** No personal data is collected.",
+        "**Repository Data:** Only the git repositories provided by the user are cloned\nfor the operation of the service."
+    ],
+    "sharing": [
+        "**Data Usage:** The cloned repositories are only used to provide the service\nfeatures such as commit differences, and are not shared with any third\nparties."
+    ],
+    "pp_length": 543
+}

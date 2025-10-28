@@ -1,0 +1,73 @@
+[
+    {
+        "description": "Category to find appropriate writers",
+        "name": "writing_category",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "writing_category",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "Please read our privacy policy carefully to get a clear understanding of how\nwe collect, use, protect or otherwise handle your Personally Identifiable\nInformation in accordance with our website."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "**What personal information do we collect from the people that visit our blog,\nwebsite or app?"
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "**\n\n  \n\nWhen ordering or registering on our site, as appropriate, you may be asked to\nenter your name, email address, mailing address, phone number, credit card\ninformation or other details to help you with your experience."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "**\n\n  \n\nWe collect information from you when you register on our site, place an order,\nsubscribe to a newsletter, respond to a survey, fill out a form, Use Live Chat\nor enter information on our site."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "**\n\n  \n\nWe may use the information we collect from you when you register, make a\npurchase, sign up for our newsletter, respond to a survey or marketing\ncommunication, surf the website, or use certain other site features in the\nfollowing ways:  \n  \n\n      **\u2022** To personalize your experience and to allow us to deliver the type of content and product offerings in which you are most interested."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "Cookies are small files that a site or its service provider transfers to\nyour computer's hard drive through your Web browser (if you allow) that\nenables the site's or service provider's systems to recognize your browser and\ncapture and remember certain information."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "We also use\ncookies to help us compile aggregate data about site traffic and site\ninteraction so that we can offer better site experiences and tools in the\nfuture."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "**We have implemented the following:**\n\n      **\u2022** Remarketing with Google AdSense\n\n      **\u2022** Google Display Network Impression Reporting\n\n      **\u2022** Demographics and Interests Reporting\n\n  \n\nWe, along with third-party vendors such as Google use first-party cookies\n(such as the Google Analytics cookies) and third-party cookies (such as the\nDoubleClick cookie) or other third-party identifiers together to compile data\nregarding user interactions with ad impressions and other ad service functions\nas they relate to our website."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "The law's reach stretches well\nbeyond California to require any person or company in the United States (and\nconceivably the world) that operates websites collecting Personally\nIdentifiable Information from California consumers to post a conspicuous\nprivacy policy on its website stating exactly the information being collected\nand those individuals or companies with whom it is being shared."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "**  \n\nIt's also important to note that we do not allow third-party behavioral\ntracking\n\n  \n\n**COPPA (Children Online Privacy Protection Act)**\n\n  \n\nWhen it comes to the collection of personal information from children under\nthe age of 13 years old, the Children's Online Privacy Protection Act (COPPA)\nputs parents in control."
+            },
+            {
+                "number": 11,
+                "label": "OMITTED",
+                "sentence": "Do we let third-parties, including ad networks or plug-ins collect PII from\nchildren under 13?"
+            },
+            {
+                "number": 12,
+                "label": "OMITTED",
+                "sentence": "**We collect your email address in order to:**\n\n      **\u2022** Send information, respond to inquiries, and/or other requests or questions\n\n      **\u2022** Process orders and to send information and updates pertaining to orders."
+            }
+        ]
+    }
+]

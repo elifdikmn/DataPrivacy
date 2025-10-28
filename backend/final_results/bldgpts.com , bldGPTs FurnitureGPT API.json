@@ -1,0 +1,58 @@
+[
+    {
+        "META_PY_KEYS": "description",
+        "description": null,
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "description",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "This Privacy Policy explains how we collect, use, disclose,\nand safeguard your personal information when you visit our website and use our\nwidget that combines furniture from local stores (the \"Service\")."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "**Collection of Information**\n\n1\\."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "We may collect personal information from you when you voluntarily provide\nit to us through your use of the Service."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "The information we may collect\nincludes, but is not limited to:\n\n1.1."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "Non-Personal Information:\n\nWe may also collect non-personal information about you automatically when you\naccess and use the Service."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "This information may include your IP address,\nbrowser type, operating system, referring URLs, and other technical\ninformation."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "We may use the information we collect from you for the following purposes:\n\n2.1."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "We do not\nknowingly collect personal information from individuals under 16 years of age."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "If we discover that we have collected personal information from a child under\nthe age of 16, we will promptly delete that information."
+            }
+        ]
+    }
+]

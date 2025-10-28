@@ -1,0 +1,27 @@
+{
+    "collection": [
+        "This Privacy Policy describes what data we collect\nand how we process it.",
+        "Where does Tomba collect\ndata?",
+        "### When you are on our website\n\nWhen you're using our website, we track your usage which includes statistics\nsuch as which pages you visit and how long you look at them.",
+        "This information\nmay include but is not limited to IP address, geolocation information, browser\ntype and information about the use of our website, including a history of the\npages you view.",
+        "If you create an account, we ask information such including but not limited\nto: your email, your name or what company you work for.",
+        "In cases of high-risk of fraud, we might ask for a phone number for\nverification purposes (we never use it for marketing purposes).",
+        "If you become\na paying customer, we will collect your payment card information.",
+        "### When you use our services\n\nWhether it is through the API, the website, the Google Sheets add-on, or the\nbrowser extensions we provide; we monitor your usage, and log requests that\nyou make.",
+        "Those logs can include IP address, geolocation information, browser\ntype, etc.",
+        "When using our services, you might send us some data or data files (for the\nEmail Finder and the Email Verifier for example).",
+        "### When you contact our support\n\nIf you reach out via email or chat, we keep conversations and other data you\nmight send during those exchanges.",
+        "### When we parse public web data\n\nWe use servers to look at publicly available online pages and process business\ndata on them.",
+        "Only public pages are looked at and only publicly available\nonline data that can be found by a search engine are indexed by our servers.",
+        "On those public pages, we look for business data such as names, professional\nemails, social networks URLs, etc.",
+        "### To provide our services\n\nWhen creating an account, you agree to our Terms of Service which allows us to\nprocess your data to give you access to Tomba .",
+        "### To improve the User Experience\n\nWe're looking at usage patterns and various statistics to understand what to\nimprove on Tomba .",
+        "## SPAM protection\n\nThis type of services analyzes the traffic of this Application, potentially\ncontaining Users' Personal Data, with the purpose of filtering it from parts\nof traffic, messages and content that are recognized as SPAM.",
+        "Personal Data processed: Cookies; Usage Data."
+    ],
+    "sharing": [
+        "### To inform businesses regarding content that is publicly displayed online\n\nTo provide the service, we also give you access to the publicly accessible\nbusiness data we have indexed.",
+        "## Services helping us manage your data\n\nTo provide our services, we rely on other companies that can partially manage\nyour data."
+    ],
+    "pp_length": 15022
+}

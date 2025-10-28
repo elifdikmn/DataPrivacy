@@ -1,0 +1,82 @@
+[
+    {
+        "META_PY_KEYS": "comment",
+        "description": null,
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "comment",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "META_PY_KEYS": "body",
+        "description": null,
+        "required_used": false,
+        "title": null,
+        "type": "object",
+        "data_name": "description",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "Returns results based on search criteria.",
+        "name": "$search",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "search criteria",
+        "data_type": "In-app search history",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "Filters results (rows).",
+        "name": "$filter",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "$filter",
+        "data_type": "Commands, instructions, or prompts",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "The unique identifier of the message",
+        "name": "id",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "id",
+        "data_type": "User IDs",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

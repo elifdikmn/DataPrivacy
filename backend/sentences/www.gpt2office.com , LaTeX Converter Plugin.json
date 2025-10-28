@@ -1,0 +1,12 @@
+{
+    "collection": [
+        "This policy outlines our practices regarding\ndata collection, use, and security, ensuring transparency and trust in our\nservice.",
+        "### Data Collection\n\nWe collect data necessary to generate your documents, such as user inputs and\nusage data.",
+        "This may include information provided during document creation,\nalong with technical data like usage patterns and preferences."
+    ],
+    "sharing": [
+        "### Data Sharing and Disclosure\n\nWe do not sell or rent user data.",
+        "Data may be shared with third-party\nservices, such as the GPT API, for the purpose of generating documents."
+    ],
+    "pp_length": 2423
+}

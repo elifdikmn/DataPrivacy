@@ -1,0 +1,18 @@
+[
+    {
+        "description": "Query string to search trends",
+        "name": "q",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "q",
+        "data_type": "In-app search history",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

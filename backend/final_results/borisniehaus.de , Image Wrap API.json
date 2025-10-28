@@ -1,0 +1,28 @@
+[
+    {
+        "META_PY_KEYS": "text",
+        "description": null,
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "META_PY_KEYS",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "This\nprivacy policy outlines how we handle information collected during the use of\nour service."
+            },
+            {
+                "number": 2,
+                "label": "CLEAR",
+                "sentence": "Data Collection and Use When you use our service to generate\nan image, we collect the following information: The text you enter, which\nappears on the image."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "Data Storage The generated images are temporarily\nstored on our server (germany)."
+            }
+        ]
+    }
+]

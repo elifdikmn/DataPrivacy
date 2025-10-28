@@ -1,0 +1,34 @@
+[
+    {
+        "description": "First name to predict gender for",
+        "name": "name",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "name",
+        "data_type": "Name",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "Optional ISO 3166-1 alpha-2 country code to improve prediction accuracy",
+        "name": "country_id",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "country_id",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

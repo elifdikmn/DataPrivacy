@@ -1,0 +1,50 @@
+[
+    {
+        "description": "API key for access to the service",
+        "name": "api_key",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "api_key",
+        "data_type": "User IDs",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "Privacy Policy\n\nInteraction with Children\n\nAutomatically Collected Info\n\nMaintained Info\n\nCookies\n\nWebsite Security Notice\n\nInfo to Third Parties\n\nAccessibility Statement\n\nPersonal Information\n\nLinking Policy\n\n# Privacy Policy\n\nThis notice provides NASA's policy regarding the nature, purpose, use and\nsharing of any information collected via this Web site."
+            }
+        ]
+    },
+    {
+        "description": "The date of the APOD image to retrieve (YYYY-MM-DD). Defaults to today's date if not provided.",
+        "name": "date",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "date of the APOD image",
+        "data_type": "Time",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "Privacy Policy\n\nInteraction with Children\n\nAutomatically Collected Info\n\nMaintained Info\n\nCookies\n\nWebsite Security Notice\n\nInfo to Third Parties\n\nAccessibility Statement\n\nPersonal Information\n\nLinking Policy\n\n# Privacy Policy\n\nThis notice provides NASA's policy regarding the nature, purpose, use and\nsharing of any information collected via this Web site."
+            }
+        ]
+    },
+    {
+        "description": "Retrieve the URL for the high definition image if set to True",
+        "name": "hd",
+        "schema_enum": null,
+        "schema_type": "boolean",
+        "type": "query",
+        "data_name": "Retrieve the URL for the high definition image if set to True",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "Privacy Policy\n\nInteraction with Children\n\nAutomatically Collected Info\n\nMaintained Info\n\nCookies\n\nWebsite Security Notice\n\nInfo to Third Parties\n\nAccessibility Statement\n\nPersonal Information\n\nLinking Policy\n\n# Privacy Policy\n\nThis notice provides NASA's policy regarding the nature, purpose, use and\nsharing of any information collected via this Web site."
+            }
+        ]
+    }
+]

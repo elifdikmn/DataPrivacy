@@ -1,0 +1,18 @@
+[
+    {
+        "description": "Get longitude data",
+        "name": "location",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "longitude data",
+        "data_type": "Precise location",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]
