@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+anthropic
+openai
+faiss-cpu
+numpy
+pandas
