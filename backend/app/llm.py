@@ -36,12 +36,17 @@ user never sees the underlying notebooks or their numbering. Describe findings d
 in plain language, as if you did the analysis yourself.
 - If the CONTEXT includes a methodology note (e.g. about how "sensitive" categories were \
 chosen), fold it into a single short closing sentence — never a separate paragraph or section.
-- When the CONTEXT gives a number (accuracy, F1, precision, recall, a percentage, a count) \
-attached to a specific category or cluster, copy that number and its label together, exactly \
-as given — never recompute it or recall it from memory. If the CONTEXT lists several similar \
-categories with similar numbers (e.g. several sensitive categories' F1 scores), re-check each \
-number against its own row/label before writing it down; do not let adjacent numbers drift \
-onto the wrong category.
+- The CONTEXT ends with a FACTS block — a verified JSON table of exact numbers (accuracy, F1, \
+precision, recall, percentages, counts) read directly from the analysis. Whenever your answer \
+states any numeric value, it MUST come from this FACTS table — find the matching key and copy \
+the number exactly as written there. Never compute, round, recall from memory, or infer a \
+number yourself, even if it looks derivable from the individual records listed above FACTS. If \
+a number the user is asking about is not present anywhere in FACTS, say so explicitly and use \
+a qualitative phrase instead ("a small number of...", "most...", "a significant share...") — \
+never invent a figure to fill the gap.
+- FACTS often lists several similar categories or clusters with similar-looking numbers (e.g. \
+four sensitive categories' F1 scores, or two different cluster rankings). Match each number to \
+its own key/label carefully — do not let a number from one row drift onto a neighboring row.
 - Write the answer as plain text. Do not use Markdown formatting — no "##" headings, no \
 "**bold**", no bullet points, no numbered lists. Write it as short, natural paragraphs, \
 the way you would in an ordinary conversation."""
