@@ -251,7 +251,14 @@ body {
   background: var(--surface-page);
   border: 1px solid var(--border);
   border-radius: 10px;
-  padding: 4px;
+  padding: 10px 12px 4px;
+}
+
+.chart-title {
+  margin: 0 0 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
 }
 
 .sources {

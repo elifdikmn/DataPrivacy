@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import Plotly from 'plotly.js-dist-min';
-import createPlotlyComponent from 'react-plotly.js/factory';
+import CategoryChart from './CategoryChart';
 import './App.css';
-
-const Plot = createPlotlyComponent(Plotly);
 
 const API_BASE = process.env.REACT_APP_API_BASE || 'http://127.0.0.1:8000';
 
@@ -82,10 +79,9 @@ function App() {
       }
 
       const data = await res.json();
-      const chart = data.chart ? JSON.parse(data.chart) : null;
       setMessages((prev) => [
         ...prev,
-        { role: 'assistant', text: data.answer, sources: data.sources, chart },
+        { role: 'assistant', text: data.answer, sources: data.sources, chart: data.chart },
       ]);
     } catch (err) {
       setError(err.message || 'Something went wrong.');
@@ -166,12 +162,8 @@ function App() {
 
                 {m.chart && (
                   <div className="chart-wrapper">
-                    <Plot
-                      data={m.chart.data}
-                      layout={{ ...m.chart.layout, autosize: true, height: 320 }}
-                      style={{ width: '100%' }}
-                      config={{ displayModeBar: false, responsive: true }}
-                    />
+                    <p className="chart-title">Data categories among the retrieved results</p>
+                    <CategoryChart data={m.chart} theme={theme} />
                   </div>
                 )}
 
