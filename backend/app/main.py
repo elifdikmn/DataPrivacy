@@ -5,6 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from . import rag
+from .viz import sources_category_chart
 
 app = FastAPI(title="GPT Plugin Privacy RAG Assistant")
 
@@ -31,6 +32,7 @@ class Source(BaseModel):
 class AskResponse(BaseModel):
     answer: str
     sources: list[Source]
+    chart: str | None = None  # Plotly figure JSON (fig.to_json()); frontend Plotly.js ile çizer
 
 
 @app.get("/health")
@@ -47,4 +49,5 @@ def ask(request: AskRequest):
     except RuntimeError as e:
         # Örn: index kurulmamış, API anahtarı eksik.
         raise HTTPException(status_code=503, detail=str(e))
+    result["chart"] = sources_category_chart(result["sources"])
     return result
