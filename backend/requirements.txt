@@ -2,7 +2,7 @@ fastapi
 uvicorn[standard]
 python-dotenv
 anthropic
-openai
+sentence-transformers
 faiss-cpu
 numpy
 pandas
