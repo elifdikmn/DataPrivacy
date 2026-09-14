@@ -9,11 +9,16 @@ const Plot = createPlotlyComponent(Plotly);
 const API_BASE = process.env.REACT_APP_API_BASE || 'http://127.0.0.1:8000';
 
 const SUGGESTED_QUESTIONS = [
+  'What data are collected by GPT Actions?',
   'What percentage of collected data is sensitive?',
+  'Which sensitive data types appear most often?',
   'Do plugins write descriptions less often for sensitive parameters?',
   'How accurately can a parameter\'s category be predicted from its name?',
+  'Which words predict sensitive categories?',
   'Do natural risky vs. safe clusters emerge among plugins?',
+  'Which plugin clusters have the highest sensitive-data share?',
   'Can mislabeled "Other" records be identified automatically?',
+  'Are there hidden sensitive parameters mislabeled as "Other"?',
   'Which parameters collect passwords?',
   'Do plugins disclose what they collect in their privacy policies?',
 ];
