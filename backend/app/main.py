@@ -6,7 +6,7 @@ from pydantic import BaseModel
 
 from . import rag
 from .retrieval import search
-from .viz import sources_category_chart
+from .viz import sources_category_treemap
 
 app = FastAPI(title="GPT Plugin Privacy RAG Assistant")
 
@@ -30,16 +30,13 @@ class Source(BaseModel):
     score: float
 
 
-class ChartDatum(BaseModel):
-    category: str
-    count: int
-    sensitive: bool
-
-
 class AskResponse(BaseModel):
     answer: str
     sources: list[Source]
-    chart: list[ChartDatum] | None = None  # frontend Recharts ile çizer
+    # İç içe treemap verisi ([{name, sensitive, size, children: [{name, size}, ...]}, ...]);
+    # frontend Recharts Treemap ile çizer. Yapı dinamik olduğu için sabit bir model yerine
+    # düz dict kullanılıyor.
+    chart: list[dict] | None = None
 
 
 @app.get("/health")
@@ -60,5 +57,5 @@ def ask(request: AskRequest):
     except RuntimeError as e:
         # Örn: index kurulmamış, API anahtarı eksik.
         raise HTTPException(status_code=503, detail=str(e))
-    result["chart"] = sources_category_chart(chart_sources)
+    result["chart"] = sources_category_treemap(chart_sources)
     return result
