@@ -29,7 +29,9 @@ A sixth, supplementary finding — whether plugins disclose what they collect in
 
 ## RAG Chatbot
 
-The chatbot lets you ask questions about the analysis in plain language and get an answer grounded in the actual data, with a supporting chart.
+The notebooks (Bölüm 1, 2, 3) are the project's analysis engine — all the data science and ML work (data cleaning, statistical testing, classification models, clustering) happens there. The RAG chatbot is a presentation/access layer on top of that: it turns the analysis's results into an interactive interface that a non-technical user can question in plain language and explore through supporting charts. The chatbot doesn't run any new analysis of its own — it makes the existing analysis's findings explorable.
+
+The chatbot lets you ask questions about the analysis in plain language and get an answer grounded in the actual data, with a supporting chart. Alongside free-text questions, the interface also offers a set of suggested-question chips covering the project's 5 main research questions, so a visitor can explore the findings without needing to know what to ask first.
 
 - **Retrieval**: three separate FAISS indices — individual parameter records, the notebooks' written findings, and the privacy-policy audit — searched independently and merged, so a small set of high-value findings never gets crowded out by the much larger record index.
 - **Embeddings**: `sentence-transformers` (`paraphrase-multilingual-MiniLM-L12-v2`), run locally and free.
