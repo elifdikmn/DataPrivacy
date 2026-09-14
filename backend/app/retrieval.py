@@ -63,7 +63,7 @@ def _search_one(index: faiss.Index, docs: list[dict], query_vector: np.ndarray, 
     return results
 
 
-def search(query: str, top_k: int = 5, top_k_knowledge: int = 4, top_k_audit: int = 3) -> list[dict]:
+def search(query: str, top_k: int = 5, top_k_knowledge: int = 6, top_k_audit: int = 3) -> list[dict]:
     """Soruyla en alakalı kayıtları, analiz bulgularını ve politika denetimi
     sonuçlarını ayrı ayrı arayıp birleştirir."""
     record_index, knowledge_index, audit_index, record_docs, knowledge_docs, audit_docs = _load()
