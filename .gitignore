@@ -9,6 +9,9 @@ __pycache__/
 .venv/
 venv/
 
+# Generated RAG index (rebuild locally with `python -m app.indexing`)
+backend/app/index_store/
+
 # Node
 node_modules/
 

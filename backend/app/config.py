@@ -19,3 +19,7 @@ TOGETHER_BASE_URL = "https://api.together.xyz/v1"
 
 DATA_PATH = BACKEND_DIR / os.getenv("DATA_PATH", "data/data_entries_final.json")
 KNOWLEDGE_DIR = BACKEND_DIR / os.getenv("KNOWLEDGE_DIR", "knowledge")
+
+INDEX_DIR = BACKEND_DIR / "app" / "index_store"
+FAISS_INDEX_PATH = INDEX_DIR / "index.faiss"
+DOCUMENTS_PATH = INDEX_DIR / "documents.json"
