@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 import Plotly from 'plotly.js-dist-min';
 import createPlotlyComponent from 'react-plotly.js/factory';
 import './App.css';
@@ -17,11 +18,35 @@ const SUGGESTED_QUESTIONS = [
   'Do plugins disclose what they collect in their privacy policies?',
 ];
 
+function getInitialTheme() {
+  try {
+    const saved = localStorage.getItem('theme');
+    if (saved === 'light' || saved === 'dark') return saved;
+  } catch {
+    // localStorage unavailable — fall through to system preference.
+  }
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
+
 function App() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [theme, setTheme] = useState(getInitialTheme);
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    try {
+      localStorage.setItem('theme', theme);
+    } catch {
+      // Ignore — theme just won't persist across reloads.
+    }
+  }, [theme]);
+
+  function toggleTheme() {
+    setTheme((t) => (t === 'dark' ? 'light' : 'dark'));
+  }
 
   async function submitQuestion(question) {
     question = question.trim();
@@ -77,26 +102,43 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
+        <button
+          type="button"
+          className="theme-toggle"
+          onClick={toggleTheme}
+          aria-label={theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
+        >
+          {theme === 'dark' ? '☀️' : '🌙'}
+        </button>
         <h1>GPT Plugin Privacy Assistant</h1>
         <p>Ask about what data GPT plugins collect and the privacy risks involved.</p>
         {messages.length > 0 && (
-          <button type="button" className="clear-chat" onClick={clearChat} disabled={loading}>
+          <motion.button
+            type="button"
+            className="clear-chat"
+            onClick={clearChat}
+            disabled={loading}
+            whileHover={{ scale: 1.04 }}
+            whileTap={{ scale: 0.96 }}
+          >
             Clear chat
-          </button>
+          </motion.button>
         )}
       </header>
 
       <div className="suggestions">
         {SUGGESTED_QUESTIONS.map((q, i) => (
-          <button
+          <motion.button
             key={i}
             type="button"
             className="suggestion-chip"
             onClick={() => submitQuestion(q)}
             disabled={loading}
+            whileHover={{ scale: 1.03, y: -1 }}
+            whileTap={{ scale: 0.97 }}
           >
             {q}
-          </button>
+          </motion.button>
         ))}
       </div>
 
@@ -105,43 +147,64 @@ function App() {
           <p className="empty-hint">Pick a question above, or type your own below.</p>
         )}
 
-        {messages.map((m, i) => (
-          <div key={i} className={`message ${m.role}`}>
-            <div className="bubble">
-              <p>{m.text}</p>
+        <AnimatePresence initial={false}>
+          {messages.map((m, i) => (
+            <motion.div
+              key={i}
+              className={`message ${m.role}`}
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.25, ease: 'easeOut' }}
+            >
+              <div className="bubble">
+                <p>{m.text}</p>
 
-              {m.chart && (
-                <div className="chart-wrapper">
-                  <Plot
-                    data={m.chart.data}
-                    layout={{ ...m.chart.layout, autosize: true, height: 320 }}
-                    style={{ width: '100%' }}
-                    config={{ displayModeBar: false, responsive: true }}
-                  />
-                </div>
-              )}
+                {m.chart && (
+                  <div className="chart-wrapper">
+                    <Plot
+                      data={m.chart.data}
+                      layout={{ ...m.chart.layout, autosize: true, height: 320 }}
+                      style={{ width: '100%' }}
+                      config={{ displayModeBar: false, responsive: true }}
+                    />
+                  </div>
+                )}
 
-              {m.sources && m.sources.length > 0 && (
-                <details className="sources">
-                  <summary>Sources ({m.sources.length})</summary>
-                  <ul>
-                    {m.sources.map((s, j) => (
-                      <li key={j}>
-                        <span className="score">{s.score.toFixed(2)}</span> {s.text}
-                      </li>
-                    ))}
-                  </ul>
-                </details>
-              )}
-            </div>
-          </div>
-        ))}
+                {m.sources && m.sources.length > 0 && (
+                  <details className="sources">
+                    <summary>Sources ({m.sources.length})</summary>
+                    <ul>
+                      {m.sources.map((s, j) => (
+                        <li key={j}>
+                          <span className="score">{s.score.toFixed(2)}</span> {s.text}
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
+                )}
+              </div>
+            </motion.div>
+          ))}
 
-        {loading && (
-          <div className="message assistant">
-            <div className="bubble">Thinking…</div>
-          </div>
-        )}
+          {loading && (
+            <motion.div
+              key="typing"
+              className="message assistant"
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2, ease: 'easeOut' }}
+            >
+              <div className="bubble">
+                <span className="typing-indicator">
+                  <span />
+                  <span />
+                  <span />
+                </span>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
 
         {error && <div className="error">Error: {error}</div>}
       </div>
@@ -154,9 +217,14 @@ function App() {
           placeholder="Or type your own question…"
           disabled={loading}
         />
-        <button type="submit" disabled={loading || !input.trim()}>
+        <motion.button
+          type="submit"
+          disabled={loading || !input.trim()}
+          whileHover={{ scale: 1.03 }}
+          whileTap={{ scale: 0.97 }}
+        >
           Send
-        </button>
+        </motion.button>
       </form>
     </div>
   );
