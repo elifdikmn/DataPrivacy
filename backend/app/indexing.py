@@ -26,7 +26,7 @@ def build_documents() -> list[dict]:
         data_type = record.get("data_type") or ""
         plugin_count = len(record.get("plugin_id_filenames") or [])
 
-        text = f"Parametre: {name}. Açıklama: {description}. Kategori: {main_type} / {data_type}."
+        text = f"Parameter: {name}. Description: {description}. Category: {main_type} / {data_type}."
         documents.append({
             "text": text,
             "type": "record",
