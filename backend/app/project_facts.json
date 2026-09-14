@@ -1,0 +1,121 @@
+{
+  "_meta": {
+    "description": "Verified numeric facts from the Bölüm 1/2/3 notebooks and the privacy-policy audit. Every value here was read directly from a notebook cell's actual print/DataFrame output, not estimated. The chatbot must copy numbers from this table rather than recomputing or recalling them from the raw retrieved records.",
+    "source": "notebooks/bolum1_eda.ipynb, bolum2_modelleme.ipynb, bolum3_uygulama.ipynb, backend/final_results/"
+  },
+  "dataset": {
+    "total_records": 12811,
+    "total_plugins": 4592,
+    "main_data_type_classes": 25,
+    "data_type_classes": 145,
+    "description_missing_count": 1999,
+    "description_missing_pct": 15.6
+  },
+  "sensitive_categories": {
+    "categories": ["Security credentials", "Personal information", "Health information", "Finance information"],
+    "sensitive_data_count": 931,
+    "sensitive_data_pct": 7.3,
+    "top3_categories_pct": 48.2,
+    "top3_categories": ["App usage data", "Identifier", "Other"],
+    "breakdown": {
+      "Personal information": {"count": 435, "pct": 3.40},
+      "Security credentials": {"count": 276, "pct": 2.15},
+      "Finance information": {"count": 138, "pct": 1.08},
+      "Health information": {"count": 82, "pct": 0.64}
+    }
+  },
+  "description_rate_test": {
+    "sensitive_has_description_pct": 81.20,
+    "non_sensitive_has_description_pct": 84.65,
+    "chi_square_statistic": 7.514,
+    "chi_square_p_value": 0.0061,
+    "cramers_v": 0.0242
+  },
+  "category_prediction_model": {
+    "target": "main_data_type (25 classes)",
+    "train_size": 10248,
+    "test_size": 2563,
+    "tfidf_baseline": {"accuracy_pct": 68.9, "macro_f1_pct": 46.8, "weighted_f1_pct": 69.2},
+    "embedding_model": {"accuracy_pct": 54.9, "macro_f1_pct": 42.6},
+    "per_class_metrics_sensitive_categories": {
+      "Security credentials": {"precision": 0.95, "recall": 0.76, "f1": 0.85},
+      "Personal information": {"precision": 0.77, "recall": 0.53, "f1": 0.63},
+      "Health information": {"precision": 1.00, "recall": 0.44, "f1": 0.61},
+      "Finance information": {"precision": 1.00, "recall": 0.14, "f1": 0.25}
+    },
+    "other_class_metrics": {"precision": 0.36, "recall": 0.69},
+    "confusion_matrix_top_confusions_into_other": {
+      "Sports information": {"pct": 90.9, "count": 10},
+      "E-commerce data": {"pct": 84.6, "count": 11},
+      "Real estate data": {"pct": 71.4, "count": 5},
+      "Gaming data": {"pct": 60.0, "count": 3},
+      "Finance information": {"pct": 50.0, "count": 14},
+      "Health information": {"pct": 50.0, "count": 8}
+    },
+    "data_type_model_79_classes": {"accuracy_pct": 65.4, "macro_f1_pct": 35.9, "rare_classes_merged": 67, "rare_classes_records": 285}
+  },
+  "security_credentials_subtypes": {
+    "note": "Breakdown of the 276 Security credentials records by data_type.",
+    "API key": 154,
+    "Access tokens": 69,
+    "Other": 22,
+    "Password": 18,
+    "Cryptographic key": 9,
+    "Verification code": 4
+  },
+  "password_records": {
+    "note": "All 18 records with data_type=='Password' (not just ones literally named 'password') — this is the authoritative total for any 'which/how many parameters collect passwords' question. Never present a partial list retrieved from individual records as if it were the total; if only some records were retrieved, label them explicitly as examples, not as the full set.",
+    "total_records": 18,
+    "total_plugin_instances": 50,
+    "name_variants": ["password", "setPassword", "api_password", "passcode"],
+    "example_use_cases": ["SMPP account", "database user password", "MySQL password", "PostgreSQL password", "SQL password", "host authentication", "content/post protection", "resume password"]
+  },
+  "clustering": {
+    "best_k": 10,
+    "silhouette_score": 0.254,
+    "total_eligible_plugins": 3041,
+    "min_params_threshold": 3,
+    "cluster_summary": {
+      "1": {"n_plugins": 83, "sensitive_pct": 16.1, "dominant_categories": ["Market data", "Time", "Finance information"]},
+      "8": {"n_plugins": 891, "sensitive_pct": 12.5, "dominant_categories": ["Identifier", "Other", "App usage data"]},
+      "5": {"n_plugins": 3, "sensitive_pct": 10.5, "dominant_categories": ["Real estate data", "Location"]},
+      "2": {"n_plugins": 338, "sensitive_pct": 9.4, "dominant_categories": ["Message", "Files and documents"]},
+      "6": {"n_plugins": 5, "sensitive_pct": 4.2, "dominant_categories": ["Food and nutrition information"]},
+      "4": {"n_plugins": 14, "sensitive_pct": 3.4, "dominant_categories": ["E-commerce data"]},
+      "7": {"n_plugins": 11, "sensitive_pct": 2.3, "dominant_categories": ["Travel information", "Time"]},
+      "9": {"n_plugins": 19, "sensitive_pct": 2.2, "dominant_categories": ["Location", "Weather information"]},
+      "0": {"n_plugins": 1523, "sensitive_pct": 1.5, "dominant_categories": ["App usage data", "Query"]},
+      "3": {"n_plugins": 154, "sensitive_pct": 0.0, "dominant_categories": ["App metadata", "Query"]}
+    },
+    "highest_sensitive_share_clusters": {"clusters": ["1", "8"], "combined_plugins": 974, "combined_pct_of_eligible": 32.0},
+    "largest_by_size_clusters": {"clusters": ["0", "8"], "combined_plugins": 2414, "combined_pct_of_eligible": 79.4},
+    "note": "'Highest sensitive share' (clusters 1+8, ~32%) and 'largest by plugin count' (clusters 0+8, ~80%) are DIFFERENT rankings. Never state that the highest-risk clusters make up ~80% — that figure belongs to the largest-by-size pair."
+  },
+  "other_reclassification": {
+    "total_other_data_type_records": 3544,
+    "known_non_other_records": 9267,
+    "known_classes_after_grouping": 78,
+    "own_test_set_accuracy_pct": 69.0,
+    "own_test_set_macro_f1_pct": 42.9,
+    "confidence_threshold": 0.5,
+    "median_confidence_pct": 20.9,
+    "confident_subset_count": 411,
+    "confident_subset_pct": 11.6,
+    "sensitive_flagged_in_confident_subset": 7,
+    "sensitive_flagged_breakdown": {"Security credentials": 4, "Personal information": 3}
+  },
+  "privacy_policy_audit": {
+    "note": "Separate, smaller dataset (backend/final_results/, 381 plugin files) — not directly comparable to the main 12,811-record dataset's numbers. Source paper's disclosure taxonomy has 5 labels (CLEAR/VAGUE/AMBIGUOUS/INCORRECT/OMITTED); all 5 are represented below.",
+    "total_parameters_with_comparable_policy_text": 308,
+    "undisclosed_count": 278,
+    "undisclosed_pct": 90.3,
+    "disclosed_clear_count": 16,
+    "disclosed_clear_pct": 5.2,
+    "disclosed_vague_count": 7,
+    "disclosed_vague_pct": 2.3,
+    "disclosed_ambiguous_count": 1,
+    "disclosed_ambiguous_pct": 0.3,
+    "disclosed_incorrect_count": 6,
+    "disclosed_incorrect_pct": 1.9
+  }
+}
