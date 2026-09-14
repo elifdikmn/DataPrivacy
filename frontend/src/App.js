@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import CategoryChart from './CategoryChart';
 import './App.css';
 
 const API_BASE = process.env.REACT_APP_API_BASE || 'http://127.0.0.1:8000';
@@ -36,6 +35,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [theme, setTheme] = useState(getInitialTheme);
+  const [visibleCharts, setVisibleCharts] = useState(new Set());
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
@@ -81,7 +81,7 @@ function App() {
       const data = await res.json();
       setMessages((prev) => [
         ...prev,
-        { role: 'assistant', text: data.answer, sources: data.sources, chart: data.chart },
+        { role: 'assistant', text: data.answer, sources: data.sources, chartImage: data.chart_image },
       ]);
     } catch (err) {
       setError(err.message || 'Something went wrong.');
@@ -98,6 +98,19 @@ function App() {
   function clearChat() {
     setMessages([]);
     setError(null);
+    setVisibleCharts(new Set());
+  }
+
+  function toggleChart(i) {
+    setVisibleCharts((prev) => {
+      const next = new Set(prev);
+      if (next.has(i)) {
+        next.delete(i);
+      } else {
+        next.add(i);
+      }
+      return next;
+    });
   }
 
   return (
@@ -160,10 +173,27 @@ function App() {
               <div className="bubble">
                 <p>{m.text}</p>
 
-                {m.chart && (
-                  <div className="chart-wrapper">
-                    <p className="chart-title">Data categories among the retrieved results</p>
-                    <CategoryChart data={m.chart} theme={theme} />
+                {m.chartImage && (
+                  <div className="chart-toggle-area">
+                    <motion.button
+                      type="button"
+                      className="show-visualization"
+                      onClick={() => toggleChart(i)}
+                      whileHover={{ scale: 1.03 }}
+                      whileTap={{ scale: 0.97 }}
+                    >
+                      {visibleCharts.has(i) ? 'Hide visualization' : 'Show visualization'}
+                    </motion.button>
+
+                    {visibleCharts.has(i) && (
+                      <div className="chart-wrapper">
+                        <img
+                          src={`${API_BASE}${m.chartImage}`}
+                          alt="Supporting chart from the analysis"
+                          className="chart-image"
+                        />
+                      </div>
+                    )}
                   </div>
                 )}
 

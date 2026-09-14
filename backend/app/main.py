@@ -2,11 +2,11 @@
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from . import rag
-from .retrieval import search
-from .viz import sources_category_treemap
+from . import config, rag
+from .chart_mapping import get_chart_filename
 
 app = FastAPI(title="GPT Plugin Privacy RAG Assistant")
 
@@ -16,6 +16,8 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+app.mount("/static", StaticFiles(directory=config.STATIC_DIR), name="static")
 
 
 class AskRequest(BaseModel):
@@ -33,10 +35,9 @@ class Source(BaseModel):
 class AskResponse(BaseModel):
     answer: str
     sources: list[Source]
-    # İç içe treemap verisi ([{name, sensitive, size, children: [{name, size}, ...]}, ...]);
-    # frontend Recharts Treemap ile çizer. Yapı dinamik olduğu için sabit bir model yerine
-    # düz dict kullanılıyor.
-    chart: list[dict] | None = None
+    # Sabit soru→görsel eşleştirme tablosundan gelen dosyanın public URL'i
+    # (örn. "/static/charts/rq1_category_distribution.png"); eşleşme yoksa None.
+    chart_image: str | None = None
 
 
 @app.get("/health")
@@ -50,12 +51,10 @@ def ask(request: AskRequest):
         raise HTTPException(status_code=400, detail="question boş olamaz.")
     try:
         result = rag.answer(request.question, top_k=request.top_k)
-        # Grafik, LLM'in cevap için kullandığı dar bağlamdan (top_k=5) bağımsız,
-        # daha geniş bir kayıt örneklemine dayanır — böylece geniş kapsamlı
-        # sorularda da anlamlı bir kategori dağılımı gösterebilir.
-        chart_sources = search(request.question, top_k=50, top_k_knowledge=0, top_k_audit=0)
     except RuntimeError as e:
         # Örn: index kurulmamış, API anahtarı eksik.
         raise HTTPException(status_code=503, detail=str(e))
-    result["chart"] = sources_category_treemap(chart_sources)
+
+    filename = get_chart_filename(request.question)
+    result["chart_image"] = f"/static/charts/{filename}" if filename else None
     return result

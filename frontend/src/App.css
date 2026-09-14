@@ -246,19 +246,39 @@ body {
   }
 }
 
+.chart-toggle-area {
+  margin-top: 10px;
+}
+
+.show-visualization {
+  padding: 7px 14px;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  background: var(--accent-wash);
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.show-visualization:hover {
+  background: var(--accent);
+  color: var(--text-on-accent);
+}
+
 .chart-wrapper {
   margin-top: 10px;
   background: var(--surface-page);
   border: 1px solid var(--border);
   border-radius: 10px;
-  padding: 10px 12px 4px;
+  padding: 8px;
 }
 
-.chart-title {
-  margin: 0 0 4px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--text-secondary);
+.chart-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
 }
 
 .sources {
