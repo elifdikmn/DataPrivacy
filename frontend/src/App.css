@@ -23,6 +23,36 @@
   font-size: 0.9rem;
 }
 
+.clear-chat {
+  margin-top: 10px;
+  padding: 4px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 999px;
+  background: #fff;
+  color: #64748b;
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.clear-chat:hover:not(:disabled) {
+  background: #fef2f2;
+  border-color: #dc2626;
+  color: #dc2626;
+}
+
+.clear-chat:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.empty-hint {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin: 24px 0;
+}
+
 .suggestions {
   display: flex;
   flex-wrap: wrap;
@@ -117,6 +147,10 @@
 .error {
   color: #dc2626;
   font-size: 0.9rem;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 10px 14px;
 }
 
 .composer {

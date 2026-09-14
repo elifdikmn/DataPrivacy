@@ -33,11 +33,18 @@ function App() {
     setError(null);
 
     try {
-      const res = await fetch(`${API_BASE}/ask`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ question, top_k: 5 }),
-      });
+      let res;
+      try {
+        res = await fetch(`${API_BASE}/ask`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ question, top_k: 5 }),
+        });
+      } catch {
+        throw new Error(
+          `Can't reach the backend at ${API_BASE}. Is it running? (uvicorn app.main:app --reload)`
+        );
+      }
 
       if (!res.ok) {
         const body = await res.json().catch(() => ({}));
@@ -62,11 +69,21 @@ function App() {
     submitQuestion(input);
   }
 
+  function clearChat() {
+    setMessages([]);
+    setError(null);
+  }
+
   return (
     <div className="app">
       <header className="app-header">
         <h1>GPT Plugin Privacy Assistant</h1>
         <p>Ask about what data GPT plugins collect and the privacy risks involved.</p>
+        {messages.length > 0 && (
+          <button type="button" className="clear-chat" onClick={clearChat} disabled={loading}>
+            Clear chat
+          </button>
+        )}
       </header>
 
       <div className="suggestions">
@@ -84,6 +101,10 @@ function App() {
       </div>
 
       <div className="chat">
+        {messages.length === 0 && !loading && !error && (
+          <p className="empty-hint">Pick a question above, or type your own below.</p>
+        )}
+
         {messages.map((m, i) => (
           <div key={i} className={`message ${m.role}`}>
             <div className="bubble">
