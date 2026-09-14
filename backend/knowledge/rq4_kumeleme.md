@@ -1,4 +1,4 @@
-# Research Question 4: Clustering Plugins and Risk Segmentation
+# Clustering Plugins and Risk Segmentation
 
 ## Question
 

@@ -1,4 +1,4 @@
-# Research Question 6: Do Plugins Disclose What They Actually Collect?
+# Do Plugins Disclose What They Actually Collect?
 
 ## Question
 
@@ -24,7 +24,7 @@ Across 308 parameters with comparable policy text:
 
 ## Interpretation
 
-Even on this smaller, independently-labeled sample, the pattern is stark: the large majority of what plugins actually collect never appears in their privacy policy at all. This is a much larger gap than a "gray area" of vague language — it's mostly plain omission. Combined with the main analysis (Section 1: sensitive categories make up 7.3% of all collected data), this suggests that the written notice a user gets from a plugin's policy is a poor guide to what the plugin actually does — reinforcing the value of a tool like this one that checks the actual catalog of what's collected rather than relying on the policy text alone.
+Even on this smaller, independently-labeled sample, the pattern is stark: the large majority of what plugins actually collect never appears in their privacy policy at all. This is a much larger gap than a "gray area" of vague language — it's mostly plain omission. Combined with the main analysis (sensitive categories make up 7.3% of all collected data), this suggests that the written notice a user gets from a plugin's policy is a poor guide to what the plugin actually does — reinforcing the value of a tool like this one that checks the actual catalog of what's collected rather than relying on the policy text alone.
 
 ## Limitation
 

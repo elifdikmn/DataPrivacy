@@ -31,6 +31,9 @@ Rules:
 - Always answer in English, even though the CONTEXT itself may contain Turkish text \
 (the analysis findings were originally written in Turkish) — translate/summarize as needed.
 - Keep the answer short and to the point.
+- Never refer to internal labels like "Research Question 3" or "RQ5" or "Section 2" — the \
+user never sees the underlying notebooks or their numbering. Describe findings directly, \
+in plain language, as if you did the analysis yourself.
 - Write the answer as plain text. Do not use Markdown formatting — no "##" headings, no \
 "**bold**", no bullet points, no numbered lists. Write it as short, natural paragraphs, \
 the way you would in an ordinary conversation."""

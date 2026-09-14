@@ -1,4 +1,4 @@
-# Research Question 5: Reclassifying "Other" Records
+# Reclassifying "Other" Records
 
 ## Question
 
@@ -6,13 +6,13 @@ Can the trained model be used to classify records with an uncertain label (espec
 
 ## Methodology
 
-The Section 2 `data_type` model can't be used as-is because it had seen "Other" as a valid class during training — that would just lead the model to say "Other" again. Instead, the model was retrained using **only the non-"Other"** 9,267 records, over the real 144 `data_type` values (with rare classes grouped, 78 classes). This way, when the model looks at an "Other" record, it's forced to propose a real category.
+The earlier `data_type` classification model can't be used as-is because it had seen "Other" as a valid class during training — that would just lead the model to say "Other" again. Instead, the model was retrained using **only the non-"Other"** 9,267 records, over the real 144 `data_type` values (with rare classes grouped, 78 classes). This way, when the model looks at an "Other" record, it's forced to propose a real category.
 
 The model produces a "confidence score" (the highest predicted probability) for every prediction.
 
 ## Results
 
-- The retrained model's performance on its own test set: accuracy 69%, macro F1 42.9% (close to Section 2's data_type model).
+- The retrained model's performance on its own test set: accuracy 69%, macro F1 42.9% (close to the earlier data_type model's performance).
 - When applied to the 3,544 "Other" records, the confidence-score distribution is low: median 20.9%, mean 28.9%.
 - **Number of records clearing a 50% confidence threshold: 411 (11.6%)**. The large remaining majority leaves the model uncertain too — these records are probably genuinely ambiguous/general-purpose.
 - Most confident predictions are intuitive, general-purpose categories: Current session setting, Resource IDs, Search query, Query filter.
