@@ -7,15 +7,23 @@ const Plot = createPlotlyComponent(Plotly);
 
 const API_BASE = process.env.REACT_APP_API_BASE || 'http://127.0.0.1:8000';
 
+const SUGGESTED_QUESTIONS = [
+  'What percentage of collected data is sensitive?',
+  'Do plugins write descriptions less often for sensitive parameters?',
+  'How accurately can a parameter\'s category be predicted from its name?',
+  'Do natural risky vs. safe clusters emerge among plugins?',
+  'Can mislabeled "Other" records be identified automatically?',
+  'Which parameters collect passwords?',
+];
+
 function App() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  async function handleSubmit(e) {
-    e.preventDefault();
-    const question = input.trim();
+  async function submitQuestion(question) {
+    question = question.trim();
     if (!question || loading) return;
 
     setMessages((prev) => [...prev, { role: 'user', text: question }]);
@@ -48,12 +56,31 @@ function App() {
     }
   }
 
+  function handleSubmit(e) {
+    e.preventDefault();
+    submitQuestion(input);
+  }
+
   return (
     <div className="app">
       <header className="app-header">
         <h1>GPT Plugin Privacy Assistant</h1>
         <p>Ask about what data GPT plugins collect and the privacy risks involved.</p>
       </header>
+
+      <div className="suggestions">
+        {SUGGESTED_QUESTIONS.map((q, i) => (
+          <button
+            key={i}
+            type="button"
+            className="suggestion-chip"
+            onClick={() => submitQuestion(q)}
+            disabled={loading}
+          >
+            {q}
+          </button>
+        ))}
+      </div>
 
       <div className="chat">
         {messages.map((m, i) => (
@@ -102,7 +129,7 @@ function App() {
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          placeholder="e.g. which parameters collect passwords?"
+          placeholder="Or type your own question…"
           disabled={loading}
         />
         <button type="submit" disabled={loading || !input.trim()}>
