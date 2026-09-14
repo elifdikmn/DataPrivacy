@@ -13,9 +13,9 @@ load_dotenv(BACKEND_DIR / ".env")
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 ANTHROPIC_MODEL = os.getenv("ANTHROPIC_MODEL", "claude-haiku-4-5")
 
-TOGETHER_API_KEY = os.getenv("TOGETHER_API_KEY", "")
-TOGETHER_EMBEDDING_MODEL = os.getenv("TOGETHER_EMBEDDING_MODEL", "")
-TOGETHER_BASE_URL = "https://api.together.xyz/v1"
+# Embedding: yerel, ücretsiz bir sentence-transformers modeli (Hugging Face'ten
+# ilk çalıştırmada indirilir, sonrasında yerel önbellekten kullanılır).
+EMBEDDING_MODEL_NAME = os.getenv("EMBEDDING_MODEL_NAME", "all-MiniLM-L6-v2")
 
 DATA_PATH = BACKEND_DIR / os.getenv("DATA_PATH", "data/data_entries_final.json")
 KNOWLEDGE_DIR = BACKEND_DIR / os.getenv("KNOWLEDGE_DIR", "knowledge")

@@ -1,45 +1,31 @@
-"""Together API ile metinleri embedding'e çevirme (OpenAI uyumlu endpoint üzerinden)."""
+"""sentence-transformers ile yerel, ücretsiz embedding hesaplama.
+
+İlk çalıştırmada model Hugging Face'ten indirilir (küçük, ~80MB), sonraki
+çalıştırmalarda yerel önbellekten (~/.cache) kullanılır — API anahtarı ya da
+internet bağlantısı gerektirmez (ilk indirme hariç).
+"""
 
 import numpy as np
-from openai import OpenAI
+from sentence_transformers import SentenceTransformer
 
 from . import config
 
-BATCH_SIZE = 96
-
-_client: OpenAI | None = None
+_model: SentenceTransformer | None = None
 
 
-def get_client() -> OpenAI:
-    global _client
-    if _client is None:
-        if not config.TOGETHER_API_KEY:
-            raise RuntimeError(
-                "TOGETHER_API_KEY tanımlı değil. backend/.env dosyasını kontrol edin."
-            )
-        if not config.TOGETHER_EMBEDDING_MODEL:
-            raise RuntimeError(
-                "TOGETHER_EMBEDDING_MODEL tanımlı değil. Together'ın güncel embedding "
-                "modelleri listesinden (api.together.ai/models) bir model adı seçip "
-                "backend/.env dosyasına yazın."
-            )
-        _client = OpenAI(api_key=config.TOGETHER_API_KEY, base_url=config.TOGETHER_BASE_URL)
-    return _client
+def get_model() -> SentenceTransformer:
+    global _model
+    if _model is None:
+        print(f"Embedding modeli yükleniyor: {config.EMBEDDING_MODEL_NAME} (ilk seferde indirilir)...")
+        _model = SentenceTransformer(config.EMBEDDING_MODEL_NAME)
+    return _model
 
 
 def embed_texts(texts: list[str]) -> np.ndarray:
     """Metin listesini embedding vektörlerine çevirir. (n_texts, boyut) şeklinde döner."""
-    client = get_client()
-    all_embeddings = []
-
-    for i in range(0, len(texts), BATCH_SIZE):
-        batch = texts[i : i + BATCH_SIZE]
-        response = client.embeddings.create(model=config.TOGETHER_EMBEDDING_MODEL, input=batch)
-        batch_embeddings = [item.embedding for item in response.data]
-        all_embeddings.extend(batch_embeddings)
-        print(f"  Embedding: {min(i + BATCH_SIZE, len(texts))}/{len(texts)}")
-
-    return np.array(all_embeddings, dtype="float32")
+    model = get_model()
+    embeddings = model.encode(texts, batch_size=64, show_progress_bar=True, convert_to_numpy=True)
+    return embeddings.astype("float32")
 
 
 def embed_query(text: str) -> np.ndarray:
