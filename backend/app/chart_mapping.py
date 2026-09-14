@@ -9,7 +9,7 @@ yoksa hiç görsel gösterilmiyor.
 QUESTION_CHART_MAP: dict[str, str] = {
     "what data are collected by gpt actions?": "treemap_main_categories.html",
     "what percentage of collected data is sensitive?": "rq1_category_distribution.png",
-    "which sensitive data types appear most often?": "treemap_with_subtypes.html",
+    "which sensitive data types appear most often?": "rq1_sensitive_breakdown.png",
     "do plugins write descriptions less often for sensitive parameters?": "rq2_description_rate.png",
     "how accurately can a parameter's category be predicted from its name?": "rq3_confusion_matrix.png",
     "which words predict sensitive categories?": "rq3_feature_importance.png",

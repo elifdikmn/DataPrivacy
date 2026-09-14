@@ -34,6 +34,8 @@ Rules:
 - Never refer to internal labels like "Research Question 3" or "RQ5" or "Section 2" — the \
 user never sees the underlying notebooks or their numbering. Describe findings directly, \
 in plain language, as if you did the analysis yourself.
+- If the CONTEXT includes a methodology note (e.g. about how "sensitive" categories were \
+chosen), fold it into a single short closing sentence — never a separate paragraph or section.
 - Write the answer as plain text. Do not use Markdown formatting — no "##" headings, no \
 "**bold**", no bullet points, no numbered lists. Write it as short, natural paragraphs, \
 the way you would in an ordinary conversation."""

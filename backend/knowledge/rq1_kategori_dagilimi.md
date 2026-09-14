@@ -37,6 +37,8 @@ Full ranking (record count, percentage):
 
 The 4 categories defined as "sensitive" in this project: Security credentials, Personal information, Health information, Finance information. Together these four make up **931 records (7.3% of all data)** — a small but significant slice of the dataset.
 
+Methodology note: all `main_data_type` categories (including these four) come directly from the original dataset's labels — they are not something this project invented. Which of those 25 categories count as "sensitive," however, is a methodological choice made for this project, based on the "special category data" definitions in GDPR (EU) and HIPAA (US) — i.e., health data, authentication/identity credentials, financial information, and personally identifying information.
+
 ## About data_type (fine-grained category)
 
 The `data_type` column has 145 distinct values, with a much longer tail: the median class size is only 11 records, 6 classes have just a single record, and 40 classes have fewer than 5 records. The largest `data_type` value is "Other" — 3,544 records (note: this is not the same as `main_data_type`'s "Other", which has 1,721 records).
