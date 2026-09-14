@@ -4,6 +4,8 @@
 
 For the data a plugin actually collects, does its privacy policy disclose that collection?
 
+Note: this is about the plugin's **privacy policy document** — separate legal/marketing text outside the parameter catalog. It is a different analysis from whether the parameter catalog itself has a `description` field filled in for that parameter (see the separate description-writing-rate finding, which found sensitive and non-sensitive parameters get a description at almost the same rate, ~81-85%).
+
 ## Data source and scope
 
 This uses a separate, smaller dataset (`backend/final_results/`, 381 plugin files) where researchers matched each collected data parameter against sentences extracted from that plugin's own privacy policy, and labeled each candidate sentence as `CLEAR` (clearly discloses it), `VAGUE` (vaguely discloses it), `INCORRECT` (disclosure is wrong/misleading), or `OMITTED` (that particular sentence doesn't disclose it). Only 184 of the 381 files had any policy text to compare against. This audit uses its own category labels (e.g. "Email address", "User IDs", "Approximate location"), which are a different, finer, hand-labeled taxonomy from the `main_data_type`/`data_type` categories used in the main 12,811-record dataset — the two are not directly comparable one-to-one.

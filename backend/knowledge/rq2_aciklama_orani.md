@@ -2,7 +2,9 @@
 
 ## Question
 
-Is the rate at which the `description` field is filled in for parameters in sensitive categories (Security credentials, Personal information, Health information, Finance information) different from non-sensitive categories?
+Is the rate at which the `description` field is filled in for parameters in sensitive categories (Security credentials, Personal information, Health information, Finance information) different from non-sensitive categories? Do plugin developers write a description less often when a parameter is sensitive?
+
+Note: this is about the `description` field in the main parameter catalog (12,811 records) — whether the developer bothered to explain the parameter at all. It is a completely different analysis from whether a plugin's privacy policy document discloses the data collection (see the separate privacy-policy audit finding).
 
 ## Note on missing data
 
@@ -24,4 +26,4 @@ A chi-square test of independence was applied:
 
 ## Interpretation
 
-The difference is statistically significant, but the effect size is practically negligible. In a large sample like 12,811 records, even very small differences can come out "significant." Conclusion: whether a parameter is sensitive or not barely predicts whether it has a description in practice — the lack of a description seems to be a general habit, independent of category.
+The difference is statistically significant, but the effect size is practically negligible. In a large sample like 12,811 records, even very small differences can come out "significant." Conclusion: whether a parameter is sensitive or not barely predicts whether it has a description in practice — the lack of a description seems to be a general habit, independent of category. So, no: plugins do not meaningfully write fewer descriptions for sensitive parameters; the small 81.2% vs 84.65% gap is statistically real but practically negligible.
