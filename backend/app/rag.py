@@ -1,4 +1,4 @@
-"""RAG çekirdeği: retrieval + Claude ile cevap üretimini birleştirir."""
+"""RAG core: combines retrieval with Claude to produce an answer."""
 
 from . import llm
 from .retrieval import search
@@ -10,11 +10,11 @@ def build_context(results: list[dict]) -> str:
         if r["type"] == "record":
             m = r["metadata"]
             parts.append(
-                f"- Parametre '{m['name']}' ({m['plugin_count']} eklentide kullanılıyor): "
-                f"{m['description'] or '(açıklama yok)'} — Kategori: {m['main_data_type']} / {m['data_type']}"
+                f"- Parameter '{m['name']}' (used in {m['plugin_count']} plugin(s)): "
+                f"{m['description'] or '(no description)'} — Category: {m['main_data_type']} / {m['data_type']}"
             )
         else:
-            parts.append(f"[Analiz bulgusu — {r['metadata']['filename']}]\n{r['text']}")
+            parts.append(f"[Analysis finding — {r['metadata']['filename']}]\n{r['text']}")
     return "\n\n".join(parts)
 
 
@@ -28,10 +28,10 @@ def answer(question: str, top_k: int = 5) -> dict:
 if __name__ == "__main__":
     import sys
 
-    question = " ".join(sys.argv[1:]) or "Hangi tür veriler en çok toplanıyor ve hangileri hassas?"
+    question = " ".join(sys.argv[1:]) or "What kinds of data are collected the most, and which are sensitive?"
     result = answer(question)
-    print("SORU:", question)
-    print("\nCEVAP:", result["answer"])
-    print("\nKAYNAKLAR:")
+    print("QUESTION:", question)
+    print("\nANSWER:", result["answer"])
+    print("\nSOURCES:")
     for s in result["sources"]:
         print(f"  [{s['score']:.3f}] ({s['type']}) {s['text'][:100]}")
