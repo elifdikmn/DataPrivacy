@@ -1,4 +1,4 @@
-# Research Question 3: Predicting Category from Parameter Name (Model Performance)
+# Predicting Category from Parameter Name (Model Performance)
 
 ## Question
 

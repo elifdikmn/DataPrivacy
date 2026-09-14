@@ -1,4 +1,4 @@
-# Research Question 1: Category Distribution and Share of Sensitive Categories
+# Category Distribution and Share of Sensitive Categories
 
 The dataset consists of 12,811 parameter records, collected by 4,592 unique GPT plugins. Each record is labeled with `main_data_type` (25 coarse categories) and `data_type` (145 fine-grained categories).
 

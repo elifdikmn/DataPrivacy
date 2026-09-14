@@ -1,4 +1,4 @@
-# Research Question 2: Description-Writing Rate in Sensitive Categories
+# Description-Writing Rate in Sensitive Categories
 
 ## Question
 
