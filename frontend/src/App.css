@@ -281,6 +281,15 @@ body {
   border-radius: 6px;
 }
 
+.chart-iframe {
+  display: block;
+  width: 100%;
+  height: 480px;
+  border: none;
+  border-radius: 6px;
+  background: #fff;
+}
+
 .sources {
   margin-top: 10px;
   font-size: 0.8rem;

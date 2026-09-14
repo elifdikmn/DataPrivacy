@@ -187,11 +187,19 @@ function App() {
 
                     {visibleCharts.has(i) && (
                       <div className="chart-wrapper">
-                        <img
-                          src={`${API_BASE}${m.chartImage}`}
-                          alt="Supporting chart from the analysis"
-                          className="chart-image"
-                        />
+                        {m.chartImage.endsWith('.html') ? (
+                          <iframe
+                            src={`${API_BASE}${m.chartImage}`}
+                            title="Interactive chart from the analysis"
+                            className="chart-iframe"
+                          />
+                        ) : (
+                          <img
+                            src={`${API_BASE}${m.chartImage}`}
+                            alt="Supporting chart from the analysis"
+                            className="chart-image"
+                          />
+                        )}
                       </div>
                     )}
                   </div>
