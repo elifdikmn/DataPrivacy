@@ -54,4 +54,4 @@ In the row-normalized confusion matrix, the "Other" column forms a visible strip
 
 ## Overall conclusion
 
-Category prediction can be done with moderate success, but the model has a systematic tendency to default to the "Other" category — meaning its outputs should be treated with caution.
+Category prediction from a parameter's name and description works with moderate success: the best model (TF-IDF + Logistic Regression) reaches **68.9% accuracy** but only **46.8% macro F1**, because it has a systematic tendency to default to the "Other" category on anything it's unsure about — meaning its outputs should be treated with caution.
