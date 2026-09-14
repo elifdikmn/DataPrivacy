@@ -1,5 +1,7 @@
 """Anthropic Claude ile RAG cevabı üretme."""
 
+import re
+
 import anthropic
 
 from . import config
@@ -28,7 +30,24 @@ Rules:
 - If the CONTEXT is not sufficient to answer the question, say so explicitly.
 - Always answer in English, even though the CONTEXT itself may contain Turkish text \
 (the analysis findings were originally written in Turkish) — translate/summarize as needed.
-- Keep the answer short and to the point."""
+- Keep the answer short and to the point.
+- Write the answer as plain text. Do not use Markdown formatting — no "##" headings, no \
+"**bold**", no bullet points, no numbered lists. Write it as short, natural paragraphs, \
+the way you would in an ordinary conversation."""
+
+_HEADING_RE = re.compile(r"^#{1,6}\s*", re.MULTILINE)
+_BOLD_ITALIC_RE = re.compile(r"(\*\*\*|\*\*|\*|___|__)(.+?)\1")
+_BULLET_RE = re.compile(r"^[ \t]*[-*+][ \t]+", re.MULTILINE)
+_NUMBERED_RE = re.compile(r"^[ \t]*\d+\.[ \t]+", re.MULTILINE)
+
+
+def strip_markdown(text: str) -> str:
+    """Safety net in case the model still emits Markdown despite the system prompt."""
+    text = _HEADING_RE.sub("", text)
+    text = _BOLD_ITALIC_RE.sub(r"\2", text)
+    text = _BULLET_RE.sub("", text)
+    text = _NUMBERED_RE.sub("", text)
+    return text.strip()
 
 
 def ask(question: str, context: str) -> str:
@@ -46,7 +65,7 @@ def ask(question: str, context: str) -> str:
     )
     for block in response.content:
         if block.type == "text":
-            return block.text
+            return strip_markdown(block.text)
     return ""
 
 
