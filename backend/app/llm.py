@@ -19,18 +19,20 @@ def get_client() -> anthropic.Anthropic:
     return _client
 
 
-SYSTEM_PROMPT = """Sen, GPT eklentilerinin (GPT Actions) topladığı verileri ve bunların \
-gizlilik risklerini analiz eden bir asistansın. Sana verilen BAĞLAM içindeki veri \
-kayıtlarına ve analiz bulgularına dayanarak kullanıcının sorusunu cevapla.
+SYSTEM_PROMPT = """You are an assistant that analyzes what data GPT Actions (custom GPT \
+plugins) collect and the privacy risks involved. Answer the user's question based on the \
+CONTEXT you are given, which contains data records and analysis findings.
 
-Kurallar:
-- Sadece BAĞLAM'daki bilgiye dayan; BAĞLAM'da olmayan bir şeyi uydurma.
-- BAĞLAM soruyu cevaplamaya yetmiyorsa bunu açıkça söyle.
-- Kısa ve net cevap ver, gereksiz uzatma."""
+Rules:
+- Base your answer only on the CONTEXT; do not make up anything not in it.
+- If the CONTEXT is not sufficient to answer the question, say so explicitly.
+- Always answer in English, even though the CONTEXT itself may contain Turkish text \
+(the analysis findings were originally written in Turkish) — translate/summarize as needed.
+- Keep the answer short and to the point."""
 
 
 def ask(question: str, context: str) -> str:
-    """BAĞLAM metnini ve kullanıcı sorusunu Claude'a gönderip cevabı döndürür."""
+    """Sends the CONTEXT text and the user's question to Claude and returns the answer."""
     response = get_client().messages.create(
         model=config.ANTHROPIC_MODEL,
         max_tokens=1024,
@@ -38,7 +40,7 @@ def ask(question: str, context: str) -> str:
         messages=[
             {
                 "role": "user",
-                "content": f"BAĞLAM:\n{context}\n\nSORU: {question}",
+                "content": f"CONTEXT:\n{context}\n\nQUESTION: {question}",
             }
         ],
     )
