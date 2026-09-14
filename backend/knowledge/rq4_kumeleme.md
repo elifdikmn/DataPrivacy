@@ -1,38 +1,38 @@
-# Araştırma Sorusu 4: Eklentilerin Kümelenmesi ve Risk Segmentasyonu
+# Research Question 4: Clustering Plugins and Risk Segmentation
 
-## Soru
+## Question
 
-Eklentileri topladıkları veri türüne göre gruplandırdığımızda doğal riskli/risksiz kümeler ortaya çıkıyor mu?
+When plugins are grouped by the type of data they collect, do natural risky/safe clusters emerge?
 
-## Kurulum
+## Setup
 
-Analiz birimi parametreden eklentiye çevrildi. `plugin_id_filenames` listesi patlatılarak (explode) her (eklenti, parametre) çifti kendi satırı yapıldı: 12.811 parametre kaydı → 40.261 (eklenti, parametre) satırı → 4.592 benzersiz eklenti.
+The unit of analysis was switched from parameter to plugin. The `plugin_id_filenames` list was exploded so each (plugin, parameter) pair became its own row: 12,811 parameter records → 40,261 (plugin, parameter) rows → 4,592 unique plugins.
 
-En az 3 parametreli eklentiler alındı (3.041 eklenti — daha azı "profil" için anlamsız/şans eseri olurdu). Her eklenti için 25 `main_data_type` kategorisindeki **oranı** (ham sayı değil) hesaplanarak bir "veri toplama profili" matrisi oluşturuldu (3.041 eklenti x 25 kategori).
+Plugins with at least 3 parameters were kept (3,041 plugins — fewer would make a "profile" meaningless/random chance). For each plugin, the **proportion** (not raw count) of its parameters in each of the 25 `main_data_type` categories was computed, producing a "data collection profile" matrix (3,041 plugins x 25 categories).
 
-## K-Means kümeleme
+## K-Means clustering
 
-Kategoriler standartlaştırıldıktan sonra K=2..10 arası silhouette skoru denendi. En iyi skor K=10'da (0.254) çıktı, ama genel olarak skorlar düşük (0.17-0.25) — eklentiler net, keskin ayrılmış kümeler oluşturmuyor.
+After standardizing the categories, silhouette score was tried for K=2..10. The best score was at K=10 (0.254), but scores were low overall (0.17-0.25) — plugins don't form sharply separated clusters.
 
-10 kümenin büyüklükleri çok dengesiz: 2 büyük küme (1.523 ve 891 eklenti) çoğunluğu kaplıyor, kalan 8 küme çok küçük (3-19 eklenti).
+The 10 clusters are very uneven in size: 2 large clusters (1,523 and 891 plugins) cover most plugins, the remaining 8 clusters are very small (3-19 plugins).
 
-## Küme profilleri ve hassas kategori payı
+## Cluster profiles and sensitive-category share
 
-| Küme | Eklenti sayısı | Hassas pay | Baskın kategoriler |
+| Cluster | # Plugins | Sensitive share | Dominant categories |
 |---|---|---|---|
-| 1 | 83 | %16.1 | Market data, Time, Finance information |
-| 8 | 891 | %12.5 | Identifier, Other, App usage data |
-| 5 | 3 | %10.5 | Real estate data, Location |
-| 2 | 338 | %9.4 | Message, Files and documents |
-| 6 | 5 | %4.2 | Food and nutrition information |
-| 4 | 14 | %3.4 | E-commerce data |
-| 7 | 11 | %2.3 | Travel information, Time |
-| 9 | 19 | %2.2 | Location, Weather information |
-| 0 | 1.523 | %1.5 | App usage data, Query |
-| 3 | 154 | %0.0 | App metadata, Query |
+| 1 | 83 | 16.1% | Market data, Time, Finance information |
+| 8 | 891 | 12.5% | Identifier, Other, App usage data |
+| 5 | 3 | 10.5% | Real estate data, Location |
+| 2 | 338 | 9.4% | Message, Files and documents |
+| 6 | 5 | 4.2% | Food and nutrition information |
+| 4 | 14 | 3.4% | E-commerce data |
+| 7 | 11 | 2.3% | Travel information, Time |
+| 9 | 19 | 2.2% | Location, Weather information |
+| 0 | 1,523 | 1.5% | App usage data, Query |
+| 3 | 154 | 0.0% | App metadata, Query |
 
-## Bulgu
+## Finding
 
-Kümeleme net bir "riskli vs risksiz" ikili ayrım üretmiyor. Bunun yerine **fonksiyonel/tematik gruplar** ortaya çıkıyor (finans & pazar, seyahat, e-ticaret, konum & hava durumu, mesajlaşma & dosya, genel amaçlı, sadece meta veri toplayan). Hassas kategori payı bu kümeler arasında kademeli olarak (%0 ile %16.1 arasında) dağılıyor. En büyük iki küme (eklentilerin ~%80'i) zaten düşük-orta hassas paya sahip; yüksek risk küçük, spesifik-amaçlı kümelerde (finans, emlak gibi) yoğunlaşıyor.
+Clustering does not produce a clean "risky vs. safe" binary split. Instead, **functional/thematic groups** emerge (finance & market, travel, e-commerce, location & weather, messaging & files, general-purpose, metadata-only). The share of sensitive categories is distributed gradually across these clusters (from 0% to 16.1%). The two largest clusters (~80% of all plugins) already have a low-to-moderate sensitive share; high risk is concentrated in small, specific-purpose clusters (like finance, real estate).
 
-Pratik çıkarım: kümeler ikili bir etiket değil, **sıralanabilir bir risk skoru** sağlıyor — Küme 1 ve Küme 8'deki eklentiler incelemeye öncelik verilmesi gereken gruplar olarak işaretlenebilir.
+Practical takeaway: clusters don't give a binary label, but they do provide a **rankable risk score** — plugins in Cluster 1 and Cluster 8 could be flagged as groups warranting priority review.

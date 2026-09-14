@@ -1,23 +1,23 @@
-# Araştırma Sorusu 5: "Other" Kayıtlarının Yeniden Sınıflandırılması
+# Research Question 5: Reclassifying "Other" Records
 
-## Soru
+## Question
 
-Kurulan model, etiketi belirsiz olan kayıtları (özellikle `data_type` sütununda "Other" kategorisi, 3.544 kayıt) sınıflandırmak için kullanılabilir mi?
+Can the trained model be used to classify records with an uncertain label (especially the `data_type` "Other" category, 3,544 records)?
 
-## Metodoloji
+## Methodology
 
-Bölüm 2'deki `data_type` modeli olduğu gibi kullanılamaz çünkü o model "Other"ı geçerli bir sınıf olarak görmüştü — bu, modelin yine "Other" demesine yol açardı. Bunun yerine model **sadece "Other" olmayan** 9.267 kayıtla, gerçek 144 `data_type` değeri üzerinden (nadir sınıflar gruplanarak, 78 sınıf) yeniden eğitildi. Böylece model "Other" kayıtlarına baktığında gerçek bir kategori önermek zorunda kaldı.
+The Section 2 `data_type` model can't be used as-is because it had seen "Other" as a valid class during training — that would just lead the model to say "Other" again. Instead, the model was retrained using **only the non-"Other"** 9,267 records, over the real 144 `data_type` values (with rare classes grouped, 78 classes). This way, when the model looks at an "Other" record, it's forced to propose a real category.
 
-Model her tahmin için bir "güven skoru" (en yüksek olasılık) üretiyor.
+The model produces a "confidence score" (the highest predicted probability) for every prediction.
 
-## Sonuçlar
+## Results
 
-- Yeniden eğitilen modelin kendi test setinde performansı: accuracy %69, macro F1 %42.9 (Bölüm 2'deki data_type modeline yakın).
-- 3.544 "Other" kaydına uygulandığında güven skoru dağılımı düşük: medyan %20.9, ortalama %28.9.
-- **%50 güven eşiğini geçen kayıt sayısı: 411 (%11.6)**. Geri kalan büyük çoğunluk için model de kararsız — bu kayıtlar muhtemelen gerçekten belirsiz/genel amaçlı.
-- Güvenli tahminlerin çoğu sezgisel, genel-amaçlı kategoriler: Current session setting, Resource IDs, Search query, Query filter.
-- **7 kayıt** güvenli şekilde bir **hassas kategoriye** (main_data_type düzeyinde Security credentials veya Personal information) işaret ediyor. Örnekler: `name="email"` (%91 güvenle Email address), `name="key"`/`name="KEY"` (%82 güvenle API key), `name="token"` (%51 güvenle Access tokens). Bu kayıtlar orijinal veri setinde "Other" olarak etiketlenmiş ama isimlerinden bile belli ki hassas veri.
+- The retrained model's performance on its own test set: accuracy 69%, macro F1 42.9% (close to Section 2's data_type model).
+- When applied to the 3,544 "Other" records, the confidence-score distribution is low: median 20.9%, mean 28.9%.
+- **Number of records clearing a 50% confidence threshold: 411 (11.6%)**. The large remaining majority leaves the model uncertain too — these records are probably genuinely ambiguous/general-purpose.
+- Most confident predictions are intuitive, general-purpose categories: Current session setting, Resource IDs, Search query, Query filter.
+- **7 records** confidently point to a **sensitive category** (Security credentials or Personal information at the main_data_type level). Examples: `name="email"` (91% confidence → Email address), `name="key"`/`name="KEY"` (82% confidence → API key), `name="token"` (51% confidence → Access tokens). These records were labeled "Other" in the original dataset, but their names alone make it obvious they're sensitive data.
 
-## Sonuç
+## Conclusion
 
-Model "Other" etiketli kayıtların tamamını güvenilir şekilde yeniden sınıflandıramaz — çoğu gerçekten belirsiz kalıyor. Ama küçük, yüksek güvenli bir alt kümede gerçekten yanlış etiketlenmiş hassas veri türlerini yakalayabiliyor. Model, otomatik yeniden etiketleme için değil, **insan gözden geçirmesi için öncelik listesi çıkarma** amacıyla kullanılmalı.
+The model can't reliably reclassify all "Other"-labeled records — most genuinely stay ambiguous. But in a small, high-confidence subset, it can catch genuinely mislabeled sensitive data types. The model should be used not for automatic relabeling, but to **generate a review-priority list for human review**.

@@ -1,27 +1,27 @@
-# Araştırma Sorusu 2: Hassas Kategorilerde Açıklama Yazma Oranı
+# Research Question 2: Description-Writing Rate in Sensitive Categories
 
-## Soru
+## Question
 
-Hassas kategorilerdeki (Security credentials, Personal information, Health information, Finance information) parametrelerde `description` alanı yazılma oranı, hassas olmayan kategorilere göre farklı mı?
+Is the rate at which the `description` field is filled in for parameters in sensitive categories (Security credentials, Personal information, Health information, Finance information) different from non-sensitive categories?
 
-## Eksik veri notu
+## Note on missing data
 
-`description` alanında boşluk `NaN` değil **boş string (`""`)** olarak saklanıyor. Genel olarak 12.811 kayıttan 1.999'unda (%15.6) description boş.
+Missing values in the `description` field are stored as an **empty string (`""`)**, not `NaN`. Overall, 1,999 of the 12,811 records (15.6%) have an empty description.
 
-## Bulgu
+## Finding
 
-- Hassas kategorilerde açıklama yazılma oranı: **%81.2**
-- Hassas olmayan kategorilerde açıklama yazılma oranı: **%84.65**
+- Description-writing rate in sensitive categories: **81.2%**
+- Description-writing rate in non-sensitive categories: **84.65%**
 
-Yani hassas kategorilerde açıklama yazılma oranı, beklentinin aksine hafifçe **daha düşük**.
+So, contrary to expectation, the description-writing rate in sensitive categories is slightly **lower**.
 
-## İstatistiksel test
+## Statistical test
 
-Ki-kare (chi-square) bağımsızlık testi uygulandı:
-- Chi-square istatistiği: 7.514
-- p-değeri: ≈0.006 (0.05 eşiğinin altında, istatistiksel olarak anlamlı)
-- Cramér's V (etki büyüklüğü): ≈0.024 (çok küçük, ihmal edilebilir)
+A chi-square test of independence was applied:
+- Chi-square statistic: 7.514
+- p-value: ≈0.006 (below the 0.05 threshold, statistically significant)
+- Cramér's V (effect size): ≈0.024 (very small, negligible)
 
-## Yorum
+## Interpretation
 
-Fark istatistiksel olarak anlamlı ama etki büyüklüğü pratikte önemsiz düzeyde küçük. 12.811 gibi büyük bir örneklemde çok küçük farklar bile "anlamlı" çıkabiliyor. Sonuç: bir parametrenin hassas olup olmaması, açıklamasının olup olmayacağını pratikte neredeyse hiç öngörmüyor — description eksikliği kategoriden bağımsız, genel bir alışkanlık gibi görünüyor.
+The difference is statistically significant, but the effect size is practically negligible. In a large sample like 12,811 records, even very small differences can come out "significant." Conclusion: whether a parameter is sensitive or not barely predicts whether it has a description in practice — the lack of a description seems to be a general habit, independent of category.
