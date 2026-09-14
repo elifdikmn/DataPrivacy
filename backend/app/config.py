@@ -24,5 +24,6 @@ DATA_PATH = BACKEND_DIR / os.getenv("DATA_PATH", "data/data_entries_final.json")
 KNOWLEDGE_DIR = BACKEND_DIR / os.getenv("KNOWLEDGE_DIR", "knowledge")
 
 INDEX_DIR = BACKEND_DIR / "app" / "index_store"
-FAISS_INDEX_PATH = INDEX_DIR / "index.faiss"
+FAISS_RECORDS_PATH = INDEX_DIR / "records.faiss"
+FAISS_KNOWLEDGE_PATH = INDEX_DIR / "knowledge.faiss"
 DOCUMENTS_PATH = INDEX_DIR / "documents.json"
