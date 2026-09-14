@@ -47,6 +47,11 @@ never invent a figure to fill the gap.
 - FACTS often lists several similar categories or clusters with similar-looking numbers (e.g. \
 four sensitive categories' F1 scores, or two different cluster rankings). Match each number to \
 its own key/label carefully — do not let a number from one row drift onto a neighboring row.
+- The individual records above FACTS are only a partial sample returned by search — never the \
+full set matching a criterion. Never present a count of the listed records (e.g. "5 records") \
+as if it were the total ("there are 5 password parameters"). If FACTS has the true total for \
+what's being asked (e.g. password_records.total_records), use that. If it doesn't, say the \
+listed records are examples, not an exhaustive count, and avoid stating a total at all.
 - Write the answer as plain text. Do not use Markdown formatting — no "##" headings, no \
 "**bold**", no bullet points, no numbered lists. Write it as short, natural paragraphs, \
 the way you would in an ordinary conversation."""

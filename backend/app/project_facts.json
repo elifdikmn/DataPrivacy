@@ -55,13 +55,20 @@
     "data_type_model_79_classes": {"accuracy_pct": 65.4, "macro_f1_pct": 35.9, "rare_classes_merged": 67, "rare_classes_records": 285}
   },
   "security_credentials_subtypes": {
-    "note": "Breakdown of the 276 Security credentials records by data_type. This is a different count from 'how many plugins use a parameter literally named password' — that is a per-parameter plugin_count from the record itself, not this table.",
+    "note": "Breakdown of the 276 Security credentials records by data_type.",
     "API key": 154,
     "Access tokens": 69,
     "Other": 22,
     "Password": 18,
     "Cryptographic key": 9,
     "Verification code": 4
+  },
+  "password_records": {
+    "note": "All 18 records with data_type=='Password' (not just ones literally named 'password') — this is the authoritative total for any 'which/how many parameters collect passwords' question. Never present a partial list retrieved from individual records as if it were the total; if only some records were retrieved, label them explicitly as examples, not as the full set.",
+    "total_records": 18,
+    "total_plugin_instances": 50,
+    "name_variants": ["password", "setPassword", "api_password", "passcode"],
+    "example_use_cases": ["SMPP account", "database user password", "MySQL password", "PostgreSQL password", "SQL password", "host authentication", "content/post protection", "resume password"]
   },
   "clustering": {
     "best_k": 10,
