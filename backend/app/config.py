@@ -22,8 +22,10 @@ EMBEDDING_MODEL_NAME = os.getenv("EMBEDDING_MODEL_NAME", "paraphrase-multilingua
 
 DATA_PATH = BACKEND_DIR / os.getenv("DATA_PATH", "data/data_entries_final.json")
 KNOWLEDGE_DIR = BACKEND_DIR / os.getenv("KNOWLEDGE_DIR", "knowledge")
+FINAL_RESULTS_DIR = BACKEND_DIR / os.getenv("FINAL_RESULTS_DIR", "final_results")
 
 INDEX_DIR = BACKEND_DIR / "app" / "index_store"
 FAISS_RECORDS_PATH = INDEX_DIR / "records.faiss"
 FAISS_KNOWLEDGE_PATH = INDEX_DIR / "knowledge.faiss"
+FAISS_AUDIT_PATH = INDEX_DIR / "audit.faiss"
 DOCUMENTS_PATH = INDEX_DIR / "documents.json"

@@ -13,6 +13,8 @@ def build_context(results: list[dict]) -> str:
                 f"- Parameter '{m['name']}' (used in {m['plugin_count']} plugin(s)): "
                 f"{m['description'] or '(no description)'} — Category: {m['main_data_type']} / {m['data_type']}"
             )
+        elif r["type"] == "audit":
+            parts.append(f"[Privacy policy audit] {r['text']}")
         else:
             parts.append(f"[Analysis finding — {r['metadata']['filename']}]\n{r['text']}")
     return "\n\n".join(parts)

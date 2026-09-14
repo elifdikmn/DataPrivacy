@@ -14,6 +14,7 @@ const SUGGESTED_QUESTIONS = [
   'Do natural risky vs. safe clusters emerge among plugins?',
   'Can mislabeled "Other" records be identified automatically?',
   'Which parameters collect passwords?',
+  'Do plugins disclose what they collect in their privacy policies?',
 ];
 
 function App() {
