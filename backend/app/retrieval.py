@@ -1,8 +1,9 @@
 """FAISS index'leri üzerinde arama yaparak bir soruya en alakalı dokümanları bulma.
 
-Kayıtlar ve knowledge (analiz bulguları) ayrı index'lerde tutulduğu için ikisi de
-ayrı ayrı aranıp birleştiriliyor — böylece az sayıdaki knowledge dokümanı, çok
-sayıdaki kayıt arasında hiçbir zaman kaybolmuyor.
+Kayıtlar, knowledge (analiz bulguları) ve audit (politika denetimi) ayrı
+index'lerde tutulduğu için üçü de ayrı ayrı aranıp birleştiriliyor — böylece
+sayıca az olan knowledge/audit dokümanları, çok sayıdaki kayıt arasında
+hiçbir zaman kaybolmuyor.
 """
 
 import json
@@ -15,28 +16,39 @@ from .embeddings import embed_query
 
 _record_index: faiss.Index | None = None
 _knowledge_index: faiss.Index | None = None
+_audit_index: faiss.Index | None = None
 _record_docs: list[dict] | None = None
 _knowledge_docs: list[dict] | None = None
+_audit_docs: list[dict] | None = None
 
 
 def _load():
-    global _record_index, _knowledge_index, _record_docs, _knowledge_docs
+    global _record_index, _knowledge_index, _audit_index
+    global _record_docs, _knowledge_docs, _audit_docs
     if _record_index is None:
-        if not config.FAISS_RECORDS_PATH.exists() or not config.FAISS_KNOWLEDGE_PATH.exists():
+        required = [config.FAISS_RECORDS_PATH, config.FAISS_KNOWLEDGE_PATH, config.FAISS_AUDIT_PATH]
+        if not all(p.exists() for p in required):
             raise RuntimeError(
                 "Index bulunamadı. Önce 'python -m app.indexing' çalıştırıp index'i kurun."
             )
         _record_index = faiss.read_index(str(config.FAISS_RECORDS_PATH))
         _knowledge_index = faiss.read_index(str(config.FAISS_KNOWLEDGE_PATH))
+        _audit_index = faiss.read_index(str(config.FAISS_AUDIT_PATH))
         with open(config.DOCUMENTS_PATH, "r", encoding="utf-8") as f:
             data = json.load(f)
         _record_docs = data["records"]
         _knowledge_docs = data["knowledge"]
-    return _record_index, _knowledge_index, _record_docs, _knowledge_docs
+        _audit_docs = data["audit"]
+    return (
+        _record_index, _knowledge_index, _audit_index,
+        _record_docs, _knowledge_docs, _audit_docs,
+    )
 
 
 def _search_one(index: faiss.Index, docs: list[dict], query_vector: np.ndarray, top_k: int) -> list[dict]:
-    scores, indices = index.search(query_vector, top_k)
+    if index.ntotal == 0 or top_k <= 0:
+        return []
+    scores, indices = index.search(query_vector, min(top_k, index.ntotal))
     results = []
     for score, idx in zip(scores[0], indices[0]):
         if idx == -1:
@@ -51,18 +63,20 @@ def _search_one(index: faiss.Index, docs: list[dict], query_vector: np.ndarray, 
     return results
 
 
-def search(query: str, top_k: int = 5, top_k_knowledge: int = 2) -> list[dict]:
-    """Soruyla en alakalı kayıtları ve analiz bulgularını ayrı ayrı arayıp birleştirir."""
-    record_index, knowledge_index, record_docs, knowledge_docs = _load()
+def search(query: str, top_k: int = 5, top_k_knowledge: int = 2, top_k_audit: int = 3) -> list[dict]:
+    """Soruyla en alakalı kayıtları, analiz bulgularını ve politika denetimi
+    sonuçlarını ayrı ayrı arayıp birleştirir."""
+    record_index, knowledge_index, audit_index, record_docs, knowledge_docs, audit_docs = _load()
 
     query_vector = embed_query(query).reshape(1, -1)
     faiss.normalize_L2(query_vector)
 
-    record_results = _search_one(record_index, record_docs, query_vector, top_k)
     knowledge_results = _search_one(knowledge_index, knowledge_docs, query_vector, top_k_knowledge)
+    audit_results = _search_one(audit_index, audit_docs, query_vector, top_k_audit)
+    record_results = _search_one(record_index, record_docs, query_vector, top_k)
 
-    # Knowledge bulgularını önce göster — bunlar genellikle daha "cevap" niteliğinde.
-    return knowledge_results + record_results
+    # Knowledge ve audit bulgularını önce göster — bunlar genellikle daha "cevap" niteliğinde.
+    return knowledge_results + audit_results + record_results
 
 
 if __name__ == "__main__":
