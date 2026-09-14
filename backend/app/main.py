@@ -29,10 +29,16 @@ class Source(BaseModel):
     score: float
 
 
+class ChartDatum(BaseModel):
+    category: str
+    count: int
+    sensitive: bool
+
+
 class AskResponse(BaseModel):
     answer: str
     sources: list[Source]
-    chart: str | None = None  # Plotly figure JSON (fig.to_json()); frontend Plotly.js ile çizer
+    chart: list[ChartDatum] | None = None  # frontend Recharts ile çizer
 
 
 @app.get("/health")

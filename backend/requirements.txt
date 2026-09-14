@@ -6,4 +6,3 @@ sentence-transformers
 faiss-cpu
 numpy
 pandas
-plotly
