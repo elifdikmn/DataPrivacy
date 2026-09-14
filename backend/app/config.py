@@ -15,7 +15,10 @@ ANTHROPIC_MODEL = os.getenv("ANTHROPIC_MODEL", "claude-haiku-4-5")
 
 # Embedding: yerel, ücretsiz bir sentence-transformers modeli (Hugging Face'ten
 # ilk çalıştırmada indirilir, sonrasında yerel önbellekten kullanılır).
-EMBEDDING_MODEL_NAME = os.getenv("EMBEDDING_MODEL_NAME", "all-MiniLM-L6-v2")
+# Çok dilli model kullanıyoruz çünkü sorular Türkçe, veri kayıtları İngilizce
+# teknik terimlerle (örn. "password", "api_key") — tek dilli bir İngilizce model
+# (all-MiniLM-L6-v2) bu ikisini semantik olarak eşleştiremiyor.
+EMBEDDING_MODEL_NAME = os.getenv("EMBEDDING_MODEL_NAME", "paraphrase-multilingual-MiniLM-L12-v2")
 
 DATA_PATH = BACKEND_DIR / os.getenv("DATA_PATH", "data/data_entries_final.json")
 KNOWLEDGE_DIR = BACKEND_DIR / os.getenv("KNOWLEDGE_DIR", "knowledge")
