@@ -8,19 +8,20 @@ Note: this is about the plugin's **privacy policy document** — separate legal/
 
 ## Data source and scope
 
-This uses a separate, smaller dataset (`backend/final_results/`, 381 plugin files) produced and published by the authors of the source paper (Wu et al., 2025, IMC '25 — see the project README's Data Sources & Attribution section), not generated as part of this project's own analysis. In it, each collected data parameter was matched against sentences extracted from that plugin's own privacy policy, and each candidate sentence was labeled `CLEAR` (clearly discloses it), `VAGUE` (vaguely discloses it), `INCORRECT` (disclosure is wrong/misleading), or `OMITTED` (that particular sentence doesn't disclose it) — the source paper's own taxonomy also includes a fifth label, `AMBIGUOUS`, which does appear in the raw `backend/final_results/` data (3 records across 381 files) but is not handled as a distinct category by this project's audit logic below; records where `AMBIGUOUS` is the only informative label (1 of the 308 audited) are folded into `UNDISCLOSED`. Only 184 of the 381 files had any policy text to compare against. This audit uses its own category labels (e.g. "Email address", "User IDs", "Approximate location"), which are a different, finer, hand-labeled taxonomy from the `main_data_type`/`data_type` categories used in the main 12,811-record dataset — the two are not directly comparable one-to-one.
+This uses a separate, smaller dataset (`backend/final_results/`, 381 plugin files) produced and published by the authors of the source paper (Wu et al., 2025, IMC '25 — see the project README's Data Sources & Attribution section), not generated as part of this project's own analysis. In it, each collected data parameter was matched against sentences extracted from that plugin's own privacy policy, and each candidate sentence was labeled with one of five categories from the source paper's own taxonomy: `CLEAR` (clearly discloses it), `VAGUE` (vaguely discloses it), `AMBIGUOUS` (unclear whether it discloses it), `INCORRECT` (disclosure is wrong/misleading), or `OMITTED` (that particular sentence doesn't disclose it). Only 184 of the 381 files had any policy text to compare against. This audit uses its own category labels (e.g. "Email address", "User IDs", "Approximate location"), which are a different, finer, hand-labeled taxonomy from the `main_data_type`/`data_type` categories used in the main 12,811-record dataset — the two are not directly comparable one-to-one.
 
 ## Method
 
-Each parameter has many candidate policy sentences checked against it (most are automatically irrelevant, hence labeled OMITTED for that sentence). A parameter's overall disclosure status is determined by its *best* matching sentence: if any sentence is CLEAR, the parameter counts as disclosed (clearly); otherwise VAGUE if any; otherwise INCORRECT if any; only if every checked sentence is OMITTED does the parameter count as genuinely undisclosed.
+Each parameter has many candidate policy sentences checked against it (most are automatically irrelevant, hence labeled OMITTED for that sentence). A parameter's overall disclosure status is determined by its *best* matching sentence, using the source paper's own label priority: CLEAR first, then VAGUE, then AMBIGUOUS, then INCORRECT; only if every checked sentence is OMITTED does the parameter count as genuinely undisclosed. In practice AMBIGUOUS is extremely rare in this dataset — only 1 of the 308 audited parameters resolves to it.
 
 ## Finding
 
 Across 308 parameters with comparable policy text:
-- **90.6% (279) are UNDISCLOSED** — no sentence anywhere in the plugin's privacy policy discloses this data collection.
+- **90.3% (278) are UNDISCLOSED** — no sentence anywhere in the plugin's privacy policy discloses this data collection.
 - 5.2% (16) are clearly disclosed.
 - 2.3% (7) are vaguely disclosed.
 - 1.9% (6) are disclosed but incorrectly/misleadingly.
+- 0.3% (1) is ambiguously disclosed.
 
 ## Interpretation
 

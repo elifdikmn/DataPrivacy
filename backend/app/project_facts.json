@@ -105,14 +105,16 @@
     "sensitive_flagged_breakdown": {"Security credentials": 4, "Personal information": 3}
   },
   "privacy_policy_audit": {
-    "note": "Separate, smaller dataset (backend/final_results/, 381 plugin files) — not directly comparable to the main 12,811-record dataset's numbers.",
+    "note": "Separate, smaller dataset (backend/final_results/, 381 plugin files) — not directly comparable to the main 12,811-record dataset's numbers. Source paper's disclosure taxonomy has 5 labels (CLEAR/VAGUE/AMBIGUOUS/INCORRECT/OMITTED); all 5 are represented below.",
     "total_parameters_with_comparable_policy_text": 308,
-    "undisclosed_count": 279,
-    "undisclosed_pct": 90.6,
+    "undisclosed_count": 278,
+    "undisclosed_pct": 90.3,
     "disclosed_clear_count": 16,
     "disclosed_clear_pct": 5.2,
     "disclosed_vague_count": 7,
     "disclosed_vague_pct": 2.3,
+    "disclosed_ambiguous_count": 1,
+    "disclosed_ambiguous_pct": 0.3,
     "disclosed_incorrect_count": 6,
     "disclosed_incorrect_pct": 1.9
   }
