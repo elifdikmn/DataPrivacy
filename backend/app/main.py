@@ -5,6 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from . import rag
+from .retrieval import search
 from .viz import sources_category_chart
 
 app = FastAPI(title="GPT Plugin Privacy RAG Assistant")
@@ -52,8 +53,12 @@ def ask(request: AskRequest):
         raise HTTPException(status_code=400, detail="question boş olamaz.")
     try:
         result = rag.answer(request.question, top_k=request.top_k)
+        # Grafik, LLM'in cevap için kullandığı dar bağlamdan (top_k=5) bağımsız,
+        # daha geniş bir kayıt örneklemine dayanır — böylece geniş kapsamlı
+        # sorularda da anlamlı bir kategori dağılımı gösterebilir.
+        chart_sources = search(request.question, top_k=50, top_k_knowledge=0, top_k_audit=0)
     except RuntimeError as e:
         # Örn: index kurulmamış, API anahtarı eksik.
         raise HTTPException(status_code=503, detail=str(e))
-    result["chart"] = sources_category_chart(result["sources"])
+    result["chart"] = sources_category_chart(chart_sources)
     return result
