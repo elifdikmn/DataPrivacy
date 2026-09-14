@@ -13,7 +13,7 @@ QUESTION_CHART_MAP: dict[str, str] = {
     "do plugins write descriptions less often for sensitive parameters?": "rq2_description_rate.png",
     "how accurately can a parameter's category be predicted from its name?": "rq3_confusion_matrix.png",
     "which words predict sensitive categories?": "rq3_feature_importance.png",
-    "do natural risky vs. safe clusters emerge among plugins?": "rq4_silhouette_scores.png",
+    "do natural risky vs. safe clusters emerge among plugins?": "rq4_cluster_sensitivity.png",
     "which plugin clusters have the highest sensitive-data share?": "rq4_cluster_sensitivity.png",
     'can mislabeled "other" records be identified automatically?': "rq5_other_confidence_distribution.png",
     'are there hidden sensitive parameters mislabeled as "other"?': "rq5_other_confidence_distribution.png",

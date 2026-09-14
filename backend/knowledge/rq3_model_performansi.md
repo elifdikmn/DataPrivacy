@@ -19,7 +19,17 @@ Looking only at a parameter's name (and description, if present), how accurately
 Patterns:
 - Small classes have high precision, low recall (the model rarely predicts them, but is right when it does).
 - The `Other` class is the opposite: precision 0.36, recall 0.69 — whenever the model is unsure, it systematically defaults to "Other," acting like a catch-all.
-- Among the sensitive categories, Security credentials is very well distinguished (F1 0.85), and Health information is also decent (F1 0.61).
+
+Per-class metrics for the 4 sensitive categories (read this table exactly as written — do not swap rows):
+
+| Category | Precision | Recall | F1 |
+|---|---|---|---|
+| Security credentials | 0.95 | 0.76 | 0.85 |
+| Personal information | 0.77 | 0.53 | 0.63 |
+| Health information | 1.00 | 0.44 | 0.61 |
+| Finance information | 1.00 | 0.14 | 0.25 |
+
+Security credentials is very well distinguished (F1 0.85); Personal information (F1 0.63) and Health information (F1 0.61) are close but distinct — do not confuse the two; Finance information is the weakest of the four (F1 0.25), despite perfect precision, because recall is very low (many Finance records are missed and fall into "Other" — see the confusion-matrix finding below).
 
 ## Embedding-based model
 

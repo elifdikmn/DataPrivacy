@@ -33,6 +33,11 @@ The 10 clusters are very uneven in size: 2 large clusters (1,523 and 891 plugins
 
 ## Finding
 
-Clustering does not produce a clean "risky vs. safe" binary split. Instead, **functional/thematic groups** emerge (finance & market, travel, e-commerce, location & weather, messaging & files, general-purpose, metadata-only). The share of sensitive categories is distributed gradually across these clusters (from 0% to 16.1%). The two largest clusters (~80% of all plugins) already have a low-to-moderate sensitive share; high risk is concentrated in small, specific-purpose clusters (like finance, real estate).
+Clustering does not produce a clean "risky vs. safe" binary split. Instead, **functional/thematic groups** emerge (finance & market, travel, e-commerce, location & weather, messaging & files, general-purpose, metadata-only). The share of sensitive categories is distributed gradually across these clusters (from 0% to 16.1%).
 
-Practical takeaway: clusters don't give a binary label, but they do provide a **rankable risk score** — plugins in Cluster 1 and Cluster 8 could be flagged as groups warranting priority review.
+Important: "biggest clusters" and "highest-risk clusters" are two different rankings here — do not merge them:
+- **Highest sensitive-data share**: Cluster 1 (16.1%) and Cluster 8 (12.5%). Combined, these two clusters hold 83 + 891 = **974 plugins — about 32% of the 3,041 eligible plugins.** They are the highest-risk clusters, not the biggest.
+- **Biggest by plugin count**: Cluster 0 (1,523 plugins) and Cluster 8 (891 plugins) — combined 2,414 plugins, **about 79% of all eligible plugins.** Their sensitive share is low-to-moderate (1.5% and 12.5% respectively) — most plugins, in other words, sit in large, relatively low-risk clusters.
+- Cluster 8 is the only cluster that appears in both rankings (large **and** comparatively high-risk).
+
+Practical takeaway: clusters don't give a binary label, but they do provide a **rankable risk score** — plugins in Cluster 1 and Cluster 8 (the two highest sensitive-share clusters, together ~32% of plugins) could be flagged as groups warranting priority review.
