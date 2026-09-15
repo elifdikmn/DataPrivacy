@@ -100,13 +100,6 @@ npm start
 
 Frontend runs at `http://localhost:3000`.
 
-## Limitations
-
-- The chatbot's charts are reliable — they're static images exported directly from the notebooks' actual output, not generated on the fly. The LLM-generated explanatory *text*, however, has occasionally gotten numeric details wrong (e.g. attributing one category's F1 score to a different, similar category; conflating "the two biggest clusters by plugin count" with "the two highest-risk clusters"). The `project_facts.json` grounding mechanism above was added specifically to reduce this risk, but it's a mitigation, not a guarantee — as a general principle for any RAG-based system, numeric claims it produces should be cross-checked against the source data before being relied on for a decision or publication.
-- The embedding-based classification model uses spaCy word vectors instead of `sentence-transformers`, because Hugging Face access was blocked by network policy in the analysis environment — results should be read with that substitution in mind.
-- Clustering results are directionally useful but not sharply separated (silhouette scores of 0.17–0.25 across all tested K).
-- The "Other" reclassification model's predictions were not validated against ground truth (none exists) — they're a review-priority signal, not a verified relabeling.
-- The privacy-policy audit (Research Question 6) uses a separate, smaller sample with its own labeling taxonomy — its numbers are not directly comparable to the main dataset's statistics.
 
 ## Data Sources & Attribution
 
