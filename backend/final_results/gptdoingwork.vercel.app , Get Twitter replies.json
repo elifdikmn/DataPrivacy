@@ -1,0 +1,18 @@
+[
+    {
+        "description": "the tweetId from the url of the post shared",
+        "name": "tweetId",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "tweetId",
+        "data_type": "Data identifier",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

@@ -1,0 +1,9 @@
+{
+  "executed_code_cells": 50,
+  "dataset_sha256": "af455e5d61634d335d2ec1839bdef47d421e04ea09c01d3b7370ffbf863ce678",
+  "environment": {
+    "python": "3.12.14",
+    "sklearn": "1.8.0"
+  },
+  "retrieval_index": "Rebuild required after this command: python -m app.indexing, then restart backend."
+}

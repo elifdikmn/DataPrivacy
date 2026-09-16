@@ -1,0 +1,11 @@
+cluster,plugin_count,sensitive_share,dominant_categories
+2,162,35.1,"Personal information (%34), Message (%18), Identifier (%9)"
+1,198,31.1,"Security credentials (%25), App usage data (%19), Query (%13)"
+9,3,10.5,"Real estate data (%44), Location (%17), App usage data (%10)"
+8,342,4.9,"Time (%29), Location (%13), App usage data (%13)"
+0,531,3.2,"Other (%28), Identifier (%23), App usage data (%14)"
+3,19,3.1,"Location (%41), Weather information (%27), App usage data (%13)"
+7,13,2.9,"E-commerce data (%58), Identifier (%13), Web and network data (%9)"
+4,1541,0.9,"App usage data (%48), Query (%22), Web and network data (%10)"
+5,6,0.0,"Vehicle information (%54), Identifier (%21), App usage data (%11)"
+6,153,0.0,"App metadata (%66), Query (%31), Files and documents (%2)"

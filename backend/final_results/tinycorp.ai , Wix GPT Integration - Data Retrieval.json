@@ -1,0 +1,18 @@
+[
+    {
+        "description": "Title of the game to search for in the collection. This fetches the specific game's data.",
+        "name": "title",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "title",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "We (and my AI agents)\ndelve deep into research, gathering rich details and data often beyond the\nscope of ChatGPT's training to craft a comprehensive document that forms the\nbackbone of each game's narrative."
+            }
+        ]
+    }
+]

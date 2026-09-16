@@ -1,0 +1,18 @@
+[
+    {
+        "description": "\u5909\u63db\u3057\u305f\u3044\u4f4f\u6240\u307e\u305f\u306f\u5730\u70b9\u540d",
+        "name": "q",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "q",
+        "data_type": "Address",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "description": "the name of the pokemon",
+        "name": "name",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "name",
+        "data_type": "Name",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

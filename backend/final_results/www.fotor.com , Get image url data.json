@@ -1,0 +1,143 @@
+[
+    {
+        "description": "\u63d0\u793a\u8bcd",
+        "name": "prompt",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "prompt",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "Our Privacy Policy covers how we collect,\nuse, disclose, transfer, and store your information and customized user data."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "By using the websites, mobile applications or other service of Fotor\n(hereinafter referred to as \u201cFotor Service\u201d or \u201cService\u201d), you acknowledge and\nagree that you have consented to the collection, use, disclosure, transfer and\nstorage practices set out in this Privacy Policy."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "We use information collected\nfrom cookies to improve users' experience and the overall quality of our\nservice."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "The use of a Clear GIF allows the service provider to measure the\nactions of the visitor such as opening a page that contains the Clear GIF."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "1.6 \u201cFace Data\u201d collectively refers to (1) \u201cinput\u201d: the original photos,\nselfies and a specified gender that you submit to Service for purpose of\ncreating AI Avatars; and (2) \u201coutcome\u201d: the avatars created through AI\ntechnology based on your face likeness."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "Our Policy on Non-Personal Information\n\nWe may collect Non-Personal Information."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "Non-personal data is collected, used,\ntransferred, disclosed and stored for a number of purposes."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "2.1 Cookies\n\n2.1.1 We generally use Cookies for the following purposes: 1) to allow\nregistered users to stay logged in to the service after they close their\nbrowser window; 2) to store users' preferences for Service functionality; 3)\nto track Service usage so we can improve our service & better understand how\npeople are using it; and 4) to better understand the interests of our\ncustomers and our Service visitors."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "Analysis Cookies, among other things, collect information on how visitors use\nour Service, the content and products that users view most frequently, and the\neffectiveness of our third-party advertising."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "2.1.5 We may link the information collected by Cookies with other information\nwe collect from you pursuant to this Privacy Policy and use the combined\ninformation as set forth herein."
+            },
+            {
+                "number": 11,
+                "label": "OMITTED",
+                "sentence": "Any information\nthat these third parties collect via Clear GIFs is generally not personally\nidentifiable (unless, for example, you provide personally identifiable\ninformation to them through an ad or e-mail message)."
+            },
+            {
+                "number": 12,
+                "label": "OMITTED",
+                "sentence": "2.3 Device Information or System Information\ufeff\ufeff\n\n2.3.1 If you visit our Service through website or mobile application, we shall\nreceive and record the device related information you use (such as device\ntype, operating system and its version, device settings, device identifier,\ntime zone and language, software version number, browser unique identifier)\naccording to specific permissions you grant in the software installation and\nuse."
+            },
+            {
+                "number": 13,
+                "label": "OMITTED",
+                "sentence": "2.3.2 The purposes of the Device Information or System Information includes:\n1) identifying the user\u2019s using habits; 2) automatically matching user\u2019s\nsystem language; 3) decision on service adaptation to some older devices or\nsystems; 4) helping developers locate the errors in the software; and 5)\nimproving the Service of website such as access speed etc."
+            },
+            {
+                "number": 14,
+                "label": "OMITTED",
+                "sentence": "2.4 Log Data\n\nWe may save information about your registration or log in Fotor."
+            },
+            {
+                "number": 15,
+                "label": "OMITTED",
+                "sentence": "We may\nautomatically record certain information about how you use our Service (we\nrefer to this information as \u201cLog Data\u201d)."
+            },
+            {
+                "number": 16,
+                "label": "OMITTED",
+                "sentence": "Log Data may include information\nsuch as a user\u2019s Internet Protocol (IP) address, date and time of\nlogin/logout."
+            },
+            {
+                "number": 17,
+                "label": "OMITTED",
+                "sentence": "Our Policy on Personal Information (General)\n\n3.1 Collection\n\nWhen you use certain Fotor Service, we may require you to provide Personal\nInformation."
+            },
+            {
+                "number": 18,
+                "label": "OMITTED",
+                "sentence": "Personal Information may be collected in a number of ways."
+            },
+            {
+                "number": 19,
+                "label": "OMITTED",
+                "sentence": "Typically, we may prompt you to provide Personal Information that is necessary\nfor a certain Service to be performed."
+            },
+            {
+                "number": 20,
+                "label": "OMITTED",
+                "sentence": "3.3 Use\n\n3.3.1 If you use Fotor as a platform to sell or buy a license of copyright\nprotected works or to participate in any artwork competition, we may require\nyour personal information in order to identify you as the source of the\nartistic work, in compliance with applicable laws."
+            },
+            {
+                "number": 21,
+                "label": "OMITTED",
+                "sentence": "3.3.2 If you require us to contact you through a specific means of\ncommunication, you need to provide for example your account identifier, name,\naddress/zip code, telephone number or email, according to the means of\ncommunication that you have specified."
+            },
+            {
+                "number": 22,
+                "label": "OMITTED",
+                "sentence": "3.3.3 If you agree to participate in our market research activities in order\nto provide better Service for you and other users in the future, you may need\nto provide some additional information (such as your gender, age, nature of\nyour organization, etc.)"
+            },
+            {
+                "number": 23,
+                "label": "OMITTED",
+                "sentence": "3.3.4 When you use our customer support service, we collect your\ncorrespondence in order to build up a public knowledge base, which will be\navailable to all users of the Service."
+            },
+            {
+                "number": 24,
+                "label": "OMITTED",
+                "sentence": "Our Policy on Face Data\ufeff\n\n4.1 Collection  \n  \nThe only case that we collect Face Data is when you use AI Avatar features."
+            },
+            {
+                "number": 25,
+                "label": "OMITTED",
+                "sentence": "To implement this functionality, you will be\nasked to upload 8 to 15 photos or selfies to Service and select a desired\ngender of the avatar to be created."
+            },
+            {
+                "number": 26,
+                "label": "OMITTED",
+                "sentence": "4.2.2 About Outcome  \n  \nYour outcome (avatar) will be stored on our servers (provided by Amazon Web\nServices located in the USA) so that they remain accessible to you in the\nservice at any time until you decide to delete it."
+            }
+        ]
+    }
+]

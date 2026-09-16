@@ -1,0 +1,178 @@
+[
+    {
+        "META_PY_KEYS": "days",
+        "description": "Number of days for which to retrieve historical data.",
+        "required_used": false,
+        "title": null,
+        "type": "integer",
+        "data_name": "days",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "### Usage Statistics\n\nWe are using Google Analytics for aggregated statistics about our website\nvisitors."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "We added a \"anonymize-IP\" function to the tracking code to make sure\nno personal data is collected in this process."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "### Data collection on our website\n\n**Who is responsible for the data collection on this website?"
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "**\n\nThe data collected on this website are processed by the website operator."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "**How do we collect your data?"
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "**\n\nSome data are collected when you provide it to us."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "This could, for example, be\ndata you enter on a contact form."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "Other data are collected automatically by our IT systems when you visit the\nwebsite."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "These data are primarily technical data such as the browser and\noperating system you are using or when you accessed the page."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "These data are\ncollected automatically as soon as you enter our website."
+            },
+            {
+                "number": 11,
+                "label": "OMITTED",
+                "sentence": "**\n\nPart of the data is collected to ensure the proper functioning of the website."
+            },
+            {
+                "number": 12,
+                "label": "OMITTED",
+                "sentence": "**\n\nYou always have the right to request information about your stored data, its\norigin, its recipients, and the purpose of its collection at no charge."
+            },
+            {
+                "number": 13,
+                "label": "OMITTED",
+                "sentence": "### Analytics and third-party tools\n\nWhen visiting our website, statistical analyses may be made of your surfing\nbehavior."
+            },
+            {
+                "number": 14,
+                "label": "OMITTED",
+                "sentence": "### Server log files\n\nThe website provider automatically collects and stores information that your\nbrowser automatically transmits to us in \"server log files\"."
+            },
+            {
+                "number": 15,
+                "label": "OMITTED",
+                "sentence": "These are:\n\n  * Browser type and browser version\n  * Operating system used\n  * Referrer URL\n  * Host name of the accessing computer\n  * Time of the server request\n  * IP address\n\nThese data will not be combined with data from other sources."
+            },
+            {
+                "number": 16,
+                "label": "OMITTED",
+                "sentence": "The mandatory\ninformation requested during registration must be provided in full."
+            },
+            {
+                "number": 17,
+                "label": "OMITTED",
+                "sentence": "This link gives us access to your data stored on Facebook."
+            },
+            {
+                "number": 18,
+                "label": "OMITTED",
+                "sentence": "Including\nespecially your:\n\n  * Facebook name\n  * Facebook profile picture\n  * Facebook cover picture\n  * Email address provided to Facebook\n  * Facebook ID\n  * Facebook friends\n  * Facebook Likes\n  * Birthday\n  * Gender\n  * Country\n  * Language\n\nThis data will be used to set up, provide, and personalize your account."
+            },
+            {
+                "number": 19,
+                "label": "OMITTED",
+                "sentence": "### Leaving comments on this website\n\nIf you use the comment function on this site, the time at which you created\nthe comment and your email address will be stored along with your comment, as\nwell as your username, unless you are posting anonymously."
+            },
+            {
+                "number": 20,
+                "label": "OMITTED",
+                "sentence": "**Storage of the IP address**\n\nOur comment function stores the IP addresses of those users who post comments."
+            },
+            {
+                "number": 21,
+                "label": "OMITTED",
+                "sentence": "**How long comments are stored**\n\nThe comments and the associated data (e.g."
+            },
+            {
+                "number": 22,
+                "label": "OMITTED",
+                "sentence": "Analytics and advertising\n\n### Google Analytics\n\nThis website uses Google Analytics, a web analytics service."
+            },
+            {
+                "number": 23,
+                "label": "OMITTED",
+                "sentence": "**Objecting to the collection of data**\n\nYou can prevent the collection of your data by Google Analytics by clicking on\nthe following link."
+            },
+            {
+                "number": 24,
+                "label": "OMITTED",
+                "sentence": "An opt-out cookie will be set to prevent your data from\nbeing collected on future visits to this site: [Disable Google\nAnalytics](javascript:gaOptout\\(\\);)."
+            },
+            {
+                "number": 25,
+                "label": "OMITTED",
+                "sentence": "Google AdSense uses so-called \"cookies\", which are text files stored in your\ncomputer that enable an analysis of the way you use the website."
+            },
+            {
+                "number": 26,
+                "label": "OMITTED",
+                "sentence": "Through these\nweb beacons, information such as the visitor traffic on these pages can be\nevaluated."
+            },
+            {
+                "number": 27,
+                "label": "OMITTED",
+                "sentence": "The information generated by cookies and web beacons relating to your use of\nthis website (including your IP address), and delivery of advertising formats,\nis transmitted to a Google server in the US and stored there."
+            },
+            {
+                "number": 28,
+                "label": "OMITTED",
+                "sentence": "By using this website, you agree\nto the processing of data relating to you and collected by Google as described\nand for the purposes set out above."
+            },
+            {
+                "number": 29,
+                "label": "OMITTED",
+                "sentence": "If you visit one of our pages featuring a YouTube plugin, a connection to the\nYouTube servers is established."
+            },
+            {
+                "number": 30,
+                "label": "OMITTED",
+                "sentence": "If you're logged in to your YouTube account, YouTube allows you to associate\nyour browsing behavior directly with your personal profile."
+            },
+            {
+                "number": 31,
+                "label": "OMITTED",
+                "sentence": "To use Google Maps, it is necessary to save your IP address."
+            },
+            {
+                "number": 32,
+                "label": "OMITTED",
+                "sentence": "Amazon uses cookies to trace the origin of the\norders."
+            },
+            {
+                "number": 33,
+                "label": "OMITTED",
+                "sentence": "As a result, Amazon can detect that you clicked the affiliate link on\nour website."
+            }
+        ]
+    }
+]

@@ -1,0 +1,188 @@
+[
+    {
+        "META_PY_KEYS": "topic",
+        "description": "Keywords (3 to 7 nouns, adjectives, adverbs) describing the most recent message by the user and your response to it.",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "Keywords describing recent user message and response",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "This\nPrivacy Policy explains how your personal information is collected, used, and\ndisclosed by hintloop."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "By\naccessing or using our Service, you signify that you have read, understood,\nand agree to our collection, storage, use, and disclosure of your personal\ninformation as described in this Privacy Policy and our Terms of Service."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "We collect information from you when you use our service, register on our\nsite, place an order, subscribe to our newsletter, respond to a survey or fill\nout a form."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "* Short Summary of your conversations with GPTs that have installed hintloop\n  * Name / Username\n  * Email Addresses\n  * Job Titles\n  * Age\n  * Password\n\n# How Do We Use The Information We Collect?"
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "Any of the information we collect from you may be used in one of the following\nways:\n\n  * To personalize your experience (your information helps us to better respond to your individual needs)\n  * To improve our website (we continually strive to improve our website offerings based on the information and feedback we receive from you)\n  * To improve customer service (your information helps us to more effectively respond to your customer service requests and support needs)\n  * To process transactions\n  * To administer a contest, promotion, survey or other site feature\n  * To send periodic emails\n\n# When does hintloop use end user information from third parties?"
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "hintloop will collect End User Data necessary to provide the hintloop services\nto our customers."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "End users may voluntarily provide us with information they have made available\non social media websites."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "If you provide us with any such information, we may\ncollect publicly available information from the social media websites you have\nindicated."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "We receive some information from the third parties when you contact us."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "For\nexample, when you submit your email address to us to show interest in becoming\na hintloop customer, we receive information from a third party that provides\nautomated fraud detection services to hintloop."
+            },
+            {
+                "number": 11,
+                "label": "OMITTED",
+                "sentence": "We also occasionally collect\ninformation that is made publicly available on social media websites."
+            },
+            {
+                "number": 12,
+                "label": "OMITTED",
+                "sentence": "hintloop will collect personal information that you submit to us."
+            },
+            {
+                "number": 13,
+                "label": "OMITTED",
+                "sentence": "We may also\nreceive personal information about you from third parties as described above."
+            },
+            {
+                "number": 14,
+                "label": "OMITTED",
+                "sentence": "By submitting your email address on this website, you agree to receive emails\nfrom us."
+            },
+            {
+                "number": 15,
+                "label": "OMITTED",
+                "sentence": "Email addresses submitted only through the order\nprocessing page will be used for the sole purpose of sending you information\nand updates pertaining to your order."
+            },
+            {
+                "number": 16,
+                "label": "OMITTED",
+                "sentence": "Information collected via our\nwebsite, through direct interactions with you, or from use of our help\nservices may be transferred from time to time to our offices or personnel, or\nto third parties, located throughout the world, and may be viewed and hosted\nanywhere in the world, including countries that may not have laws of general\napplicability regulating the use and transfer of such data."
+            },
+            {
+                "number": 17,
+                "label": "OMITTED",
+                "sentence": "The rights you have to request updates or corrections to the information\nhintloop collects depend on your relationship with hintloop."
+            },
+            {
+                "number": 18,
+                "label": "OMITTED",
+                "sentence": "Such third parties may use their own cookies or other methods to collect\ninformation about you."
+            },
+            {
+                "number": 19,
+                "label": "OMITTED",
+                "sentence": "# Cookies for Advertising\n\nThese cookies collect information over time about your online activity on the\nwebsite and other online services to make online advertisements more relevant\nand effective to you."
+            },
+            {
+                "number": 20,
+                "label": "OMITTED",
+                "sentence": "# Cookies\n\nhintloop uses \"Cookies\" to identify the areas of our website that you have\nvisited."
+            },
+            {
+                "number": 21,
+                "label": "OMITTED",
+                "sentence": "We do not knowingly collect\npersonally identifiable information from anyone under the age of 13."
+            },
+            {
+                "number": 22,
+                "label": "OMITTED",
+                "sentence": "If We become aware that We have\ncollected Personal Data from anyone under the age of 13 without verification\nof parental consent, We take steps to remove that information from Our\nservers."
+            },
+            {
+                "number": 23,
+                "label": "OMITTED",
+                "sentence": "* Sessions  \n\nWe use \"Sessions\" to identify the areas of our website that you have visited."
+            },
+            {
+                "number": 24,
+                "label": "OMITTED",
+                "sentence": "# Information about General Data Protection Regulation (GDPR)\n\nWe may be collecting and using information from you if you are from the\nEuropean Economic Area (EEA), and in this section of our Privacy Policy we are\ngoing to explain exactly how and why is this data collected, and how we\nmaintain this data under protection from being replicated or used in the wrong\nway."
+            },
+            {
+                "number": 25,
+                "label": "OMITTED",
+                "sentence": "The Data Protection Principles include requirements such as:\n\n  * Personal data collected must be processed in a fair, legal, and transparent way and should only be used in a way that a person would reasonably expect."
+            },
+            {
+                "number": 26,
+                "label": "OMITTED",
+                "sentence": "* Personal data should only be collected to fulfil a specific purpose and it should only be used for that purpose."
+            },
+            {
+                "number": 27,
+                "label": "OMITTED",
+                "sentence": "Organizations must specify why they need the personal data when they collect it."
+            },
+            {
+                "number": 28,
+                "label": "OMITTED",
+                "sentence": "GDPR adds some new requirements regarding how companies should protect\nindividuals' personal data that they collect and process."
+            },
+            {
+                "number": 29,
+                "label": "OMITTED",
+                "sentence": "We do store all conversation and personal data\nfor up to 6 years unless your account is deleted."
+            },
+            {
+                "number": 30,
+                "label": "OMITTED",
+                "sentence": "# California Residents\n\nThe California Consumer Privacy Act (CCPA) requires us to disclose categories\nof Personal Information we collect and how we use it, the categories of\nsources from whom we collect Personal Information, and the third parties with\nwhom we share it, which we have explained above."
+            },
+            {
+                "number": 31,
+                "label": "OMITTED",
+                "sentence": "You may submit a verifiable request for information regarding the: (1) categories of Personal Information we collect, use, or share; (2) purposes for which categories of Personal Information are collected or used by us; (3) categories of sources from which we collect Personal Information; and (4) specific pieces of Personal Information we have collected about you."
+            },
+            {
+                "number": 32,
+                "label": "OMITTED",
+                "sentence": "You may submit a verifiable request to close your account and we will delete Personal Information about you that we have collected."
+            },
+            {
+                "number": 33,
+                "label": "OMITTED",
+                "sentence": "# California Online Privacy Protection Act (CalOPPA)\n\nCalOPPA requires us to disclose categories of Personal Information we collect\nand how we use it, the categories of sources from whom we collect Personal\nInformation, and the third parties with whom we share it, which we have\nexplained above."
+            },
+            {
+                "number": 34,
+                "label": "OMITTED",
+                "sentence": "You may submit a verifiable request for information regarding the: (1) categories of Personal Information we collect, use, or share; (2) purposes for which categories of Personal Information are collected or used by us; (3) categories of sources from which we collect Personal Information; and (4) specific pieces of Personal Information we have collected about you."
+            },
+            {
+                "number": 35,
+                "label": "OMITTED",
+                "sentence": "You may submit a verifiable request to close your account and we will delete Personal Information about you that we have collected."
+            }
+        ]
+    }
+]

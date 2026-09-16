@@ -1,0 +1,18 @@
+[
+    {
+        "description": "An image URL",
+        "name": "imageUrl",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "imageUrl",
+        "data_type": "Photos",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

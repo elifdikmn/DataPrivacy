@@ -1,0 +1,18 @@
+[
+    {
+        "description": "The query string to search for in the art collection.The query is generally in English. If it is not, please translate it into English first.",
+        "name": "query",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "query",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

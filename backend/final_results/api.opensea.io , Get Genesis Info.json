@@ -1,0 +1,38 @@
+[
+    {
+        "description": "The identifier of the target Genesis",
+        "name": "identifier",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "identifier of the target Genesis",
+        "data_type": "Data identifier",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "This\nPrivacy Policy explains how we collect, use, and share your personal\ninformation when you use our GPT service that utilizes the OpenSea API."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "Information We Collect\n\n  * **NFT Identifier, Name, or Number:** When you use our service, you may input NFT identifiers, names, or numbers to search for NFT information."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "We collect and process this information solely for the purpose of providing you with the requested information."
+            },
+            {
+                "number": 4,
+                "label": "AMBIGUOUS",
+                "sentence": "Data Security\n\nWe want to assure you that we do not collect or store any customer's personal\ninformation, including NFT identifiers, names, or numbers."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "While\nwe don't collect personal information, we still take reasonable measures to\nensure the security of our service and any non-personal data you provide\nduring your interactions with us."
+            }
+        ]
+    }
+]

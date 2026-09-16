@@ -1,0 +1,23 @@
+[
+    {
+        "META_PY_KEYS": "url",
+        "description": null,
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "url",
+        "data_type": "Web browsing history",
+        "collection": [
+            {
+                "number": 1,
+                "label": "INCORRECT",
+                "sentence": "Information Collection and Use:  The API is designed to not collect or store any personal data of its users."
+            },
+            {
+                "number": 2,
+                "label": "INCORRECT",
+                "sentence": "However, as we do not collect or store data, the risk of breach concerning personal data is significantly minimized."
+            }
+        ]
+    }
+]

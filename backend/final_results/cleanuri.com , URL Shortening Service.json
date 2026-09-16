@@ -1,0 +1,78 @@
+[
+    {
+        "description": "The long URL to be shortened",
+        "name": "url",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "body",
+        "data_name": "url",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "This page informs you of our policies regarding the collection, use, and\ndisclosure of personal data when you use our Service and the choices you have\nassociated with that data."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "By using the Service, you\nagree to the collection and use of information in accordance with this policy."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "Unless otherwise defined in this Privacy Policy, the terms used in this\nPrivacy Policy have the same meanings as in our Terms and Conditions,\naccessible from https://cleanuri.com\n\n## Information Collection And Use\n\nWe collect several different types of information for various purposes to\nprovide and improve our Service to you."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "### Types of Data Collected\n\n#### Personal Data\n\nWhile using our Service, we may ask you to provide us with certain personally\nidentifiable information that can be used to contact or identify you\n(\"Personal Data\")."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "Personally identifiable information may include, but is not\nlimited to:\n\n  * Cookies and Usage Data\n\n#### Usage Data\n\nWe may also collect information on how the Service is accessed and used\n(\"Usage Data\")."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "This Usage Data may include information such as your\ncomputer's Internet Protocol address (e.g."
+            },
+            {
+                "number": 7,
+                "label": "OMITTED",
+                "sentence": "IP address), browser type, browser\nversion, the pages of our Service that you visit, the time and date of your\nvisit, the time spent on those pages, unique device identifiers and other\ndiagnostic data."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "#### Tracking & Cookies Data\n\nWe use cookies and similar tracking technologies to track the activity on our\nService and hold certain information."
+            },
+            {
+                "number": 9,
+                "label": "OMITTED",
+                "sentence": "Tracking technologies also used are beacons, tags, and scripts\nto collect and track information and to improve and analyze our Service."
+            },
+            {
+                "number": 10,
+                "label": "OMITTED",
+                "sentence": "* **Google Analytics**\n\nGoogle Analytics is a web analytics service offered by Google that tracks and\nreports website traffic."
+            },
+            {
+                "number": 11,
+                "label": "OMITTED",
+                "sentence": "Google uses the data collected to track and monitor\nthe use of our Service."
+            },
+            {
+                "number": 12,
+                "label": "OMITTED",
+                "sentence": "We do not knowingly collect personally identifiable information from anyone\nunder the age of 18."
+            },
+            {
+                "number": 13,
+                "label": "OMITTED",
+                "sentence": "If we\nbecome aware that we have collected Personal Data from children without\nverification of parental consent, we take steps to remove that information\nfrom our servers."
+            }
+        ]
+    }
+]

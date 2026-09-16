@@ -1,0 +1,18 @@
+[
+    {
+        "description": "Used to filter cat based on their bleed. For example, ?breed_ids=beng will return bengal cat.",
+        "name": "breed_ids",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "breed_ids",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

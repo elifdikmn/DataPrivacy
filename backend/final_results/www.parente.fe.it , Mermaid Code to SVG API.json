@@ -1,0 +1,18 @@
+[
+    {
+        "META_PY_KEYS": "mermaid_code",
+        "description": "Codice Mermaid da convertire in SVG",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "mermaid_code",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "INCORRECT",
+                "sentence": "No Data Retention\n\nThis GPT does not store or retain any user data, including personal or\nstatistical information."
+            }
+        ]
+    }
+]

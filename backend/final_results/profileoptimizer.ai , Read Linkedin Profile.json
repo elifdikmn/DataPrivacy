@@ -1,0 +1,18 @@
+[
+    {
+        "description": "The URL of the Linkedin Profile to read",
+        "name": "url",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "url",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

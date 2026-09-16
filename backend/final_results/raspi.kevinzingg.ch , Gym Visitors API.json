@@ -1,0 +1,53 @@
+[
+    {
+        "description": "Name of the gym",
+        "name": "gymName",
+        "schema_enum": [
+            "Bern City",
+            "Stadelhofen",
+            "Stockerhof",
+            "Puls 5",
+            "Glattpark",
+            "Milandia",
+            "Regensdorf",
+            "Sihlcitiy",
+            "Winterthur",
+            "Eichst\u00e4tte"
+        ],
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "gymName",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "I do\nnot take any personal information, cookies etc."
+            }
+        ]
+    },
+    {
+        "description": "Day of the week",
+        "name": "day",
+        "schema_enum": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+        ],
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "day of the week",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "I do\nnot take any personal information, cookies etc."
+            }
+        ]
+    }
+]

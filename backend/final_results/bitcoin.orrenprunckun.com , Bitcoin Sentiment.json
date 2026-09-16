@@ -1,0 +1,34 @@
+[
+    {
+        "description": "Current Bitcoin price",
+        "name": "price",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "Current Bitcoin price",
+        "data_type": "Other financial info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    },
+    {
+        "description": "Bitcoin sentiment based on news",
+        "name": "sentiment",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "Bitcoin sentiment based on news",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

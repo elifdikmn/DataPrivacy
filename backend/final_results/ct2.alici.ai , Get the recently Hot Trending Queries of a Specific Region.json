@@ -1,0 +1,28 @@
+[
+    {
+        "META_PY_KEYS": "Geo",
+        "description": "Geographical code Or Country code, These are typically two-letter codes defined according to international standards, such as ISO 3166-1 alpha-2, used to represent countries or regions.",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "Geographical code or Country code",
+        "data_type": "Approximate location",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "No personal data from the GPTs or the authentication process is stored by Get\nTrends Service."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "**Data Collection:** No personal information is actively gathered from GPTs."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "Interaction data, such as selected text and generated interactions, is\ncollected purely to process user inquiries and to improve service performance."
+            }
+        ]
+    }
+]

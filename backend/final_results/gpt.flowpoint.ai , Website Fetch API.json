@@ -1,0 +1,18 @@
+[
+    {
+        "META_PY_KEYS": "url",
+        "description": "The URL to process.",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "url",
+        "data_type": "Web browsing history",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

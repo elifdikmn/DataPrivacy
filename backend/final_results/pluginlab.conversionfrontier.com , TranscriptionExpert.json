@@ -1,0 +1,38 @@
+[
+    {
+        "META_PY_KEYS": "audio_url",
+        "description": "The URL of the audio file to transcribe. Supports direct download links such as https://drive.google.com/uc?export=download&id=.... The service supports .mp3 and .wav formats.",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "audio_url",
+        "data_type": "Other audio files",
+        "collection": [
+            {
+                "number": 1,
+                "label": "CLEAR",
+                "sentence": "## Data Collection:\n\nWe collect the following types of data:\n\n  * Directly Provided Data: User inputs, including Google Drive links to audio files and any additional textual information or instructions."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "* Automatically Collected Data: Usage statistics, such as the number of requests made, types of files processed, and timestamps of interactions."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "Users can also opt-out of\nnon-essential data collection and processing."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "## Contact Information:\n\nFor any questions or concerns regarding privacy, users can contact us\nat:\"contact@conversionfrontier.com'\n\n## AI-Specific Considerations:\n\nThe AI processes personal data solely for the purpose of providing the\ntranscription and summarization service."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "description": "Search query for the movie",
+        "name": "query",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "query",
+        "data_type": "In-app search history",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "* Information reasonably sufficient to permit TMDB to contact you including your company affiliation (if applicable), an address, telephone number, and, if available, an electronic mail address."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "* Your contact information (name, postal address, email address, and telephone number)\n  * A physical or electronic signature\n\n**C. Submitting a Counter-Notice."
+            }
+        ]
+    },
+    {
+        "description": "API key for authentication",
+        "name": "api_key",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "api_key",
+        "data_type": "User IDs",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "* Information reasonably sufficient to permit TMDB to contact you including your company affiliation (if applicable), an address, telephone number, and, if available, an electronic mail address."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "* Your contact information (name, postal address, email address, and telephone number)\n  * A physical or electronic signature\n\n**C. Submitting a Counter-Notice."
+            }
+        ]
+    }
+]

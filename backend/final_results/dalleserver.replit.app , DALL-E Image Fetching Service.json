@@ -1,0 +1,23 @@
+[
+    {
+        "META_PY_KEYS": "openaiFileIdRefs",
+        "description": null,
+        "required_used": false,
+        "title": null,
+        "type": "array",
+        "data_name": "openaiFileIdRefs",
+        "data_type": "Data identifier",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "We do not store any\npersonal information beyond what is necessary to create your web page."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "### Consent and Agreement\n\nBy using DesignerGPT, you agree to the collection and use of information in\naccordance with this policy."
+            }
+        ]
+    }
+]

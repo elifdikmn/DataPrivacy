@@ -1,0 +1,28 @@
+[
+    {
+        "description": " This parameter takes a question. The API will return relevant contextual information and reference links starting from 'https://www.findgpts.ai' or 'https://findgpts.ai' (if available) to assist in answering the question based upon provided context.",
+        "name": "question",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "query",
+        "data_name": "question",
+        "data_type": "Reference Information",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "We do not store any personal data from the GPTs or the authentication process."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "**Data Collection:** We do not actively collect personal information from\nGPTs."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "Interaction data, such as selected text and generated responses, is\ncollected solely to process user inquiries and enhance service performance."
+            }
+        ]
+    }
+]

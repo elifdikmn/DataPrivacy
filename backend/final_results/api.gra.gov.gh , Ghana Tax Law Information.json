@@ -1,0 +1,53 @@
+[
+    {
+        "META_PY_KEYS": null,
+        "description": null,
+        "required_used": false,
+        "title": null,
+        "type": "object",
+        "data_name": "postal code information",
+        "data_type": "Address",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "### What Personal Information About Customers Does Ghana Revenue Authority\nGather?"
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "Here are the types of\ninformation we gather."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "* __\n\nInformation You Give Us: We receive and may store any information you enter on\nour Web site or give us in any other way."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "* __\n\nAutomatic Information: We receive and store certain types of information\nwhenever you interact with our website."
+            },
+            {
+                "number": 5,
+                "label": "OMITTED",
+                "sentence": "For example, like many web sites, we\nsometimes use \u201ccookies,\u201d and we obtain certain types of information when your\nWeb browser accesses our website."
+            },
+            {
+                "number": 6,
+                "label": "OMITTED",
+                "sentence": "#### Information You Give Us\n\nYou provide most such information when you search, or send messages via our\nwebsite or email to Ghana Revenue Authority."
+            },
+            {
+                "number": 7,
+                "label": "VAGUE",
+                "sentence": "As a result of those actions, you\nmight supply us with such information as your name, address, and phone\nnumbers."
+            },
+            {
+                "number": 8,
+                "label": "OMITTED",
+                "sentence": "#### Automatic Information\n\nFor security purposes Ghana Revenue Authority sometimes collects and analyzes\nthe Internet protocol (IP) address used to connect your computer to the\nInternet, and to our website."
+            }
+        ]
+    }
+]

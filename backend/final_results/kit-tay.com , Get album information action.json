@@ -1,0 +1,33 @@
+[
+    {
+        "description": "The album identifier",
+        "name": "album",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "album identifier",
+        "data_type": "Data identifier",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "This Privacy Policy explains how we\ncollect, use, and share your information when you visit our website."
+            },
+            {
+                "number": 2,
+                "label": "OMITTED",
+                "sentence": "## Information We Collect\n\nWe collect the following information when you visit our website:\n\n  * Your IP address\n  * Browser type and language\n  * Referring website\n  * Pages you visit on our website\n  * Date and time of your visit\n  * Information you provide to us through forms, such as your name and email address\n\nWe also collect information from cookies and other tracking technologies."
+            },
+            {
+                "number": 3,
+                "label": "OMITTED",
+                "sentence": "They\nallow us to remember your preferences and settings, and to track your activity\non our website."
+            },
+            {
+                "number": 4,
+                "label": "OMITTED",
+                "sentence": "## Your Choices\n\nYou have the following choices regarding your information:\n\n  * You can choose not to allow us to collect cookies by disabling cookies in your browser settings."
+            }
+        ]
+    }
+]

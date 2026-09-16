@@ -1,0 +1,18 @@
+[
+    {
+        "description": "The domain name",
+        "name": "domain",
+        "schema_enum": null,
+        "schema_type": "string",
+        "type": "path",
+        "data_name": "domain name",
+        "data_type": "Other info",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]

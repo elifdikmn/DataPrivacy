@@ -1,0 +1,18 @@
+[
+    {
+        "META_PY_KEYS": "query",
+        "description": "Semantically relevant query from the user about Product Marketing, clearly stated in natural language.",
+        "required_used": false,
+        "title": null,
+        "type": "string",
+        "data_name": "query about Product Marketing",
+        "data_type": "Other user-generated content",
+        "collection": [
+            {
+                "number": 1,
+                "label": "OMITTED",
+                "sentence": "None"
+            }
+        ]
+    }
+]
