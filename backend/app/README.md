@@ -5,8 +5,8 @@
 - `indexing.py`: record/knowledge/audit documents and FAISS indices.
 - `index_state.py`: source fingerprints invalidate stale indices after analysis changes.
 - `retrieval.py`: source-aware index loading and searches.
-- `llm.py`: Anthropic response contract; qualitative explanation plus fact IDs.
-- `facts.py`: renders numbers with their own fact labels, rejects invalid payloads; numeric membership is only a diagnostic.
+- `llm.py`: natural-language Anthropic responses with tolerant legacy JSON handling.
+- `facts.py`: complete reference facts and optional legacy rendering; numeric diagnostics do not block chat.
 - `rag.py`: retrieval and answer orchestration.
 - `chart_mapping.py`: suggested question → prebuilt chart, including conditional confidence intervals.
 

@@ -1,4 +1,4 @@
-"""Render numeric claims from fact IDs, retaining each value's own label."""
+"""Project facts, optional legacy fact rendering and nonblocking numeric diagnostics."""
 import json
 import re
 from decimal import Decimal
@@ -29,43 +29,37 @@ def numeric_facts(obj=_UNSET, prefix=''):
     return result
 
 def format_facts_block():
-    return ('FACTS (use exact fact IDs as {{fact.id}} placeholders; never type a numeric '
-            'value yourself):\n' + json.dumps(numeric_facts(), indent=2))
+    return 'FACTS (reference data: match each number to its model, metric, category and unit; answer in natural language):\n' + json.dumps(load_facts(), ensure_ascii=False, indent=2)
 
 class GroundingError(ValueError):
     pass
 
-_PLACEHOLDER_RE = re.compile(r'\{\{([^{}]+)\}\}')
-
 def render_grounded_answer(payload):
-    """Numeric values are substituted from FACTS by code, never typed by the LLM.
+    """Numbers and their labels are produced by code, never by LLM prose.
 
-    The LLM writes full prose and embeds every number as a {{fact.id}} placeholder;
-    this function verifies no digit appears outside a placeholder (so nothing can be
-    invented or miscalculated), resolves each placeholder against FACTS, and returns
-    the rendered text. This validates numerical grounding, not the truth of the
-    surrounding prose or whether the selected facts fully answer the question.
+    This validates numerical rendering, not the truth of qualitative prose or
+    whether the selected facts completely answer the question.
     """
-    if not isinstance(payload, dict) or set(payload) != {'explanation'}:
-        raise GroundingError('Expected explanation only.')
-    explanation = payload['explanation']
-    if not isinstance(explanation, str) or not explanation.strip() or len(explanation) > 4000:
-        raise GroundingError('Explanation must be non-empty prose under 4000 characters.')
-    placeholders = _PLACEHOLDER_RE.findall(explanation)
-    if len(placeholders) > 20:
-        raise GroundingError('Expected at most twenty fact references.')
-    outside_placeholders = _PLACEHOLDER_RE.sub('', explanation)
-    if re.search(r'\d', outside_placeholders):
-        raise GroundingError('Digits may only appear inside {{fact.id}} placeholders.')
+    if not isinstance(payload, dict) or set(payload) != {'explanation', 'fact_ids'}:
+        raise GroundingError('Expected explanation and fact_ids only.')
+    explanation, ids = payload['explanation'], payload['fact_ids']
+    if not isinstance(explanation, str) or len(explanation) > 4000 or re.search(r'\d', explanation):
+        raise GroundingError('Explanation must be short qualitative prose without digits.')
+    if not isinstance(ids, list) or len(ids) > 12 or any(not isinstance(x,str) for x in ids):
+        raise GroundingError('Expected at most twelve fact IDs.')
     facts = numeric_facts()
-    unknown = sorted({key.strip() for key in placeholders if key.strip() not in facts})
-    if unknown:
-        raise GroundingError(f'Unknown fact ID(s): {unknown}')
-
-    def resolve(match):
-        return f'{facts[match.group(1).strip()]:g}'
-
-    return _PLACEHOLDER_RE.sub(resolve, explanation).strip()
+    if any(key not in facts for key in ids):
+        raise GroundingError('Unknown fact ID.')
+    rows = []
+    for key in dict.fromkeys(ids):
+        value = facts[key]
+        # Include full hierarchy so values cannot silently drift to a different model/category.
+        parts = key.split('.')
+        if len(parts) >= 2 and parts[-2] in ('ci95', 'ci95_wilson') and parts[-1] in ('0','1'):
+            parts[-2:] = ['95% confidence interval', 'lower' if parts[-1]=='0' else 'upper']
+        label = ' / '.join(part.replace('_', ' ') for part in parts)
+        rows.append(f'{label}: {value:g}')
+    return '\n\n'.join([explanation.strip(), *rows]).strip()
 
 # Kept as a formatting diagnostic only, never as claim validation.
 _NUMBER_RE = re.compile(r'(?<![\w.])-?\d{1,3}(?:,\d{3})+(?:\.\d+)?|(?<![\w.])-?\d+(?:\.\d+)?')

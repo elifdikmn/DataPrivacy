@@ -26,13 +26,11 @@ class BackendTests(unittest.TestCase):
         self.assertEqual(unambiguous_type_mapping(df),{'y':'C'})
     def test_values_and_labels_render_from_same_fact(self):
         key='category_prediction_model.embedding_model.accuracy_pct'
-        facts=load_facts()
-        value=facts['category_prediction_model']['embedding_model']['accuracy_pct']
-        answer=render_grounded_answer({'explanation':f'The word-vector result is {{{{{key}}}}} percent.'})
-        self.assertIn(f'{value:g} percent',answer)
-        with self.assertRaises(GroundingError):render_grounded_answer({'explanation':'TF-IDF accuracy is 54.9%.'})
-        with self.assertRaises(GroundingError):render_grounded_answer({'explanation':'A result of {{invented.accuracy}}.'})
-        with self.assertRaises(GroundingError):render_grounded_answer({'explanation':'A result.','fact_ids':[key]})
+        answer=render_grounded_answer({'explanation':'The word-vector result is shown below.','fact_ids':[key]})
+        self.assertIn('embedding model / accuracy pct:',answer)
+        self.assertNotIn('tfidf baseline',answer)
+        with self.assertRaises(GroundingError):render_grounded_answer({'explanation':'TF-IDF accuracy is 54.9%.','fact_ids':[]})
+        with self.assertRaises(GroundingError):render_grounded_answer({'explanation':'A result.','fact_ids':['invented.accuracy']})
     def test_number_format_diagnostic(self):
         self.assertEqual(verify_answer_numbers('There are 12,811 records.'),[])
         self.assertEqual(verify_answer_numbers('There are 12811.0 records.'),[])
@@ -50,31 +48,90 @@ class BackendTests(unittest.TestCase):
         with patch('app.retrieval.index_is_current',return_value=False):
             r=TestClient(app).post('/ask',json={'question':'What is the model performance?'})
             self.assertEqual(r.status_code,503)
-    def test_invalid_llm_payload_cannot_pass_through(self):
+class ConversationTests(unittest.TestCase):
+    def fake_client(self, texts):
         from types import SimpleNamespace
-        from app import llm
-        fake=SimpleNamespace(messages=SimpleNamespace(create=lambda **kwargs:SimpleNamespace(content=[SimpleNamespace(type='text',text='{"explanation":"Accuracy is 54.9%."}')])))
-        with patch('app.llm.get_client',return_value=fake):
-            self.assertIn('could not validate',llm.ask('test','context'))
+        from unittest.mock import Mock
+        response=SimpleNamespace(content=[SimpleNamespace(type='text',text=t) for t in texts],stop_reason='end_turn')
+        return SimpleNamespace(messages=SimpleNamespace(create=Mock(return_value=response)))
 
-    def test_malformed_reply_is_retried_once_then_succeeds(self):
-        from types import SimpleNamespace
+    def test_natural_answers_including_f1_and_confidence_intervals(self):
         from app import llm
-        key='dataset.total_records'
-        replies=iter([
-            '{"explanation":"Accuracy is 54.9%."}',
-            '{"explanation":"There are {{'+key+'}} records."}',
-        ])
-        calls=[]
-        def create(**kwargs):
-            calls.append(kwargs['messages'][0]['content'])
-            return SimpleNamespace(content=[SimpleNamespace(type='text',text=next(replies))])
-        fake=SimpleNamespace(messages=SimpleNamespace(create=create))
-        with patch('app.llm.get_client',return_value=fake):
-            result=llm.ask('test','FACTS:\n{}')
-        self.assertEqual(len(calls),2)
-        self.assertIn('could not be validated',calls[1])
-        self.assertIn(f'{load_facts()["dataset"]["total_records"]:g} records',result)
+        for answer in ['Merhaba! Projende nasıl yardımcı olabilirim?',
+                       'Macro F1, sınıfların F1 skorlarının ortalamasıdır.',
+                       'Doğruluk %76.20; %95 güven aralığı %74.56–%77.80.']:
+            with self.subTest(answer=answer), patch('app.llm.get_client',return_value=self.fake_client([answer])):
+                self.assertEqual(llm.ask('Projemi açıklar mısın?','context'),answer)
+
+    def test_unmatched_numbers_only_log(self):
+        from app import llm
+        answer='Örnek olarak 987654321 ele alalım.'
+        with patch('app.llm.get_client',return_value=self.fake_client([answer])), self.assertLogs('chatbot.llm',level='WARNING'):
+            self.assertEqual(llm.ask('Bir örnek ver','context'),answer)
+
+    def test_multiple_text_blocks(self):
+        from app import llm
+        with patch('app.llm.get_client',return_value=self.fake_client(['Merhaba.','Nasıl yardımcı olabilirim?'])):
+            self.assertEqual(llm.ask('Merhaba','context'),'Merhaba.\nNasıl yardımcı olabilirim?')
+
+    def test_legacy_json_does_not_discard_numeric_explanation(self):
+        from app import llm
+        for ids in [[],['invented.accuracy']]:
+            payload=json.dumps({'explanation':'Accuracy is 54.9%', 'fact_ids':ids})
+            for text in [payload,'```json\n'+payload+'\n```']:
+                with patch('app.llm.get_client',return_value=self.fake_client([text])):
+                    self.assertEqual(llm.ask('test','context'),'Accuracy is 54.9%')
+
+    def test_legacy_valid_fact_retains_explanation(self):
+        from app import llm
+        payload=json.dumps({'explanation':'F1 hakkında sonuç:', 'fact_ids':['category_prediction_model.embedding_model.accuracy_pct']})
+        with patch('app.llm.get_client',return_value=self.fake_client([payload])):
+            answer=llm.ask('test','context')
+            self.assertIn('F1 hakkında sonuç:',answer)
+            self.assertIn('embedding model / accuracy pct:',answer)
+
+    def test_diagnostic_failure_does_not_break_conversation(self):
+        from app import llm
+        with patch('app.llm.get_client',return_value=self.fake_client(['Merhaba.'])), patch('app.llm.verify_answer_numbers',side_effect=ValueError('diagnostic')), self.assertLogs('chatbot.llm',level='WARNING'):
+            self.assertEqual(llm.ask('Merhaba','context'),'Merhaba.')
+
+    def test_empty_provider_response_is_controlled(self):
+        with patch('app.rag.search',return_value=[]), patch('app.llm.get_client',return_value=self.fake_client([])):
+            response=TestClient(app).post('/ask',json={'question':'Merhaba'})
+            self.assertEqual(response.status_code,503)
+            self.assertIn('empty response',response.json()['detail'])
+
+    def test_http_natural_answer_and_facts_context(self):
+        fake=self.fake_client(['Merhaba! F1 ve %95 güven aralığını açıklayabilirim.'])
+        with patch('app.rag.search',return_value=[]), patch('app.llm.get_client',return_value=fake):
+            response=TestClient(app).post('/ask',json={'question':'Merhaba'})
+        self.assertEqual(response.status_code,200)
+        self.assertEqual(response.json()['answer'],'Merhaba! F1 ve %95 güven aralığını açıklayabilirim.')
+        self.assertEqual(response.json()['sources'],[])
+        self.assertIn('chart_image',response.json())
+        kwargs=fake.messages.create.call_args.kwargs
+        self.assertIn('ordinary text, not JSON',kwargs['system'])
+        self.assertIn('FACTS (reference data',kwargs['messages'][0]['content'])
+        self.assertIn('ci95',kwargs['messages'][0]['content'])
+
+    def test_rq7_facts_and_intervals_reach_provider(self):
+        from app.facts import format_facts_block
+        from app.rag import build_context
+        facts=load_facts()
+        rq7=facts['sensitive_undisclosed_intersection']
+        block=format_facts_block()
+        self.assertEqual(json.loads(block.split('\n',1)[1])['sensitive_undisclosed_intersection'],rq7)
+        expected='Hassas parametrelerin %90’ı açıklanmamış; %95 güven aralığı %69,9–%97,2.'
+        fake=self.fake_client([expected])
+        with patch('app.rag.search',return_value=[]), patch('app.llm.get_client',return_value=fake):
+            response=TestClient(app).post('/ask',json={'question':'RQ7 sonucunu güven aralığıyla açıkla'})
+        self.assertEqual(response.status_code,200)
+        self.assertEqual(response.json()['answer'],expected)
+        sent=fake.messages.create.call_args.kwargs['messages'][0]['content']
+        self.assertIn('sensitive_undisclosed_intersection',sent)
+        self.assertIn(block,sent)
+        self.assertEqual(fake.messages.create.call_count,1)
+
 
 class IndexFreshnessTests(unittest.TestCase):
     def test_real_source_change_invalidates_manifest(self):
