@@ -24,3 +24,17 @@ class MetricsTests(unittest.TestCase):
     def test_invalid_input(self):
         with self.assertRaises(ValueError):paired_intervals(['a'],{'x':[]},n_resamples=200)
         with self.assertRaises(ValueError):wilson_interval(2,1)
+
+class NotebookChartTests(unittest.TestCase):
+    def test_every_served_chart_is_saved_by_exactly_one_notebook_cell(self):
+        # analysis.rebuild exports each chart under the name its cell passes to plt.savefig.
+        import json,re
+        from pathlib import Path
+        root=Path(__file__).resolve().parents[1]
+        pattern=re.compile(r"""savefig\(\s*['"](?:[^'"]*/)?([\w.-]+\.png)['"]""")
+        saved=[]
+        for path in sorted((root/'notebooks').glob('bolum*.ipynb')):
+            for cell in json.loads(path.read_text(encoding='utf-8'))['cells']:
+                if cell['cell_type']=='code':saved+=pattern.findall(''.join(cell['source']))
+        served=sorted(p.name for p in (root/'backend/static/charts').glob('*.png'))
+        self.assertEqual(sorted(saved),served)

@@ -1,40 +1,54 @@
-Notebook execution: 50 code cells passed (analysis.rebuild).
+Notebook execution: 52 code cells passed (analysis.rebuild).
 
 test_invalid_input (test_analysis.MetricsTests.test_invalid_input) ... ok
 test_metrics_match_reference_including_zero_predictions (test_analysis.MetricsTests.test_metrics_match_reference_including_zero_predictions) ... ok
 test_pairing_identical_models_has_zero_difference (test_analysis.MetricsTests.test_pairing_identical_models_has_zero_difference) ... ok
 test_perfect_and_failed_models (test_analysis.MetricsTests.test_perfect_and_failed_models) ... ok
 test_wilson_matches_scipy_with_boundary_counts (test_analysis.MetricsTests.test_wilson_matches_scipy_with_boundary_counts) ... ok
+test_every_served_chart_is_saved_by_exactly_one_notebook_cell (test_analysis.NotebookChartTests.test_every_served_chart_is_saved_by_exactly_one_notebook_cell) ... ok
+test_chart_mapping_tolerates_formatting_and_every_chart_exists (test_backend.AnswerStyleTests.test_chart_mapping_tolerates_formatting_and_every_chart_exists) ... ok
+test_frontend_suggestions_match_chart_questions (test_backend.AnswerStyleTests.test_frontend_suggestions_match_chart_questions) ... ok
+test_history_becomes_alternating_messages (test_backend.AnswerStyleTests.test_history_becomes_alternating_messages) ... ok
+test_http_history_reaches_provider_and_retrieval (test_backend.AnswerStyleTests.test_http_history_reaches_provider_and_retrieval) ... ok
+test_markdown_tidying_keeps_bold_and_leaves_text_intact (test_backend.AnswerStyleTests.test_markdown_tidying_keeps_bold_and_leaves_text_intact) ... ok
+test_prompt_targets_short_answers_with_bold_key_terms (test_backend.AnswerStyleTests.test_prompt_targets_short_answers_with_bold_key_terms) ... ok
 test_all_audit_counts_match_notebook_facts (test_backend.BackendTests.test_all_audit_counts_match_notebook_facts) ... ok
 test_http_validation_and_static_chart (test_backend.BackendTests.test_http_validation_and_static_chart) ... ok
-test_invalid_llm_payload_cannot_pass_through (test_backend.BackendTests.test_invalid_llm_payload_cannot_pass_through) ... ok
 test_number_format_diagnostic (test_backend.BackendTests.test_number_format_diagnostic) ... ok
 test_request_without_ready_index_is_controlled (test_backend.BackendTests.test_request_without_ready_index_is_controlled) ... ok
 test_stale_index_fails_readiness (test_backend.BackendTests.test_stale_index_fails_readiness) ... ok
 test_taxonomy_conflict_not_silently_collapsed (test_backend.BackendTests.test_taxonomy_conflict_not_silently_collapsed) ... ok
 test_unique_action_counts_real_data (test_backend.BackendTests.test_unique_action_counts_real_data) ... ok
 test_values_and_labels_render_from_same_fact (test_backend.BackendTests.test_values_and_labels_render_from_same_fact) ... ok
+test_diagnostic_failure_does_not_break_conversation (test_backend.ConversationTests.test_diagnostic_failure_does_not_break_conversation) ... ok
+test_empty_provider_response_is_controlled (test_backend.ConversationTests.test_empty_provider_response_is_controlled) ... ok
+test_http_natural_answer_and_facts_context (test_backend.ConversationTests.test_http_natural_answer_and_facts_context) ... ok
+test_legacy_json_does_not_discard_numeric_explanation (test_backend.ConversationTests.test_legacy_json_does_not_discard_numeric_explanation) ... Unmatched numeric tokens in answer: ['54.9']
+Unmatched numeric tokens in answer: ['54.9']
+Unmatched numeric tokens in answer: ['54.9']
+Unmatched numeric tokens in answer: ['54.9']
+ok
+test_legacy_valid_fact_retains_explanation (test_backend.ConversationTests.test_legacy_valid_fact_retains_explanation) ... ok
+test_multiple_text_blocks (test_backend.ConversationTests.test_multiple_text_blocks) ... ok
+test_natural_answers_including_f1_and_confidence_intervals (test_backend.ConversationTests.test_natural_answers_including_f1_and_confidence_intervals) ... ok
+test_rq7_facts_and_intervals_reach_provider (test_backend.ConversationTests.test_rq7_facts_and_intervals_reach_provider) ... ok
+test_unmatched_numbers_only_log (test_backend.ConversationTests.test_unmatched_numbers_only_log) ... ok
 test_real_source_change_invalidates_manifest (test_backend.IndexFreshnessTests.test_real_source_change_invalidates_manifest) ... ok
 
 ----------------------------------------------------------------------
-Ran 15 tests in 0.196s
+Ran 30 tests in 0.417s
 
 OK
 
-Frontend production build:
-npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+Frontend production build (CI=true):
 
 > frontend@0.1.0 build
 > react-scripts build
 
-[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
-(node:26) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
-(Use `node --trace-deprecation ...` to show where the warning was created)
 Creating an optimized production build...
 Browserslist: browsers data (caniuse-lite) is 11 months old. Please run:
   npx update-browserslist-db@latest
   Why you should do it regularly: https://github.com/browserslist/update-db#readme
-[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
 Browserslist: browsers data (caniuse-lite) is 11 months old. Please run:
   npx update-browserslist-db@latest
   Why you should do it regularly: https://github.com/browserslist/update-db#readme
@@ -42,7 +56,8 @@ Compiled successfully.
 
 File sizes after gzip:
 
-  106.1 kB (+25 B)  build/static/js/main.2aeda3d2.js
+  106.38 kB  build/static/js/main.f0d26077.js
+  1.81 kB    build/static/css/main.3ef24fce.css
 
 The project was built assuming it is hosted at /.
 You can control this with the homepage field in your package.json.
@@ -50,7 +65,6 @@ You can control this with the homepage field in your package.json.
 The build folder is ready to be deployed.
 You may serve it with a static server:
 
-  npm install -g serve
   serve -s build
 
 Find out more about deployment here:

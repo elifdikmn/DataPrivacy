@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Privacy Assistant",
+  "name": "GPT Plugin Privacy Assistant",
   "icons": [
     {
       "src": "favicon.ico",

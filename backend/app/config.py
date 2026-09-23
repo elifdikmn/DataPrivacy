@@ -26,6 +26,13 @@ FINAL_RESULTS_DIR = BACKEND_DIR / os.getenv("FINAL_RESULTS_DIR", "final_results"
 
 STATIC_DIR = BACKEND_DIR / "static"
 
+# Frontend'in çalıştığı adres(ler). "*" tüm origin'lere izin verir (yalnızca yerel deneme için).
+CORS_ORIGINS = [
+    origin.strip()
+    for origin in os.getenv("CORS_ORIGINS", "http://localhost:3000,http://127.0.0.1:3000").split(",")
+    if origin.strip()
+]
+
 INDEX_DIR = BACKEND_DIR / "app" / "index_store"
 FAISS_RECORDS_PATH = INDEX_DIR / "records.faiss"
 FAISS_KNOWLEDGE_PATH = INDEX_DIR / "knowledge.faiss"

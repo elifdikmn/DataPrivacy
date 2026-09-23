@@ -211,6 +211,11 @@ body {
   line-height: 1.55;
 }
 
+.message.assistant .bubble strong {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
 .typing-indicator {
   display: inline-flex;
   gap: 4px;

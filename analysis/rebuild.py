@@ -1,7 +1,11 @@
 """Run corrected notebooks and refresh all dependent facts, reports and PNGs.
 
-Usage: OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m analysis.rebuild
+Usage: OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m analysis.rebuild [--update-knowledge]
 This does not call an LLM or build the expensive retrieval embeddings.
+
+backend/knowledge/*.md are hand-edited. By default the generated knowledge texts are
+written to analysis/results/generated_knowledge/ for review; pass --update-knowledge
+to overwrite the curated files instead.
 """
 import ast
 import base64
@@ -14,6 +18,7 @@ from pathlib import Path
 import shutil
 import sys
 import platform
+import re
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -26,28 +31,35 @@ ROOT = Path(__file__).resolve().parents[1]
 RESULTS = ROOT/'analysis/results'
 CHARTS = ROOT/'backend/static/charts'
 EXPORT = ROOT/'notebooks/exported_charts'
-PLOTS = {
- 1:{11:'rq1_sensitive_breakdown.png',12:'rq1_category_distribution.png',19:'rq2_description_rate.png'},
- 2:{18:'rq3_model_comparison.png',20:'rq3_model_comparison_per_category.png',24:'rq3_feature_importance.png',27:'rq3_password_breakdown.png',34:'rq3_confusion_matrix.png'},
- 3:{6:'rq4_silhouette_scores.png',11:'rq4_cluster_sensitivity.png',17:'rq5_other_confidence_distribution.png',25:'rq6_policy_disclosure.png',28:'rq7_sensitive_undisclosed.png'},
- 4:{1:'rq3_validation_confidence_intervals.png'}}
+GENERATED_KNOWLEDGE = RESULTS/'generated_knowledge'
+# Charts produced by the notebooks and served by the chatbot. Each plotting cell names its
+# own file with plt.savefig('exported_charts/<name>.png'), so exports follow the cell that
+# draws them instead of fixed cell positions (adding a cell no longer mislabels charts).
+EXPECTED_CHARTS = {
+ 'rq1_sensitive_breakdown.png','rq1_category_distribution.png','rq2_description_rate.png',
+ 'rq3_model_comparison.png','rq3_model_comparison_per_category.png','rq3_feature_importance.png',
+ 'rq3_password_breakdown.png','rq3_confusion_matrix.png','rq3_validation_confidence_intervals.png',
+ 'rq4_silhouette_scores.png','rq4_cluster_sensitivity.png','rq5_other_confidence_distribution.png',
+ 'rq6_policy_disclosure.png','rq7_sensitive_undisclosed.png'}
+SAVEFIG_RE = re.compile(r"""savefig\(\s*['"](?:[^'"]*/)?([\w.-]+\.png)['"]""")
 
 def write_json(path, data):
     path.write_text(json.dumps(data,ensure_ascii=False,indent=2,allow_nan=False)+'\n',encoding='utf-8')
 
-def execute_notebook(path, part):
-    nb=json.loads(path.read_text());env={'__name__':'__main__'};count=0
+def execute_notebook(path):
+    nb=json.loads(path.read_text(encoding='utf-8'));env={'__name__':'__main__'};count=0;exported=set()
     old_cwd=Path.cwd();os.chdir(ROOT/'notebooks')
     try:
         for i,cell in enumerate(nb['cells']):
             if cell['cell_type']!='code':continue
             count+=1; outputs=[];stream=io.StringIO()
+            chart=next(iter(SAVEFIG_RE.findall(''.join(cell['source']))),None)
             def show(*args, **kwargs):
                 for num in plt.get_fignums():
                     fig=plt.figure(num);buf=io.BytesIO();fig.savefig(buf,format='png',dpi=140,bbox_inches='tight')
                     outputs.append({'output_type':'display_data','metadata':{},'data':{'image/png':base64.b64encode(buf.getvalue()).decode(),'text/plain':['<Matplotlib figure>']}})
-                    if i in PLOTS[part]:
-                        name=PLOTS[part][i];(CHARTS/name).write_bytes(buf.getvalue());(EXPORT/name).write_bytes(buf.getvalue())
+                    if chart:
+                        (CHARTS/chart).write_bytes(buf.getvalue());(EXPORT/chart).write_bytes(buf.getvalue());exported.add(chart)
                 plt.close('all')
             plt.show=show
             tree=ast.parse(''.join(cell['source']))
@@ -63,7 +75,7 @@ def execute_notebook(path, part):
             print(f'{path.name} cell {i}: passed',flush=True)
     finally:os.chdir(old_cwd)
     write_json(path,nb)
-    return env,count
+    return env,count,exported
 
 def make_validation_notebook():
     code='''import sys, json
@@ -74,7 +86,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from analysis.model_validation import run_validation
 
-df = pd.DataFrame(json.loads((ROOT / 'backend/data/data_entries_final.json').read_text()))
+df = pd.DataFrame(json.loads((ROOT / 'backend/data/data_entries_final.json').read_text(encoding='utf-8')))
 validation_result, validation_reports = run_validation(df)
 print(json.dumps(validation_result, indent=2))
 
@@ -92,14 +104,28 @@ for ax, metric, title in zip(axes, ['accuracy','macro_f1'], ['Accuracy','Macro F
 fig.suptitle('Fixed-test performance with conditional 95% confidence intervals')
 fig.text(.02,.015,'Paired class-stratified bootstrap, 2,000 resamples. Excludes retraining and shared-Action dependence.',fontsize=9)
 plt.tight_layout(rect=[0,.05,1,.94])
+plt.savefig('exported_charts/rq3_validation_confidence_intervals.png', dpi=150, bbox_inches='tight')
 plt.show()
 '''
     cells=[{'cell_type':'markdown','metadata':{},'source':['# Part 4 — Validation and 95% confidence intervals\n\n','Model selection uses only a validation subdivision of the original training set. The selected model is then fitted on the full training set and measured on the original test set.\n\n','Accuracy, macro F1, weighted F1 and paired improvements use 2,000 class-stratified bootstrap samples with the same sampled records for both models. Sensitive-category recall uses Wilson intervals. All intervals assume independent parameter records and condition on fixed fitted models; they do not include retraining or model-selection uncertainty. The original test set has already been inspected; external or Action-grouped validation is still needed.\n\n','A prediction probability for an individual record is not a confidence interval for model performance. No interval for correctness on unlabeled Other records can be computed without reviewed labels.\n\n','Method reference: [SciPy bootstrap documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html). Stratification and metric computation are implemented explicitly in analysis/metrics.py.\n']},
     {'cell_type':'code','metadata':{},'source':code.splitlines(keepends=True),'execution_count':None,'outputs':[]}]
     for i,c in enumerate(cells):c['id']=f'validation-{i}'
-    write_json(ROOT/'notebooks/bolum4_dogrulama.ipynb',{'nbformat':4,'nbformat_minor':5,'metadata':{'kernelspec':{'display_name':'Python 3','language':'python','name':'python3'}},'cells':cells})
+    path=ROOT/'notebooks/bolum4_dogrulama.ipynb'
+    if path.exists():
+        # Refresh only the generated cells; keep hand-written ones such as the Finding summary.
+        nb=json.loads(path.read_text(encoding='utf-8'));fresh={c['id']:c for c in cells}
+        nb['cells']=[fresh.pop(c.get('id'),c) for c in nb['cells']]+list(fresh.values())
+    else:
+        nb={'nbformat':4,'nbformat_minor':5,'metadata':{'kernelspec':{'display_name':'Python 3','language':'python','name':'python3'}},'cells':cells}
+    write_json(path,nb)
 
-def refresh_derived(envs, total_cells):
+def write_knowledge(name, text, update):
+    """backend/knowledge/ is curated by hand; unless asked, write a draft for review instead."""
+    target=ROOT/'backend/knowledge'/name if update else GENERATED_KNOWLEDGE/name
+    target.parent.mkdir(parents=True,exist_ok=True)
+    target.write_text(text,encoding='utf-8')
+
+def refresh_derived(envs, total_cells, update_knowledge=False):
     e1,e2,e3,e4=[envs[i] for i in range(1,5)];v=e4['validation_result'];df=e1['df']
     fine=paired_intervals(e2['y_test_dt'], {'fine_category':e2['y_pred_dt']})
     other=paired_intervals(e3['y_test_k'], {'known_categories_only':e3['y_pred_k']})
@@ -107,7 +133,7 @@ def refresh_derived(envs, total_cells):
     write_json(RESULTS/'model_validation.json',v);write_json(RESULTS/'fine_category_intervals.json',fine)
     write_json(RESULTS/'known_only_intervals.json',other);write_json(RESULTS/'embedding_intervals.json',embed)
     for name,report in e4['validation_reports'].items():pd.DataFrame(report).T.to_csv(RESULTS/f'{name}_report.csv')
-    facts=json.loads((ROOT/'backend/app/project_facts.json').read_text())
+    facts=json.loads((ROOT/'backend/app/project_facts.json').read_text(encoding='utf-8'))
     facts['_meta']['description']='Generated from the current notebook execution by python -m analysis.rebuild. Numeric confidence intervals are conditional estimates; consult uncertainty notes.'
     facts['_meta']['dataset_sha256']=hashlib.sha256((ROOT/'backend/data/data_entries_final.json').read_bytes()).hexdigest()
     facts['_meta']['environment']={'python':platform.python_version(),'sklearn':sklearn.__version__}
@@ -179,22 +205,25 @@ def refresh_derived(envs, total_cells):
         f"Fine-category baseline: accuracy {e2['acc_dt']:.4f}, macro F1 {e2['f1_macro_dt']:.4f}.",
         'Confusion-matrix rows use all true records in each class as the denominator. Half of all true Finance and Health records, not half their errors, were predicted as Other by the original baseline.',
         'Per-class support means test examples. Coefficients do not establish model reliability. See FACTS for exact model-specific values and intervals.']
-    (ROOT/'backend/knowledge/rq3_model_performansi.md').write_text('\n'.join(lines)+'\n')
+    write_knowledge('rq3_model_performansi.md','\n'.join(lines)+'\n',update_knowledge)
     rows=['# Distinct-parameter Action profiles','\n## Corrected sample',f'{len(e3["df_exploded"])} distinct parameter–Action pairs; {eligible} Actions have at least three distinct parameter records.',
           '\n## Cluster results',f'Best K within 2–10: {e3["best_k"]}; silhouette {e3["best_score"]:.4f}.','|Cluster|Actions|Selected sensitive-category share|Top categories|','|---|---:|---:|---|']
     for c,r in cluster_rows.items():rows.append(f'|{c}|{r["n_plugins"]}|{r["sensitive_pct"]}%|{", ".join(r["dominant_categories"])}|')
     rows+=['\n## Interpretation','These are functional category profiles, not safe/unsafe labels. The four selected categories omit other potentially sensitive data, including location and messages. Cluster IDs changed after deduplication and cannot be matched by number to older results. K is exploratory; small clusters and the upper search boundary require caution. Rankings in FACTS distinguish cluster size from selected-category share.']
-    (ROOT/'backend/knowledge/rq4_kumeleme.md').write_text('\n'.join(rows)+'\n')
-    (ROOT/'backend/knowledge/rq5_other_siniflandirma.md').write_text(f'''# Review prioritization for Other records
+    write_knowledge('rq4_kumeleme.md','\n'.join(rows)+'\n',update_knowledge)
+    write_knowledge('rq5_other_siniflandirma.md',f'''# Review prioritization for Other records
 
 ## Results
 The known-label-only classifier was applied to {len(e3['df_other'])} records originally labeled Other at the fine-category level. {len(e3['confident_other'])} exceed the uncalibrated prediction-score threshold of 0.5; {e3['n_sensitive_flagged']} map unambiguously to a selected sensitive category. {reclass['unresolved_broad_mappings']} above-threshold predictions have unresolved fine-to-broad mappings.
 
 ## Interpretation
 These are unverified review candidates, not confirmed hidden sensitive records. For example, skills → API key and email_type → Email address may be false positives. A high probability does not prove correctness, and a low probability does not prove the original Other label is appropriate. Human labels are needed to measure precision on this population. Known-label test confidence intervals in FACTS do not transfer to unlabeled Other records. Use suggestions for review prioritization, not automatic relabeling.
-''')
+''',update_knowledge)
     # Replace notebook summary with generated corrected evidence.
-    path=ROOT/'notebooks/bolum3_uygulama.ipynb';nb=json.loads(path.read_text());nb['cells'][31]['source']=('\n'.join(rows)+'\n\nAbove-threshold flags remain unverified; see Part 4 for confidence intervals.\n').splitlines(keepends=True);write_json(path,nb)
+    path=ROOT/'notebooks/bolum3_uygulama.ipynb';nb=json.loads(path.read_text(encoding='utf-8'))
+    summary=[c for c in nb['cells'] if c['cell_type']=='markdown' and ''.join(c['source']).startswith(rows[0])]
+    if len(summary)!=1:raise RuntimeError(f'{path.name}: expected exactly one generated cell starting with {rows[0]!r}')
+    summary[0]['source']=('\n'.join(rows)+'\n\nAbove-threshold flags remain unverified; see Part 4 for confidence intervals.\n').splitlines(keepends=True);write_json(path,nb)
     write_json(RESULTS/'execution_manifest.json',{'executed_code_cells':total_cells,'dataset_sha256':facts['_meta']['dataset_sha256'],'environment':facts['_meta']['environment'],'retrieval_index':'Rebuild required after this command: python -m app.indexing, then restart backend.'})
     # Compact results report, including paired intervals rather than overlap heuristics.
     report=['# Corrected analysis results','\n|Model|Accuracy (95% CI)|Macro F1 (95% CI)|','|---|---|---|']
@@ -205,18 +234,24 @@ These are unverified review candidates, not confirmed hidden sensitive records. 
              '\n## Corrected clustering',f'{eligible} eligible Actions; {len(e3["df_exploded"])} distinct parameter–Action pairs.',
              '\nMethod: [SciPy bootstrap reference](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html). The implementation uses explicit class-stratified paired resampling.',
              '\nAdditional JSON reports contain fine-category and known-label-only intervals, plus Wilson intervals for sensitive-category recall.']
-    (RESULTS/'RESULTS.md').write_text('\n'.join(report)+'\n')
+    (RESULTS/'RESULTS.md').write_text('\n'.join(report)+'\n',encoding='utf-8')
 
 
 def main():
+    update_knowledge='--update-knowledge' in sys.argv[1:]
     for p in [RESULTS,CHARTS,EXPORT]:p.mkdir(exist_ok=True,parents=True)
     # Source changes invalidate retrieval; leave no manifest claiming current indices.
     (ROOT/'backend/app/index_store/manifest.json').unlink(missing_ok=True)
-    make_validation_notebook();envs={};total=0
+    make_validation_notebook();envs={};total=0;exported=set()
     for part in range(1,5):
         path=next((ROOT/'notebooks').glob(f'bolum{part}_*.ipynb'))
-        envs[part],count=execute_notebook(path,part);total+=count
-    refresh_derived(envs,total)
+        envs[part],count,charts=execute_notebook(path);total+=count;exported|=charts
+    missing=EXPECTED_CHARTS-exported
+    if missing:raise RuntimeError(f"Charts not produced (check the plt.savefig names in the notebooks): {sorted(missing)}")
+    refresh_derived(envs,total,update_knowledge)
     print(f'COMPLETE: {total} code cells. Rebuild retrieval indices before live RAG use.',flush=True)
+    if not update_knowledge:
+        print(f'Knowledge drafts: {GENERATED_KNOWLEDGE.relative_to(ROOT)}/ (backend/knowledge/ unchanged; '
+              'review the drafts or rerun with --update-knowledge).',flush=True)
 
 if __name__=='__main__':main()

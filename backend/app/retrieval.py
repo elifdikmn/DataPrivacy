@@ -35,7 +35,7 @@ def _load():
         required = [config.FAISS_RECORDS_PATH, config.FAISS_KNOWLEDGE_PATH, config.FAISS_AUDIT_PATH, config.DOCUMENTS_PATH]
         if not all(p.exists() for p in required):
             raise RuntimeError(
-                "Index bulunamadı. Önce 'python -m app.indexing' çalıştırıp index'i kurun."
+                "Retrieval index not found. Run python -m app.indexing, then restart the backend."
             )
         records = faiss.read_index(str(config.FAISS_RECORDS_PATH))
         knowledge = faiss.read_index(str(config.FAISS_KNOWLEDGE_PATH))

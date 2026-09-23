@@ -34,6 +34,10 @@ class BackendTests(unittest.TestCase):
     def test_number_format_diagnostic(self):
         self.assertEqual(verify_answer_numbers('There are 12,811 records.'),[])
         self.assertEqual(verify_answer_numbers('There are 12811.0 records.'),[])
+        # Fractions written as percentages, the CI level and Turkish decimal commas are known values.
+        self.assertEqual(verify_answer_numbers('Doğruluk %76.20; %95 güven aralığı %74.56–%77.80.'),[])
+        self.assertEqual(verify_answer_numbers('%90; %95 güven aralığı %69,9–%97,2; 12.811 kayıt.'),[])
+        self.assertEqual(verify_answer_numbers('Accuracy is 54.9% and 99.9%.'),['54.9','99.9'])
     def test_http_validation_and_static_chart(self):
         client=TestClient(app)
         self.assertEqual(client.get('/health').status_code,200)
@@ -110,9 +114,13 @@ class ConversationTests(unittest.TestCase):
         self.assertEqual(response.json()['sources'],[])
         self.assertIn('chart_image',response.json())
         kwargs=fake.messages.create.call_args.kwargs
-        self.assertIn('ordinary text, not JSON',kwargs['system'])
-        self.assertIn('FACTS (reference data',kwargs['messages'][0]['content'])
-        self.assertIn('ci95',kwargs['messages'][0]['content'])
+        system=' '.join(block['text'] for block in kwargs['system'])
+        self.assertIn('ordinary text, not JSON',system)
+        self.assertIn('FACTS (reference data',system)
+        self.assertIn('ci95',system)
+        # The stable prefix (instructions + FACTS) is marked for prompt caching.
+        self.assertEqual(kwargs['system'][-1]['cache_control'],{'type':'ephemeral'})
+        self.assertIn('QUESTION: Merhaba',kwargs['messages'][-1]['content'])
 
     def test_rq7_facts_and_intervals_reach_provider(self):
         from app.facts import format_facts_block
@@ -127,11 +135,63 @@ class ConversationTests(unittest.TestCase):
             response=TestClient(app).post('/ask',json={'question':'RQ7 sonucunu güven aralığıyla açıkla'})
         self.assertEqual(response.status_code,200)
         self.assertEqual(response.json()['answer'],expected)
-        sent=fake.messages.create.call_args.kwargs['messages'][0]['content']
+        sent=' '.join(b['text'] for b in fake.messages.create.call_args.kwargs['system'])
         self.assertIn('sensitive_undisclosed_intersection',sent)
         self.assertIn(block,sent)
         self.assertEqual(fake.messages.create.call_count,1)
 
+
+class AnswerStyleTests(unittest.TestCase):
+    def test_prompt_targets_short_answers_with_bold_key_terms(self):
+        from app.llm import SYSTEM_PROMPT
+        self.assertIn('non-specialists',SYSTEM_PROMPT)
+        self.assertIn('two to four sentences',SYSTEM_PROMPT)
+        self.assertIn('**bold**',SYSTEM_PROMPT)
+
+    def test_markdown_tidying_keeps_bold_and_leaves_text_intact(self):
+        from app.llm import tidy_markdown
+        self.assertEqual(tidy_markdown('## Sonuç\nModel **%76.2** doğru.'),'**Sonuç**\nModel **%76.2** doğru.')
+        self.assertEqual(tidy_markdown('* a\n+ b\n- c'),'- a\n- b\n- c')
+        self.assertEqual(tidy_markdown('***önemli***'),'**önemli**')
+        for text in ['__init__ ve api_key','2 * 3 * 4 = 24','1. adım\n2. adım']:
+            self.assertEqual(tidy_markdown(text),text)
+
+    def test_history_becomes_alternating_messages(self):
+        from app.llm import history_messages
+        history=[{'role':'assistant','text':'Merhaba!'},{'role':'user','text':'Model ne kadar doğru?'},
+                 {'role':'assistant','text':'**%76.2**'},{'role':'user','text':'başarısız istek'},{'role':'user','text':'  '}]
+        self.assertEqual(history_messages(history),[{'role':'user','content':'Model ne kadar doğru?'},{'role':'assistant','content':'**%76.2**'}])
+        self.assertEqual(history_messages(None),[])
+
+    def test_http_history_reaches_provider_and_retrieval(self):
+        fake=ConversationTests.fake_client(None,['**%74.6–%77.8** aralığında.'])
+        history=[{'role':'user','text':'Model ne kadar doğru?'},{'role':'assistant','text':'Doğruluk **%76.2**.'}]
+        with patch('app.rag.search',return_value=[]) as search, patch('app.llm.get_client',return_value=fake):
+            response=TestClient(app).post('/ask',json={'question':'Peki güven aralığı?','history':history})
+        self.assertEqual(response.status_code,200)
+        self.assertEqual(response.json()['answer'],'**%74.6–%77.8** aralığında.')
+        messages=fake.messages.create.call_args.kwargs['messages']
+        self.assertEqual([m['role'] for m in messages],['user','assistant','user'])
+        self.assertIn('Peki güven aralığı?',messages[-1]['content'])
+        self.assertIn('Model ne kadar doğru?',search.call_args.args[0])
+        bad=TestClient(app).post('/ask',json={'question':'x','history':[{'role':'system','text':'y'}]})
+        self.assertEqual(bad.status_code,422)
+
+    def test_chart_mapping_tolerates_formatting_and_every_chart_exists(self):
+        from app.chart_mapping import QUESTION_CHART_MAP,get_chart_filename
+        self.assertEqual(get_chart_filename('  What percentage of collected data is SENSITIVE  '),'rq1_category_distribution.png')
+        self.assertEqual(get_chart_filename('Can mislabeled “Other” records be identified automatically'),'rq5_other_confidence_distribution.png')
+        self.assertEqual(get_chart_filename('Are sensitive parameters also the undisclosed ones?'),'rq7_sensitive_undisclosed.png')
+        self.assertIsNone(get_chart_filename('Tell me a joke'))
+        for chart in QUESTION_CHART_MAP.values():self.assertTrue((config.STATIC_DIR/'charts'/chart).is_file(),chart)
+
+    def test_frontend_suggestions_match_chart_questions(self):
+        import re
+        from app.chart_mapping import QUESTION_CHART_MAP
+        source=(Path(__file__).resolve().parents[1]/'frontend/src/App.js').read_text(encoding='utf-8')
+        block=source.split('const SUGGESTED_QUESTIONS = [',1)[1].split('];',1)[0]
+        chips=[q.replace("\\'","'") for q in re.findall(r"'((?:[^'\\]|\\.)*)'",block)]
+        self.assertEqual(sorted(c.lower() for c in chips),sorted(QUESTION_CHART_MAP))
 
 class IndexFreshnessTests(unittest.TestCase):
     def test_real_source_change_invalidates_manifest(self):

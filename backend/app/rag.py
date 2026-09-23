@@ -3,13 +3,15 @@
 import logging
 
 from . import llm
-from .facts import format_facts_block
 from .retrieval import search
 
 logger = logging.getLogger("chatbot.rag")
 
 
 def build_context(results: list[dict]) -> str:
+    # FACTS tablosu burada değil, system prompt'ta (llm.system_blocks) — her istekte
+    # aynı olduğu için orada önbelleğe alınıyor. Burada yalnızca soruya göre
+    # değişen, retrieval'dan gelen kanıtlar var.
     parts = []
     for r in results:
         if r["type"] == "record":
@@ -22,19 +24,21 @@ def build_context(results: list[dict]) -> str:
             parts.append(f"[Privacy policy audit] {r['text']}")
         else:
             parts.append(f"[Analysis finding — {r['metadata']['filename']}]\n{r['text']}")
-
-    # FACTS tablosu her zaman en sonda eklenir — küçük olduğu için tamamı,
-    # sorudan bağımsız. Amaç: LLM'in sayıları ham kayıtlardan kendi kafasında
-    # hesaplaması yerine, buradan birebir kopyalaması.
-    parts.append(format_facts_block())
-
-    return "\n\n".join(parts)
+    return "\n\n".join(parts) if parts else "(no retrieved evidence)"
 
 
-def answer(question: str, top_k: int = 5) -> dict:
-    results = search(question, top_k=top_k)
+def retrieval_query(question: str, history: list[dict] | None = None) -> str:
+    """Follow-up questions ("and its confidence interval?") are short and vague on
+    their own, so the previous user question is added to the search query."""
+    previous = [t.get("text", "").strip() for t in (history or []) if t.get("role") == "user"]
+    previous = [text for text in previous if text]
+    return f"{previous[-1]}\n{question}" if previous else question
+
+
+def answer(question: str, top_k: int = 5, history: list[dict] | None = None) -> dict:
+    results = search(retrieval_query(question, history), top_k=top_k)
     context = build_context(results)
-    response_text = llm.ask(question, context)
+    response_text = llm.ask(question, context, history)
 
     return {"answer": response_text, "sources": results}
 

@@ -1,5 +1,7 @@
 """FastAPI giriş noktası: RAG çekirdeğini HTTP üzerinden sunar."""
 
+from typing import Literal
+
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
@@ -13,17 +15,27 @@ app = FastAPI(title="GPT Plugin Privacy RAG Assistant")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # local geliştirme için; production'da spesifik origin(ler) ile değiştirin
-    allow_methods=["*"],
+    # Varsayılan: yalnızca yerel React geliştirme sunucusu. Başka origin'ler için
+    # backend/.env içinde CORS_ORIGINS (virgülle ayrılmış liste) tanımlayın.
+    allow_origins=config.CORS_ORIGINS,
+    allow_methods=["GET", "POST"],
     allow_headers=["*"],
 )
 
 app.mount("/static", StaticFiles(directory=config.STATIC_DIR), name="static")
 
 
+class ChatTurn(BaseModel):
+    role: Literal["user", "assistant"]
+    text: str = Field(max_length=8000)
+
+
 class AskRequest(BaseModel):
     question: str = Field(max_length=4000)
     top_k: int = Field(default=5, ge=1, le=20)
+    # Önceki mesajlar (eskiden yeniye); takip sorularının ("peki güven aralığı?")
+    # bağlamını korumak için. Modele yalnızca son birkaç mesaj gönderilir.
+    history: list[ChatTurn] = Field(default_factory=list, max_length=20)
 
 
 class Source(BaseModel):
@@ -58,9 +70,10 @@ def ready():
 @app.post("/ask", response_model=AskResponse)
 def ask(request: AskRequest):
     if not request.question.strip():
-        raise HTTPException(status_code=400, detail="question boş olamaz.")
+        raise HTTPException(status_code=400, detail="The question cannot be empty.")
+    history = [turn.model_dump() for turn in request.history]
     try:
-        result = rag.answer(request.question, top_k=request.top_k)
+        result = rag.answer(request.question, top_k=request.top_k, history=history)
     except anthropic.AuthenticationError:
         raise HTTPException(status_code=503, detail="The answer service is not configured correctly.")
     except anthropic.APITimeoutError:

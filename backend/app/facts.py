@@ -1,7 +1,7 @@
 """Project facts, optional legacy fact rendering and nonblocking numeric diagnostics."""
 import json
 import re
-from decimal import Decimal
+from decimal import Decimal, ROUND_HALF_UP
 from functools import lru_cache
 from . import config
 
@@ -62,7 +62,37 @@ def render_grounded_answer(payload):
     return '\n\n'.join([explanation.strip(), *rows]).strip()
 
 # Kept as a formatting diagnostic only, never as claim validation.
-_NUMBER_RE = re.compile(r'(?<![\w.])-?\d{1,3}(?:,\d{3})+(?:\.\d+)?|(?<![\w.])-?\d+(?:\.\d+)?')
+# A number counts as "known" when it equals a FACTS value, or that value as a
+# percentage (0.762 -> 76.2), after rounding to the number of decimals written.
+# Both English (12,811.5) and Turkish (12.811,5 / %69,9) separators are accepted.
+_NUMBER_RE = re.compile(r'(?<![\w.,])-?\d+(?:[.,]\d+)*')
+
+def _readings(token):
+    """Possible plain-decimal readings of a written number, e.g. '12,811' -> 12811 or 12.811."""
+    sign, body = ('-', token[1:]) if token.startswith('-') else ('', token)
+    readings = set()
+    for thousands, decimal in ((',', '.'), ('.', ',')):
+        parts = body.split(decimal)
+        if len(parts) > 2 or (len(parts) == 2 and thousands in parts[1]):
+            continue
+        groups = parts[0].split(thousands)
+        if len(groups) > 1 and (len(groups[0]) > 3 or any(len(g) != 3 for g in groups[1:])):
+            continue
+        readings.add(sign + ''.join(groups) + ('.' + parts[1] if len(parts) == 2 else ''))
+    return readings
+
+def _known_values():
+    values = set()
+    for v in numeric_facts().values():
+        d = Decimal(str(v))
+        values.update((d, d * 100))
+    return values
+
+def _matches(reading, known):
+    number = Decimal(reading)
+    step = Decimal(1).scaleb(number.as_tuple().exponent)
+    return any(k.quantize(step, rounding=ROUND_HALF_UP) == number for k in known)
+
 def verify_answer_numbers(text):
-    known = {Decimal(str(v)) for v in numeric_facts().values()}
-    return sorted({n for n in _NUMBER_RE.findall(text) if Decimal(n.replace(',','')) not in known})
+    known = _known_values()
+    return sorted({t for t in _NUMBER_RE.findall(text) if not any(_matches(r, known) for r in _readings(t))})

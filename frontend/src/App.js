@@ -1,8 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import './App.css';
 
 const API_BASE = process.env.REACT_APP_API_BASE || 'http://127.0.0.1:8000';
+
+// How many earlier messages are sent with each question, so follow-ups
+// ("and its confidence interval?") keep their context.
+const HISTORY_LENGTH = 6;
+const MAX_QUESTION_LENGTH = 4000;
 
 const SUGGESTED_QUESTIONS = [
   'What data are collected by GPT Actions?',
@@ -18,7 +23,33 @@ const SUGGESTED_QUESTIONS = [
   'Are there hidden sensitive parameters mislabeled as "Other"?',
   'Which parameters collect passwords?',
   'Do plugins disclose what they collect in their privacy policies?',
+  'Are sensitive parameters also the undisclosed ones?',
 ];
+
+// Renders the small Markdown subset the assistant is asked to use:
+// **bold** key terms and "- " list items. Everything else stays plain text,
+// so no HTML from the model is ever injected into the page.
+function renderRichText(text) {
+  const lines = text.split('\n');
+  return lines.map((line, i) => {
+    const isBullet = /^\s*[-*]\s+/.test(line);
+    const content = isBullet ? line.replace(/^\s*[-*]\s+/, '') : line;
+    const parts = content.split(/(\*\*[^*\n]+\*\*)/g).map((part, j) =>
+      part.length > 4 && part.startsWith('**') && part.endsWith('**') ? (
+        <strong key={j}>{part.slice(2, -2)}</strong>
+      ) : (
+        part
+      )
+    );
+    return (
+      <React.Fragment key={i}>
+        {isBullet && '• '}
+        {parts}
+        {i < lines.length - 1 && '\n'}
+      </React.Fragment>
+    );
+  });
+}
 
 function getInitialTheme() {
   try {
@@ -37,6 +68,14 @@ function App() {
   const [error, setError] = useState(null);
   const [theme, setTheme] = useState(getInitialTheme);
   const [visibleCharts, setVisibleCharts] = useState(new Set());
+  const composerRef = useRef(null);
+
+  // Keep the newest message (and the input box) in view.
+  useEffect(() => {
+    if (messages.length > 0 || loading) {
+      composerRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }
+  }, [messages.length, loading]);
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
@@ -55,6 +94,10 @@ function App() {
     question = question.trim();
     if (!question || loading) return;
 
+    const history = messages
+      .slice(-HISTORY_LENGTH)
+      .map(({ role, text }) => ({ role, text: text.slice(0, MAX_QUESTION_LENGTH) }));
+
     setMessages((prev) => [...prev, { role: 'user', text: question }]);
     setInput('');
     setLoading(true);
@@ -66,7 +109,7 @@ function App() {
         res = await fetch(`${API_BASE}/ask`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ question, top_k: 5 }),
+          body: JSON.stringify({ question, top_k: 5, history }),
         });
       } catch {
         throw new Error(
@@ -172,7 +215,7 @@ function App() {
               transition={{ duration: 0.25, ease: 'easeOut' }}
             >
               <div className="bubble">
-                <p>{m.text}</p>
+                <p>{m.role === 'assistant' ? renderRichText(m.text) : m.text}</p>
 
                 {m.chartImage && (
                   <div className="chart-toggle-area">
@@ -245,12 +288,13 @@ function App() {
         {error && <div className="error">Error: {error}</div>}
       </div>
 
-      <form className="composer" onSubmit={handleSubmit}>
+      <form className="composer" onSubmit={handleSubmit} ref={composerRef}>
         <input
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder="Or type your own question…"
+          maxLength={MAX_QUESTION_LENGTH}
           disabled={loading}
         />
         <motion.button
