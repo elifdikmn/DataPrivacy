@@ -145,7 +145,8 @@ class AnswerStyleTests(unittest.TestCase):
     def test_prompt_targets_short_answers_with_bold_key_terms(self):
         from app.llm import SYSTEM_PROMPT
         self.assertIn('non-specialists',SYSTEM_PROMPT)
-        self.assertIn('two to four sentences',SYSTEM_PROMPT)
+        self.assertIn('two or three sentences',SYSTEM_PROMPT)
+        self.assertIn('Answer only the question that was asked',SYSTEM_PROMPT)
         self.assertIn('**bold**',SYSTEM_PROMPT)
 
     def test_markdown_tidying_keeps_bold_and_leaves_text_intact(self):
@@ -153,7 +154,8 @@ class AnswerStyleTests(unittest.TestCase):
         self.assertEqual(tidy_markdown('## Sonuç\nModel **%76.2** doğru.'),'**Sonuç**\nModel **%76.2** doğru.')
         self.assertEqual(tidy_markdown('* a\n+ b\n- c'),'- a\n- b\n- c')
         self.assertEqual(tidy_markdown('***önemli***'),'**önemli**')
-        for text in ['__init__ ve api_key','2 * 3 * 4 = 24','1. adım\n2. adım']:
+        self.assertEqual(tidy_markdown('slightly *less* likely and _rarely_ **bold**'),'slightly less likely and rarely **bold**')
+        for text in ['__init__ ve api_key','2 * 3 * 4 = 24','1. adım\n2. adım','- madde *','snake_case_name']:
             self.assertEqual(tidy_markdown(text),text)
 
     def test_history_becomes_alternating_messages(self):

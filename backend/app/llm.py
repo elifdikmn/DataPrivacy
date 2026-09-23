@@ -38,13 +38,20 @@ AUDIENCE AND STYLE
 Your readers are curious non-specialists (students, journalists, policy and privacy staff),
 not data scientists. Reply naturally in the user's language. Use ordinary text, not JSON,
 fact IDs or a schema.
+- Answer only the question that was asked. Do not add findings from other research questions
+  unless the user asks for them.
 - Put the direct answer in the first sentence.
-- Keep answers short: two to four sentences (about 80 words). Go longer only when the user
-  asks for more detail, an explanation or a comparison.
+- Keep answers short: two or three sentences, at most about 60 words. Go longer only when the
+  user asks for more detail, an explanation or a comparison.
 - Use plain words. When a technical term is needed (for example macro F1, confidence interval
   or silhouette score), explain it in a few words the first time you use it.
-- Put the one to three most important terms or numbers in **bold**. Use no other Markdown:
-  no headings, tables, italics or code blocks. A short "- " list is fine for three or more items.
+- Always put the one to three most important terms or numbers in **bold**, for example
+  **7.3%** or **Personal information**. Use no other Markdown: no italics, headings, tables or
+  code blocks. A short "- " list is fine for three or more items.
+- Before calling something the largest, most common or smallest, compare the actual numbers
+  in FACTS.
+- Do not over-interpret: a difference that is statistically significant but has a negligible
+  effect size is not evidence of a real-world pattern; say it is a very small difference.
 - Respond to greetings normally and explain concepts when asked; not every answer needs a
   statistic. If the context does not answer a project-specific question, say so clearly.
 - Earlier turns are conversation history: use them to understand follow-up questions.
@@ -83,17 +90,23 @@ def system_blocks() -> list[dict]:
 _HEADING_RE = re.compile(r"^[ \t]*#{1,6}[ \t]+(.+?)[ \t]*#*[ \t]*$", re.MULTILINE)
 _TRIPLE_EMPHASIS_RE = re.compile(r"\*\*\*(?=\S)(.+?)(?<=\S)\*\*\*")
 _BULLET_RE = re.compile(r"^([ \t]*)[*+•][ \t]+", re.MULTILINE)
+# *italic* / _italic_ (not ** and not spaced like "2 * 3" or identifiers like api_key).
+_ITALIC_RE = re.compile(r"(?<![\w*])\*(?=[^\s*])([^*\n]+?)(?<=[^\s*])\*(?![\w*])")
+_UNDERSCORE_ITALIC_RE = re.compile(r"(?<![\w_])_(?=[^\s_])([^_\n]+?)(?<=[^\s_])_(?![\w_])")
 
 
 def tidy_markdown(text: str) -> str:
     """Normalise the little Markdown the frontend renders: **bold** and "- " lists.
 
-    Headings become bold lines and "*"/"+" bullets become "- ". Nothing else is
-    touched, so identifiers such as __init__ or arithmetic such as 2 * 3 stay intact.
+    Headings become bold lines, "*"/"+" bullets become "- " and *italics* become plain
+    text (the frontend shows no italics). Identifiers such as __init__ or api_key and
+    arithmetic such as 2 * 3 stay intact.
     """
     text = _HEADING_RE.sub(r"**\1**", text)
     text = _TRIPLE_EMPHASIS_RE.sub(r"**\1**", text)
     text = _BULLET_RE.sub(r"\1- ", text)
+    text = _ITALIC_RE.sub(r"\1", text)
+    text = _UNDERSCORE_ITALIC_RE.sub(r"\1", text)
     return text.strip()
 
 
