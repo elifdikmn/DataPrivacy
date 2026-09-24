@@ -101,7 +101,7 @@ npm start
 
 Frontend runs at `http://localhost:3000`.
 
-For a hosted demo, follow the [Render deployment guide](docs/DEPLOY_RENDER.md). It covers the separate API and frontend services, FAISS index generation, environment variables, and a live smoke test.
+For a hosted demo, follow the [Render deployment guide](docs/DEPLOY_RENDER.md). If Render's Free backend runs out of memory, the [Cloud Run backend guide](docs/DEPLOY_CLOUD_RUN.md) keeps the React frontend on Render while moving only the Python API to a larger container.
 
 
 ## Data Sources & Attribution

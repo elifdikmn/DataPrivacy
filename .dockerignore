@@ -1,0 +1,15 @@
+.git
+.venv
+**/.venv
+**/.env
+**/.env.*
+!**/.env.example
+**/__pycache__
+**/*.pyc
+**/.DS_Store
+backend/app/index_store
+frontend
+notebooks
+tests
+docs
+backend/assets
