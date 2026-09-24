@@ -35,10 +35,11 @@ def retrieval_query(question: str, history: list[dict] | None = None) -> str:
     return f"{previous[-1]}\n{question}" if previous else question
 
 
-def answer(question: str, top_k: int = 5, history: list[dict] | None = None) -> dict:
+def answer(question: str, top_k: int = 5, audience: str = "general",
+           history: list[dict] | None = None) -> dict:
     results = search(retrieval_query(question, history), top_k=top_k)
     context = build_context(results)
-    response_text = llm.ask(question, context, history)
+    response_text = llm.ask(question, context, audience=audience, history=history)
 
     return {"answer": response_text, "sources": results}
 

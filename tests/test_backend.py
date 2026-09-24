@@ -9,9 +9,28 @@ from app.facts import render_grounded_answer, GroundingError, verify_answer_numb
 from app import indexing,config
 from fastapi.testclient import TestClient
 from app.main import app
+from app import main as app_main
+from app.ratelimit import RateLimiter
+# The suite calls /ask many times; rate limits are tested separately in RateLimitTests.
+app_main.limiter=RateLimiter(per_client=[])
 import pandas as pd
 
 class BackendTests(unittest.TestCase):
+    def test_cors_origins_are_explicit(self):
+        self.assertEqual(
+            config.parse_cors_origins(' https://example.onrender.com/ , http://localhost:3000 '),
+            ['https://example.onrender.com', 'http://localhost:3000'],
+        )
+        client=TestClient(app)
+        headers={'Origin':'http://localhost:3000','Access-Control-Request-Method':'POST'}
+        allowed=client.options('/ask',headers=headers)
+        self.assertEqual(allowed.status_code,200)
+        self.assertEqual(allowed.headers['access-control-allow-origin'],'http://localhost:3000')
+        headers['Origin']='https://unrelated.example'
+        denied=client.options('/ask',headers=headers)
+        self.assertEqual(denied.status_code,400)
+        self.assertNotIn('access-control-allow-origin',denied.headers)
+
     def test_unique_action_counts_real_data(self):
         rows=json.loads(config.DATA_PATH.read_text());docs=indexing.build_record_documents()
         self.assertEqual(len(docs),12811)
@@ -43,6 +62,8 @@ class BackendTests(unittest.TestCase):
         self.assertEqual(client.get('/health').status_code,200)
         self.assertEqual(client.post('/ask',json={'question':' '}).status_code,400)
         for k in [-1,0,1000000]:self.assertEqual(client.post('/ask',json={'question':'test','top_k':k}).status_code,422)
+        self.assertEqual(client.post('/ask',json={'question':'test','audience':'expert'}).status_code,422)
+        self.assertEqual(client.post('/ask',json={'question':'test','audience':'student'}).status_code,422)
         self.assertEqual(client.post('/ask',json={'question':'x'*4001}).status_code,422)
         for p in (config.STATIC_DIR/'charts').glob('*'):self.assertEqual(client.get('/static/charts/'+p.name).status_code,200)
     def test_stale_index_fails_readiness(self):
@@ -76,7 +97,35 @@ class ConversationTests(unittest.TestCase):
     def test_multiple_text_blocks(self):
         from app import llm
         with patch('app.llm.get_client',return_value=self.fake_client(['Merhaba.','Nasıl yardımcı olabilirim?'])):
-            self.assertEqual(llm.ask('Merhaba','context'),'Merhaba.\nNasıl yardımcı olabilirim?')
+                self.assertEqual(llm.ask('Merhaba','context'),'Merhaba.\nNasıl yardımcı olabilirim?')
+
+    def test_bold_emphasis_is_preserved(self):
+        from app import llm
+        answer='The key result is **7.3% sensitive data**.'
+        with patch('app.llm.get_client',return_value=self.fake_client([answer])):
+            self.assertEqual(llm.ask('What is the key result?','context'),answer)
+
+    def test_audience_instruction_reaches_provider(self):
+        from app import llm
+        fake=self.fake_client(['A concise answer.'])
+        with patch('app.llm.get_client',return_value=fake):
+            llm.ask('Explain the result','context',audience='researcher')
+        system=' '.join(block['text'] for block in fake.messages.create.call_args.kwargs['system'])
+        self.assertIn('TARGET AUDIENCE',system)
+        self.assertIn('effect size or uncertainty',system)
+        self.assertEqual(fake.messages.create.call_args.kwargs['max_tokens'],1024)
+
+    def test_general_answers_are_instructed_to_be_direct_and_short(self):
+        from app import llm
+        fake=self.fake_client(['7.3% of the listed requests are sensitive.'])
+        with patch('app.llm.get_client',return_value=fake):
+            llm.ask('How much is sensitive?','context',audience='general')
+        kwargs=fake.messages.create.call_args.kwargs
+        system=' '.join(block['text'] for block in kwargs['system'])
+        self.assertIn('Answer only the exact question asked',system)
+        self.assertIn('1–2 short sentences',system)
+        self.assertIn('Do not add an introduction',system)
+        self.assertEqual(kwargs['max_tokens'],400)
 
     def test_legacy_json_does_not_discard_numeric_explanation(self):
         from app import llm
@@ -118,8 +167,10 @@ class ConversationTests(unittest.TestCase):
         self.assertIn('ordinary text, not JSON',system)
         self.assertIn('FACTS (reference data',system)
         self.assertIn('ci95',system)
-        # The stable prefix (instructions + FACTS) is marked for prompt caching.
-        self.assertEqual(kwargs['system'][-1]['cache_control'],{'type':'ephemeral'})
+        # The stable prefix (instructions + FACTS) is cached; the audience block follows it.
+        self.assertEqual(kwargs['system'][1]['cache_control'],{'type':'ephemeral'})
+        self.assertIn('FACTS (reference data',kwargs['system'][1]['text'])
+        self.assertTrue(kwargs['system'][2]['text'].startswith('TARGET AUDIENCE'))
         self.assertIn('QUESTION: Merhaba',kwargs['messages'][-1]['content'])
 
     def test_rq7_facts_and_intervals_reach_provider(self):
@@ -143,11 +194,11 @@ class ConversationTests(unittest.TestCase):
 
 class AnswerStyleTests(unittest.TestCase):
     def test_prompt_targets_short_answers_with_bold_key_terms(self):
-        from app.llm import SYSTEM_PROMPT
-        self.assertIn('non-specialists',SYSTEM_PROMPT)
-        self.assertIn('two or three sentences',SYSTEM_PROMPT)
+        from app.llm import SYSTEM_PROMPT,AUDIENCE_INSTRUCTIONS
         self.assertIn('Answer only the question that was asked',SYSTEM_PROMPT)
         self.assertIn('**bold**',SYSTEM_PROMPT)
+        self.assertIn('compare the actual numbers',SYSTEM_PROMPT)
+        self.assertIn('non-technical',AUDIENCE_INSTRUCTIONS['general'])
 
     def test_markdown_tidying_keeps_bold_and_leaves_text_intact(self):
         from app.llm import tidy_markdown
@@ -191,9 +242,12 @@ class AnswerStyleTests(unittest.TestCase):
         import re
         from app.chart_mapping import QUESTION_CHART_MAP
         source=(Path(__file__).resolve().parents[1]/'frontend/src/App.js').read_text(encoding='utf-8')
-        block=source.split('const SUGGESTED_QUESTIONS = [',1)[1].split('];',1)[0]
-        chips=[q.replace("\\'","'") for q in re.findall(r"'((?:[^'\\]|\\.)*)'",block)]
-        self.assertEqual(sorted(c.lower() for c in chips),sorted(QUESTION_CHART_MAP))
+        unescape=lambda q:q.replace("\\'","'")
+        general=source.split('const GENERAL_QUESTIONS = [',1)[1].split('];',1)[0]
+        researcher=source.split('const RESEARCHER_QUESTIONS = [',1)[1].split(']',1)[0]
+        string=r"'((?:[^'\\]|\\.)*)'"
+        queries=[unescape(q) for q in re.findall(r"query: "+string,general)]+[unescape(q) for q in re.findall(string,researcher)]
+        self.assertEqual(sorted(q.lower() for q in queries),sorted(QUESTION_CHART_MAP))
 
 class IndexFreshnessTests(unittest.TestCase):
     def test_real_source_change_invalidates_manifest(self):
@@ -212,3 +266,32 @@ class IndexFreshnessTests(unittest.TestCase):
                 self.assertTrue(index_state.index_is_current())
                 (k/'rq1.md').write_text('corrected finding')
                 self.assertFalse(index_state.index_is_current())
+
+
+class RateLimitTests(unittest.TestCase):
+    def test_per_client_and_global_limits(self):
+        from app.ratelimit import RateLimiter
+        limiter=RateLimiter(per_client=[(2,60),(0,86400)],global_limit=(3,86400))
+        self.assertIsNone(limiter.check('a',now=0));self.assertIsNone(limiter.check('a',now=1))
+        wait=limiter.check('a',now=2)
+        self.assertEqual(wait,59)                      # the oldest request leaves the window at t=60
+        self.assertIsNone(limiter.check('a',now=61))   # allowed again after the window
+        self.assertIsNotNone(limiter.check('b',now=62))# global daily cap (3) reached for everyone
+
+    def test_client_key_prefers_forwarded_ip(self):
+        from app.ratelimit import client_key
+        self.assertEqual(client_key({'x-forwarded-for':'203.0.113.5, 10.0.0.1'},'10.0.0.9'),'203.0.113.5')
+        self.assertEqual(client_key({},'10.0.0.9'),'10.0.0.9')
+
+    def test_ask_returns_429_with_retry_after(self):
+        from app import main
+        from app.ratelimit import RateLimiter
+        fake=ConversationTests.fake_client(None,['Kısa cevap.'])
+        with patch.object(main,'limiter',RateLimiter(per_client=[(1,60)])), \
+             patch('app.rag.search',return_value=[]), patch('app.llm.get_client',return_value=fake):
+            client=TestClient(app)
+            self.assertEqual(client.post('/ask',json={'question':'Merhaba'}).status_code,200)
+            limited=client.post('/ask',json={'question':'Merhaba'})
+        self.assertEqual(limited.status_code,429)
+        self.assertIn('retry-after',limited.headers)
+        self.assertEqual(fake.messages.create.call_count,1)

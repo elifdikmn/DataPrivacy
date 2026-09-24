@@ -1,0 +1,14 @@
+.git
+.gitignore
+.venv
+**/.venv
+**/.env
+**/.env.*
+**/__pycache__
+**/*.pyc
+backend/app/index_store
+frontend
+notebooks
+tests
+docs
+backend/assets

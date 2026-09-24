@@ -2,53 +2,72 @@ import React, { useEffect, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import './App.css';
 
-const API_BASE = process.env.REACT_APP_API_BASE || 'http://127.0.0.1:8000';
+export function resolveApiBase(configured, environment) {
+  const base = (configured || '').trim().replace(/\/+$/, '');
+  return base || (environment === 'production' ? '' : 'http://127.0.0.1:8000');
+}
 
 // How many earlier messages are sent with each question, so follow-ups
 // ("and its confidence interval?") keep their context.
 const HISTORY_LENGTH = 6;
 const MAX_QUESTION_LENGTH = 4000;
 
-const SUGGESTED_QUESTIONS = [
-  'What data are collected by GPT Actions?',
+const API_BASE = resolveApiBase(process.env.REACT_APP_API_BASE, process.env.NODE_ENV);
+
+// Keep the canonical query for the backend's exact chart mappings while showing
+// non-technical wording to general readers.
+const GENERAL_QUESTIONS = [
+  { label: 'What information can GPT Actions ask for?', query: 'What data are collected by GPT Actions?' },
+  { label: 'How much of that information is sensitive?', query: 'What percentage of collected data is sensitive?' },
+  { label: 'Which sensitive details appear most often?', query: 'Which sensitive data types appear most often?' },
+  { label: 'Are sensitive requests explained as often as other requests?', query: 'Do plugins write descriptions less often for sensitive parameters?' },
+  { label: 'Where do password requests appear?', query: 'Which parameters collect passwords?' },
+  { label: 'Do privacy policies explain what these tools ask for?', query: 'Do plugins disclose what they collect in their privacy policies?' },
+  { label: 'Are the sensitive requests also missing from privacy policies?', query: 'Are sensitive parameters also the undisclosed ones?' },
+];
+
+const RESEARCHER_QUESTIONS = [
   'What are the model performance confidence intervals?',
-  'What percentage of collected data is sensitive?',
-  'Which sensitive data types appear most often?',
-  'Do plugins write descriptions less often for sensitive parameters?',
   'How accurately can a parameter\'s category be predicted from its name?',
   'Which words predict sensitive categories?',
   'Do natural risky vs. safe clusters emerge among plugins?',
   'Which plugin clusters have the highest sensitive-data share?',
   'Can mislabeled "Other" records be identified automatically?',
   'Are there hidden sensitive parameters mislabeled as "Other"?',
-  'Which parameters collect passwords?',
-  'Do plugins disclose what they collect in their privacy policies?',
-  'Are sensitive parameters also the undisclosed ones?',
+].map((question) => ({ label: question, query: question }));
+
+const AUDIENCES = [
+  { value: 'general', label: 'General audience' },
+  { value: 'researcher', label: 'Researcher' },
 ];
 
 // Renders the small Markdown subset the assistant is asked to use:
 // **bold** key terms and "- " list items. Everything else stays plain text,
 // so no HTML from the model is ever injected into the page.
-function renderRichText(text) {
+export function FormattedAnswer({ text }) {
   const lines = text.split('\n');
-  return lines.map((line, i) => {
-    const isBullet = /^\s*[-*]\s+/.test(line);
-    const content = isBullet ? line.replace(/^\s*[-*]\s+/, '') : line;
-    const parts = content.split(/(\*\*[^*\n]+\*\*)/g).map((part, j) =>
-      part.length > 4 && part.startsWith('**') && part.endsWith('**') ? (
-        <strong key={j}>{part.slice(2, -2)}</strong>
-      ) : (
-        part
-      )
-    );
-    return (
-      <React.Fragment key={i}>
-        {isBullet && '• '}
-        {parts}
-        {i < lines.length - 1 && '\n'}
-      </React.Fragment>
-    );
-  });
+  return (
+    <p>
+      {lines.map((line, i) => {
+        const isBullet = /^\s*[-*]\s+/.test(line);
+        const content = isBullet ? line.replace(/^\s*[-*]\s+/, '') : line;
+        const parts = content.split(/(\*\*[^*\n]+\*\*)/g).map((part, j) =>
+          part.length > 4 && part.startsWith('**') && part.endsWith('**') ? (
+            <strong key={j}>{part.slice(2, -2)}</strong>
+          ) : (
+            <React.Fragment key={j}>{part}</React.Fragment>
+          )
+        );
+        return (
+          <React.Fragment key={i}>
+            {isBullet && '• '}
+            {parts}
+            {i < lines.length - 1 && '\n'}
+          </React.Fragment>
+        );
+      })}
+    </p>
+  );
 }
 
 function getInitialTheme() {
@@ -67,13 +86,20 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [theme, setTheme] = useState(getInitialTheme);
+  const [audience, setAudience] = useState(() => {
+    try {
+      return localStorage.getItem('audience') === 'researcher' ? 'researcher' : 'general';
+    } catch {
+      return 'general';
+    }
+  });
   const [visibleCharts, setVisibleCharts] = useState(new Set());
   const composerRef = useRef(null);
 
   // Keep the newest message (and the input box) in view.
   useEffect(() => {
     if (messages.length > 0 || loading) {
-      composerRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
+      composerRef.current?.scrollIntoView?.({ behavior: 'smooth', block: 'end' });
     }
   }, [messages.length, loading]);
 
@@ -86,19 +112,31 @@ function App() {
     }
   }, [theme]);
 
+  useEffect(() => {
+    try {
+      localStorage.setItem('audience', audience);
+    } catch {
+      // The selector still works for the current session.
+    }
+  }, [audience]);
+
   function toggleTheme() {
     setTheme((t) => (t === 'dark' ? 'light' : 'dark'));
   }
 
-  async function submitQuestion(question) {
+  async function submitQuestion(question, displayQuestion = question) {
     question = question.trim();
     if (!question || loading) return;
+    if (!API_BASE) {
+      setError('The backend address is not configured. Set REACT_APP_API_BASE and rebuild the site.');
+      return;
+    }
 
     const history = messages
       .slice(-HISTORY_LENGTH)
       .map(({ role, text }) => ({ role, text: text.slice(0, MAX_QUESTION_LENGTH) }));
 
-    setMessages((prev) => [...prev, { role: 'user', text: question }]);
+    setMessages((prev) => [...prev, { role: 'user', text: displayQuestion }]);
     setInput('');
     setLoading(true);
     setError(null);
@@ -109,11 +147,11 @@ function App() {
         res = await fetch(`${API_BASE}/ask`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ question, top_k: 5, history }),
+          body: JSON.stringify({ question, top_k: 5, audience, history }),
         });
       } catch {
         throw new Error(
-          `Can't reach the backend at ${API_BASE}. Is it running? (uvicorn app.main:app --reload)`
+          `Can't reach the backend at ${API_BASE}. Please try again later.`
         );
       }
 
@@ -170,6 +208,21 @@ function App() {
         </button>
         <h1>GPT Plugin Privacy Assistant</h1>
         <p>Ask about what data GPT plugins collect and the privacy risks involved.</p>
+        <div className="audience-control">
+          <label htmlFor="audience">Explain for</label>
+          <select
+            id="audience"
+            value={audience}
+            onChange={(event) => setAudience(event.target.value)}
+            disabled={loading}
+          >
+            {AUDIENCES.map((option) => (
+              <option key={option.value} value={option.value}>
+                {option.label}
+              </option>
+            ))}
+          </select>
+        </div>
         {messages.length > 0 && (
           <motion.button
             type="button"
@@ -185,17 +238,17 @@ function App() {
       </header>
 
       <div className="suggestions">
-        {SUGGESTED_QUESTIONS.map((q, i) => (
+        {(audience === 'general' ? GENERAL_QUESTIONS : [...GENERAL_QUESTIONS, ...RESEARCHER_QUESTIONS]).map((item) => (
           <motion.button
-            key={i}
+            key={item.query}
             type="button"
             className="suggestion-chip"
-            onClick={() => submitQuestion(q)}
+            onClick={() => submitQuestion(item.query, item.label)}
             disabled={loading}
             whileHover={{ scale: 1.03, y: -1 }}
             whileTap={{ scale: 0.97 }}
           >
-            {q}
+            {item.label}
           </motion.button>
         ))}
       </div>
@@ -215,7 +268,7 @@ function App() {
               transition={{ duration: 0.25, ease: 'easeOut' }}
             >
               <div className="bubble">
-                <p>{m.role === 'assistant' ? renderRichText(m.text) : m.text}</p>
+                {m.role === 'assistant' ? <FormattedAnswer text={m.text} /> : <p>{m.text}</p>}
 
                 {m.chartImage && (
                   <div className="chart-toggle-area">
