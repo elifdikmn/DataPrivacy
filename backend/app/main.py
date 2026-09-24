@@ -14,9 +14,9 @@ app = FastAPI(title="GPT Plugin Privacy RAG Assistant")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # local geliştirme için; production'da spesifik origin(ler) ile değiştirin
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=config.CORS_ORIGINS,
+    allow_methods=["GET", "POST"],
+    allow_headers=["Content-Type"],
 )
 
 app.mount("/static", StaticFiles(directory=config.STATIC_DIR), name="static")

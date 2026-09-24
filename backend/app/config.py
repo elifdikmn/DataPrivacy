@@ -13,6 +13,16 @@ load_dotenv(BACKEND_DIR / ".env")
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 ANTHROPIC_MODEL = os.getenv("ANTHROPIC_MODEL", "claude-haiku-4-5")
 
+
+def parse_cors_origins(value: str) -> list[str]:
+    """Read exact browser origins; an origin has no path or trailing slash."""
+    return [origin.strip().rstrip("/") for origin in value.split(",") if origin.strip()]
+
+
+CORS_ORIGINS = parse_cors_origins(
+    os.getenv("CORS_ORIGINS", "http://localhost:3000,http://127.0.0.1:3000")
+)
+
 # Embedding: yerel, ücretsiz bir sentence-transformers modeli (Hugging Face'ten
 # ilk çalıştırmada indirilir, sonrasında yerel önbellekten kullanılır).
 # Çok dilli model kullanıyoruz çünkü sorular Türkçe, veri kayıtları İngilizce

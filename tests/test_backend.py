@@ -12,6 +12,21 @@ from app.main import app
 import pandas as pd
 
 class BackendTests(unittest.TestCase):
+    def test_cors_origins_are_explicit(self):
+        self.assertEqual(
+            config.parse_cors_origins(' https://example.onrender.com/ , http://localhost:3000 '),
+            ['https://example.onrender.com', 'http://localhost:3000'],
+        )
+        client=TestClient(app)
+        headers={'Origin':'http://localhost:3000','Access-Control-Request-Method':'POST'}
+        allowed=client.options('/ask',headers=headers)
+        self.assertEqual(allowed.status_code,200)
+        self.assertEqual(allowed.headers['access-control-allow-origin'],'http://localhost:3000')
+        headers['Origin']='https://unrelated.example'
+        denied=client.options('/ask',headers=headers)
+        self.assertEqual(denied.status_code,400)
+        self.assertNotIn('access-control-allow-origin',denied.headers)
+
     def test_unique_action_counts_real_data(self):
         rows=json.loads(config.DATA_PATH.read_text());docs=indexing.build_record_documents()
         self.assertEqual(len(docs),12811)

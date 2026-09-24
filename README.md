@@ -101,6 +101,8 @@ npm start
 
 Frontend runs at `http://localhost:3000`.
 
+For a hosted demo, follow the [Render deployment guide](docs/DEPLOY_RENDER.md). It covers the separate API and frontend services, FAISS index generation, environment variables, and a live smoke test.
+
 
 ## Data Sources & Attribution
 

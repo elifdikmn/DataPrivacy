@@ -2,7 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import './App.css';
 
-const API_BASE = process.env.REACT_APP_API_BASE || 'http://127.0.0.1:8000';
+export function resolveApiBase(configured, environment) {
+  const base = (configured || '').trim().replace(/\/+$/, '');
+  return base || (environment === 'production' ? '' : 'http://127.0.0.1:8000');
+}
+
+const API_BASE = resolveApiBase(process.env.REACT_APP_API_BASE, process.env.NODE_ENV);
 
 // Keep the canonical query for the backend's exact chart mappings while showing
 // non-technical wording to general readers.
@@ -94,6 +99,10 @@ function App() {
   async function submitQuestion(question, displayQuestion = question) {
     question = question.trim();
     if (!question || loading) return;
+    if (!API_BASE) {
+      setError('The backend address is not configured. Set REACT_APP_API_BASE and rebuild the site.');
+      return;
+    }
 
     setMessages((prev) => [...prev, { role: 'user', text: displayQuestion }]);
     setInput('');
@@ -110,7 +119,7 @@ function App() {
         });
       } catch {
         throw new Error(
-          `Can't reach the backend at ${API_BASE}. Is it running? (uvicorn app.main:app --reload)`
+          `Can't reach the backend at ${API_BASE}. Please try again later.`
         );
       }
 

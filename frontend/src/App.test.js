@@ -1,6 +1,6 @@
 import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import App, { FormattedAnswer } from './App';
+import App, { FormattedAnswer, resolveApiBase } from './App';
 
 beforeAll(() => {
   window.matchMedia = window.matchMedia || (() => ({ matches: false }));
@@ -8,6 +8,12 @@ beforeAll(() => {
 
 beforeEach(() => {
   localStorage.clear();
+});
+
+test('requires a configured backend URL in production and keeps a local development fallback', () => {
+  expect(resolveApiBase('', 'production')).toBe('');
+  expect(resolveApiBase('', 'development')).toBe('http://127.0.0.1:8000');
+  expect(resolveApiBase(' https://api.example.com/ ', 'production')).toBe('https://api.example.com');
 });
 
 test('offers audience-specific answer modes', () => {
