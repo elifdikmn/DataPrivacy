@@ -22,7 +22,7 @@ COPY backend/knowledge ./knowledge
 COPY backend/final_results ./final_results
 COPY backend/static ./static
 RUN python -m app.indexing \
-    # Hugging Face Spaces runs the container as a non-root user (UID 1000).
+    # Keep the app and model cache readable if the container runs as a non-root user.
     && chmod -R a+rX /app /opt/hf-cache
 
 # Runtime must use the model baked into the image, not download it on a cold start.

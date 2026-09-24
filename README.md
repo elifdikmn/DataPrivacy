@@ -94,12 +94,11 @@ DataPrivacy/
 ├── frontend/
 │   └── src/                      # React chat interface
 ├── tests/                        # unittest suite (analysis metrics, backend, API)
-├── docs/                         # Deployment guides (Hugging Face, Render, Cloud Run)
-├── deploy/huggingface/           # Space card used by the Hugging Face deploy workflow
-├── Dockerfile                    # API image (Hugging Face Spaces / Cloud Run)
+├── docs/                         # Deployment guides (Cloud Run, Render)
+├── Dockerfile                    # API image for Google Cloud Run
 ├── requirements-analysis.txt     # Notebook / analysis environment
 ├── requirements-test.txt         # Minimal environment for the test suite
-└── .github/workflows/            # CI (tests, frontend tests and build) and backend deployment
+└── .github/workflows/tests.yml   # CI: backend tests, frontend tests and production build
 ```
 
 ## How to Run
@@ -147,7 +146,7 @@ This re-executes all four notebooks and refreshes `project_facts.json`, the repo
 
 **Deployment**
 
-The recommended free setup keeps the React frontend as a Render Static Site and runs the Python API on a Hugging Face Space, whose free CPU hardware has enough memory for the embedding model: see [docs/DEPLOY_HUGGINGFACE.md](docs/DEPLOY_HUGGINGFACE.md). Alternatives: the [Render guide](docs/DEPLOY_RENDER.md) (Render's free backend has too little memory for the embedding model; a paid plan works) and the [Cloud Run guide](docs/DEPLOY_CLOUD_RUN.md) (requires a Google Cloud billing account). `/ask` is rate-limited per client and per day (`RATE_LIMIT_PER_MINUTE`, `RATE_LIMIT_PER_DAY`, `GLOBAL_DAILY_LIMIT` in `backend/.env.example`); also set a spending limit in the Anthropic Console.
+The hosted demo keeps the React frontend as a Render Static Site and runs the Python API on Google Cloud Run: see [docs/DEPLOY_CLOUD_RUN.md](docs/DEPLOY_CLOUD_RUN.md). Render's free web service (512 MB) is too small for the embedding model; the [Render guide](docs/DEPLOY_RENDER.md) still describes the frontend and a paid-plan backend. `/ask` is rate-limited per client and per day (`RATE_LIMIT_PER_MINUTE`, `RATE_LIMIT_PER_DAY`, `GLOBAL_DAILY_LIMIT` in `backend/.env.example`); also set a spending limit in the Anthropic Console.
 
 
 ## Data Sources & Attribution

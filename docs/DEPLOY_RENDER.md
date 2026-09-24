@@ -1,6 +1,6 @@
 # Deploy on Render
 
-> **Note:** Render's free web service (512 MB) is too small for the API's embedding model. Keep the frontend on Render as described in section 2, and run the API on a free Hugging Face Space instead — see [DEPLOY_HUGGINGFACE.md](DEPLOY_HUGGINGFACE.md). Section 1 still applies to a paid Render instance with at least ~2 GB of memory.
+> **Note:** Render's free web service (512 MB) is too small for the API's embedding model. Keep the frontend on Render as described in section 2 and run the API on Google Cloud Run — see [DEPLOY_CLOUD_RUN.md](DEPLOY_CLOUD_RUN.md). Section 1 still applies to a paid Render instance with at least ~2 GB of memory.
 
 This repository needs two Render services from the same GitHub repository: a Python Web Service for the API and a React Static Site for the interface. Deploy the API first, because the Static Site needs its public URL at build time.
 
