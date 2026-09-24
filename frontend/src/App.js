@@ -4,21 +4,46 @@ import './App.css';
 
 const API_BASE = process.env.REACT_APP_API_BASE || 'http://127.0.0.1:8000';
 
-const SUGGESTED_QUESTIONS = [
-  'What data are collected by GPT Actions?',
+// Keep the canonical query for the backend's exact chart mappings while showing
+// non-technical wording to general readers.
+const GENERAL_QUESTIONS = [
+  { label: 'What information can GPT Actions ask for?', query: 'What data are collected by GPT Actions?' },
+  { label: 'How much of that information is sensitive?', query: 'What percentage of collected data is sensitive?' },
+  { label: 'Which sensitive details appear most often?', query: 'Which sensitive data types appear most often?' },
+  { label: 'Are sensitive requests explained as often as other requests?', query: 'Do plugins write descriptions less often for sensitive parameters?' },
+  { label: 'Where do password requests appear?', query: 'Which parameters collect passwords?' },
+  { label: 'Do privacy policies explain what these tools ask for?', query: 'Do plugins disclose what they collect in their privacy policies?' },
+];
+
+const RESEARCHER_QUESTIONS = [
   'What are the model performance confidence intervals?',
-  'What percentage of collected data is sensitive?',
-  'Which sensitive data types appear most often?',
-  'Do plugins write descriptions less often for sensitive parameters?',
   'How accurately can a parameter\'s category be predicted from its name?',
   'Which words predict sensitive categories?',
   'Do natural risky vs. safe clusters emerge among plugins?',
   'Which plugin clusters have the highest sensitive-data share?',
   'Can mislabeled "Other" records be identified automatically?',
   'Are there hidden sensitive parameters mislabeled as "Other"?',
-  'Which parameters collect passwords?',
-  'Do plugins disclose what they collect in their privacy policies?',
+].map((question) => ({ label: question, query: question }));
+
+const AUDIENCES = [
+  { value: 'general', label: 'General audience' },
+  { value: 'researcher', label: 'Researcher' },
 ];
+
+export function FormattedAnswer({ text }) {
+  const parts = text.split(/(\*\*[^*\n]+\*\*)/g);
+  return (
+    <p>
+      {parts.map((part, index) =>
+        part.startsWith('**') && part.endsWith('**') ? (
+          <strong key={index}>{part.slice(2, -2)}</strong>
+        ) : (
+          <React.Fragment key={index}>{part}</React.Fragment>
+        )
+      )}
+    </p>
+  );
+}
 
 function getInitialTheme() {
   try {
@@ -36,6 +61,13 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [theme, setTheme] = useState(getInitialTheme);
+  const [audience, setAudience] = useState(() => {
+    try {
+      return localStorage.getItem('audience') === 'researcher' ? 'researcher' : 'general';
+    } catch {
+      return 'general';
+    }
+  });
   const [visibleCharts, setVisibleCharts] = useState(new Set());
 
   useEffect(() => {
@@ -47,15 +79,23 @@ function App() {
     }
   }, [theme]);
 
+  useEffect(() => {
+    try {
+      localStorage.setItem('audience', audience);
+    } catch {
+      // The selector still works for the current session.
+    }
+  }, [audience]);
+
   function toggleTheme() {
     setTheme((t) => (t === 'dark' ? 'light' : 'dark'));
   }
 
-  async function submitQuestion(question) {
+  async function submitQuestion(question, displayQuestion = question) {
     question = question.trim();
     if (!question || loading) return;
 
-    setMessages((prev) => [...prev, { role: 'user', text: question }]);
+    setMessages((prev) => [...prev, { role: 'user', text: displayQuestion }]);
     setInput('');
     setLoading(true);
     setError(null);
@@ -66,7 +106,7 @@ function App() {
         res = await fetch(`${API_BASE}/ask`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ question, top_k: 5 }),
+          body: JSON.stringify({ question, top_k: 5, audience }),
         });
       } catch {
         throw new Error(
@@ -127,6 +167,21 @@ function App() {
         </button>
         <h1>GPT Plugin Privacy Assistant</h1>
         <p>Ask about what data GPT plugins collect and the privacy risks involved.</p>
+        <div className="audience-control">
+          <label htmlFor="audience">Explain for</label>
+          <select
+            id="audience"
+            value={audience}
+            onChange={(event) => setAudience(event.target.value)}
+            disabled={loading}
+          >
+            {AUDIENCES.map((option) => (
+              <option key={option.value} value={option.value}>
+                {option.label}
+              </option>
+            ))}
+          </select>
+        </div>
         {messages.length > 0 && (
           <motion.button
             type="button"
@@ -142,17 +197,17 @@ function App() {
       </header>
 
       <div className="suggestions">
-        {SUGGESTED_QUESTIONS.map((q, i) => (
+        {(audience === 'general' ? GENERAL_QUESTIONS : [...GENERAL_QUESTIONS, ...RESEARCHER_QUESTIONS]).map((item) => (
           <motion.button
-            key={i}
+            key={item.query}
             type="button"
             className="suggestion-chip"
-            onClick={() => submitQuestion(q)}
+            onClick={() => submitQuestion(item.query, item.label)}
             disabled={loading}
             whileHover={{ scale: 1.03, y: -1 }}
             whileTap={{ scale: 0.97 }}
           >
-            {q}
+            {item.label}
           </motion.button>
         ))}
       </div>
@@ -172,7 +227,7 @@ function App() {
               transition={{ duration: 0.25, ease: 'easeOut' }}
             >
               <div className="bubble">
-                <p>{m.text}</p>
+                {m.role === 'assistant' ? <FormattedAnswer text={m.text} /> : <p>{m.text}</p>}
 
                 {m.chartImage && (
                   <div className="chart-toggle-area">

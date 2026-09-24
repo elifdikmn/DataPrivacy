@@ -32,13 +32,14 @@ A sixth, supplementary finding — whether plugins disclose what they collect in
 
 The notebooks (Bölüm 1, 2, 3) are the project's analysis engine — all the data science and ML work (data cleaning, statistical testing, classification models, clustering) happens there. The RAG chatbot is a presentation/access layer on top of that: it turns the analysis's results into an interactive interface that a non-technical user can question in plain language and explore through supporting charts. The chatbot doesn't run any new analysis of its own — it makes the existing analysis's findings explorable.
 
-The chatbot lets you ask questions about the analysis in plain language and get an answer grounded in the actual data, with a supporting chart. Alongside free-text questions, the interface also offers a set of suggested-question chips covering the project's 5 main research questions, so a visitor can explore the findings without needing to know what to ask first.
+The chatbot lets you ask questions about the analysis in plain language and get an answer grounded in the actual data, with a supporting chart. Alongside free-text questions, the interface offers six plain-language suggested questions for General audience visitors. Researcher mode adds seven technical questions about models, clustering, and uncertain labels. The general labels are mapped to the original analysis questions behind the scenes so their supporting charts still appear.
 
 - **Retrieval**: three separate FAISS indices — individual parameter records, the notebooks' written findings, and the privacy-policy audit — searched independently and merged, so a small set of high-value findings never gets crowded out by the much larger record index.
 - **Embeddings**: `sentence-transformers` (`paraphrase-multilingual-MiniLM-L12-v2`), run locally and free.
 - **LLM**: Anthropic Claude (`claude-haiku-4-5`), used only to phrase the answer from retrieved context — never to invent or compute numbers on its own (see Grounding below).
 - **Visualizations**: no chart is generated live. Each of the chatbot's suggested questions is mapped ahead of time to a specific pre-built chart exported from the notebooks (`backend/app/chart_mapping.py`); an unmapped free-text question simply gets no chart, rather than a guessed or mismatched one.
 - **Numeric grounding**: `backend/app/project_facts.json` holds every verified statistic from the analysis (accuracy/F1 scores, percentages, counts) read directly from the notebooks' actual output. It's appended to every request's context, and the system prompt requires the model to copy numbers from this table rather than recomputing or recalling them — the failure mode this exists to prevent. A lightweight post-hoc check (`facts.verify_answer_numbers`) flags any number in a generated answer that doesn't appear in the table, logged for review.
+- **Audience-aware answers**: visitors can choose General audience or Researcher. General answers aim to answer only the question in 1–2 short, jargon-free sentences; Researcher answers retain methodological detail and limitations. Both use restrained bold emphasis for the key takeaway.
 
 ## Tech Stack
 

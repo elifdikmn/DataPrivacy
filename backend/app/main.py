@@ -4,6 +4,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
+from typing import Literal
 import anthropic
 
 from . import config, rag
@@ -24,6 +25,7 @@ app.mount("/static", StaticFiles(directory=config.STATIC_DIR), name="static")
 class AskRequest(BaseModel):
     question: str = Field(max_length=4000)
     top_k: int = Field(default=5, ge=1, le=20)
+    audience: Literal["general", "researcher"] = "general"
 
 
 class Source(BaseModel):
@@ -60,7 +62,7 @@ def ask(request: AskRequest):
     if not request.question.strip():
         raise HTTPException(status_code=400, detail="question boş olamaz.")
     try:
-        result = rag.answer(request.question, top_k=request.top_k)
+        result = rag.answer(request.question, top_k=request.top_k, audience=request.audience)
     except anthropic.AuthenticationError:
         raise HTTPException(status_code=503, detail="The answer service is not configured correctly.")
     except anthropic.APITimeoutError:

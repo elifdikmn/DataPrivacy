@@ -31,10 +31,10 @@ def build_context(results: list[dict]) -> str:
     return "\n\n".join(parts)
 
 
-def answer(question: str, top_k: int = 5) -> dict:
+def answer(question: str, top_k: int = 5, audience: str = "general") -> dict:
     results = search(question, top_k=top_k)
     context = build_context(results)
-    response_text = llm.ask(question, context)
+    response_text = llm.ask(question, context, audience=audience)
 
     return {"answer": response_text, "sources": results}
 

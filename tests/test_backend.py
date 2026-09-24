@@ -39,6 +39,8 @@ class BackendTests(unittest.TestCase):
         self.assertEqual(client.get('/health').status_code,200)
         self.assertEqual(client.post('/ask',json={'question':' '}).status_code,400)
         for k in [-1,0,1000000]:self.assertEqual(client.post('/ask',json={'question':'test','top_k':k}).status_code,422)
+        self.assertEqual(client.post('/ask',json={'question':'test','audience':'expert'}).status_code,422)
+        self.assertEqual(client.post('/ask',json={'question':'test','audience':'student'}).status_code,422)
         self.assertEqual(client.post('/ask',json={'question':'x'*4001}).status_code,422)
         for p in (config.STATIC_DIR/'charts').glob('*'):self.assertEqual(client.get('/static/charts/'+p.name).status_code,200)
     def test_stale_index_fails_readiness(self):
@@ -72,7 +74,34 @@ class ConversationTests(unittest.TestCase):
     def test_multiple_text_blocks(self):
         from app import llm
         with patch('app.llm.get_client',return_value=self.fake_client(['Merhaba.','Nasıl yardımcı olabilirim?'])):
-            self.assertEqual(llm.ask('Merhaba','context'),'Merhaba.\nNasıl yardımcı olabilirim?')
+                self.assertEqual(llm.ask('Merhaba','context'),'Merhaba.\nNasıl yardımcı olabilirim?')
+
+    def test_bold_emphasis_is_preserved(self):
+        from app import llm
+        answer='The key result is **7.3% sensitive data**.'
+        with patch('app.llm.get_client',return_value=self.fake_client([answer])):
+            self.assertEqual(llm.ask('What is the key result?','context'),answer)
+
+    def test_audience_instruction_reaches_provider(self):
+        from app import llm
+        fake=self.fake_client(['A concise answer.'])
+        with patch('app.llm.get_client',return_value=fake):
+            llm.ask('Explain the result','context',audience='researcher')
+        system=fake.messages.create.call_args.kwargs['system']
+        self.assertIn('TARGET AUDIENCE',system)
+        self.assertIn('effect size or uncertainty',system)
+        self.assertEqual(fake.messages.create.call_args.kwargs['max_tokens'],1024)
+
+    def test_general_answers_are_instructed_to_be_direct_and_short(self):
+        from app import llm
+        fake=self.fake_client(['7.3% of the listed requests are sensitive.'])
+        with patch('app.llm.get_client',return_value=fake):
+            llm.ask('How much is sensitive?','context',audience='general')
+        kwargs=fake.messages.create.call_args.kwargs
+        self.assertIn('Answer only the exact question asked',kwargs['system'])
+        self.assertIn('1–2 short sentences',kwargs['system'])
+        self.assertIn('Do not add an introduction',kwargs['system'])
+        self.assertEqual(kwargs['max_tokens'],160)
 
     def test_legacy_json_does_not_discard_numeric_explanation(self):
         from app import llm
