@@ -1,0 +1,114 @@
+'data.frame':	5000 obs. of  5 variables:
+ $ Loan     : int  0 0 0 0 0 0 0 0 0 1 ...
+ $ Income   : int  49 34 11 100 45 29 72 22 81 180 ...
+ $ Family   : int  4 3 1 1 4 4 2 1 3 1 ...
+ $ CCAvg    : num  1.6 1.5 1 2.7 1 0.4 1.5 0.3 0.6 8.9 ...
+ $ Education: Factor w/ 3 levels "1","2","3": 1 1 1 2 2 2 2 3 2 3 ...
+      Loan           Income           Family          CCAvg        Education
+ Min.   :0.000   Min.   :  8.00   Min.   :1.000   Min.   : 0.000   1:2096   
+ 1st Qu.:0.000   1st Qu.: 39.00   1st Qu.:1.000   1st Qu.: 0.700   2:1403   
+ Median :0.000   Median : 64.00   Median :2.000   Median : 1.500   3:1501   
+ Mean   :0.096   Mean   : 73.77   Mean   :2.396   Mean   : 1.938            
+ 3rd Qu.:0.000   3rd Qu.: 98.00   3rd Qu.:3.000   3rd Qu.: 2.500            
+ Max.   :1.000   Max.   :224.00   Max.   :4.000   Max.   :10.000            
+
+Call:
+lm(formula = Loan ~ Income + Family + CCAvg + Education, data = loan)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.56354 -0.14730 -0.03822  0.06978  1.05386 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -3.455e-01  1.127e-02 -30.653  < 2e-16 ***
+Income       3.367e-03  9.799e-05  34.364  < 2e-16 ***
+Family       3.160e-02  3.010e-03  10.499  < 2e-16 ***
+CCAvg        1.373e-02  2.538e-03   5.412 6.52e-08 ***
+Education2   1.517e-01  8.473e-03  17.908  < 2e-16 ***
+Education3   1.605e-01  8.229e-03  19.511  < 2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.2393 on 4994 degrees of freedom
+Multiple R-squared:  0.3409,	Adjusted R-squared:  0.3402 
+F-statistic: 516.6 on 5 and 4994 DF,  p-value: < 2.2e-16
+
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+-0.28563 -0.01968  0.07293  0.09600  0.19350  0.72735 
+Fitted y_hat > 1: 0 
+Fitted y_hat < 0: 1508 
+Outside [0, 1]  : 1508 of 5000 
+
+Some customers with y_hat > 1:
+[1] Loan      Income    Family    CCAvg     Education yhat_lpm 
+<0 rows> (or 0-length row.names)
+
+Some customers with y_hat < 0:
+     Loan Income Family CCAvg Education   yhat_lpm
+1483    0      8      1   0.1         1 -0.2856269
+1721    0      8      1   0.3         1 -0.2828800
+4417    0      8      1   0.3         1 -0.2828800
+1771    0      9      1   0.1         1 -0.2822597
+2599    0      9      1   0.2         1 -0.2808862
+1807    0     10      1   0.1         1 -0.2788924
+180     0     11      1   0.1         1 -0.2755252
+1224    0     11      1   0.2         1 -0.2741517
+4267    0     11      1   0.2         1 -0.2741517
+3917    0     12      1   0.2         1 -0.2707845
+
+Call:
+glm(formula = Loan ~ Income + Family + CCAvg + Education, family = binomial(link = "logit"), 
+    data = loan)
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -13.177833   0.517777 -25.451  < 2e-16 ***
+Income        0.059791   0.002687  22.255  < 2e-16 ***
+Family        0.587079   0.071275   8.237  < 2e-16 ***
+CCAvg         0.162679   0.040505   4.016 5.91e-05 ***
+Education2    3.910609   0.251037  15.578  < 2e-16 ***
+Education3    3.933173   0.244329  16.098  < 2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3162.0  on 4999  degrees of freedom
+Residual deviance: 1334.8  on 4994  degrees of freedom
+AIC: 1346.8
+
+Number of Fisher Scoring iterations: 8
+
+Threshold (share of Loan = 1): 0.096 
+      Predicted
+Actual    0    1
+     0 4001  519
+     1   61  419
+PCP overall : 0.8840 (88.40%)
+PCP (y = 1) : 0.8729 (87.29%)
+PCP (y = 0) : 0.8852 (88.52%)
+Means: Income = 73.7742, Family = 2.3964, CCAvg = 1.9379
+ (Intercept)       Income       Family        CCAvg   Education2   Education3 
+-13.17783285   0.05979075   0.58707882   0.16267911   3.91060897   3.93317273 
+z = -3.134071
+P(Loan = 1) by formula = exp(z) / (1 + exp(z)) = 0.041724
+P(Loan = 1) by predict() = 0.041724
+                  LPM      Logit
+(Intercept) -0.345541 -13.177833
+Income       0.003367   0.059791
+Family       0.031602   0.587079
+CCAvg        0.013735   0.162679
+Education2   0.151743   3.910609
+Education3   0.160547   3.933173
+Ratio Logit / LPM (slopes):
+    Income     Family      CCAvg Education2 Education3 
+     17.76      18.58      11.84      25.77      24.50 
+g(z) = exp(z) / (1 + exp(z))^2 = 0.039983
+P at Education = 1, 2, 3: 0.000871, 0.041724, 0.042635
+    Variable       LPM     Logit Logit_gz_times_b
+1     Income 0.0033673 0.0023906        0.0023906
+2     Family 0.0316025 0.0234730        0.0234730
+3      CCAvg 0.0137346 0.0065043        0.0065043
+4 Education2 0.1517432 0.0408522        0.1563566
+5 Education3 0.1605467 0.0417638        0.1572588
