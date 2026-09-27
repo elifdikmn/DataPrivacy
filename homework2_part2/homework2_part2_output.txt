@@ -1,0 +1,104 @@
+Loading required package: maxLik
+Loading required package: miscTools
+
+Please cite the 'maxLik' package as:
+Henningsen, Arne and Toomet, Ott (2011). maxLik: A package for maximum likelihood estimation in R. Computational Statistics 26(3), 443-458. DOI 10.1007/s00180-010-0217-1.
+
+If you have questions, suggestions, or comments regarding the 'maxLik' package, please use a forum or 'tracker' at maxLik's R-Forge site:
+https://r-forge.r-project.org/projects/maxlik/
+
+Please cite the 'censReg' package as:
+Henningsen, Arne (2017). censReg: Censored Regression (Tobit) Models. R package version 0.5. http://CRAN.R-Project.org/package=censReg.
+
+If you have questions, suggestions, or comments regarding the 'censReg' package, please use a forum or 'tracker' at the R-Forge site of the 'sampleSelection' project:
+https://r-forge.r-project.org/projects/sampleselection/
+'data.frame':	31000 obs. of  4 variables:
+ $ CustomerID: int  1 1 1 1 1 1 1 1 1 1 ...
+ $ DataUse   : num  2.43 0 0 0 0 ...
+ $ Quota     : num  100 97.6 97.6 97.6 97.6 ...
+ $ Days      : int  31 30 29 28 27 26 25 24 23 22 ...
+   CustomerID        DataUse              Quota             Days   
+ Min.   :   1.0   Min.   :  0.00000   Min.   :  0.00   Min.   : 1  
+ 1st Qu.: 250.8   1st Qu.:  0.02548   1st Qu.: 29.11   1st Qu.: 8  
+ Median : 500.5   Median :  0.53058   Median : 59.76   Median :16  
+ Mean   : 500.5   Mean   :  1.66582   Mean   : 62.65   Mean   :16  
+ 3rd Qu.: 750.2   3rd Qu.:  1.86610   3rd Qu.: 89.91   3rd Qu.:24  
+ Max.   :1000.0   Max.   :136.68000   Max.   :600.00   Max.   :31  
+Observations with DataUse == 0: 6536 (21.1% of 31000)
+Observations with DataUse < 0: 0 
+
+Call:
+lm(formula = DataUse ~ Quota + Days, data = usage)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+ -5.915  -1.492  -1.079   0.215 132.658 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  1.3633019  0.0476447  28.614  < 2e-16 ***
+Quota        0.0079765  0.0004577  17.426  < 2e-16 ***
+Days        -0.0123239  0.0025276  -4.876 1.09e-06 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 3.817 on 30997 degrees of freedom
+Multiple R-squared:  0.009702,	Adjusted R-squared:  0.009638 
+F-statistic: 151.8 on 2 and 30997 DF,  p-value: < 2.2e-16
+
+
+Call:
+censReg(formula = DataUse ~ Quota + Days, left = 0, right = Inf, 
+    data = usage)
+
+Observations:
+         Total  Left-censored     Uncensored Right-censored 
+         31000           6536          24464              0 
+
+Coefficients:
+              Estimate Std. error t value  Pr(> t)    
+(Intercept)  0.6111869  0.0576965  10.593  < 2e-16 ***
+Quota        0.0090140  0.0005516  16.340  < 2e-16 ***
+Days        -0.0119462  0.0030650  -3.898 9.71e-05 ***
+logSigma     1.4947160  0.0046189 323.611  < 2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Newton-Raphson maximisation, 7 iterations
+Return code 8: successive function values within relative tolerance limit (reltol)
+Log-likelihood: -76375.86 on 4 Df
+
+                 Linear       Tobit
+(Intercept)  1.36330186  0.61118690
+Quota        0.00797655  0.00901397
+Days        -0.01232391 -0.01194619
+Tobit / Linear ratio:
+(Intercept)       Quota        Days 
+      0.448       1.130       0.969 
+Tobit sigma = exp(logSigma) = 4.4581
+Mean of Days: 16 
+
+(i) Quota = 10, Days = mean
+       Marg. Eff.  Std. Error t value  Pr(>|t|)    
+Quota  0.00491762  0.00027835 17.6672 < 2.2e-16 ***
+Days  -0.00651732  0.00166369 -3.9174  8.97e-05 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(ii) Quota = 2000, Days = mean
+       Marg. Eff.  Std. Error t value  Pr(>|t|)    
+Quota  0.00901381  0.00055179 16.3356 < 2.2e-16 ***
+Days  -0.01194598  0.00306501 -3.8975 9.738e-05 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Manual check, Quota = 10:
+          xb            z          Phi     ME_Quota      ME_Days 
+ 0.510187536  0.114441334  0.545556025  0.004917625 -0.006517316 
+Manual check, Quota = 2000:
+          xb            z          Phi     ME_Quota      ME_Days 
+18.447985411  4.138109850  0.999982491  0.009013811 -0.011945981 
+                Model   ME_Quota     ME_Days
+1   Linear (constant) 0.00797655 -0.01232391
+2   Tobit, Quota = 10 0.00491762 -0.00651732
+3 Tobit, Quota = 2000 0.00901381 -0.01194598
