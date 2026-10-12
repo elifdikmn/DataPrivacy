@@ -69,6 +69,30 @@ class BackendTests(unittest.TestCase):
     def test_stale_index_fails_readiness(self):
         with patch('app.index_state.index_is_current',return_value=False):
             self.assertEqual(TestClient(app).get('/ready').status_code,503)
+
+    def test_other_suggestions_are_not_presented_as_confirmed_mislabels(self):
+        from app import llm
+        with patch('app.rag.search') as search, patch.object(llm, 'ask') as ask:
+            response=TestClient(app).post('/ask',json={
+                'question':'Can the model suggest categories for "Other" records?',
+                'audience':'researcher',
+            })
+        self.assertEqual(response.status_code,200)
+        payload=response.json()
+        self.assertIn('411 (11.6%)',payload['answer'])
+        self.assertIn('7',payload['answer'])
+        self.assertIn('none of these predictions has been verified',payload['answer'])
+        self.assertEqual(payload['chart_image'],'/static/charts/rq5_other_confidence_distribution.png')
+        search.assert_not_called()
+        ask.assert_not_called()
+
+        legacy=TestClient(app).post('/ask',json={
+            'question':'Are there hidden sensitive parameters mislabeled as "Other"?',
+            'audience':'researcher',
+        })
+        self.assertEqual(legacy.status_code,200)
+        self.assertIn('unverified review candidates',legacy.json()['answer'])
+        self.assertNotIn('data leakage',legacy.json()['answer'])
     def test_request_without_ready_index_is_controlled(self):
         with patch('app.retrieval.index_is_current',return_value=False):
             r=TestClient(app).post('/ask',json={'question':'What is the model performance?'})
@@ -234,6 +258,8 @@ class AnswerStyleTests(unittest.TestCase):
         from app.chart_mapping import QUESTION_CHART_MAP,get_chart_filename
         self.assertEqual(get_chart_filename('  What percentage of collected data is SENSITIVE  '),'rq1_category_distribution.png')
         self.assertEqual(get_chart_filename('Can mislabeled “Other” records be identified automatically'),'rq5_other_confidence_distribution.png')
+        self.assertEqual(get_chart_filename('Can the model suggest categories for “Other” records?'),'rq5_other_confidence_distribution.png')
+        self.assertEqual(get_chart_filename("How accurately can a parameter's category be predicted from its name and description?"),'rq3_confusion_matrix.png')
         self.assertEqual(get_chart_filename('Are sensitive parameters also the undisclosed ones?'),'rq7_sensitive_undisclosed.png')
         self.assertIsNone(get_chart_filename('Tell me a joke'))
         for chart in QUESTION_CHART_MAP.values():self.assertTrue((config.STATIC_DIR/'charts'/chart).is_file(),chart)
@@ -247,7 +273,14 @@ class AnswerStyleTests(unittest.TestCase):
         researcher=source.split('const RESEARCHER_QUESTIONS = [',1)[1].split(']',1)[0]
         string=r"'((?:[^'\\]|\\.)*)'"
         queries=[unescape(q) for q in re.findall(r"query: "+string,general)]+[unescape(q) for q in re.findall(string,researcher)]
-        self.assertEqual(sorted(q.lower() for q in queries),sorted(QUESTION_CHART_MAP))
+        self.assertEqual(len(queries),len(set(q.lower() for q in queries)))
+        self.assertTrue(set(q.lower() for q in queries).issubset(QUESTION_CHART_MAP))
+        # Keep chart support for older shared questions without showing duplicate buttons.
+        self.assertEqual(set(QUESTION_CHART_MAP)-set(q.lower() for q in queries),{
+            "how accurately can a parameter's category be predicted from its name?",
+            'can mislabeled "other" records be identified automatically?',
+            'are there hidden sensitive parameters mislabeled as "other"?',
+        })
 
 class IndexFreshnessTests(unittest.TestCase):
     def test_real_source_change_invalidates_manifest(self):

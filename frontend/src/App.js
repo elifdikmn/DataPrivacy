@@ -28,12 +28,11 @@ const GENERAL_QUESTIONS = [
 
 const RESEARCHER_QUESTIONS = [
   'What are the model performance confidence intervals?',
-  'How accurately can a parameter\'s category be predicted from its name?',
+  'How accurately can a parameter\'s category be predicted from its name and description?',
   'Which words predict sensitive categories?',
   'Do natural risky vs. safe clusters emerge among plugins?',
   'Which plugin clusters have the highest sensitive-data share?',
-  'Can mislabeled "Other" records be identified automatically?',
-  'Are there hidden sensitive parameters mislabeled as "Other"?',
+  'Can the model suggest categories for "Other" records?',
 ].map((question) => ({ label: question, query: question }));
 
 const AUDIENCES = [

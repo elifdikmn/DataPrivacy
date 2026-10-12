@@ -1,8 +1,8 @@
-# Can Records Mislabeled "Other" Be Identified Automatically?
+# Can the Model Suggest Categories for "Other" Records?
 
 ## Question
 
-The `data_type` column's largest value is "Other" (3,544 records) — an admittedly ambiguous label. Can the classification model from Research Question 3 be used to suggest what these records should actually be?
+The `data_type` column's largest value is "Other" (3,544 records) — an ambiguous label. Can the classification model from Research Question 3 suggest possible categories for human review?
 
 ## Method
 
@@ -10,10 +10,10 @@ The fine-category model can't just be reused as-is, because it was trained with 
 
 ## Finding
 
-Applied to all 3,544 "Other" records, prediction confidence (the model's highest output probability) is generally low: the median is only 20.9%. This isn't surprising — the "Other" label likely already contains genuinely ambiguous or general-purpose records, and the model reflects that as uncertainty. Only 411 records (11.6%) cross a 0.5 confidence threshold. Most confident predictions are intuitive, general-purpose technical categories.
+Applied to all 3,544 "Other" records, the model's highest prediction score is generally low: the median is only 20.9%. This may reflect ambiguous or general-purpose records, but the scores are not calibrated probabilities. Only 411 records (11.6%) cross a 0.5 prediction-score threshold. These are review candidates, not 411 confirmed labeling errors.
 
-But 7 records confidently point to a sensitive category (4 to Security credentials, 3 to Personal information). Records with names like `email`, `key`, `KEY`, `token` are suggested as sensitive categories with 50-91% confidence — in the original dataset these are labeled "Other," but their names alone make it obvious they're sensitive data. All 411 above-threshold predictions' fine-to-broad category mappings resolved cleanly this time (0 left unresolved) — the mapping logic deliberately leaves a `data_type` unresolved rather than guessing when it maps to more than one broad category.
+Of those 411 candidates, 7 were assigned to one of the project's selected sensitive categories (4 to Security credentials, 3 to Personal information). Names such as `email`, `key`, `KEY` and `token` warrant closer inspection, but a name alone does not establish the correct category. All 411 above-threshold predictions' fine-to-broad category mappings resolved (0 left unresolved); this checks the category mapping, not the predictions' correctness.
 
 ## Interpretation
 
-The model can't reliably reclassify all "Other" records — but for a small, high-confidence subset, it can catch genuinely mislabeled sensitive data. These are **unverified review candidates, not confirmed hidden sensitive records** — for example, a "skills" field mapped to API key, or an "email_type" field mapped to Email address, could well be false positives. A high prediction score doesn't prove correctness, and a low score doesn't prove the original "Other" label was wrong; the 0.5 threshold is an uncalibrated cutoff, not a confidence interval. The right use of this model is generating a human-review priority list — not automatic relabeling. The known-label test-set confidence intervals above describe a different, labeled population and don't transfer to correctness on these unlabeled "Other" records; measuring real precision on this population needs human-reviewed ground truth.
+The model cannot establish which "Other" records are mislabeled. These are **unverified review candidates, not confirmed hidden sensitive records** — for example, a "skills" field mapped to API key, or an "email_type" field mapped to Email address, could be false positives. A high prediction score does not prove correctness, and a low score does not prove the original "Other" label is correct; the 0.5 threshold is an uncalibrated cutoff, not a confidence interval. Use the suggestions as a human-review priority list, not automatic relabeling. The known-label test-set confidence intervals describe a different, labeled population and do not transfer to the unlabeled "Other" records; measuring precision on them requires human-reviewed ground truth.
