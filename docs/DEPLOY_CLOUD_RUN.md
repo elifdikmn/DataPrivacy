@@ -11,6 +11,7 @@ The repository-root `Dockerfile` builds the existing API, downloads the multilin
 ## Create the backend service
 
 1. In Google Cloud, select or create a project and attach a billing account. Enable Cloud Run, Cloud Build, Artifact Registry, and Secret Manager when prompted.
+   Then open **Billing → Budgets & alerts** and create a small monthly budget (for example $5) with email alerts, so any unexpected cost is noticed early. A budget sends alerts; it does not stop charges by itself.
 2. In Secret Manager, create a secret for the Anthropic key. Enter the key there yourself; never paste it into GitHub, a build variable, a support message, or the React frontend.
 3. In Cloud Run, choose **Deploy from source repository / continuously deploy from a repository**, connect the GitHub repository `elifdikmn/DataPrivacy`, choose branch `main`, and select the repository-root `Dockerfile` as the build configuration. Alternatively, from a local checkout with Google Cloud CLI configured, deploy from the repository root with `gcloud run deploy dataprivacy-api --source .` (the root Dockerfile is selected automatically).
 4. Configure the service with **1 CPU, 2 GiB memory, concurrency 1, minimum instances 0, maximum instances 1** to start. Allow unauthenticated access because the public React site calls the API directly. This makes the API public; it is not a security control. Keep the default request timeout unless real tests show that it is too short.
@@ -21,7 +22,7 @@ The repository-root `Dockerfile` builds the existing API, downloads the multilin
 
 In Render, open the `DataPrivacy-1` **Static Site** → **Environment** and change `REACT_APP_API_BASE` to the new Cloud Run HTTPS URL (without a trailing slash). **Rebuild and deploy** the static site; Create React App embeds this value at build time. The backend's `CORS_ORIGINS` must remain exactly `https://dataprivacy-1.onrender.com`.
 
-Test one General audience question and its chart, then one Researcher question. Only after both work should you retire the old Render backend. Keep the Anthropic spending limit and add API rate limiting before broad public sharing; CORS alone does not prevent direct calls to a public API.
+Test one General audience question and its chart, then one Researcher question. Only after both work should you retire the old Render backend. Keep a monthly spending limit in the Anthropic Console. `/ask` has built-in rate limits (per client per minute and per day, plus a global daily cap; see `RATE_LIMIT_PER_MINUTE`, `RATE_LIMIT_PER_DAY` and `GLOBAL_DAILY_LIMIT` in `backend/.env.example`, settable as Cloud Run environment variables). CORS alone does not prevent direct calls to a public API. Keep **maximum instances 1**: the rate-limit counters live in each instance's memory.
 
 ## References
 
