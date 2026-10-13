@@ -14,6 +14,7 @@ QUESTION_CHART_MAP: dict[str, str] = {
     "what percentage of collected data is sensitive?": "rq1_category_distribution.png",
     "which sensitive data types appear most often?": "rq1_sensitive_breakdown.png",
     "do plugins write descriptions less often for sensitive parameters?": "rq2_description_rate.png",
+    "are sensitive requests explained as often as other requests?": "rq2_description_rate.png",
     "how accurately can a parameter's category be predicted from its name?": "rq3_confusion_matrix.png",
     "how accurately can a parameter's category be predicted from its name and description?": "rq3_confusion_matrix.png",
     "which words predict sensitive categories?": "rq3_feature_importance.png",

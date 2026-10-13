@@ -6,7 +6,7 @@ import re
 from . import llm
 from .chart_mapping import get_chart_filename
 from .facts import load_facts
-from .researcher_answers import answer_researcher_question
+from .researcher_answers import answer_general_question, answer_researcher_question
 from .retrieval import search
 
 logger = logging.getLogger("chatbot.rag")
@@ -133,6 +133,9 @@ def answer(question: str, top_k: int = 5, audience: str = "general",
     if curated is not None:
         return curated
     curated = answer_researcher_question(question, audience)
+    if curated is not None:
+        return curated
+    curated = answer_general_question(question, audience)
     if curated is not None:
         return curated
     curated = curated_other_answer(question, audience)

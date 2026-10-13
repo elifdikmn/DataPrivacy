@@ -1,4 +1,4 @@
-"""Reviewed answers for the demo's fixed Researcher questions.
+"""Reviewed answers for the demo's fixed questions.
 
 Free-form questions still use retrieval and the LLM. These exact prompts have
 stable, fact-backed answers so a rerun cannot swap denominators or overstate
@@ -8,11 +8,15 @@ what a small audit or a model score establishes.
 from .chart_mapping import _normalise
 from .facts import load_facts
 
+_DESCRIPTION_EQUAL_QUESTION = "are sensitive requests explained as often as other requests"
+_DESCRIPTION_LESS_QUESTION = "do plugins write descriptions less often for sensitive parameters"
+
 REVIEWED_QUESTIONS = {
     "what data are collected by gpt actions",
     "what percentage of collected data is sensitive",
     "which sensitive data types appear most often",
-    "do plugins write descriptions less often for sensitive parameters",
+    _DESCRIPTION_EQUAL_QUESTION,
+    _DESCRIPTION_LESS_QUESTION,
     "do plugins disclose what they collect in their privacy policies",
     "are sensitive parameters also the undisclosed ones",
     "what are the model performance confidence intervals",
@@ -34,6 +38,9 @@ def answer_researcher_question(question: str, audience: str) -> dict | None:
     normalized = _normalise(question)
     if audience != "researcher" or normalized not in REVIEWED_QUESTIONS:
         return None
+    description_leading = "Not quite" if normalized == _DESCRIPTION_EQUAL_QUESTION else "Yes, slightly"
+    if normalized == _DESCRIPTION_EQUAL_QUESTION:
+        normalized = _DESCRIPTION_LESS_QUESTION
 
     facts = load_facts()
     dataset = facts["dataset"]
@@ -83,7 +90,7 @@ def answer_researcher_question(question: str, audience: str) -> dict | None:
             "rq1_kategori_dagilimi.md",
         ),
         "do plugins write descriptions less often for sensitive parameters": (
-            f"**Yes, slightly.** {descriptions['sensitive_has_description_pct']:.1f}% "
+            f"**{description_leading}.** {descriptions['sensitive_has_description_pct']:.1f}% "
             f"of fields in the selected sensitive categories have a schema description, "
             f"versus {descriptions['non_sensitive_has_description_pct']:.1f}% of other "
             "fields—a difference of about 3.4 percentage points. The association is "
@@ -179,6 +186,88 @@ def answer_researcher_question(question: str, audience: str) -> dict | None:
             "rq4_kumeleme.md",
         ),
     }
+
+    response, filename = answers[normalized]
+    return {
+        "answer": response,
+        "sources": [{
+            "text": "Reviewed project result and its scope and limitations.",
+            "type": "finding",
+            "metadata": {"filename": filename},
+            "score": 1.0,
+        }],
+    }
+
+
+def answer_general_question(question: str, audience: str) -> dict | None:
+    """Give the shared demo questions the same findings in shorter language."""
+    normalized = _normalise(question)
+    if audience != "general":
+        return None
+    description_leading = "Not quite" if normalized == _DESCRIPTION_EQUAL_QUESTION else "Yes, slightly"
+    if normalized == _DESCRIPTION_EQUAL_QUESTION:
+        normalized = _DESCRIPTION_LESS_QUESTION
+
+    facts = load_facts()
+    dataset = facts["dataset"]
+    sensitive = facts["sensitive_categories"]
+    breakdown = sensitive["breakdown"]
+    descriptions = facts["description_rate_test"]
+    audit = facts["privacy_policy_audit"]
+    intersection = facts["sensitive_undisclosed_intersection"]
+    answers = {
+        "what data are collected by gpt actions": (
+            f"The dataset lists **{dataset['total_records']:,} fields** that "
+            f"{dataset['total_plugins']:,} GPT Actions can request. They cover "
+            f"{dataset['main_data_type_classes']} categories; App usage data, "
+            "Identifier, and Other are the largest. These are possible requests, "
+            "not proof that users sent the data.",
+            "rq1_kategori_dagilimi.md",
+        ),
+        "what percentage of collected data is sensitive": (
+            f"**{sensitive['sensitive_data_count']:,} of {dataset['total_records']:,} "
+            f"fields ({sensitive['sensitive_data_pct']}%)** fall into four categories "
+            "we selected as sensitive: Security credentials, Personal information, "
+            "Health information, and Finance information. This is our project's "
+            "definition, not a complete measure of privacy risk.",
+            "rq1_kategori_dagilimi.md",
+        ),
+        "which sensitive data types appear most often": (
+            "Of the four categories we selected, **Personal information** "
+            f"appears most often ({breakdown['Personal information']['count']} fields), "
+            f"followed by Security credentials ({breakdown['Security credentials']['count']}), "
+            f"Finance information ({breakdown['Finance information']['count']}), and "
+            f"Health information ({breakdown['Health information']['count']}). "
+            "These are fields an Action can request, not confirmed user submissions.",
+            "rq1_kategori_dagilimi.md",
+        ),
+        "do plugins write descriptions less often for sensitive parameters": (
+            f"**{description_leading}.** Sensitive fields have descriptions slightly less often "
+            f"than other fields ({descriptions['sensitive_has_description_pct']:.1f}% "
+            f"versus {descriptions['non_sensitive_has_description_pct']:.1f}%). "
+            "The difference is small. This checks whether a field has a "
+            "description, not whether its privacy policy explains the request.",
+            "rq2_aciklama_orani.md",
+        ),
+        "do plugins disclose what they collect in their privacy policies": (
+            f"In the smaller policy audit, **{audit['undisclosed_count']} of "
+            f"{audit['total_parameters_with_comparable_policy_text']} fields "
+            f"({audit['undisclosed_pct']:.1f}%)** were not disclosed in the "
+            "corresponding privacy policies. This finding is about the audited "
+            "group, not every GPT Action.",
+            "rq6_policy_audit.md",
+        ),
+        "are sensitive parameters also the undisclosed ones": (
+            f"**Yes, in this small audit:** {intersection['undisclosed_count']} of "
+            f"{intersection['sensitive_count']} fields we could clearly map "
+            "to our selected sensitive categories were not disclosed in their "
+            "privacy policies. The sample is too small to say whether sensitive "
+            "fields are treated differently from other fields.",
+            "rq7_hassas_ve_ifsa_edilmemis.md",
+        ),
+    }
+    if normalized not in answers:
+        return None
 
     response, filename = answers[normalized]
     return {

@@ -147,6 +147,46 @@ class BackendTests(unittest.TestCase):
         self.assertIn('not a validated risk score', clusters)
         self.assertIsNone(answer_researcher_question('A new free-form question', 'researcher'))
         self.assertIsNone(answer_researcher_question('What data are collected by GPT Actions?', 'general'))
+
+    def test_shared_demo_questions_agree_across_audiences(self):
+        from app import llm
+        from app.chart_mapping import get_chart_filename
+        shared_questions = [
+            'What data are collected by GPT Actions?',
+            'What percentage of collected data is sensitive?',
+            'Which sensitive data types appear most often?',
+            'Are sensitive requests explained as often as other requests?',
+            'Which parameters collect passwords?',
+            'Do plugins disclose what they collect in their privacy policies?',
+            'Are sensitive parameters also the undisclosed ones?',
+        ]
+        client = TestClient(app)
+        for question in shared_questions:
+            answers = {}
+            for audience in ('general', 'researcher'):
+                with self.subTest(question=question, audience=audience), patch('app.rag.search') as search, patch.object(llm, 'ask') as ask:
+                    response = client.post('/ask', json={'question': question, 'audience': audience})
+                self.assertEqual(response.status_code, 200)
+                payload = response.json()
+                self.assertEqual(payload['chart_image'], f'/static/charts/{get_chart_filename(question)}')
+                self.assertTrue(payload['sources'])
+                answers[audience] = payload['answer']
+                search.assert_not_called()
+                ask.assert_not_called()
+            self.assertGreaterEqual(len(answers['researcher']), len(answers['general']))
+
+        question = 'Are sensitive requests explained as often as other requests?'
+        for audience in ('general', 'researcher'):
+            answer = client.post('/ask', json={'question': question, 'audience': audience}).json()['answer']
+            self.assertTrue(answer.startswith('**Not quite.**'))
+            self.assertIn('81.2%', answer)
+            self.assertIn('84.7%', answer)
+        for audience in ('general', 'researcher'):
+            answer = client.post('/ask', json={
+                'question': 'Do plugins write descriptions less often for sensitive parameters?',
+                'audience': audience,
+            }).json()['answer']
+            self.assertTrue(answer.startswith('**Yes, slightly.**'))
     def test_stale_index_fails_readiness(self):
         with patch('app.index_state.index_is_current',return_value=False):
             self.assertEqual(TestClient(app).get('/ready').status_code,503)
@@ -365,6 +405,7 @@ class AnswerStyleTests(unittest.TestCase):
             'where do password requests appear?',
             'do natural risky vs. safe clusters emerge among plugins?',
             'which plugin clusters have the highest sensitive-data share?',
+            'do plugins write descriptions less often for sensitive parameters?',
         })
 
 class IndexFreshnessTests(unittest.TestCase):

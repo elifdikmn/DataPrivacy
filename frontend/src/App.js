@@ -20,7 +20,7 @@ const GENERAL_QUESTIONS = [
   { label: 'What information can GPT Actions ask for?', query: 'What data are collected by GPT Actions?' },
   { label: 'How much of that information is sensitive?', query: 'What percentage of collected data is sensitive?' },
   { label: 'Which sensitive details appear most often?', query: 'Which sensitive data types appear most often?' },
-  { label: 'Are sensitive requests explained as often as other requests?', query: 'Do plugins write descriptions less often for sensitive parameters?' },
+  { label: 'Are sensitive requests explained as often as other requests?', query: 'Are sensitive requests explained as often as other requests?' },
   { label: 'Where do password requests appear?', query: 'Which parameters collect passwords?' },
   { label: 'Do privacy policies explain what these tools ask for?', query: 'Do plugins disclose what they collect in their privacy policies?' },
   { label: 'Are the sensitive requests also missing from privacy policies?', query: 'Are sensitive parameters also the undisclosed ones?' },
