@@ -38,7 +38,7 @@ GENERATED_KNOWLEDGE = RESULTS/'generated_knowledge'
 EXPECTED_CHARTS = {
  'rq1_sensitive_breakdown.png','rq1_category_distribution.png','rq2_description_rate.png',
  'rq3_model_comparison.png','rq3_model_comparison_per_category.png','rq3_feature_importance.png',
- 'rq3_password_breakdown.png','rq3_confusion_matrix.png','rq3_validation_confidence_intervals.png',
+ 'rq3_password_breakdown.png','password_use_cases.png','rq3_confusion_matrix.png','rq3_validation_confidence_intervals.png',
  'rq4_silhouette_scores.png','rq4_cluster_sensitivity.png','rq5_other_confidence_distribution.png',
  'rq6_policy_disclosure.png','rq7_sensitive_undisclosed.png'}
 SAVEFIG_RE = re.compile(r"""savefig\(\s*['"](?:[^'"]*/)?([\w.-]+\.png)['"]""")
@@ -149,6 +149,9 @@ def refresh_derived(envs, total_cells, update_knowledge=False):
         r=e2['report_baseline'][cat]
         model['per_class_metrics_sensitive_categories'][cat]={k:round(r[src],3) for k,src in [('precision','precision'),('recall','recall'),('f1','f1-score')]}
     pwd=df[df.data_type=='Password']
+    from .password_use_cases import summarize_password_use_cases
+    password_summary=summarize_password_use_cases(df.to_dict('records'))
+    facts['password_records']['purpose_group_counts']=password_summary['group_counts']
     facts['password_records']['total_plugin_instances']=sum(len(set(ids)) for ids in pwd.plugin_id_filenames)
     facts['password_records']['unique_plugins']=len(set(x for ids in pwd.plugin_id_filenames for x in ids))
     facts['password_records']['note']='total_plugin_instances counts unique parameter–Action pairs, while unique_plugins counts distinct Action IDs across all Password records. Record counts are not runtime transmission counts.'

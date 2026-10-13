@@ -401,6 +401,15 @@
   "password_records": {
     "note": "total_plugin_instances counts unique parameter–Action pairs, while unique_plugins counts distinct Action IDs across all Password records. Record counts are not runtime transmission counts.",
     "total_records": 18,
+    "purpose_group_note": "Groups are manually and conservatively assigned from each Password-labeled parameter's schema description. They count parameter records, not Actions; generic, empty, and inconsistent descriptions remain General or unclear. No observed password transmission is established.",
+    "purpose_group_counts": {
+      "Database access": 4,
+      "Content or resume protection": 3,
+      "SMPP messaging": 1,
+      "Host connection": 1,
+      "Article-posting account": 1,
+      "General or unclear": 8
+    },
     "total_plugin_instances": 35,
     "name_variants": [
       "password",

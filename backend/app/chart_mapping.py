@@ -22,7 +22,7 @@ QUESTION_CHART_MAP: dict[str, str] = {
     'can mislabeled "other" records be identified automatically?': "rq5_other_confidence_distribution.png",
     'are there hidden sensitive parameters mislabeled as "other"?': "rq5_other_confidence_distribution.png",
     'can the model suggest categories for "other" records?': "rq5_other_confidence_distribution.png",
-    "which parameters collect passwords?": "rq3_password_breakdown.png",
+    "which parameters collect passwords?": "password_use_cases.png",
     "do plugins disclose what they collect in their privacy policies?": "rq6_policy_disclosure.png",
     "are sensitive parameters also the undisclosed ones?": "rq7_sensitive_undisclosed.png",
 }

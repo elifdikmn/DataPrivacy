@@ -66,6 +66,17 @@ class BackendTests(unittest.TestCase):
         self.assertEqual(client.post('/ask',json={'question':'test','audience':'student'}).status_code,422)
         self.assertEqual(client.post('/ask',json={'question':'x'*4001}).status_code,422)
         for p in (config.STATIC_DIR/'charts').glob('*'):self.assertEqual(client.get('/static/charts/'+p.name).status_code,200)
+    def test_password_visualization_uses_reviewed_notebook_chart(self):
+        from analysis.password_use_cases import summarize_password_use_cases
+        summary=summarize_password_use_cases(json.loads(config.DATA_PATH.read_text()))
+        self.assertEqual(summary['record_count'],18)
+        self.assertEqual(summary['action_count'],29)
+        self.assertEqual(sum(summary['group_counts'].values()),18)
+        self.assertEqual(summary['group_counts']['General or unclear'],8)
+        self.assertEqual(summary['group_counts'],load_facts()['password_records']['purpose_group_counts'])
+        with patch('app.main.rag.answer', return_value={'answer':'Password fields appear in several Actions.','sources':[]}):
+            payload=TestClient(app).post('/ask',json={'question':'Which parameters collect passwords?'}).json()
+        self.assertEqual(payload['chart_image'],'/static/charts/password_use_cases.png')
     def test_stale_index_fails_readiness(self):
         with patch('app.index_state.index_is_current',return_value=False):
             self.assertEqual(TestClient(app).get('/ready').status_code,503)
