@@ -77,6 +77,22 @@ class BackendTests(unittest.TestCase):
         with patch('app.main.rag.answer', return_value={'answer':'Password fields appear in several Actions.','sources':[]}):
             payload=TestClient(app).post('/ask',json={'question':'Which parameters collect passwords?'}).json()
         self.assertEqual(payload['chart_image'],'/static/charts/password_use_cases.png')
+    def test_password_answer_matches_chart_without_llm(self):
+        from app import llm
+        for question in ('Which parameters collect passwords?', 'Where do password requests appear?'):
+            for audience in ('general', 'researcher'):
+                with self.subTest(question=question,audience=audience), patch('app.rag.search') as search, patch.object(llm,'ask') as ask:
+                    response=TestClient(app).post('/ask',json={'question':question,'audience':audience})
+                self.assertEqual(response.status_code,200)
+                payload=response.json()
+                self.assertEqual(payload['chart_image'],'/static/charts/password_use_cases.png')
+                self.assertIn('18 password-labeled fields',payload['answer'])
+                self.assertIn('29 distinct GPT Actions',payload['answer'])
+                self.assertIn('4 for database access',payload['answer'])
+                self.assertIn('8 with unclear purposes',payload['answer'])
+                self.assertNotIn('wrong dataset',payload['answer'])
+                search.assert_not_called()
+                ask.assert_not_called()
     def test_stale_index_fails_readiness(self):
         with patch('app.index_state.index_is_current',return_value=False):
             self.assertEqual(TestClient(app).get('/ready').status_code,503)
@@ -291,6 +307,7 @@ class AnswerStyleTests(unittest.TestCase):
             "how accurately can a parameter's category be predicted from its name?",
             'can mislabeled "other" records be identified automatically?',
             'are there hidden sensitive parameters mislabeled as "other"?',
+            'where do password requests appear?',
         })
 
 class IndexFreshnessTests(unittest.TestCase):

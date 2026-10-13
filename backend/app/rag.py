@@ -4,6 +4,7 @@ import logging
 import re
 
 from . import llm
+from .chart_mapping import get_chart_filename
 from .facts import load_facts
 from .retrieval import search
 
@@ -14,6 +15,42 @@ _OTHER_GENERAL_QUESTIONS = {
     'can mislabeled "other" records be identified automatically',
 }
 _OTHER_SENSITIVE_QUESTION = 'are there hidden sensitive parameters mislabeled as "other"'
+
+
+def curated_password_answer(question: str, audience: str) -> dict | None:
+    """Keep the password answer aligned with the manually reviewed chart."""
+    if get_chart_filename(question) != "password_use_cases.png":
+        return None
+
+    facts = load_facts()["password_records"]
+    groups = facts["purpose_group_counts"]
+    summary = (
+        f"Across **{facts['unique_plugins']} distinct GPT Actions**, the dataset lists "
+        f"**{facts['total_records']} password-labeled fields**: "
+        f"{groups['Database access']} for database access, "
+        f"{groups['Content or resume protection']} for content or resume protection, "
+        f"{groups['SMPP messaging']} for SMPP messaging, "
+        f"{groups['Host connection']} for host connection, "
+        f"{groups['Article-posting account']} for an article-posting account, "
+        f"and {groups['General or unclear']} with unclear purposes."
+    )
+    if audience == "general":
+        answer = summary + " These declared fields do not prove that passwords were sent."
+    else:
+        answer = (
+            summary + " The groups were assigned conservatively from schema descriptions "
+            "and count parameter records, not Actions. The dataset does not show whether "
+            "any password was actually transmitted at runtime."
+        )
+    return {
+        "answer": answer,
+        "sources": [{
+            "text": "Manually reviewed purposes of Password-labeled schema fields and distinct Action counts.",
+            "type": "finding",
+            "metadata": {"filename": "project_facts.json"},
+            "score": 1.0,
+        }],
+    }
 
 
 def curated_other_answer(question: str, audience: str) -> dict | None:
@@ -90,6 +127,9 @@ def retrieval_query(question: str, history: list[dict] | None = None) -> str:
 
 def answer(question: str, top_k: int = 5, audience: str = "general",
            history: list[dict] | None = None) -> dict:
+    curated = curated_password_answer(question, audience)
+    if curated is not None:
+        return curated
     curated = curated_other_answer(question, audience)
     if curated is not None:
         return curated
