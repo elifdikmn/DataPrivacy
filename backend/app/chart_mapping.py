@@ -19,6 +19,7 @@ QUESTION_CHART_MAP: dict[str, str] = {
     "which words predict sensitive categories?": "rq3_feature_importance.png",
     "do natural risky vs. safe clusters emerge among plugins?": "rq4_cluster_sensitivity.png",
     "which plugin clusters have the highest sensitive-data share?": "rq4_cluster_sensitivity.png",
+    "do risky vs. safe clusters emerge, and which groups have the highest sensitive-data share?": "rq4_cluster_sensitivity.png",
     'can mislabeled "other" records be identified automatically?': "rq5_other_confidence_distribution.png",
     'are there hidden sensitive parameters mislabeled as "other"?': "rq5_other_confidence_distribution.png",
     'can the model suggest categories for "other" records?': "rq5_other_confidence_distribution.png",

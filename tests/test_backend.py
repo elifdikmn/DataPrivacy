@@ -77,6 +77,11 @@ class BackendTests(unittest.TestCase):
         with patch('app.main.rag.answer', return_value={'answer':'Password fields appear in several Actions.','sources':[]}):
             payload=TestClient(app).post('/ask',json={'question':'Which parameters collect passwords?'}).json()
         self.assertEqual(payload['chart_image'],'/static/charts/password_use_cases.png')
+    def test_combined_cluster_question_uses_cluster_chart(self):
+        question='Do risky vs. safe clusters emerge, and which groups have the highest sensitive-data share?'
+        with patch('app.main.rag.answer', return_value={'answer':'No clean split; clusters 2 and 1 have the highest selected-category shares.','sources':[]}):
+            payload=TestClient(app).post('/ask',json={'question':question,'audience':'researcher'}).json()
+        self.assertEqual(payload['chart_image'],'/static/charts/rq4_cluster_sensitivity.png')
     def test_password_answer_matches_chart_without_llm(self):
         from app import llm
         for question in ('Which parameters collect passwords?', 'Where do password requests appear?'):
@@ -308,6 +313,8 @@ class AnswerStyleTests(unittest.TestCase):
             'can mislabeled "other" records be identified automatically?',
             'are there hidden sensitive parameters mislabeled as "other"?',
             'where do password requests appear?',
+            'do natural risky vs. safe clusters emerge among plugins?',
+            'which plugin clusters have the highest sensitive-data share?',
         })
 
 class IndexFreshnessTests(unittest.TestCase):

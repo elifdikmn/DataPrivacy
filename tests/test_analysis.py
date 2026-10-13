@@ -33,7 +33,9 @@ class NotebookChartTests(unittest.TestCase):
         root=Path(__file__).resolve().parents[1]
         pattern=re.compile(r"""savefig\(\s*['"](?:[^'"]*/)?([\w.-]+\.png)['"]""")
         saved=[]
-        for path in sorted((root/'notebooks').glob('bolum*.ipynb')):
+        notebooks=list((root/'notebooks').glob('bolum*.ipynb'))
+        notebooks.append(root/'notebooks/rq7_sensitive_disclosure_heatmap.ipynb')
+        for path in sorted(notebooks):
             for cell in json.loads(path.read_text(encoding='utf-8'))['cells']:
                 if cell['cell_type']=='code':saved+=pattern.findall(''.join(cell['source']))
         served=sorted(p.name for p in (root/'backend/static/charts').glob('*.png'))

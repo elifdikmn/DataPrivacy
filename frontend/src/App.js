@@ -30,8 +30,7 @@ const RESEARCHER_QUESTIONS = [
   'What are the model performance confidence intervals?',
   'How accurately can a parameter\'s category be predicted from its name and description?',
   'Which words predict sensitive categories?',
-  'Do natural risky vs. safe clusters emerge among plugins?',
-  'Which plugin clusters have the highest sensitive-data share?',
+  'Do risky vs. safe clusters emerge, and which groups have the highest sensitive-data share?',
   'Can the model suggest categories for "Other" records?',
 ].map((question) => ({ label: question, query: question }));
 
@@ -94,6 +93,7 @@ function App() {
   });
   const [visibleCharts, setVisibleCharts] = useState(new Set());
   const composerRef = useRef(null);
+  const activeRequestRef = useRef(null);
 
   // Keep the newest message (and the input box) in view.
   useEffect(() => {
@@ -139,6 +139,8 @@ function App() {
     setInput('');
     setLoading(true);
     setError(null);
+    const controller = new AbortController();
+    activeRequestRef.current = controller;
 
     try {
       let res;
@@ -147,6 +149,7 @@ function App() {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ question, top_k: 5, audience, history }),
+          signal: controller.signal,
         });
       } catch {
         throw new Error(
@@ -160,14 +163,20 @@ function App() {
       }
 
       const data = await res.json();
+      if (activeRequestRef.current !== controller) return;
       setMessages((prev) => [
         ...prev,
         { role: 'assistant', text: data.answer, sources: data.sources, chartImage: data.chart_image },
       ]);
     } catch (err) {
-      setError(err.message || 'Something went wrong.');
+      if (activeRequestRef.current === controller && !controller.signal.aborted) {
+        setError(err.message || 'Something went wrong.');
+      }
     } finally {
-      setLoading(false);
+      if (activeRequestRef.current === controller) {
+        activeRequestRef.current = null;
+        setLoading(false);
+      }
     }
   }
 
@@ -180,6 +189,17 @@ function App() {
     setMessages([]);
     setError(null);
     setVisibleCharts(new Set());
+  }
+
+  function changeAudience(event) {
+    const nextAudience = event.target.value;
+    if (nextAudience === audience) return;
+    activeRequestRef.current?.abort();
+    activeRequestRef.current = null;
+    setLoading(false);
+    clearChat();
+    setInput('');
+    setAudience(nextAudience);
   }
 
   function toggleChart(i) {
@@ -212,8 +232,7 @@ function App() {
           <select
             id="audience"
             value={audience}
-            onChange={(event) => setAudience(event.target.value)}
-            disabled={loading}
+            onChange={changeAudience}
           >
             {AUDIENCES.map((option) => (
               <option key={option.value} value={option.value}>
