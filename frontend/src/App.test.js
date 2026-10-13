@@ -30,18 +30,18 @@ test('renders model-selected emphasis as bold text', () => {
   expect(screen.getByText('7.3% sensitive data').tagName).toBe('STRONG');
 });
 
-test('shows seven plain-language questions and five distinct researcher questions', () => {
+test('shows seven plain-language questions and four distinct researcher questions', () => {
   render(<App />);
   expect(screen.getAllByRole('button', { name: /\?/ })).toHaveLength(7);
   expect(screen.getByRole('button', { name: 'Where do password requests appear?' })).toBeInTheDocument();
   expect(screen.queryByRole('button', { name: 'What are the model performance confidence intervals?' })).not.toBeInTheDocument();
 
   fireEvent.change(screen.getByLabelText('Explain for'), { target: { value: 'researcher' } });
-  expect(screen.getAllByRole('button', { name: /\?/ })).toHaveLength(12);
+  expect(screen.getAllByRole('button', { name: /\?/ })).toHaveLength(11);
   expect(screen.getByRole('button', { name: 'What are the model performance confidence intervals?' })).toBeInTheDocument();
   expect(screen.getByRole('button', { name: 'Do risky vs. safe clusters emerge, and which groups have the highest sensitive-data share?' })).toBeInTheDocument();
   expect(screen.queryByRole('button', { name: 'Which plugin clusters have the highest sensitive-data share?' })).not.toBeInTheDocument();
-  expect(screen.getByRole('button', { name: 'Can the model suggest categories for "Other" records?' })).toBeInTheDocument();
+  expect(screen.queryByRole('button', { name: 'Can the model suggest categories for "Other" records?' })).not.toBeInTheDocument();
   expect(screen.queryByRole('button', { name: 'Are there hidden sensitive parameters mislabeled as "Other"?' })).not.toBeInTheDocument();
   expect(screen.getByRole('button', { name: "How accurately can a parameter's category be predicted from its name and description?" })).toBeInTheDocument();
 });

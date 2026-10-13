@@ -31,7 +31,6 @@ const RESEARCHER_QUESTIONS = [
   'How accurately can a parameter\'s category be predicted from its name and description?',
   'Which words predict sensitive categories?',
   'Do risky vs. safe clusters emerge, and which groups have the highest sensitive-data share?',
-  'Can the model suggest categories for "Other" records?',
 ].map((question) => ({ label: question, query: question }));
 
 const AUDIENCES = [
