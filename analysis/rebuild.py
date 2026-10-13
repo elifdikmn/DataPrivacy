@@ -40,7 +40,7 @@ EXPECTED_CHARTS = {
  'rq3_model_comparison.png','rq3_model_comparison_per_category.png','rq3_feature_importance.png',
  'rq3_password_breakdown.png','password_use_cases.png','rq3_confusion_matrix.png','rq3_validation_confidence_intervals.png',
  'rq4_silhouette_scores.png','rq4_cluster_sensitivity.png','rq5_other_confidence_distribution.png',
- 'rq6_policy_disclosure.png','rq7_sensitive_undisclosed.png'}
+ 'rq6_policy_disclosure.png','rq7_sensitive_undisclosed.png','rq7_sensitive_disclosure_heatmap.png'}
 SAVEFIG_RE = re.compile(r"""savefig\(\s*['"](?:[^'"]*/)?([\w.-]+\.png)['"]""")
 
 def write_json(path, data):
@@ -249,6 +249,8 @@ def main():
     for part in range(1,5):
         path=next((ROOT/'notebooks').glob(f'bolum{part}_*.ipynb'))
         envs[part],count,charts=execute_notebook(path);total+=count;exported|=charts
+    _,count,charts=execute_notebook(ROOT/'notebooks/rq7_sensitive_disclosure_heatmap.ipynb')
+    total+=count;exported|=charts
     missing=EXPECTED_CHARTS-exported
     if missing:raise RuntimeError(f"Charts not produced (check the plt.savefig names in the notebooks): {sorted(missing)}")
     refresh_derived(envs,total,update_knowledge)

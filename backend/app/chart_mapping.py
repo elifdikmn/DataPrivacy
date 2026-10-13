@@ -25,7 +25,7 @@ QUESTION_CHART_MAP: dict[str, str] = {
     "which parameters collect passwords?": "password_use_cases.png",
     "where do password requests appear?": "password_use_cases.png",
     "do plugins disclose what they collect in their privacy policies?": "rq6_policy_disclosure.png",
-    "are sensitive parameters also the undisclosed ones?": "rq7_sensitive_undisclosed.png",
+    "are sensitive parameters also the undisclosed ones?": "rq7_sensitive_disclosure_heatmap.png",
 }
 
 _QUOTES = str.maketrans({"“": '"', "”": '"', "‘": "'", "’": "'"})

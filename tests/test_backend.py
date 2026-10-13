@@ -287,7 +287,7 @@ class AnswerStyleTests(unittest.TestCase):
         self.assertEqual(get_chart_filename('Can mislabeled “Other” records be identified automatically'),'rq5_other_confidence_distribution.png')
         self.assertEqual(get_chart_filename('Can the model suggest categories for “Other” records?'),'rq5_other_confidence_distribution.png')
         self.assertEqual(get_chart_filename("How accurately can a parameter's category be predicted from its name and description?"),'rq3_confusion_matrix.png')
-        self.assertEqual(get_chart_filename('Are sensitive parameters also the undisclosed ones?'),'rq7_sensitive_undisclosed.png')
+        self.assertEqual(get_chart_filename('Are sensitive parameters also the undisclosed ones?'),'rq7_sensitive_disclosure_heatmap.png')
         self.assertIsNone(get_chart_filename('Tell me a joke'))
         for chart in QUESTION_CHART_MAP.values():self.assertTrue((config.STATIC_DIR/'charts'/chart).is_file(),chart)
 
