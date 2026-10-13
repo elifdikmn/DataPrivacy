@@ -6,6 +6,7 @@ import re
 from . import llm
 from .chart_mapping import get_chart_filename
 from .facts import load_facts
+from .researcher_answers import answer_researcher_question
 from .retrieval import search
 
 logger = logging.getLogger("chatbot.rag")
@@ -39,7 +40,8 @@ def curated_password_answer(question: str, audience: str) -> dict | None:
     else:
         answer = (
             summary + " The groups were assigned conservatively from schema descriptions "
-            "and count parameter records, not Actions. The dataset does not show whether "
+            "and count parameter records, not Actions; one record may appear in several "
+            "Actions. The dataset does not show whether "
             "any password was actually transmitted at runtime."
         )
     return {
@@ -128,6 +130,9 @@ def retrieval_query(question: str, history: list[dict] | None = None) -> str:
 def answer(question: str, top_k: int = 5, audience: str = "general",
            history: list[dict] | None = None) -> dict:
     curated = curated_password_answer(question, audience)
+    if curated is not None:
+        return curated
+    curated = answer_researcher_question(question, audience)
     if curated is not None:
         return curated
     curated = curated_other_answer(question, audience)

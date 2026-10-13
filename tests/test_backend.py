@@ -98,6 +98,55 @@ class BackendTests(unittest.TestCase):
                 self.assertNotIn('wrong dataset',payload['answer'])
                 search.assert_not_called()
                 ask.assert_not_called()
+
+    def test_all_researcher_demo_questions_use_reviewed_answers(self):
+        from app import llm
+        from app.chart_mapping import get_chart_filename
+        questions = [
+            'What data are collected by GPT Actions?',
+            'What percentage of collected data is sensitive?',
+            'Which sensitive data types appear most often?',
+            'Do plugins write descriptions less often for sensitive parameters?',
+            'Which parameters collect passwords?',
+            'Do plugins disclose what they collect in their privacy policies?',
+            'Are sensitive parameters also the undisclosed ones?',
+            'What are the model performance confidence intervals?',
+            "How accurately can a parameter's category be predicted from its name and description?",
+            'Which words predict sensitive categories?',
+            'Do risky vs. safe clusters emerge, and which groups have the highest sensitive-data share?',
+        ]
+        for question in questions:
+            with self.subTest(question=question), patch('app.rag.search') as search, patch.object(llm, 'ask') as ask:
+                response = TestClient(app).post('/ask', json={'question': question, 'audience': 'researcher'})
+            self.assertEqual(response.status_code, 200)
+            payload = response.json()
+            self.assertTrue(payload['answer'])
+            self.assertTrue(payload['sources'])
+            self.assertEqual(payload['chart_image'], f'/static/charts/{get_chart_filename(question)}')
+            search.assert_not_called()
+            ask.assert_not_called()
+
+    def test_reviewed_researcher_answers_keep_denominators_and_limits(self):
+        from app.researcher_answers import answer_researcher_question
+        distribution = answer_researcher_question('What data are collected by GPT Actions?', 'researcher')['answer']
+        self.assertIn('App usage data, Identifier, and Other', distribution)
+        self.assertIn('48.2% combined', distribution)
+        description = answer_researcher_question('Do plugins write descriptions less often for sensitive parameters?', 'researcher')['answer']
+        self.assertTrue(description.startswith('**Yes, slightly.**'))
+        self.assertIn('81.2%', description)
+        self.assertIn('84.7%', description)
+        intersection = answer_researcher_question('Are sensitive parameters also the undisclosed ones?', 'researcher')['answer']
+        self.assertIn('18 of 20', intersection)
+        self.assertIn('remaining fields cannot all be classified as non-sensitive', intersection)
+        self.assertIn('does not establish whether sensitivity changes disclosure', intersection)
+        intervals = answer_researcher_question('What are the model performance confidence intervals?', 'researcher')['answer']
+        self.assertIn('76.2% accuracy', intervals)
+        self.assertIn('74.6–77.8%', intervals)
+        clusters = answer_researcher_question('Do risky vs. safe clusters emerge, and which groups have the highest sensitive-data share?', 'researcher')['answer']
+        self.assertIn('within the tested range of K=2–10', clusters)
+        self.assertIn('not a validated risk score', clusters)
+        self.assertIsNone(answer_researcher_question('A new free-form question', 'researcher'))
+        self.assertIsNone(answer_researcher_question('What data are collected by GPT Actions?', 'general'))
     def test_stale_index_fails_readiness(self):
         with patch('app.index_state.index_is_current',return_value=False):
             self.assertEqual(TestClient(app).get('/ready').status_code,503)
@@ -312,6 +361,7 @@ class AnswerStyleTests(unittest.TestCase):
             "how accurately can a parameter's category be predicted from its name?",
             'can mislabeled "other" records be identified automatically?',
             'are there hidden sensitive parameters mislabeled as "other"?',
+            'can the model suggest categories for "other" records?',
             'where do password requests appear?',
             'do natural risky vs. safe clusters emerge among plugins?',
             'which plugin clusters have the highest sensitive-data share?',
